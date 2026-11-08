@@ -120,7 +120,7 @@
 			In general, an <term>inductive argument</term><idx><h>argument</h><h>inductive</h></idx><idx><h>inductive argument</h><see>argument, inductive</see></idx> uses a collection of <em>specific</em> examples (e.g., observations or data) as its premises and uses them to propose a <em>general</em> conclusion. This is shown in the image on the left below, where the argument moves from the narrow specific premises at the bottom up to the wide general conclusion at the top. A <term>deductive argument</term><idx><h>argument</h><h>deductive</h></idx><idx><h>deductive argument</h><see>argument, deductive</see></idx> uses a collection of <em>general statements</em> (e.g., definitions or rules) as its premises and uses them to propose a <em>specific conclusion</em>. This is shown in the image to the right below, where the argument moves from the wide general premises at the bottom to the narrow specific conclusion at the top.
 		</p>
 		<sidebyside widths="40% 40%">
-			<image>
+			<image xml:id="img-inductive-argument">
 			<shortdescription>A pyramid upside down with the narrow end at the bottom for a specific premise, the middle section is another specific premise; the wide part at the top is for the general conclusion</shortdescription>
 				<latex-image>
 					\begin{tikzpicture}[font=\figfont, align=center,
@@ -136,7 +136,7 @@
 					\end{tikzpicture}
 				</latex-image>
 			</image>
-			<image>
+			<image xml:id="img-deductive-argument">
 			<shortdescription>A pyramid right-side up with the wide base at the bottom for a general premise; another general premise in the middle section, and a specific conclusion in the narrow part at the top</shortdescription>
 				<latex-image>
 					\begin{tikzpicture}[font=\figfont, align=center,

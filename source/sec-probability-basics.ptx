@@ -52,7 +52,7 @@
 		<p>
 			Probabilities calculated from observed data or simulated results are known as <term>experimental</term> (or <term>empirical</term>) <term>probabilities</term><idx>experimental probability</idx><idx><h>empirical probability</h><see>experimental probability</see></idx><idx><h>probability</h><h>types</h><h>experimental</h></idx>. In contrast, when the likelihood (or chance) of an event is determined by analyzing all the possible outcomes and calculating the ratio of favorable outcomes to the total number of outcomes, it is referred to as <term>theoretical probability</term>. A third type of probability, called <term>subjective probability</term><idx>subjective probability</idx><idx><h>probability</h><h>types</h><h>subjective</h></idx>, is essentially an educated guess based on personal experience or intuition. This section will primarily focus on theoretical probabilities.
 		</p>
-		<definition xml:id="def_theoretical-probability">
+		<definition xml:id="def-theoretical-probability">
 			<idx>theoretical probability</idx>
 			<idx><h>probability</h><h>types</h><h>theoretical</h></idx>
 			<statement>
@@ -71,7 +71,7 @@
 		<p>
 			Before we can discuss the basic rules of probability, it is important to understand the terminology used. The terms we need to define are rooted in sets, which we discussed earlier in this chapter.  First, we need to define what we mean by an <term>experiment</term> in probability theory.
 		</p>
-		<definition xml:id="def-experiment_probability">
+		<definition xml:id="def-experiment-probability">
 			<idx>experiment (probability)</idx>
 			<idx><h>probability</h><h>experiment</h></idx>
 			<idx><h>trial</h><see>experiment (probability)</see></idx>
@@ -81,7 +81,7 @@
 				</p>
 			</statement>
 		</definition>
-		<definition xml:id="def_sample-space">
+		<definition xml:id="def-sample-space">
 			<idx>sample space</idx>
 			<idx><h>probability</h><h>sample space</h></idx>
 			<statement>
@@ -90,7 +90,7 @@
 				</p>
 			</statement>
 		</definition>
-		<definition xml:id="def_event">
+		<definition xml:id="def-event">
 			<idx>event</idx>
 			<idx><h>probability</h><h>event</h></idx>
 			<statement>
@@ -102,7 +102,7 @@
 		<p>
 			The following example illustrates key terms.
 		</p>
-		<example xml:id="ex_probabilty_basic-rules_coin-flip">
+		<example xml:id="ex-probability-basic-rules-coin-flip">
 			<title>Analyzing a Simple Experiment</title>
 			<p>
 				A fair coin is flipped twice, and the result of each flip is noted. What is the probability that exactly one head appears in these two flips?
@@ -120,13 +120,13 @@
 				</md>.
 			</p>
 			<p>
-				If we assume that each of the outcomes is equally likely, then (applying <xref ref="def_theoretical-probability"/>)
+				If we assume that each of the outcomes is equally likely, then (applying <xref ref="def-theoretical-probability"/>)
 				<md>
 					P(E) = \frac{ n(E)}{n(S)} = \frac{2}{4} = \frac{1}{2} = 0.50
 				</md>.
 			</p>
 		</example>
-		<example xml:id="ex_probability_basic-rules-2">
+		<example xml:id="ex-probability-basic-rules-2">
 			<title>Identifying a Sample Space</title>
 			<statement>
 				<p>
@@ -144,10 +144,10 @@
 			<solution><p>The set in (d) gives the possible sums. Set (a) includes 1, which cannot be a sum of two dice. Sets (b) and (e) contain only some of the possible sums, so they are events rather than the full sample space. Set (c) would be the sample space if we recorded the number on each die, but here we note only the sum.</p></solution>
 		</example>
 		<p>
-			In <xref ref="ex_probabilty_basic-rules_coin-flip"/>, the event of interest was <m>E = \lbrace HT, TH \rbrace</m>. Notice that every outcome in that event is also an outcome in the sample space <m>S</m>. This is what it means to say that <m>E</m> is a <idx><h>sets</h><h>subset</h></idx><term>subset</term> of <m>S</m>. 
-			Also, notice that because <m>E</m> is a subset of <m>S</m>, it must always be true that <m>E</m> contains no more elements than <m>S</m>. That is, <m>n(E) \leq n(S)</m>. This, together with our definition of <xref ref="def_theoretical-probability" text="custom">theoretical probability</xref>, leads to the following rules.
+			In <xref ref="ex-probability-basic-rules-coin-flip"/>, the event of interest was <m>E = \lbrace HT, TH \rbrace</m>. Notice that every outcome in that event is also an outcome in the sample space <m>S</m>. This is what it means to say that <m>E</m> is a <idx><h>sets</h><h>subset</h></idx><term>subset</term> of <m>S</m>. 
+			Also, notice that because <m>E</m> is a subset of <m>S</m>, it must always be true that <m>E</m> contains no more elements than <m>S</m>. That is, <m>n(E) \leq n(S)</m>. This, together with our definition of <xref ref="def-theoretical-probability" text="custom">theoretical probability</xref>, leads to the following rules.
 		</p>
-		<fact xml:id="thm_basic-probability">
+		<fact xml:id="fact-basic-probability">
 			<title>Basic Probability Rules</title>
 			<idx><h>probability</h><h>formula</h><h>basic rules</h></idx>
 			<statement>
@@ -163,7 +163,7 @@
 			The first rule says that because <m>E</m> is a subset of <m>S</m>, the ratio of <m>n(E)</m> to <m>n(S)</m> can be at most 1, and since neither count can be negative, it must be at least 0. 
 			The second rule tells us that the probability of something in the sample space happening is 1. Since the sample space contains all possible outcomes, this gives us the maximum possible probability of 1.
 		</p>
-		<example xml:id="ex_probability_measure_urn">
+		<example xml:id="ex-probability-measure-urn">
 			<title>Assigning Probabilities to Outcomes</title>
 			<statement>
 				<p>
@@ -189,12 +189,12 @@
 			</solution>
 		</example>
 	</subsection>
-	<subsection xml:id="sec_probability_more-rules">
+	<subsection xml:id="subsec-probability-more-rules">
 		<title>More Probability Rules</title>
 		<p>
-			There are other useful probability rules for working with events. The first follows from the <xref ref="fact-sets-inclusion-exclusion-rule" text="custom">inclusion-exclusion rule</xref> that we saw in <xref ref="sec-set-cardinality"/>.
+			There are other useful probability rules for working with events. The first follows from the <xref ref="fact-sets-inclusion-exclusion-rule" text="custom">inclusion-exclusion rule</xref> that we saw in <xref ref="sec-sets-cardinality"/>.
 		</p>
-		<fact xml:id="thm_probability-rule_general-addition">
+		<fact xml:id="fact-probability-rule-general-addition">
 			<idx>general addition rule (probability)</idx>
 			<idx><h>probability</h><h>formula</h><h>general addition rule</h></idx>
 			<statement>
@@ -203,14 +203,14 @@
 					<md>
 						P(A\cup B) = P(A) + P(B) - P(A\cap B)
 					</md>.
-					<alert>Note:</alert> If <m>A</m> and <m>B</m> are <xref ref="def_mutually-exclusive" text="custom">mutually exclusive</xref>, this reduces to
+					<alert>Note:</alert> If <m>A</m> and <m>B</m> are <xref ref="def-mutually-exclusive" text="custom">mutually exclusive</xref>, this reduces to
 					<md>
 						P(A\cup B) = P(A) + P(B)
 					</md>.
 				</p>
 			</statement>
 		</fact>
-		<example xml:id="ex_probability_more-rules_general-addition">
+		<example xml:id="ex-probability-more-rules-general-addition">
 			<title>Using the General Addition Rule</title>
 			<statement>
 			<p>
@@ -261,7 +261,7 @@
 							</md>
 						</p>
 						<p>
-							The second way is to apply the <xref ref="thm_probability-rule_general-addition" text="custom">general addition rule</xref>: add the total of yellow items and the total of erasers, but since the yellow erasers are in both sets, subtract out their joint probability.
+							The second way is to apply the <xref ref="fact-probability-rule-general-addition" text="custom">general addition rule</xref>: add the total of yellow items and the total of erasers, but since the yellow erasers are in both sets, subtract out their joint probability.
 						</p>
 						<p>
 							<md>
@@ -293,7 +293,7 @@
 	<p>
 		Note that the general addition rule can be used to find any of the four probabilities it relates. Here is an example where the rule is used to find the probability of the intersection term (the <q>joint probability</q>).
 	</p>
-	<example xml:id="ex_probability_more-rules_find-intersection">
+	<example xml:id="ex-probability-more-rules-find-intersection">
 			<title>Using the General Addition Rule to Find an Intersection</title>
 			<statement>
 				<p>
@@ -311,9 +311,9 @@
 			</solution>
 		</example>
 		<p>
-			The word <q>not</q> often appears in probability problems, and you likely have an instinctive understanding of how to deal with it. For example, suppose you were told there was a 40% chance (probability) of rain. What is the probability that it does not rain? That is right<mdash/>60%!  This is the <term>complement rule</term>, which is closely related to the idea of the <xref ref="def_complement" text="custom">complement of a set</xref>, discussed in a previous section.
+			The word <q>not</q> often appears in probability problems, and you likely have an instinctive understanding of how to deal with it. For example, suppose you were told there was a 40% chance (probability) of rain. What is the probability that it does not rain? That is right<mdash/>60%!  This is the <term>complement rule</term>, which is closely related to the idea of the <xref ref="def-complement" text="custom">complement of a set</xref>, discussed in a previous section.
 		</p>
-		<definition xml:id="def-complement_event">
+		<definition xml:id="def-complement-event">
 			<idx><h>complement</h><h>of an event</h></idx>
 			<idx><h>probability</h><h>complement of an event</h></idx>
 			<statement>
@@ -325,7 +325,7 @@
 		<p>
 			An event and its complement divide up the sample space.  That is, every element in the sample space is either in the event or in its complement, and never in both.  This observation leads to a rule for finding the probability of the complement of an event.
 		</p>
-		<fact xml:id="def_probability-rule_complement">
+		<fact xml:id="fact-probability-rule-complement">
 			<idx>complement rule</idx>
 			<idx><h>probability</h><h>formula</h><h>complement rule</h></idx>
 			<statement>
@@ -335,7 +335,7 @@
 				</p>
 			</statement>
 		</fact>
-		<example xml:id="ex_probability_more-rules_complement">
+		<example xml:id="ex-probability-more-rules-complement">
 			<title>Finding the Probability of a Complement</title>
 			<statement>
 				<p>
@@ -358,15 +358,15 @@
 			</solution>
 		</example>
 	</subsection>
-	<subsection xml:id="sec_probability_counting">
+	<subsection xml:id="subsec-probability-counting">
 		<title>Probability from Counting</title>
 		<p>
-			Throughout this section, we have assumed that each outcome is equally likely. In <xref ref="ex_probability_measure_urn"/>, we pulled colored marbles from a jar in which each marble was equally likely, but not each color. This was because there were more marbles of some colors than others. In that example, we had two different ways to list the sample space, depending on how (or what) we counted. This illustrates how counting is an important tool for computing probabilities.
+			Throughout this section, we have assumed that each outcome is equally likely. In <xref ref="ex-probability-measure-urn"/>, we pulled colored marbles from a jar in which each marble was equally likely, but not each color. This was because there were more marbles of some colors than others. In that example, we had two different ways to list the sample space, depending on how (or what) we counted. This illustrates how counting is an important tool for computing probabilities.
 		</p>
 		<p>
-			The definition of theoretical probability shown in <xref ref="def_theoretical-probability" text="type-global"/> is fundamentally based on enumeration (counting). By applying the counting techniques introduced in <xref ref="sec-set-multiplication-principle"/> and <xref ref="sec-set-permutation-combination"/>, we can now address more complex probability problems. In the examples that follow, we will use a variety of counting rules to compute probabilities. Pay close attention to how, in each case, we must first determine which counting rule(s) to apply and how to combine them to count the number of outcomes in both the sample space and the event whose probability we wish to find.
+			The definition of theoretical probability shown in <xref ref="def-theoretical-probability" text="type-global"/> is fundamentally based on enumeration (counting). By applying the counting techniques introduced in <xref ref="sec-counting-addition-multiplication-rules"/> and <xref ref="sec-counting-permutation-combination"/>, we can now address more complex probability problems. In the examples that follow, we will use a variety of counting rules to compute probabilities. Pay close attention to how, in each case, we must first determine which counting rule(s) to apply and how to combine them to count the number of outcomes in both the sample space and the event whose probability we wish to find.
 		</p>
-		<example xml:id="ex_probability_counting_basic">
+		<example xml:id="ex-probability-counting-basic">
 			<title>Probability Using Basic Counting Rules</title>
 			<statement>
 				<p>
@@ -392,7 +392,7 @@
 		<p>
 			A process in which we choose one item, as we did above when we chose a single cat, is often much easier to work with than a process in which we must choose two or more items. Consider the next example.
 		</p>
-		<example xml:id="ex_probability_counting_steps">
+		<example xml:id="ex-probability-counting-steps">
 			<title>Probability Using Permutations and Combinations</title>
 			<statement>
 				<p>
@@ -407,7 +407,7 @@
 			</statement>
 			<solution>
 				<p>
-					Notice that nothing is said about the order in which cards are drawn for the first three events.  So we will use <xref ref="fact_counting-rule_combination" text="custom">combinations</xref> to count both the sample space and the number of outcomes in these events.  The common sample space is found by counting the number of ways to select 4 of the 10 cards if order doesn't matter: <m>C(10,4) = \frac{10 \times 9\times 8\times 7}{4\times 3\times 2\times 1} = 210</m>.
+					Notice that nothing is said about the order in which cards are drawn for the first three events.  So we will use <xref ref="fact-counting-rule-combination" text="custom">combinations</xref> to count both the sample space and the number of outcomes in these events.  The common sample space is found by counting the number of ways to select 4 of the 10 cards if order doesn't matter: <m>C(10,4) = \frac{10 \times 9\times 8\times 7}{4\times 3\times 2\times 1} = 210</m>.
 					<ol marker="a)">
 						<li>
 							<p>
@@ -437,7 +437,7 @@
 							</p></li>
 						<li>
 							<p>
-								Our last event is different from the other three because the order in which we pick our cards matters.  We should therefore use a <xref ref="fact-permutation-formula" text="custom">permutation</xref> or the <xref ref="thm_counting-rule_multiplication" text="custom">multiplication rule</xref> instead of a combination. Keeping in mind that there is only one of each suit's queen in the deck, we compute
+								Our last event is different from the other three because the order in which we pick our cards matters.  We should therefore use a <xref ref="fact-permutation-formula" text="custom">permutation</xref> or the <xref ref="principle-counting-rule-multiplication" text="custom">multiplication rule</xref> instead of a combination. Keeping in mind that there is only one of each suit's queen in the deck, we compute
 								<md>
 									<mrow>P(\text{Queen of Hearts, }\amp\text{Diamonds, Clubs, then Spades}) </mrow>
 									<mrow>\amp = \frac{1\times 1\times 1\times 1}{P(10,4)}</mrow>
@@ -450,7 +450,7 @@
 				</p>
 			</solution>
 		</example>
-		<example xml:id="exp_probability_counting_cases">
+		<example xml:id="ex-probability-counting-cases">
 			<title>Probabilities Using Cases</title>
 			<statement>
 				<p>

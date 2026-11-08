@@ -75,7 +75,7 @@
       </p>
       <figure>
         <caption>Steps to calculate federal income tax</caption>
-        <image width="100%">
+        <image xml:id="img-income-tax-steps" width="100%">
         <shortdescription>Five rectangles showing the steps: 1. Calculate gross income by adding all income; 2. Calculate adjusted gross income (AGI) by subtracting any pre-tax adjustments; 3. Calculate taxable income by subtracting deductions (itemized or standard); 4. Calculate tax using tax table for your filing status; 5. Calculate refund or amount owed by subtracting credits and withholdings. If the amount is negative you get a refund; if the amount is positive you owe money.</shortdescription>
           <latex-image>
             % resizebox: at full size (21cm) the picture is wider than the page
@@ -248,9 +248,9 @@
       </p>
       
       <p>
-        The cutoff values in the figure are for a married couple filing jointly. However, the percentages are the same for everyone, as you'll see in the table shown below. We pay 10% of any taxable income in the first bucket. If the first bucket is full, we move to the second bucket and we pay 12% of that income. For example, Taylor and Casey (in <xref ref="ex_taylor_casey"/>), with $132,000 of taxable income, fill the first two buckets and part of the third, so they are in the 22% tax bracket. They will pay 22% of the income in that bucket, but they are not paying 22% of their entire income.
+        The cutoff values in the figure are for a married couple filing jointly. However, the percentages are the same for everyone, as you'll see in the table shown below. We pay 10% of any taxable income in the first bucket. If the first bucket is full, we move to the second bucket and we pay 12% of that income. For example, Taylor and Casey (in <xref ref="ex-taylor-casey"/>), with $132,000 of taxable income, fill the first two buckets and part of the third, so they are in the 22% tax bracket. They will pay 22% of the income in that bucket, but they are not paying 22% of their entire income.
       </p>
-      <figure xml:id="tax_buckets">
+      <figure xml:id="fig-tax-buckets">
         <caption>Tax brackets as buckets, using the 2024 cutoffs for married couples filing jointly. Based on an idea by <url href="https://www.trailfp.com/financial-planning/how-about-them-tax-apples/" visual="trailfp.com/financial-planning/how-about-them-tax-apples">John Chesbrough</url>.</caption>
         <image width="90%" source="images/financial_math/Tax-buckets-3.png">
         <shortdescription>A drawing that shows the tax brackets as buckets being filled from a hose labeled taxable income. The buckets vary in size because the width of the tax brackets varies. The cutoffs shown are for married couples filing jointly, from $0 to $23,200 at 10% up to over $731,200 at 37%. The cutoff values for all filing statuses are given in the next table.</shortdescription>
@@ -543,7 +543,7 @@
       </solution>
     </example>
   
-    <example xml:id="ex_taylor_casey">
+    <example xml:id="ex-taylor-casey">
       <statement>
         <p>
           Taylor and Casey are married and filing jointly. Together their taxable income is $132,000. Use the simplified 2024 tax tables from this section to determine how much they owe in taxes.
@@ -616,7 +616,7 @@
     <example>
       <statement>
         <p>
-          As we discovered in <xref ref="ex_taylor_casey"/>, Taylor and Casey owe $19,146 in taxes. Their employers withheld $9,905, and they received a $7,500 credit for their purchase of an electric car. Will they receive a refund, or will they need to make a payment?
+          As we discovered in <xref ref="ex-taylor-casey"/>, Taylor and Casey owe $19,146 in taxes. Their employers withheld $9,905, and they received a $7,500 credit for their purchase of an electric car. Will they receive a refund, or will they need to make a payment?
         </p>
       </statement>
       <solution>

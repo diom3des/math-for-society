@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-set-permutation-combination" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec-counting-permutation-combination" xmlns:xi="http://www.w3.org/2001/XInclude">
 	<title>Permutations and Combinations</title>
 
 	<objectives>
@@ -26,9 +26,9 @@
 	<subsection xml:id="subsec-counting-factorial">
 		<title>Factorials</title>
 		<p>
-			The following example shows how the <term>factorial</term> is a special case of the <xref ref="thm_counting-rule_multiplication" text="custom">multiplication rule</xref>.
+			The following example shows how the <term>factorial</term> is a special case of the <xref ref="principle-counting-rule-multiplication" text="custom">multiplication rule</xref>.
 		</p>
-		<example xml:id="ex_counting_factorial_dolls">
+		<example xml:id="ex-counting-factorial-dolls">
 			<title>Arranging Items</title>
 			<statement>
 				<p>
@@ -51,7 +51,7 @@
 		<p>
 			Notice that because we were selecting from our group of items without replacing them, the number of choices went down by one each time. When we use the multiplication rule with this sort of process, we wind up multiplying the numbers between 1 and the original number of choices. This product has a special name.
 		</p>
-		<definition xml:id="def_factorial">
+		<definition xml:id="def-factorial">
 			<idx>factorial</idx>
 			<statement>
 				<p>
@@ -69,7 +69,7 @@
 		<p>
 			In the next example we practice computing factorials. Note how quickly the value of a factorial grows as <m>n</m> grows. Also, notice that when dividing factorials, canceling is a very useful tool.
 		</p>
-		<example xml:id="ex_counting_factorial_compute">
+		<example xml:id="ex-counting-factorial-compute">
 			<title>Computing Factorials</title>
 			<statement>
 				<p>
@@ -109,12 +109,12 @@
 			</solution>
 		</example>
 	</subsection>
-	<subsection xml:id="subsec_counting_permutations">
+	<subsection xml:id="subsec-counting-permutations">
 		<title>Permutations</title>
 		<p>
 			In some counting problems, the process resembles the one used in factorial-based problems, but we are not required to use or arrange all of the items. Here is an example.
 		</p>
-		<example xml:id="ex_counting_permutation_runners">
+		<example xml:id="ex-counting-permutation-runners">
 			<title>Ordering a Subset</title>
 			<statement>
 				<p>
@@ -167,7 +167,7 @@
 			</md>.
 			Permutations are a general method used to count the number of ways to complete a process when the order of completion matters. A race is a good example of a situation where order is important. Another example is provided below.
 		</p>
-		<example xml:id="ex_counting_permutation_bands">
+		<example xml:id="ex-counting-permutation-bands">
 			<title>Using Permutations</title>
 			<statement>
 				<p>
@@ -197,12 +197,12 @@
 		which looks like the multiplication rule.  You may find this easier to use than the version written with factorials.
 		</p>
 	</subsection>
-	<subsection xml:id="subsec_counting_combinations">
+	<subsection xml:id="subsec-counting-combinations">
 		<title>Combinations</title>
 		<p>
 			Permutations are useful when the order in which we select objects matters<mdash/>as in running a race or creating a schedule. However, order does not always matter. In such cases, we need to change the way we count. This important distinction is illustrated in the following example.
 		</p>
-		<example xml:id="ex_counting_combination_movies">
+		<example xml:id="ex-counting-combination-movies">
 			<title>Counting When Order Doesn't Matter</title>
 			<statement>
 				<p>
@@ -254,7 +254,7 @@
 			In the example above, we arrived at the final solution using two steps. First, we counted the number of ways to pick the friends to go with you if the order did matter (12). Then we counted the number of ways that those two friends could be arranged, which was 2. 
 			Finally, we divide the 12 ordered ways by the 2 different orderings to get a total of 6 ways to choose your two friends if the order does not matter. This process can be combined into a single counting rule called a combination.
 		</p>
-		<fact xml:id="fact_counting-rule_combination">
+		<fact xml:id="fact-counting-rule-combination">
 			<idx>combination</idx>
 			<idx><h>counting rules</h><h>combination</h></idx>
 			<statement>
@@ -273,7 +273,7 @@
 					C(4,2) = \frac{4!}{2!(4-2)!} = \frac{4\times 3\times 2!}{2!\times 2!} = \frac{4\times 3}{2\times 1} = 6
 				</md>.
 			</p>
-		<example xml:id="ex_counting_combination_committee">
+		<example xml:id="ex-counting-combination-committee">
 			<title>Using a Combination</title>
 			<statement>
 				<p>
@@ -303,28 +303,28 @@
 			</md>.
 		</p>
 	</subsection>
-	<subsection xml:id="sec_counting_mixed">
+	<subsection xml:id="subsec-counting-mixed">
 	<title>Mixed Counting Techniques</title>
 		<p>
 			One of the most challenging aspects of counting problems is deciding which rules<mdash/>or combinations of rules<mdash/>to apply to a given question. To complicate things further, there are often multiple approaches to reach the correct answer. Here are a few general rules of thumb to keep in mind.
 		</p>
-		<assemblage xml:id="assemblage-counting-rules_principles">
+		<assemblage xml:id="assemblage-counting-rules-principles">
 			<title>Combining Counting Rules</title>
 			<idx><h>counting rules</h><h>combining</h></idx>
 				<p>
 					<ol>
-						<li><p>If the things you are counting come in two groups that don't overlap, count each group, then add together the results. (<xref ref="thm_counting-rule_addition-informal" text="custom">addition rule</xref><mdash/>goes with <q>or</q>)</p></li>
+						<li><p>If the things you are counting come in two groups that don't overlap, count each group, then add together the results. (<xref ref="principle-counting-rule-addition-informal" text="custom">addition rule</xref><mdash/>goes with <q>or</q>)</p></li>
 						<li><p>If there is overlap between the two groups, remember to subtract the intersection. (<xref ref="fact-sets-inclusion-exclusion-rule" text="custom">inclusion-exclusion rule</xref>)</p></li>
-						<li><p>If the process you are counting can be broken down into steps, count the number of ways each step can be performed and multiply. (<xref ref="thm_counting-rule_multiplication" text="custom">multiplication rule</xref><mdash/>goes with <q>and</q>)</p></li>
+						<li><p>If the process you are counting can be broken down into steps, count the number of ways each step can be performed and multiply. (<xref ref="principle-counting-rule-multiplication" text="custom">multiplication rule</xref><mdash/>goes with <q>and</q>)</p></li>
 						<li><p>If you are arranging things or selecting multiple items and the order of selection matters, use a permutation. (<xref ref="fact-permutation-formula" text="custom">permutation rule</xref>)</p></li>
-						<li><p>If you are selecting multiple items from a group of items and the order in which you pick them does not matter, use a combination. (<xref ref="fact_counting-rule_combination" text="custom">combination rule</xref>)</p></li>
+						<li><p>If you are selecting multiple items from a group of items and the order in which you pick them does not matter, use a combination. (<xref ref="fact-counting-rule-combination" text="custom">combination rule</xref>)</p></li>
 					</ol>
 				</p>
 		</assemblage>
 		<p>
 			The following examples illustrate these principles. Remember that the first step should always be to identify the rule or rules that should be used to solve a counting problem.
 		</p>
-		<example xml:id="ex_counting_mixed_permutation">
+		<example xml:id="ex-counting-mixed-permutation">
 			<title>Picking a Counting Rule</title>
 			<statement>
 				<p>The front row of Professor Jackson's classroom has only 4 seats, and there are 8 students who wish to sit in them. In how many ways can the seats be assigned?</p>
@@ -337,7 +337,7 @@
 				</p>
 			</solution>
 		</example>
-		<example xml:id="ex_counting_mixed_two-combinations">
+		<example xml:id="ex-counting-mixed-two-combinations">
 			<title>Combining Counting Rules</title>
 			<statement>
 				<p>
@@ -366,7 +366,7 @@
 				</p>
 			</solution>
 		</example>
-		<example xml:id="ex_sets-counting_mixed_permutation-2">
+		<example xml:id="ex-sets-counting-mixed-permutation-2">
 			<title>Counting by Combining Objects</title>
 			<statement>
 				<p>
@@ -387,7 +387,7 @@
 				</p>
 			</solution>
 		</example>
-		<example xml:id="ex_counting_mixed_at-least">
+		<example xml:id="ex-counting-mixed-at-least">
 			<title>Counting Cases with <q>At Least</q></title>
 			<statement>
 				<p>

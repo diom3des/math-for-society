@@ -295,7 +295,7 @@
 	<p>
 		The most important thing to remember about using this formula is that it assumes that we put money in the account <em>once</em> and let it sit there earning interest.
 	</p>
-  <example xml:id="ex_future_value_compound_interest">
+  <example xml:id="ex-future-value-compound-interest">
     <statement>
       <p>
         If $3,500 is invested at 9% compounded monthly, what will the future value be in four years?
@@ -431,7 +431,7 @@
           <cell>$24,370.65</cell>
         </row>
       </tabular>
-      <image>
+      <image xml:id="img-simple-vs-compound-growth">
       <shortdescription>A coordinate graph with years on the x-axis and account balance on the y-axis. Simple interest (dark blue diamonds) increases in a straight line from $3,000 to $9,300; compound interest (pink squares) curves upward, reaching about $24,000 at 35 years, because it grows exponentially.</shortdescription>
         <latex-image>
           \begin{tikzpicture}[font=\figfont]
@@ -469,7 +469,7 @@
     <subsection>
       <title>Finding the Amount of Interest Earned and the Percentage</title>
       <p>
-        In <xref ref="ex_future_value_compound_interest"/> suppose we also want to know how much interest was earned and what percentage of the final balance is from interest. The future value of the investment is $5,009.92. To figure out how much of that was interest, we need to subtract the amount initially deposited.
+        In <xref ref="ex-future-value-compound-interest"/> suppose we also want to know how much interest was earned and what percentage of the final balance is from interest. The future value of the investment is $5,009.92. To figure out how much of that was interest, we need to subtract the amount initially deposited.
       </p>
       <assemblage>
         <title>Key Idea</title>

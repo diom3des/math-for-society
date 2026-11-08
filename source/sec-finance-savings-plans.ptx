@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-finance-savings_plans" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec-finance-savings-plans" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Annuities and Sinking Funds</title>
 
   <!-- This section is a remix of PCC, Sekhon and Bloom material, and my own original writing. -->
@@ -74,7 +74,7 @@
         </ul>
       </p>
     </assemblage>
-    <example xml:id="ex_future_value_annuity_1">
+    <example xml:id="ex-future-value-annuity-1">
       <statement>
       <p>
         A traditional individual retirement account (IRA)<idx>individual retirement account (IRA)</idx> is a special type of retirement account in which income taxes on the money you invest and its earnings are deferred until you withdraw it. If you deposit $100 each month into an IRA earning 6% APR, how much will you have in the account after 20 years? 
@@ -110,7 +110,7 @@
     <example>
       <statement>
         <p>
-          If you deposit $100 each month into an IRA earning 6% APR for 20 years, how much will you have earned in interest? What percentage of the balance is interest? Use the result of <xref ref="ex_future_value_annuity_1"/> to find these values.
+          If you deposit $100 each month into an IRA earning 6% APR for 20 years, how much will you have earned in interest? What percentage of the balance is interest? Use the result of <xref ref="ex-future-value-annuity-1"/> to find these values.
         </p>
       </statement>
       <solution>
@@ -189,7 +189,7 @@
     </solution>
     </example>
   </subsection>
-  <subsection xml:id="subsec-sinking_funds">
+  <subsection xml:id="subsec-sinking-funds">
     <title>Computing Payments and Sinking Funds</title>
     <p>
       If a specific lump sum is needed in the future, the annuity formula can be used to determine the necessary deposit size to accumulate the required amount. When a business regularly deposits money into an account to save for future equipment purchases, this savings fund is called a <term>sinking fund</term>. To solve these problems, the annuity formula is used to solve for <m>d</m>, the deposit amount.
@@ -217,7 +217,7 @@
       </p>
     </solution>
   </example>
-  <example xml:id="ex_sinking_fund_1">
+  <example xml:id="ex-sinking-fund-1">
     <statement>
       <p>
         A business needs $450,000 in five years to upgrade some equipment.  How much should be deposited each quarter in a sinking fund that earns 9% compounded quarterly to have this amount in five years?
@@ -247,7 +247,7 @@
   <example>
     <statement>
       <p>
-        How much interest did the business in <xref ref="ex_sinking_fund_1"/> earn on its sinking fund? What percentage of the final account balance is interest?
+        How much interest did the business in <xref ref="ex-sinking-fund-1"/> earn on its sinking fund? What percentage of the final account balance is interest?
       </p>
     </statement>
     <solution>

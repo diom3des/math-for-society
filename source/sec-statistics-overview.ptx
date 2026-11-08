@@ -124,7 +124,7 @@
 		<p>
 			The intended population is sometimes called the <term>target population</term><idx><h>population</h><h>target</h></idx>. If we design our study badly, the collected data might not actually be representative of the intended population.
 		</p>
-		<definition xml:id="def_population">
+		<definition xml:id="def-population">
 			<idx><h>population</h></idx>
 			<idx><h>statistics</h><h>population</h></idx>
 			<statement>
@@ -148,7 +148,7 @@
 		<p>
 			A <term>parameter</term> is a value (such as a percentage, average, or other measure) that describes a characteristic of an entire population. Since collecting data from every member of a population is often too time-consuming, expensive, or impossible, parameters are usually theoretical quantities that we aim to estimate. For example, the average amount of money spent on textbooks per year by all students at Walla Walla University is a parameter.
 		</p>
-		<definition xml:id="def_parameter">
+		<definition xml:id="def-parameter">
 			<idx>parameter</idx>
 			<statement>
 				<p>A measurement describing some characteristic of a population is called a <term>parameter</term>.</p>
@@ -157,7 +157,7 @@
 		<p>
 			To estimate the parameter, we select a <term>sample</term>, which is a smaller subset of the entire population. It is very important that we choose a <term>representative sample</term><idx><h>sample</h><h>representative</h></idx>, one that matches the characteristics of the population, to have a good estimate. If we survey 100 students at WWU, those students would be our sample. We will talk about how to choose a representative sample later in this section.
 		</p>
-		<definition xml:id="def_sample">
+		<definition xml:id="def-sample">
 			<idx>sample</idx>
 			<statement>
 				<p>A <term>sample</term> is a sub-collection of subjects drawn from a given population.</p>
@@ -166,7 +166,7 @@
 		<p>
 			To get our data, we would then ask each student in the sample how much they spent on textbooks and record the answers, or <alert>raw data</alert>. Then we could calculate the average, which is our statistic. A <alert>statistic</alert> is a descriptive value calculated using data from a sample.
 		</p>
-		<definition xml:id="def_statistic">
+		<definition xml:id="def-statistic">
 			<idx>statistic</idx>
 			<statement>
 				<p>A measurement describing some characteristic of a sample is called a <term>statistic</term>.</p>
@@ -234,19 +234,19 @@
 			Identifying the population can be tricky, but once we know who we're studying, how do we choose a good sample? We want our sample statistic to accurately estimate the population parameter, which means we need a representative sample. Going back to our political polling example: we wouldn't expect accurate results if we only surveyed Starbucks customers or your TikTok followers<mdash/>groups that might not reflect the broader voting population. So how can we select a sample that truly reflects the characteristics of our population?
 		</p>
 	</subsection>
-	<subsection xml:id="subsec_statistics_sampling_methods">
+	<subsection xml:id="subsec-statistics-sampling-methods">
 		<title>Sampling Methods</title>	
 		<introduction>
 			<p>
 				Since it's important to select a sample that accurately represents the population we're studying, we must be careful in how we choose it. This means not only avoiding samples that fail to reflect the population but also guarding against unintentional bias in the way data are collected. To ensure a representative sample, the selection process must be truly random. However, there are several ways to achieve randomness. In this section, we'll explore four methods of random sampling, along with one method that falls short of being random.
 			</p>
 		</introduction>
-		<subsubsection xml:id="subsubsec-statistics_sampling_SRS">
+		<subsubsection xml:id="subsubsec-statistics-sampling-srs">
 			<title>Simple Random Sample (SRS)</title>
 			<p>
 				The simplest way to use randomness to collect a sample is to collect a <term>simple random sample</term>.
 			</p>
-			<definition xml:id="def_simple-random-sample">
+			<definition xml:id="def-simple-random-sample">
 				<idx>simple random sample</idx>
 				<idx><h>sample</h><h>simple random sample</h></idx>
 				<statement>
@@ -264,12 +264,12 @@
 				In practice, computers are better suited for this kind of task. Still, even a random sample might not perfectly reflect the population. For instance, if we repeatedly select samples of 100 student ID numbers from the basket, some samples might include a slightly higher number of students from one major or class year than others. Some samples might have more first-year students, while others might include more seniors. This natural difference from sample to sample is called <term>sampling variation</term><idx>sampling variation</idx>. When we want to ensure certain groups are represented, we need to use a different sampling method, such as a stratified sample (described below).
 			</p>
 		</subsubsection>
-		<subsubsection xml:id="subsubsec-statistics_sampling_systematic">
+		<subsubsection xml:id="subsubsec-statistics-sampling-systematic">
 			<title>Systematic Sample</title>
 			<p>
 				A <term>systematic sample</term> is particularly useful when the population from which we are sampling is already ordered. Examples of this include products coming off an assembly line, or cars moving through a sobriety checkpoint.
 			</p>
-			<definition xml:id="def_systematic_sample">
+			<definition xml:id="def-systematic-sample">
 				<idx>systematic sample</idx>
 				<idx><h>sample</h><h>systematic sample</h></idx>
 				<statement>
@@ -281,9 +281,9 @@
 					ASWWU is conducting a survey to find out whether WWU students would prefer different operating hours at the Atlas. To gather responses, student workers stand outside the Caf, randomly choose one of the first ten students to exit the building (say, the third), and then survey every tenth student after that.
 				</p>
 			</example>
-			<figure xml:id="fig_data_def_systematic-sample">
+			<figure xml:id="fig-data-def-systematic-sample">
 				<caption>Systematic sample: subject #2 selected, then every fifth subject thereafter</caption>
-				<image width="55%" xml:id="image_data_def_systematic-sample">
+				<image width="55%" xml:id="img-data-def-systematic-sample">
 					<shortdescription>
 						One of the first 5 dots was randomly selected, and then every fifth dot thereafter is selected for the sample.
 					</shortdescription>
@@ -300,12 +300,12 @@
 				</image>
 			</figure>
 		</subsubsection>
-		<subsubsection xml:id="subsubsec-statistics_sampling_stratified">
+		<subsubsection xml:id="subsubsec-statistics-sampling-stratified">
 			<title>Stratified Sample</title>
 			<p>
 				In a <term>stratified sample</term> we group the population by characteristics which we think may make a difference, and then select randomly from each group. For example, we may want to ensure that both men and women are included in a drug study, so we select some men and some women. Or we may wish to ensure that voters of all political leanings are included in an election poll.
 			</p>
-			<definition xml:id="def_stratified_sample">
+			<definition xml:id="def-stratified-sample">
 				<idx>stratified sample</idx>
 				<idx><h>sample</h><h>stratified sample</h></idx>
 				<statement>
@@ -317,9 +317,9 @@
 					Suppose voter registration data for the state shows that the electorate consists of 39% Democrats, 37% Republicans, and 24% Independents. A political action group wishes to survey 1,000 people about a particular initiative. To ensure the sample reflects this composition, a stratified sampling method is used. From a total sample of 1,000 voters, researchers randomly select 390 Democrats, 370 Republicans, and 240 Independents from their respective groups. This approach guarantees that each political affiliation is proportionally represented in the sample.
 				</p>
 			</example>
-			<figure xml:id="fig_data_def_stratified-sample">
+			<figure xml:id="fig-data-def-stratified-sample">
 				<caption>Stratified sample: three subjects sampled from each stratum</caption>
-				<image width="75%" xml:id="image_data_def_stratified-sample">
+				<image width="75%" xml:id="img-data-def-stratified-sample">
 					<shortdescription>
 						The dots have been divided into six groups, and then three dots are randomly selected from each group to form the sample.
 					</shortdescription>
@@ -363,12 +363,12 @@
 				</image>
 			</figure>
 		</subsubsection>
-		<subsubsection xml:id="subsubsec-statistics_sampling_cluster">
+		<subsubsection xml:id="subsubsec-statistics-sampling-cluster">
 			<title>Cluster Sample</title>
 			<p>
 				The difference between a <term>cluster sample</term> and a stratified sample lies in how the groups are used. In a stratified sample, the population is divided into groups (strata), and a random sample is taken from each group. In contrast, a cluster sample involves dividing the population into clusters, then randomly selecting entire clusters and including all individuals within those clusters in the sample.
 			</p>
-			<definition xml:id="def_cluster_sample">
+			<definition xml:id="def-cluster-sample">
 				<idx>cluster sample</idx>
 				<idx><h>sample</h><h>cluster sample</h></idx>
 				<statement>
@@ -382,9 +382,9 @@
 					Your eccentric uncle is convinced there's a government cover-up of UFO sightings. To investigate, he decides to conduct a study. Instead of trying to gather data from all 50 states, he randomly selects 10 states and collects data on every UFO sighting reported in those 10 states. Unfortunately, before he can finish, some mysterious individuals in black SUVs show up and take him away.
 				</p>
 			</example>
-			<figure xml:id="fig_data_def_cluster-sample">
+			<figure xml:id="fig-data-def-cluster-sample">
 				<caption>Cluster sample: all individuals in three clusters</caption>
-				<image width="75%" xml:id="image_data_def_cluster-sample">
+				<image width="75%" xml:id="img-data-def-cluster-sample">
 					<shortdescription>
 						The dots have been divided into six groups, and then three of those groups are randomly selected and every dot from the selected groups is added to the sample.
 					</shortdescription>
@@ -420,12 +420,12 @@
 				</image>
 			</figure>
 		</subsubsection>
-		<subsubsection xml:id="subsubsec-statistics_sampling_convenience">
+		<subsubsection xml:id="subsubsec-statistics-sampling-convenience">
 			<title>Convenience Sample</title>
 			<p>
 				If we use a sampling technique that lacks an element of randomness, we risk producing a sample that does not accurately represent the population. One of the simplest<mdash/>yet most problematic<mdash/>methods of data collection is the <term>convenience sample</term>. It's important to note that convenience samples should <em>never</em> be used in statistical analysis, as they often lead to biased and unreliable results.
 			</p>
-			<definition xml:id="def_convenience-sample">
+			<definition xml:id="def-convenience-sample">
 				<idx>convenience sample</idx>
 				<idx><h>sample</h><h>convenience sample</h></idx>
 				<statement>
@@ -441,7 +441,7 @@
 			</example>
 		</subsubsection>
 	</subsection>
-	<subsection xml:id="sec_statistics_study_types">
+	<subsection xml:id="subsec-statistics-study-types">
 		<title>Types of Studies</title>
 		<p>
 			Samples are collected from populations for two main reasons. The first is to conduct an <alert>observational study</alert><mdash/>a study based on observations or measurements. These may be <q>solicited</q>, such as in surveys or polls, or <q>unsolicited</q>, like observing how many drivers turn right at a red light despite a <q>no turn on red</q> sign.
@@ -478,7 +478,7 @@
 				</ol>
 			</p>
 		</example>
-		<definition xml:id="def_observational-study">
+		<definition xml:id="def-observational-study">
 			<idx>observational study</idx>
 			<idx><h>study types</h><h>observational</h></idx>
 			<statement>
@@ -487,7 +487,7 @@
 				</p>
 			</statement>
 		</definition>
-		<definition xml:id="def_experiment">
+		<definition xml:id="def-experiment">
 			<idx>experiment (study design)</idx>
 			<idx><h>study types</h><h>experiment</h></idx>
 			<statement>
@@ -587,7 +587,7 @@
 			</p>
 		</example>
 	</subsection>
-	<subsection xml:id="subsection_statistics_confidence_interval">
+	<subsection xml:id="subsec-statistics-confidence-interval">
 		<title>Margin of Error and Confidence Intervals</title>
 		<p>
 			Even when a study or experiment has successfully avoided bias and has been well done, there is still an element of variation. If we took 5 different random samples of 100 college students and calculated their average textbook cost, we wouldn't expect to get the exact same average for each sample. This is due to sampling variation. To account for this, researchers publish their margin of error or a confidence interval for their statistics. These numbers describe the precision of the estimate for a certain confidence level. 

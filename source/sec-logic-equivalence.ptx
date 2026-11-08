@@ -119,7 +119,7 @@
 			</statement>
 		</fact>
 		<p>
-			You can demonstrate this equivalence using a truth table, much like the previous example; try it in <xref ref="ex-logic-equivalence-negation"/>. The intuitive sense of the above logical statement is illustrated by the following example.
+			You can demonstrate this equivalence using a truth table, much like the previous example; try it in <xref ref="exer-logic-equivalence-negation"/>. The intuitive sense of the above logical statement is illustrated by the following example.
 		</p>
 		<example>
 			<statement>
@@ -500,7 +500,7 @@
 			</solution>
 		</example>
 	</subsection>
-	<subsection xml:id="subsec-logic-deMorgan">
+	<subsection xml:id="subsec-logic-demorgan">
 		<title>De Morgan's Laws</title>
 		<p>
 			In 1847, Augustus De Morgan published two rules of logic that had previously been known only informally. These rules allow us to rewrite the negation of an AND statement with OR, and the negation of an OR statement with AND. 
@@ -509,7 +509,7 @@
 			To illustrate the intuitive sense of <term>De Morgan's laws</term>, suppose you want to schedule a meeting with two colleagues at 4:30 p.m. on Friday, and you need both of them to be available at that time. Let <m>A</m> be <q>Colleague A is available,</q> and let <m>B</m> be <q>Colleague B is available.</q> What situation would make it impossible to have the meeting? That is, what would it mean if it were not the case that Colleague A and Colleague B could both meet? Writing this in logic, what is equivalent to <m>\neg(A \land B)</m>?
 			This situation is equivalent to either Colleague A not being available or Colleague B not being available. That is, (again writing the result in logic) <m>\neg A \lor \neg B</m> is an equivalent form.
 		</p>
-		<fact xml:id="fact-logic-deMorgan">
+		<fact xml:id="fact-logic-demorgan">
 			<title>De Morgan's Laws</title>
 			<idx>De Morgan's laws</idx>
 			<idx><h>logical rules</h><h>De Morgan's laws</h></idx>
@@ -524,7 +524,7 @@
 			</statement>
 		</fact>
 		<p>
-			De Morgan's laws can be demonstrated using truth tables. Try it in <xref ref="ex-logic-equivalence-demorgan-1"/> and <xref ref="ex-logic-equivalence-demorgan-2"/>.
+			De Morgan's laws can be demonstrated using truth tables. Try it in <xref ref="exer-logic-equivalence-demorgan-1"/> and <xref ref="exer-logic-equivalence-demorgan-2"/>.
 		</p>
 	</subsection>
 
@@ -682,7 +682,7 @@
 			</solution>
 		</exercise>
 
-		<exercise xml:id="ex-logic-equivalence-negation"><!--  #5 (new) -->
+		<exercise xml:id="exer-logic-equivalence-negation"><!--  #5 (new) -->
 			<statement>
 				<p>
 					Use a truth table to show that <m>\neg(p \to q) \equiv p \land \neg q</m>.
@@ -737,7 +737,7 @@
 			</solution>
 		</exercise>
 
-		<exercise xml:id="ex-logic-equivalence-demorgan-1"><!--  #6 (Written Homework 4: 06a) -->
+		<exercise xml:id="exer-logic-equivalence-demorgan-1"><!--  #6 (Written Homework 4: 06a) -->
 			<statement>
 				<p>
 					The first of De Morgan's laws is <m>\neg(p \lor q) \equiv \neg p \land \neg q</m>.
@@ -822,7 +822,7 @@
 			</solution>
 		</exercise>
 
-		<exercise xml:id="ex-logic-equivalence-demorgan-2"><!--  #7 (question library: 06b) -->
+		<exercise xml:id="exer-logic-equivalence-demorgan-2"><!--  #7 (question library: 06b) -->
 			<statement>
 				<p>
 					The second of De Morgan's laws is <m>\neg(p \land q) \equiv \neg p \lor \neg q</m>.

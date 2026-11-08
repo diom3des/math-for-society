@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<chapter xml:id="ch-chapter-sets" xmlns:xi="http://www.w3.org/2001/XInclude">
+<chapter xml:id="ch-sets" xmlns:xi="http://www.w3.org/2001/XInclude">
 	<title>Sets, Counting, and Probability</title>
 
 	<objectives>
@@ -67,7 +67,7 @@
 
 	<xi:include href="sec-sets-set-operations.ptx" />
 	<xi:include href="sec-sets-cardinality.ptx" />
-	<xi:include href="sec-counting-multiplication-principle.ptx" />
+	<xi:include href="sec-counting-addition-multiplication-rules.ptx" />
 	<xi:include href="sec-counting-permutation-combination.ptx" />
 	<xi:include href="sec-probability-basics.ptx" />
 	<xi:include href="sec-probability-conditional.ptx" />

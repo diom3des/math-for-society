@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-set-cardinality" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec-sets-cardinality" xmlns:xi="http://www.w3.org/2001/XInclude">
 	<title>The Number of Elements in a Finite Set</title>
 
 	<objectives>
@@ -70,7 +70,7 @@
 					</md>
 					people who drink neither.
 				</p>
-				<image xml:id="tigs-2venn-coffee-tea" width="100%">
+				<image xml:id="img-2venn-coffee-tea" width="100%">
 					<shortdescription>A rectangle is drawn for the universal set U. There are two overlapping circles inside. One is labeled "Coffee" and contains the number 80. The other is labeled "Tea" and contains the number 20. The intersection of the two circles contains the number 40.</shortdescription>
 					<latex-image>
 						\begin{tikzpicture}[scale=2/7,font=\figfont]
@@ -135,7 +135,7 @@
 			<p>
 				To find how many people have <em>not</em> used either service, we want the cardinality of <m>(F \cup X)^C</m>. Since <m>U</m> is 100%, and <m>n(F\cup X) = 0.9</m>, it follows that <m>n((F\cup X)^C) = 1.0 - 0.9 = 0.1</m>, or 10% of those surveyed. These quantities are illustrated in the Venn diagram below.
 			</p>
-			<image xml:id="tigs-2venn-social-media" width="43%">
+			<image xml:id="img-2venn-social-media" width="43%">
 				<shortdescription>A rectangle is drawn for the universal set U. There are two overlapping circles inside. One is labeled F and contains the number 0.50. The other is labeled X and contains the number 0.20. The intersection of the two circles contains the number 0.20. The region outside both circles contains the number 0.10.</shortdescription>
 				<latex-image>
 					\begin{tikzpicture}[scale=2/7,font=\figfont]
@@ -171,9 +171,9 @@
 			</statement>
 		</fact>
 		<p>
-			(This is also called the <term>addition law</term><idx><h>addition law</h><see>inclusion-exclusion rule</see></idx>; its probability version is the <xref ref="thm_probability-rule_general-addition" text="custom">general addition rule</xref> in <xref ref="sec-probability-basics"/>. It is not the same as the <xref ref="thm_counting-rule_addition-informal" text="custom">addition rule</xref> in <xref ref="sec-set-multiplication-principle"/>, which applies only when the sets do not overlap.)
+			(This is also called the <term>addition law</term><idx><h>addition law</h><see>inclusion-exclusion rule</see></idx>; its probability version is the <xref ref="fact-probability-rule-general-addition" text="custom">general addition rule</xref> in <xref ref="sec-probability-basics"/>. It is not the same as the <xref ref="principle-counting-rule-addition-informal" text="custom">addition rule</xref> in <xref ref="sec-counting-addition-multiplication-rules"/>, which applies only when the sets do not overlap.)
 		</p>
-		<definition xml:id="def_mutually-exclusive">
+		<definition xml:id="def-mutually-exclusive">
 	  	<idx>mutually exclusive</idx>
 	  	<idx><h>sets</h><h>mutually exclusive</h></idx>
 	  	<statement>
@@ -200,7 +200,7 @@
 					</md>
 					That is, 110 people bought popcorn but not soda.
 				</p>
-				<image xml:id="tigs-2venn-popcorn" width="45%">
+				<image xml:id="img-2venn-popcorn" width="45%">
 					<shortdescription>A rectangle is drawn for the universal set U. There are two overlapping circles inside. One is labeled P and contains the number 110. The other is labeled S and contains the number 60. The intersection of the two circles contains the number 90.</shortdescription>
 					<latex-image>
 						\begin{tikzpicture}[scale=2/7,font=\figfont]
@@ -274,7 +274,7 @@
 					</p>
 					<figure xml:id="fig-3-set-venn-diagram">
 						<caption>A three-set Venn diagram divides the plane into 8 distinct regions, here marked with <m>a</m> through <m>h</m>.</caption>
-						<image xml:id="tikz-3venn-courses" width="94%">
+						<image xml:id="img-3venn-courses" width="94%">
 							<shortdescription>A rectangle is drawn for the universal set U. There are three overlapping circles inside. One is labeled S, one H, and one R. The distinct regions are labeled with lower case letters a through h.</shortdescription>
 							<latex-image>
 								\begin{venndiagram3sets}[
@@ -335,7 +335,7 @@
 					</p>
 					<figure xml:id="fig-3-set-venn-diagram-solved">
 						<caption>The <q>solved</q> three-set Venn diagram showing the cardinality of each region.</caption>
-						<image xml:id="tikz-3venn-courses-solved" width="100%">
+						<image xml:id="img-3venn-courses-solved" width="100%">
 							<shortdescription>A rectangle is drawn for the universal set U. There are three overlapping circles inside. One is labeled S, one H, and one R. The distinct regions are labeled with numbers representing their cardinality.</shortdescription>
 							<latex-image>
 								\begin{venndiagram3sets}[
@@ -436,7 +436,7 @@
 				</p>
 				<figure xml:id="fig-3-set-venn-diagram-consumer">
 					<caption>The <q>solved</q> three-set Venn diagram showing the cardinality of each region.</caption>
-					<image xml:id="tikz-3venn-consumers-solved" width="45%">
+					<image xml:id="img-3venn-consumers-solved" width="45%">
 						<shortdescription>A rectangle is drawn for the universal set U. There are three overlapping circles inside. One is labeled C, one R, and one L. The distinct regions are labeled with numbers representing their cardinality.</shortdescription>
 						<latex-image>
 							\begin{venndiagram3sets}[

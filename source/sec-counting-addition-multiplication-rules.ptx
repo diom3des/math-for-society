@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-set-multiplication-principle" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec-counting-addition-multiplication-rules" xmlns:xi="http://www.w3.org/2001/XInclude">
 	<title>The Addition and Multiplication Rules</title>
 
 	<objectives>
@@ -26,9 +26,9 @@
 	<subsection>
 		<title>The Addition Rule</title>
 		<p>
-			The <term>addition rule</term> is a reformulation of the <xref text="custom" ref="fact-sets-inclusion-exclusion-rule">inclusion-exclusion rule</xref> for <xref text="custom" ref="def_mutually-exclusive">mutually exclusive</xref> sets.
+			The <term>addition rule</term> is a reformulation of the <xref text="custom" ref="fact-sets-inclusion-exclusion-rule">inclusion-exclusion rule</xref> for <xref text="custom" ref="def-mutually-exclusive">mutually exclusive</xref> sets.
 		</p>
-		<principle xml:id="thm_counting-rule_addition-informal">
+		<principle xml:id="principle-counting-rule-addition-informal">
 			<title>Addition Rule</title>
 			<statement>
 				<p>
@@ -44,7 +44,7 @@
 			total possibilities. 
 			To see this common-sense counting rule in action, consider the following example.
 		</p>
-		<example xml:id="ex_counting_addition-informal">
+		<example xml:id="ex-counting-addition-informal">
 			<title>Using the Addition Rule</title>
 			<statement>
 				<p>You have won a church raffle. The winning ticket entitles you to choose either one of eight possible homemade pies or one of six types of homemade cakes. In how many ways can you make your choice?</p>
@@ -59,12 +59,12 @@
 			The addition rule is useful for counting mutually exclusive cases. For non-mutually exclusive scenarios, use the <xref text="custom" ref="fact-sets-inclusion-exclusion-rule">inclusion-exclusion rule</xref>.
 		</p>
 	</subsection>
-	<subsection xml:id="sec_counting_multiplication">
+	<subsection xml:id="subsec-counting-multiplication">
 		<title>The Multiplication Rule</title>
 		<p>
 			Some processes have two or more steps, rather than cases, each of which can happen in several different ways. To determine the total number of ways a multi-step process can occur, we use a new rule called the <term>multiplication rule</term>.
 		</p>
-		<principle xml:id="thm_counting-rule_multiplication">
+		<principle xml:id="principle-counting-rule-multiplication">
 			<title>Multiplication Rule</title>
 			<idx>multiplication rule (counting)</idx>
 			<idx><h>counting rules</h><h>multiplication</h></idx>
@@ -80,7 +80,7 @@
 				n_1 \times n_2 \times \cdots \times n_k
 			</md>.
 		</p>
-		<example xml:id="ex_counting_multiplication_2-step">
+		<example xml:id="ex-counting-multiplication-2-step">
 			<statement>
 				<p>
 					A college student has two pairs of clean pants and three clean shirts. How many outfits are possible, where an <q>outfit</q> is a pair of pants and a shirt?
@@ -98,7 +98,7 @@
 				</p>
 			</solution>
 		</example>
-		<example xml:id="ex_counting_multiplication_3-step">
+		<example xml:id="ex-counting-multiplication-3-step">
 			<statement>
 				<p>
 					At a lunch buffet, you can choose from 4 types of sandwiches, 5 types of drinks, and 3 types of desserts. How many different meal combinations can you create by selecting one item from each category?
@@ -120,7 +120,7 @@
 		<p>
 			Both examples above can be represented using a <term>tree diagram</term>. Tree diagrams are helpful tools for visualizing the multiplication rule and solving multi-step problems. They work well when each step in a process leads to a set of possible outcomes. However, when a process involves many steps or numerous options at each stage, tree diagrams can become cumbersome to create and use.
 		</p>
-		<definition xml:id="def_tree-diagram">
+		<definition xml:id="def-tree-diagram">
 			<idx>tree diagram</idx>
 			<statement>
 				<p>
@@ -131,16 +131,16 @@
 		<example>
 			<statement>
 				<p>
-					Construct a tree diagram to illustrate the solution to <xref ref="ex_counting_multiplication_2-step"/>.
+					Construct a tree diagram to illustrate the solution to <xref ref="ex-counting-multiplication-2-step"/>.
 				</p>
 			</statement>
 			<solution>
 				<p>
 					Note that the tree has 6 <em>leaves</em><mdash/>the number of outfits (outcomes) predicted by the multiplication rule.
 				</p>
-				<figure xml:id="fig_counting_multiplication_2-step">
-					<caption>Tree diagram illustrating the 6 outcomes possible in <xref ref="ex_counting_multiplication_2-step"/>.</caption>
-					<image xml:id="tikz-ex-counting-tree-2-step" width="55%">
+				<figure xml:id="fig-counting-multiplication-2-step">
+					<caption>Tree diagram illustrating the 6 outcomes possible in <xref ref="ex-counting-multiplication-2-step"/>.</caption>
+					<image xml:id="img-ex-counting-tree-2-step" width="55%">
 						<shortdescription>A tree diagram with one branch from the starting point for each of two pairs of pants, and three branches from each pair of pants, one for each clean shirt (1 through 3).</shortdescription>
 						<latex-image>
 							% Tree options
@@ -177,16 +177,16 @@
 		<example>
 			<statement>
 				<p>
-					Construct a tree diagram to illustrate the solution to <xref ref="ex_counting_multiplication_3-step"/>.
+					Construct a tree diagram to illustrate the solution to <xref ref="ex-counting-multiplication-3-step"/>.
 				</p>
 			</statement>
 			<solution>
 				<p>
 					Sixty branches at the last level make this tree inconvenient to use, though it does visually represent all possible lunch options. For problems with many levels or options, the multiplication rule is a more efficient way to solve counting problems.
 				</p>
-				<figure xml:id="fig_counting_multiplication_3-step">
-					<caption>Tree diagram showing all 60 outcomes possible in <xref ref="ex_counting_multiplication_3-step"/>.</caption>
-					<image xml:id="tikz-ex-counting-tree-3-step" width="85%">
+				<figure xml:id="fig-counting-multiplication-3-step">
+					<caption>Tree diagram showing all 60 outcomes possible in <xref ref="ex-counting-multiplication-3-step"/>.</caption>
+					<image xml:id="img-ex-counting-tree-3-step" width="85%">
 						<shortdescription>A tree diagram with one branch from the starting point for each of four sandwich options, and five branches from each sandwich option representing drinks, and three from each drink representing dessert choices. This leads to 60 total options, which agrees with the multiplication rule.</shortdescription>
 						<latex-image>
 							% 60 leaves make this tree ~20in tall, taller than the page PreTeXt
@@ -340,12 +340,12 @@
 			</solution>
 		</example>
 		<p>
-			Notice that in a tree diagram we represent a particular sequence of choices by following a path through the tree. For example, in <xref ref="fig_counting_multiplication_3-step"/>, going along the second branch to sandwich 2, then the first branch to drink 1, and then the third branch to dessert 3 gives us one complete lunch option. The total number of possible lunches is the same as the total number of branches at the last step.
+			Notice that in a tree diagram we represent a particular sequence of choices by following a path through the tree. For example, in <xref ref="fig-counting-multiplication-3-step"/>, going along the second branch to sandwich 2, then the first branch to drink 1, and then the third branch to dessert 3 gives us one complete lunch option. The total number of possible lunches is the same as the total number of branches at the last step.
 		</p>
 		<p>
 			There are some instances where the number of choices we have at a given step depends on the choice we made at the previous step. In these cases, the multiplication rule will not work. However, as shown in the next example, a tree diagram can still be a useful tool for counting the total number of ways to complete such a process.
 		</p>
-		<example xml:id="ex_counting_multiplication_unbalanced-tree">
+		<example xml:id="ex-counting-multiplication-unbalanced-tree">
 			<statement>
 				<p>
 					A travel agency offers a vacation package where you select one destination and one resort. You can choose from three destinations: Hawaii, Florida, and Alaska. In Hawaii, you can stay at one of two resorts. In Florida, you can choose from three different resorts. In Alaska, only one resort is available. How many different vacation packages are possible in total?
@@ -359,9 +359,9 @@
 							<li><p>pick a resort (the number depends on the destination chosen in step 1).</p></li>
 						</ol>
 					</p>
-					<figure xml:id="fig_counting_multiplication_ex_unbalanced-tree">
+					<figure xml:id="fig-counting-multiplication-ex-unbalanced-tree">
 						<caption>Tree diagram of the six vacation packages.</caption>
-						<image xml:id="image_counting_multiplication_ex_unbalanced-tree">
+						<image xml:id="img-counting-multiplication-ex-unbalanced-tree">
 							<shortdescription> A tree with one branch from the starting point for each destination, Hawaii, Florida, and Alaska.  Hawaii has two branches for its two resorts, Florida has three branches for its three resorts, and Alaska has one branch.</shortdescription>
 							<latex-image>
 								\begin{tikzpicture}[font=\figfont\tiny]

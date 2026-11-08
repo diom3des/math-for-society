@@ -44,11 +44,11 @@
 		</p>
 	</introduction>
 
-	<subsection xml:id="sec_data_data">
+	<subsection xml:id="subsec-data-data">
 		<title>What Is Data?</title>
 
-		<introduction xml:id="sec_data_variables_intro">
-			<definition xml:id="def_data">
+		<introduction xml:id="intro-data-variables-intro">
+			<definition xml:id="def-data">
 				<idx>data</idx>
 				<statement>
 					<p>
@@ -59,7 +59,7 @@
 			<p>
 				We can understand and classify data better if we first understand the source from which the measurements are taken. Each type of measurement, such as height, length of time, or favorite pizza topping, comes from a certain characteristic or property called a <term>variable</term>.
 			</p>
-			<definition xml:id="def_variable">
+			<definition xml:id="def-variable">
 				<idx>variable</idx>
 				<statement>
 					<p>
@@ -70,7 +70,7 @@
 			<p>
 				In a typical set of data, one or more variables are identified, and the measurements are collected for each of those variables.
 			</p>
-			<example xml:id="ex_data_identifying-variables">
+			<example xml:id="ex-data-identifying-variables">
 				<!-- <title>Identifying Variables</title> -->
 				<statement>
 					<p>
@@ -84,12 +84,12 @@
 				</solution>
 			</example>
 		</introduction>
-		<subsubsection xml:id="subsubsec_data_variables_number">
+		<subsubsection xml:id="subsubsec-data-variables-number">
 			<title>Classification by Number of Variables</title>
 			<p>
 				One way in which we can classify data is based on the number of variables that are being measured. In this chapter we may look at data sets composed of	measurements from one, two, or more variables. These are given the following names.
 			</p>
-			<definition xml:id="def_num-vars">
+			<definition xml:id="def-num-vars">
 				<idx><h>data</h><h>univariate</h></idx>
 				<idx><h>data</h><h>bivariate</h></idx>
 				<idx><h>data</h><h>multivariate</h></idx>
@@ -119,7 +119,7 @@
 			<p>
 				Let's look at an example.
 			</p>
-			<example xml:id="ex_data_classifying-datasets">
+			<example xml:id="ex-data-classifying-datasets">
 				<!-- <title>Classifying Datasets</title> -->
 				<statement>
 					<p>
@@ -176,12 +176,12 @@
 				</solution>
 			</example>
 		</subsubsection>
-		<subsubsection xml:id="sec_data_variables_type">
+		<subsubsection xml:id="subsubsec-data-variables-type">
 			<title>Types of Variables</title>
 			<p>
 				Another way to classify data is based on the types of variables that are being measured. The type of a variable depends on what is being recorded. Consider the following example.
 			</p>
-			<example xml:id="ex_data_classify-variables">
+			<example xml:id="ex-data-classify-variables">
 				<title>Classifying Variables</title>
 				<statement>
 					<p> 
@@ -219,7 +219,7 @@
 			<p>
 				The example above illustrates the two main types of variables we will study. One example of the first type is <q>zip code</q>, a variable whose values, though written as numbers, are really labels for categories. The values of such a variable represent categories into which individuals can be grouped, or <q>qualities</q> that the data possess. Such variables are called <term>qualitative</term>.
 			</p>
-			<definition xml:id="def_qualitative-variable">
+			<definition xml:id="def-qualitative-variable">
 				<idx>qualitative variable</idx>
 				<idx><h>variable</h><h>qualitative</h></idx>
 				<idx><h>categorical variable</h><see>qualitative variable</see></idx>
@@ -232,7 +232,7 @@
 			<p>
 				The second type of variable<mdash/>and the one we will focus on most in this chapter<mdash/>includes variables whose values are numerical and can be used in mathematical operations such as addition and division. These values represent a <q>quantity</q> rather than a <q>quality</q>, and are therefore called <term>quantitative</term> variables. Examples of this type from our earlier example include <q>number of residents</q> and <q>length of residence</q>.
 			</p>
-			<definition xml:id="def_quantitative-variable">
+			<definition xml:id="def-quantitative-variable">
 				<idx>quantitative variable</idx>
 				<idx><h>variable</h><h>quantitative</h></idx>
 				<statement>
@@ -243,7 +243,7 @@
 			</definition>
 		</subsubsection>
 	</subsection>
-	<subsection xml:id="sec_statistics_graphs_qualitative">
+	<subsection xml:id="subsec-statistics-graphs-qualitative">
 		<title>Graphing Qualitative Data</title>
 		<introduction>
 			<p>
@@ -252,13 +252,13 @@
 			<p>
 				The following example motivates the need to organize data before they can be understood and will be used throughout this section.
 			</p>
-			<example xml:id="ex_graphs_organizing-data">
+			<example xml:id="ex-graphs-organizing-data">
 				<!-- <title>Organizing Data</title> -->
 				<statement>
 					<p>
 						To better understand their customers, a pizza parlor decides to collect a list of favorite pizza toppings. They choose an appropriate sampling technique and gather the following data from 96 customers. What do these data tell you?
 					</p>
-					<table xml:id="ex_graphs_organizing-data_table">
+					<table xml:id="table-graphs-organizing-data">
 						<title>Raw Pizza Topping Data</title>
 						<tabular>
 							<row>
@@ -415,12 +415,12 @@
 				</solution>
 			</example>
 		</introduction>
-		<subsubsection xml:id="subsubsec_graph_qualitative_frequency-table">
+		<subsubsection xml:id="subsubsec-graph-qualitative-frequency-table">
 			<title>Frequency Tables</title>
 			<p>
 				The first step in graphing qualitative data is to summarize them. To do so, we construct a <term>frequency table</term>.
 			</p>
-			<definition xml:id="def_frequency-table">
+			<definition xml:id="def-frequency-table">
 				<idx>frequency table</idx>
 				<statement>
 					<p>
@@ -443,11 +443,11 @@
 			<p>
 				To understand how this works, let's use a frequency table to summarize the pizza topping data from our first example.
 			</p>
-			<example xml:id="ex_graphs_frequency-table">
+			<example xml:id="ex-graphs-frequency-table">
 				<!-- <title>A Frequency Table</title> -->
 				<statement>
 					<p>
-						Construct a frequency table for the pizza topping data seen in <xref ref="ex_graphs_organizing-data" text="custom">the example above</xref>. Does this table give you a better picture of the data set?
+						Construct a frequency table for the pizza topping data seen in <xref ref="ex-graphs-organizing-data" text="custom">the example above</xref>. Does this table give you a better picture of the data set?
 					</p>
 				</statement>
 				<solution>
@@ -461,7 +461,7 @@
 								</li>
 								<li>
 									<p>
-										Count the frequency with which each topping appears in <xref ref="ex_graphs_organizing-data_table" text="custom">the original data</xref>.
+										Count the frequency with which each topping appears in <xref ref="table-graphs-organizing-data" text="custom">the original data</xref>.
 									</p>
 								</li>
 								<li>
@@ -472,7 +472,7 @@
 							</ol>
 							This definitely gives us a clearer picture of the data set. We can now see the number of times each topping was selected as somebody's favorite.
 						</p>
-						<table xml:id="ex_graphs_frequency-table_table">
+						<table xml:id="table-graphs-frequency-table">
 							<title>Pizza Toppings Frequency Table</title>
 							<tabular>
 								<col right="medium" halign="left"></col>
@@ -533,7 +533,7 @@
 			<p>
 				While a frequency table is useful for summarizing data, it can be hard to gauge how popular categories are relative to each other. For instance, in the previous example, two more customers preferred cheese over olives<mdash/>but is that a significant difference? To better analyze this, we can convert counts into proportions (or percentages).
 			</p>
-			<definition xml:id="def_relative-frequency-table">
+			<definition xml:id="def-relative-frequency-table">
 				<!-- <title>Relative Frequency Table</title> -->
 				<idx>relative frequency table</idx>
 				<statement>
@@ -545,11 +545,11 @@
 			<p>
 				Let's revisit the pizza topping data once again, this time constructing a relative frequency table.
 			</p>
-			<example xml:id="ex_graphs_relative-frequency-table">
+			<example xml:id="ex-graphs-relative-frequency-table">
 				<!-- <title>A Relative Frequency Table</title> -->
 				<statement>
 					<p>
-						Construct a relative frequency table for the pizza topping data seen in <xref ref="ex_graphs_organizing-data"/>.
+						Construct a relative frequency table for the pizza topping data seen in <xref ref="ex-graphs-organizing-data"/>.
 					</p>
 				</statement>
 				<solution>
@@ -559,7 +559,7 @@
 							<ol>
 								<li>
 									<p>
-										Start with the <xref ref="ex_graphs_frequency-table_table" text="custom">frequency table</xref> from the previous example.
+										Start with the <xref ref="table-graphs-frequency-table" text="custom">frequency table</xref> from the previous example.
 									</p>
 								</li>
 								<li>
@@ -575,7 +575,7 @@
 							</ol>
 							The relative frequency table allows for a clearer comparison between categories.
 						</p>
-						<table xml:id="ex_graphs_relative-frequency-table_table">
+						<table xml:id="table-graphs-relative-frequency-table">
 							<title>Pizza Toppings Relative Frequency Table</title>
 							<tabular>
 								<col halign="left" right="medium"></col>
@@ -637,12 +637,12 @@
 				While these tables are a good step in better displaying our data, we still need to translate this into a	picture. We will discuss ways to do that below.
 			</p>			
 		</subsubsection>
-		<subsubsection xml:id="sec_graphs_qualitative_graphs">
+		<subsubsection xml:id="subsubsec-graphs-qualitative-graphs">
 			<title>Graphs</title>
 			<p>
 				One of the most basic ways to graphically represent data collected for a qualitative variable is by using a <term>bar graph</term>. First, create a frequency table. Once this is done, you can use computer software such as Microsoft Excel or Google Sheets to quickly construct a bar graph.
 			</p>
-			<definition xml:id="def_bar-graph">
+			<definition xml:id="def-bar-graph">
 				<idx>bar graph</idx>
 				<idx><h>graphs</h><h>bar graph</h></idx>
 				<statement>
@@ -654,20 +654,20 @@
 			<p>
 				Note that you can also make a bar graph using a relative frequency table. This type of graph is technically called a <term>relative frequency bar graph</term><idx>relative frequency bar graph</idx><idx><h>graphs</h><h>relative frequency bar graph</h></idx>, but it looks just like a regular bar graph. The only difference is that the vertical scale represents percentages instead of raw frequencies.
 			</p>
-			<example xml:id="ex_graphs_bar-graph">
+			<example xml:id="ex-graphs-bar-graph">
 				<!-- <title>Constructing a Bar Graph</title> -->
 				<statement>
 					<p>
-						Construct a bar graph for the pizza topping data seen in <xref ref="ex_graphs_organizing-data"/>.
+						Construct a bar graph for the pizza topping data seen in <xref ref="ex-graphs-organizing-data"/>.
 					</p>
 				</statement>
 				<solution>
 					<p>
-						Based on the <xref ref="ex_graphs_frequency-table_table" text="custom">frequency table for these data</xref>, we get the following bar graph.
+						Based on the <xref ref="table-graphs-frequency-table" text="custom">frequency table for these data</xref>, we get the following bar graph.
 					</p>
-					<figure xml:id="fig_graphs_ex_bar-graph">
+					<figure xml:id="fig-graphs-ex-bar-graph">
 						<caption>Pizza topping bar graph</caption>
-						<image xml:id="image_graphs_ex_bar-graph" width="90%">
+						<image xml:id="img-graphs-ex-bar-graph" width="90%">
 							<shortdescription>
 								A bar for each pizza topping with heights corresponding to the frequency of the topping in our frequency table.
 							</shortdescription>
@@ -733,7 +733,7 @@
 			<p>
 				Both bar graphs and relative frequency bar graphs are useful for comparing the number or percentage of values in one category with those in another. However, when the goal is to illustrate how each category contributes to the whole, a <term>pie graph</term> is often more useful. Pie graphs can be created using the same software we previously used to construct bar graphs. As an example, let's revisit our pizza toppings scenario one more time.
 			</p>
-			<definition xml:id="def_pie-graph">
+			<definition xml:id="def-pie-graph">
 				<idx>pie graph</idx>
 				<idx><h>graphs</h><h>pie graph</h></idx>
 				<statement>
@@ -742,16 +742,16 @@
 					</p>
 				</statement>
 			</definition>
-			<example xml:id="ex_graphs_pie-graph">
+			<example xml:id="ex-graphs-pie-graph">
 				<!-- <title>Constructing a Pie Graph</title> -->
 				<statement>
-					<p>Construct a pie graph for the pizza topping data seen in <xref ref="ex_graphs_organizing-data"/>.</p>
+					<p>Construct a pie graph for the pizza topping data seen in <xref ref="ex-graphs-organizing-data"/>.</p>
 				</statement>
 				<solution>
-					<p>Based on the <xref ref="ex_graphs_relative-frequency-table_table" text="custom">relative frequency table</xref> previously constructed for these data, we get the following pie graph.</p>
-					<figure xml:id="fig_graphs_ex_pie-graph">
+					<p>Based on the <xref ref="table-graphs-relative-frequency-table" text="custom">relative frequency table</xref> previously constructed for these data, we get the following pie graph.</p>
+					<figure xml:id="fig-graphs-ex-pie-graph">
 						<caption>Pizza topping pie graph</caption>
-						<image xml:id="image_graphs_ex_pie-graph"  width="80%">
+						<image xml:id="img-graphs-ex-pie-graph"  width="80%">
 							<shortdescription>
 								A circle divided into ten sectors with sizes proportional to the relative frequency of the pizza toppings they represent.
 							</shortdescription>
@@ -830,19 +830,19 @@
 			</example>
 		</subsubsection>
 	</subsection>
-	<subsection xml:id="subsec_graphs_quantitative">
+	<subsection xml:id="subsec-graphs-quantitative">
 		<title>Graphing Quantitative Data</title>
 		<introduction>
 			<p> 
 				When we wish to represent a quantitative variable graphically we encounter many of the same issues we saw with qualitative data: raw numbers are rarely meaningful on their own. Just as we used frequency tables to summarize qualitative data before creating graphs, we must first organize quantitative data to make them interpretable. As we will see below, most of the time this means grouping the data into intervals before creating a graph. 
 			</p>
 		</introduction>
-		<subsubsection xml:id="sec_graphs_quantitative_tables">
+		<subsubsection xml:id="subsubsec-graphs-quantitative-tables">
 			<title>Summarizing Quantitative Data with Tables</title>
 			<p>
-				The first step in graphing quantitative data is to find a way to summarize them in a table, just as we used <xref ref="def_frequency-table" text="custom">frequency tables</xref> for qualitative variables. However, unlike qualitative data, quantitative data don't come with ready-made categories to use as table rows. So, before we can build the table, we need to create appropriate groupings for the data.
+				The first step in graphing quantitative data is to find a way to summarize them in a table, just as we used <xref ref="def-frequency-table" text="custom">frequency tables</xref> for qualitative variables. However, unlike qualitative data, quantitative data don't come with ready-made categories to use as table rows. So, before we can build the table, we need to create appropriate groupings for the data.
 			</p>
-			<definition xml:id="def_frequency-distribution">
+			<definition xml:id="def-frequency-distribution">
 				<idx><h>frequency distribution</h></idx>
 				<idx><h>frequency distribution</h><h>class</h></idx>
 				<idx><h>frequency distribution</h><h>class width</h></idx>
@@ -875,13 +875,13 @@
 			<p>
 				Remember that although a frequency distribution and a frequency table may look similar, they are used for different types of data. A <term>frequency table</term> is typically used to organize and summarize <em>qualitative (categorical)</em> data<mdash/>like colors, brands, or types. In contrast, a <term>frequency distribution</term> is used for <em>quantitative (numerical)</em> data<mdash/>like heights, weights, or test scores. Creating a frequency distribution requires dividing the range of numerical values into classes or intervals before organizing the data.
 			</p>
-			<example xml:id="ex_graphs_frequency-distribution">
+			<example xml:id="ex-graphs-frequency-distribution">
 				<!-- <title>Constructing a Frequency Distribution</title> -->
 				<statement>
 					<p>
 						Daisy is particularly interested in the height of tomato plants. Over the summer, she collects data from various randomly selected gardens in her hometown. Summarize the heights she recorded (rounded to the nearest tenth of an inch) using a frequency distribution with five classes.
 					</p>
-					<table xml:id="ex_graphs_frequency-distribution_table">
+					<table xml:id="table-graphs-frequency-distribution">
 						<title>Tomato Plant Heights</title>
 						<tabular>
 							<row>
@@ -1006,7 +1006,7 @@
 								</li>
 							</ol>
 						</p>
-						<table xml:id="ex_graphs_frequency-distribution_frequency-distribution">
+						<table xml:id="table-graphs-frequency-distribution-frequency-distribution">
 							<title>Frequency Distribution of Tomato Plant Heights</title>
 							<tabular  halign="center">
 								<col halign="center" right="medium"></col>
@@ -1044,12 +1044,12 @@
 				Once we have summarized our data in a frequency distribution, we construct a relative frequency distribution by dividing each class frequency by the grand total. We can also create a representative graph called a <term>histogram</term>, which we explore next.
 			</p>
 		</subsubsection>
-		<subsubsection xml:id="subsubsec_graphs_quantitative_histograms">
+		<subsubsection xml:id="subsubsec-graphs-quantitative-histograms">
 			<title>Histograms</title>
 			<p>
-				The graph that we use to describe data summarized by a frequency distribution is called a <term>histogram</term>. A histogram is very similar to	the <xref ref="def_bar-graph" text="custom">bar graphs</xref> we used to summarize data from a frequency table. There are,	however, some important differences.
+				The graph that we use to describe data summarized by a frequency distribution is called a <term>histogram</term>. A histogram is very similar to	the <xref ref="def-bar-graph" text="custom">bar graphs</xref> we used to summarize data from a frequency table. There are,	however, some important differences.
 			</p>
-			<definition xml:id="def_histogram">
+			<definition xml:id="def-histogram">
 				<idx>histogram</idx>
 				<idx><h>graphs</h><h>histogram</h></idx>
 				<statement>
@@ -1061,18 +1061,18 @@
 			<p>
 				In a histogram, the order of the bars is important because the classes are arranged from the smallest to the largest values. The bars touch each other to show that the classes are contiguous, meaning there are no gaps between them. These two features (ordered classes and touching bars) are not present when making bar graphs. Now, let's construct a histogram for the tomato plant heights from the previous example using a spreadsheet, just as we did when creating a bar graph.
 			</p>
-			<example xml:id="ex_graphs_histogram">
+			<example xml:id="ex-graphs-histogram">
 				<!-- <title>Constructing a Histogram</title> -->
 				<statement>
-					<p>Construct a histogram for the frequency distribution found in <xref ref="ex_graphs_frequency-distribution"/>.</p>
+					<p>Construct a histogram for the frequency distribution found in <xref ref="ex-graphs-frequency-distribution"/>.</p>
 				</statement>
 				<solution>
 					<p>
-						Based on the <xref ref="ex_graphs_frequency-distribution_frequency-distribution" text="custom">frequency distribution</xref> built in the previous example, we construct the following histogram.
+						Based on the <xref ref="table-graphs-frequency-distribution-frequency-distribution" text="custom">frequency distribution</xref> built in the previous example, we construct the following histogram.
 					</p>
-					<figure xml:id="fig_graphs_ex_histogram">
+					<figure xml:id="fig-graphs-ex-histogram">
 						<caption>Tomato plant heights</caption>
-						<image width="85%" xml:id="image_graphs_ex_histogram">
+						<image width="85%" xml:id="img-graphs-ex-histogram">
 							<shortdescription>
 								One bar for each range of tomato plant heights arranged in order of increasing height with no gaps between the bars and the height of the bar equal to the number of plants in the range the bar represents.
 							</shortdescription>
@@ -1109,25 +1109,25 @@
 				</solution>
 			</example>
 		</subsubsection>
-		<subsubsection xml:id="subsubsec_graphs_quantitative_stem-and-leaf">
+		<subsubsection xml:id="subsubsec-graphs-quantitative-stem-and-leaf">
 			<title>Stem-and-Leaf Plots</title>
 			<p>
 				One disadvantage of summarizing quantitative data using a frequency distribution or histogram is that you lose the specific data values. In other words, you can no longer see the individual values that existed before the summary. If we want a visual representation of quantitative data that also displays the raw values, we need a different type of graph.
 			</p>
-			<example xml:id="ex_graphs_recovering-data">
+			<example xml:id="ex-graphs-recovering-data">
 				<title>Recovering Data from a Frequency Distribution</title>
 				<statement>
 					<p>
-						Using the frequency distribution created in <xref ref="ex_graphs_frequency-distribution"/>, determine how many tomato plants are exactly 14.2 inches tall.
+						Using the frequency distribution created in <xref ref="ex-graphs-frequency-distribution"/>, determine how many tomato plants are exactly 14.2 inches tall.
 					</p>
 				</statement>
 				<solution>
 					<p>
-						Looking just at the <xref ref="ex_graphs_frequency-distribution_frequency-distribution" text="custom">frequency distribution</xref> we created for these data, this is not possible. If all we have is the frequency distribution, we can only tell that there are 10 plants between 14.1 and 16 inches tall. Some of those may be 14.2 inches tall, but there is no way of knowing without going back to the raw data.
+						Looking just at the <xref ref="table-graphs-frequency-distribution-frequency-distribution" text="custom">frequency distribution</xref> we created for these data, this is not possible. If all we have is the frequency distribution, we can only tell that there are 10 plants between 14.1 and 16 inches tall. Some of those may be 14.2 inches tall, but there is no way of knowing without going back to the raw data.
 					</p>
 				</solution>
 			</example>
-			<definition xml:id="def_stem-and-leaf">
+			<definition xml:id="def-stem-and-leaf">
 				<idx>stem-and-leaf plot</idx>
 				<idx><h>graphs</h><h>stem-and-leaf plot</h></idx>
 				<statement>
@@ -1139,13 +1139,13 @@
 			<p>
 				Stem-and-leaf plots are typically created by hand, making them most useful for relatively small data sets when we want a quick visual impression of the data's shape. To ensure accuracy, each <q>leaf</q> should take up the same amount of space. If you're typing a stem-and-leaf plot on a computer, use a monospaced font like Courier so that narrower digits (like 1) don't take up less space than wider ones (like 8). Consider the following example.
 			</p>
-			<example xml:id="ex_graphs_stem-and-leaf">
+			<example xml:id="ex-graphs-stem-and-leaf">
 				<!-- <title>Constructing a Stem-and-Leaf Plot</title> -->
 				<statement>
 					<p>
 						The following is a list of the number of quarter credits taken by 30 different college students. Construct a stem-and-leaf plot for these data.
 					</p>
-					<table xml:id="ex_graphs_stem-and-leaf_table">
+					<table xml:id="table-graphs-stem-and-leaf">
 						<title>Number of Credits Taken</title>
 						<tabular>
 							<row>
@@ -1209,7 +1209,7 @@
 								</li>
 							</ol>
 						</p>
-						<listing xml:id="listing_graphs_examp_stem-and-leaf">
+						<listing xml:id="listing-graphs-examp-stem-and-leaf">
 							<title>Stem-and-Leaf Plot</title>
 							<!-- Leave indent at far left of spacing won't work out in HTML! -->
 <program>
@@ -1235,19 +1235,19 @@ Stem | Leaf
 					</p>
 				</statement>
 			</definition>
-			<example xml:id="ex_graphs_expanded-stem-and-leaf">
+			<example xml:id="ex-graphs-expanded-stem-and-leaf">
 				<!-- <title>Constructing an Expanded Stem-and-Leaf Plot</title> -->
 				<statement>
 					<p>
-						Construct an expanded stem-and-leaf plot for the credits data from <xref ref="ex_graphs_stem-and-leaf"/> using two rows per stem.
+						Construct an expanded stem-and-leaf plot for the credits data from <xref ref="ex-graphs-stem-and-leaf"/> using two rows per stem.
 					</p>
 				</statement>
 				<solution>
 					<sidebyside widths="50% 45%" margins="auto" valign="middle">
 						<p>
-							This is done in almost exactly the same way as <xref ref="ex_graphs_stem-and-leaf" text="custom">our last example</xref>. The only difference is that	each stem gets two rows. The leaves are then split up with 0<ndash/>4 going in the first row and 5<ndash/>9 in the second row for a given stem. The result is	shown to the right.
+							This is done in almost exactly the same way as <xref ref="ex-graphs-stem-and-leaf" text="custom">our last example</xref>. The only difference is that	each stem gets two rows. The leaves are then split up with 0<ndash/>4 going in the first row and 5<ndash/>9 in the second row for a given stem. The result is	shown to the right.
 						</p>
-						<listing xml:id="listing_graphs_ex_expanded-stem-and-leaf">
+						<listing xml:id="listing-graphs-ex-expanded-stem-and-leaf">
 							<title>Expanded Stem-and-Leaf Plot</title>
 							<!-- Leave indent at far left of spacing won't work out in HTML! -->
 <program> 
@@ -1269,12 +1269,12 @@ Stem | Leaf
 			</example>
 		</subsubsection>
 	</subsection>
-	<subsection xml:id="subsec_graphs_quantitative_interpreting">
+	<subsection xml:id="subsec-graphs-quantitative-interpreting">
 		<title>Interpreting Graphs</title>
 		<p>
 			We create graphs to better understand a set of data. So, it's important that we know how to interpret the graphs we create. In this chapter, we'll spend most of our time working with univariate quantitative variables. That means we need to be sure we know how to interpret histograms. There are three major things to look for in a histogram: where is its <term>center</term>, does it have one or more <term>modes</term>, and is it <term>symmetric</term> or <term>skewed</term>?
 		</p>
-		<definition xml:id="def_histogram-center">
+		<definition xml:id="def-histogram-center">
 			<idx><h>histogram</h><h>center</h></idx>
 			<statement>
 				<p>
@@ -1282,7 +1282,7 @@ Stem | Leaf
 				</p>
 			</statement>
 			</definition>
-			<p xml:id="def_histogram-mode">
+			<p xml:id="para-histogram-mode">
 				<idx><h>histogram</h><h>mode</h></idx>
 				<idx><h>histogram</h><h>unimodal</h></idx>
 				<idx><h>histogram</h><h>bimodal</h></idx>
@@ -1292,7 +1292,7 @@ Stem | Leaf
 				<idx><h>modal class</h><see>histogram, modal class</see></idx>
 				One way to describe the shape of a histogram is based on the number and location of its <em>modes</em>. A <term>mode</term> is a class that contains significantly more data than the classes immediately	next to it. A histogram can be <term>unimodal</term> (one mode), <term>bimodal</term> (two modes), <term>multimodal</term> (more than two modes), or it may have no prominent modes in which case it is called <term>uniform</term>. The class with the tallest bar is sometimes called the <term>modal class</term>.
 			</p>
-			<p xml:id="def_histogram-symmetry">
+			<p xml:id="para-histogram-symmetry">
 				<idx><h>histogram</h><h>symmetric</h></idx>
 				<idx><h>histogram</h><h>skewed</h></idx>
 				Another way to describe the shape of a histogram is by its <term>symmetry</term>. A histogram is <term>symmetric</term> when the left and right sides are mirror images of each other. It is <term>skewed right</term> if the right tail extends farther than the left, and <term>skewed left</term> if the left tail extends farther than the right.
@@ -1300,19 +1300,19 @@ Stem | Leaf
 			<p>
 				We can tell a lot about the distribution of values of a single quantitative variable by describing the histogram in these terms. Consider the following example.
 			</p>
-			<example xml:id="ex_graphs_describing-histograms">
+			<example xml:id="ex-graphs-describing-histograms">
 				<!-- <title>Describing Histograms</title> -->
 				<statement>
 					<p>
 						Locate the center of each histogram and then classify it by number of modes and symmetry.
 					</p>
-					<figure xml:id="fig_graphs_examp_describing-histograms">
+					<figure xml:id="fig-graphs-examp-describing-histograms">
 						<caption>Various histograms to classify</caption>
 						<sbsgroup margins="auto" widths="40% 40%">
 							<sidebyside>
-								<figure xml:id="fig_graphs_examp_describing-histograms-a">
+								<figure xml:id="fig-graphs-examp-describing-histograms-a">
 									<caption></caption>
-									<image width="90%" xml:id="image_graphs_examp_describing-histograms-a">
+									<image width="90%" xml:id="img-graphs-examp-describing-histograms-a">
 										<shortdescription>
 											Histogram bars increase from left to right until the next-to-last bar, which is the highest.  The last bar is somewhat lower.
 										</shortdescription>
@@ -1353,9 +1353,9 @@ Stem | Leaf
 										</latex-image>
 									</image>
 								</figure>								
-								<figure xml:id="fig_graphs_examp_describing-histograms-b">
+								<figure xml:id="fig-graphs-examp-describing-histograms-b">
 									<caption></caption>
-								  <image width="90%" xml:id="image_graphs_examp_describing-histograms-b">
+								  <image width="90%" xml:id="img-graphs-examp-describing-histograms-b">
 								  	<shortdescription>
 											Histogram bars increase from left to right for the first three bars.  The fourth bar is significantly lower, and then the last bar is about the same height as the third.
 										</shortdescription>
@@ -1398,9 +1398,9 @@ Stem | Leaf
 								</figure>
 							</sidebyside>
 							<sidebyside>
-								<figure xml:id="fig_graphs_examp_describing-histograms-c">
+								<figure xml:id="fig-graphs-examp-describing-histograms-c">
 									<caption></caption>
-									<image width="90%" xml:id="image_graphs_examp_describing-histograms-c">
+									<image width="90%" xml:id="img-graphs-examp-describing-histograms-c">
 										<shortdescription>
 											Histogram bars increase from left to right until the third bar, which is the highest.  Then they decrease at about the same rate at which they increased.
 										</shortdescription>
@@ -1441,9 +1441,9 @@ Stem | Leaf
 										</latex-image>
 									</image>
 								</figure>
-								<figure xml:id="fig_graphs_examp_describing-histograms-d">
+								<figure xml:id="fig-graphs-examp-describing-histograms-d">
 									<caption></caption>
-								  <image width="90%" xml:id="image_graphs_examp_describing-histograms-d">
+								  <image width="90%" xml:id="img-graphs-examp-describing-histograms-d">
 								  	<shortdescription>
 								  		Histogram bars are at about the same height all the way across, with the second bar a little higher and the fourth a little lower than the rest.
 										</shortdescription>
@@ -1486,9 +1486,9 @@ Stem | Leaf
 								</figure>
 							</sidebyside>
 							<sidebyside>
-								<figure xml:id="fig_graphs_examp_describing-histograms-e">
+								<figure xml:id="fig-graphs-examp-describing-histograms-e">
 									<caption></caption>
-									<image width="90%" xml:id="image_graphs_examp_describing-histograms-e">
+									<image width="90%" xml:id="img-graphs-examp-describing-histograms-e">
 										<shortdescription>
 											The left most histogram bar is short, the second is quite tall, the third is short again (but a little taller than the first), the fourth is tall again (and a little taller than the second) and the last one is between the second and third in height.
 										</shortdescription>
@@ -1529,9 +1529,9 @@ Stem | Leaf
 										</latex-image>
 									</image>
 								</figure>
-								<figure xml:id="fig_graphs_examp_describing-histograms-f">
+								<figure xml:id="fig-graphs-examp-describing-histograms-f">
 									<caption></caption>
-								  <image width="90%" xml:id="image_graphs_examp_describing-histograms-f">
+								  <image width="90%" xml:id="img-graphs-examp-describing-histograms-f">
 								  	<shortdescription>
 								  		The first bar is quite tall, the second is very short, the third is tall again (a little taller than the first) and the fourth is short (a little shorter than the second).  The last bar is almost as tall as the first.
 										</shortdescription>

@@ -29,12 +29,12 @@
 		</p>
 	</introduction>
 
-	<subsection xml:id="subsec_center-spread_mode">
+	<subsection xml:id="subsec-center-spread-mode">
 		<title>Mode</title>
 		<p>
-			We have already seen the term <term>mode</term> used in the context of a graph. Recall that a <xref ref="def_histogram-mode" text="custom">mode of a histogram</xref> is a class with noticeably more data than its neighbors, and that the class with the tallest bar is called the modal class. In a bar graph, the tallest bar marks the category that appears most often in the data set. Choosing the value that appears most often seems a reasonable way to describe a <q>typical</q> element of a data set and leads to the following definition.
+			We have already seen the term <term>mode</term> used in the context of a graph. Recall that a <xref ref="para-histogram-mode" text="custom">mode of a histogram</xref> is a class with noticeably more data than its neighbors, and that the class with the tallest bar is called the modal class. In a bar graph, the tallest bar marks the category that appears most often in the data set. Choosing the value that appears most often seems a reasonable way to describe a <q>typical</q> element of a data set and leads to the following definition.
 		</p>
-		<definition xml:id="def_mode">
+		<definition xml:id="def-mode">
 			<idx>mode</idx>
 			<idx><h>measures of center</h><h>mode</h></idx>
 			<statement>
@@ -44,15 +44,15 @@
 			</statement>
 		</definition>
 		<p>
-			The <term>mode</term> is unique among our measures of center as it is the only one that applies to both <xref ref="def_quantitative-variable" text="custom">quantitative variables</xref> and <xref ref="def_qualitative-variable" text="custom">qualitative variables</xref>. Consider the following examples.
+			The <term>mode</term> is unique among our measures of center as it is the only one that applies to both <xref ref="def-quantitative-variable" text="custom">quantitative variables</xref> and <xref ref="def-qualitative-variable" text="custom">qualitative variables</xref>. Consider the following examples.
 		</p>
-		<example xml:id="ex_center-spread_mode-qualitative">
+		<example xml:id="ex-center-spread-mode-qualitative">
 			<!-- <title>The Mode of a Qualitative Variable</title> -->
 			<statement>
 				<p>
 					A breakout presentation at a business convention attracts 16 participants. The job title of each of these participants is as follows. Find the mode of this set of data.
 				</p>
-				<table xml:id="ex_center-spread_mode-qualitative_data">
+				<table xml:id="table-center-spread-mode-qualitative-data">
 					<title>Job Titles</title>
 					<tabular>
 						<row>
@@ -84,9 +84,9 @@
 			</statement>
 			<solution>
 				<p>
-					The mode is the most commonly appearing value. One way to find that is to construct a <xref ref="def_frequency-table" text="custom">frequency table</xref>. Doing so for these data produces the following table, from which we can see that the mode is <q>manager</q>.
+					The mode is the most commonly appearing value. One way to find that is to construct a <xref ref="def-frequency-table" text="custom">frequency table</xref>. Doing so for these data produces the following table, from which we can see that the mode is <q>manager</q>.
 				</p>
-				<table xml:id="ex_center-spread_mode_frequency-table">
+				<table xml:id="table-center-spread-mode-frequency">
 					<title>Frequency Table</title>
 					<tabular>
 						<row bottom="medium">
@@ -109,13 +109,13 @@
 				</table>
 			</solution>
 		</example>
-		<example xml:id="ex_center-spread_mode-quantitative">
+		<example xml:id="ex-center-spread-mode-quantitative">
 			<!-- <title>The Mode of a Quantitative Variable</title> -->
 			<statement>
 				<p>
 					A survey of sixteen grocery store shoppers asked how many times a month these shoppers visit their favorite grocery store. Find the mode of the resulting data, shown below.
 				</p>
-				<table xml:id="ex_center-spread_mode-quantitative_data">
+				<table xml:id="table-center-spread-mode-quantitative-data">
 					<title>Number of Visits per Month</title>
 					<tabular>
 						<row>
@@ -144,7 +144,7 @@
 			<solution>
 				<p>
 					Again, the best starting point is to construct a quick frequency table.</p>
-					<table xml:id="ex_center-spread_mode-quantitative_frequency-table">
+					<table xml:id="table-center-spread-mode-quantitative-frequency">
 						<title>Frequency Table</title>
 						<tabular>
 							<row bottom="medium">
@@ -179,7 +179,7 @@
 		<p>
 			While the mode is an easy way to measure the center, and is in fact the only way we have to measure the center of a set of qualitative data, it is usually not the best choice for measuring the center of a set of quantitative data. To see why this may be so, consider the next example.
 		</p>
-		<example xml:id="ex_center-spread_mode_bad-example">
+		<example xml:id="ex-center-spread-mode-bad-example">
 			<statement>
 				<p>Find the mode of the following sets of numbers.
 					<ol marker="a)">
@@ -194,7 +194,7 @@
 					<ol marker="a)">
 						<li>
 							<p>
-								This data set contains no repeated values. Therefore, according to <xref ref="def_mode" text="custom">the definition</xref>, there is no mode for this set.
+								This data set contains no repeated values. Therefore, according to <xref ref="def-mode" text="custom">the definition</xref>, there is no mode for this set.
 							</p>
 						</li>
 						<li>
@@ -210,12 +210,12 @@
 			In summary, you should use the mode to measure the center of any qualitative set of data, or as a quick, but not definitive, measure of center for quantitative data. But be careful! The mode may not exist, there may be multiple modes, and if there is a single mode it may be very different from the <q>typical</q> values in the data set.
 		</p>
 	</subsection>
-	<subsection xml:id="subsec_center-midrange">
+	<subsection xml:id="subsec-center-midrange">
 		<title>Midrange</title>
 		<p>
 			When we think of the <q>typical</q> value in a set of data, we may also think of the word <q>middle</q>. Our next measure of center, the <term>midrange</term>, is exactly that<mdash/>the middle of the data's range. Note that the midrange is not a very useful measure of center. Rather, we introduce it in order to discuss outliers and why some measures of center are more appropriate than others depending on characteristics of the data.
 		</p>
-		<definition xml:id="def_midrange">
+		<definition xml:id="def-midrange">
 			<idx>midrange</idx>
 			<idx><h>measures of center</h><h>midrange</h></idx>
 			<statement>
@@ -228,12 +228,12 @@
 				</p>
 			</statement>
 		</definition>
-		<example xml:id="ex_center-spread_midrange_computation">
+		<example xml:id="ex-center-spread-midrange-computation">
 			<statement>
 				<p>
 					A certain pond has been well stocked with fish for the upcoming fishing season. In order to keep a fish from this pond, it must be at least 13 inches long. To try to determine whether the fish in the pond are long enough to allow fishing, a fish and game warden randomly catches and releases 20 different fish, finding the following lengths, in inches. Find the midrange of these data.
 				</p>
-				<table xml:id="ex_center-spread_midrange_computation_data">
+				<table xml:id="table-center-spread-midrange-computation-data">
 					<title>Fish Lengths in Inches</title>
 					<tabular>
 						<row>
@@ -280,7 +280,7 @@
 		<p>
 			The midrange is easy to compute, but it has significant limitations. Most importantly, the midrange is extremely sensitive to <term>outliers</term>. Additionally, it only considers the maximum and minimum values, ignoring all other data points. Ideally, a measure of center should incorporate every value in the data set when determining the <q>typical</q> value.
 		</p>
-		<definition xml:id="def_outlier">
+		<definition xml:id="def-outlier">
 			<idx>outlier</idx>
 			<statement>
 				<p>
@@ -291,11 +291,11 @@
 		<p>
 			To see how an outlier can affect the midrange, let's take another look at the fish-length data from the previous example.
 		</p>
-		<example xml:id="ex_center-spread_midrange_computation-outlier">
+		<example xml:id="ex-center-spread-midrange-computation-outlier">
 			<!-- <title>The Effect of Outliers on the Midrange and Range</title> -->
 			<statement>
 				<p>
-					The game warden believes that the 6.5-inch fish she caught in the <xref ref="ex_center-spread_midrange_computation_data" text="custom">sample above</xref> is an outlier. She decides to redo the computation without that fish. Find the new midrange.</p>
+					The game warden believes that the 6.5-inch fish she caught in the <xref ref="table-center-spread-midrange-computation-data" text="custom">sample above</xref> is an outlier. She decides to redo the computation without that fish. Find the new midrange.</p>
 			</statement>
 			<solution>
 				<p>
@@ -311,12 +311,12 @@
 			Notice what a big difference the single 6.5-inch fish made! This is what we mean when we say that the midrange is sensitive to outliers.
 		</p>
 	</subsection>
-	<subsection xml:id="sec_center-spread_median">
+	<subsection xml:id="subsec-center-spread-median">
 		<title>Median</title>
 		<p>
 			To reinforce why we need a measure of center that is resistant to outliers, consider the following example.
 		</p>
-		<example xml:id="ex_center-spread_median_outlier">
+		<example xml:id="ex-center-spread-median-outlier">
 			<p>
 				The most expensive house in a certain market is a $2,500,000 mansion. The least expensive house is an $8,000 mobile home. Do you think that the midrange is an accurate measure of the <q>typical</q> home value in this market?
 			</p>
@@ -334,7 +334,7 @@
 		<p>
 			You may have heard of the median, a common measure of center that's especially useful when a data set includes outliers, such as housing prices or household incomes. The term <q>median household income</q> is often used because it reflects typical earnings more accurately in such cases. This is especially helpful in places like Washington State, where billionaires like Bill Gates can skew the data.
 		</p>
-		<definition xml:id="def_median">
+		<definition xml:id="def-median">
 			<idx>median</idx>
 			<idx><h>measures of center</h><h>median</h></idx>
 			<statement>
@@ -346,7 +346,7 @@
 		<p>
 			Let's practice finding the median.
 		</p>
-		<example xml:id="ex_center-spread_median">
+		<example xml:id="ex-center-spread-median">
 			<!-- <title>Computing the Median</title> -->
 			<statement>
 				<p>Find the median of each set of data below.
@@ -394,12 +394,12 @@
 			Notice that the 1,000 in the second data set is an outlier. But when finding the median, the actual value doesn't matter<mdash/>only its position in the data set does. You could replace 1,000 with a more typical number like 220, and the median would stay the same. Bill Gates could earn just $200,000 a year, and the median household income in Washington State wouldn't change! This is what it means for the median to be <em>resistant to outliers</em><idx>resistant to outliers</idx>.
 		</p>
 	</subsection>
-	<subsection xml:id="subsec_center-spread_mean">
+	<subsection xml:id="subsec-center-spread-mean">
 		<title>Mean</title>
 		<p>
 			While the median effectively handles outliers, it has one significant limitation: it ignores the values of individual data points. When we want each value to influence our measure of center, we use the <term>arithmetic mean</term> (commonly called the average). Unlike the median, the arithmetic mean incorporates every data point in the data set. For a sample, we use <m>\bar{x}</m> (read <q>x bar</q>) to represent the mean.
 		</p>
-		<definition xml:id="def_mean">
+		<definition xml:id="def-mean">
 			<idx>mean</idx>
 			<idx><h>arithmetic mean</h><see>mean</see></idx>
 			<idx><h>measures of center</h><h>mean</h></idx>
@@ -502,29 +502,29 @@
 			</solution>
 		</example>
 	</subsection>
-	<subsection xml:id="subsec_center-spread_appropriate">
+	<subsection xml:id="subsec-center-spread-appropriate">
 	<title>Which Measure Should I Use?</title>
 	<p>
 		We have now seen four different numerical measures of center:
 		  <ul>
 				<li>
 					<p>
-						the <xref ref="def_mode" text="custom">mode</xref>,
+						the <xref ref="def-mode" text="custom">mode</xref>,
 					</p>
 				</li>
 				<li>
 					<p>
-						the <xref ref="def_midrange" text="custom">midrange</xref>,
+						the <xref ref="def-midrange" text="custom">midrange</xref>,
 					</p>
 				</li>
 				<li>
 					<p>
-						the <xref ref="def_median" text="custom">median</xref>, and
+						the <xref ref="def-median" text="custom">median</xref>, and
 					</p>
 				</li>
 				<li>
 					<p>
-						the <xref ref="def_mean" text="custom">mean</xref>.
+						the <xref ref="def-mean" text="custom">mean</xref>.
 					</p>
 				</li>
 			</ul>
@@ -585,7 +585,7 @@
 		<p>
 			As we can see, each method has its own strengths and weaknesses. Based on these, we summarize when to use which measures of center below.
 		</p>
-		<observation xml:id="fig_center-spread_appropriate">
+		<observation xml:id="obs-center-spread-appropriate">
 			<p>
 				<ul>
 					<li>
@@ -615,7 +615,7 @@
 				</ul>
 			</p>
 		</observation>
-		<example xml:id="ex_center-spread_appropriate_identify">
+		<example xml:id="ex-center-spread-appropriate-identify">
 			<!-- <title>Picking Appropriate Measures</title> -->
 			<statement>
 				<p>
@@ -672,7 +672,7 @@
 			</solution>
 		</example>
 		<p>
-			It is often helpful to compute multiple summary statistics for comparison. One useful comparison is between the mean and the median. If the mean is greater than the median, the data distribution is typically <xref ref="def_histogram-symmetry" text="custom">skewed right</xref>. If the mean is less than the median, the distribution is <xref ref="def_histogram-symmetry" text="custom">skewed left</xref>. When the mean and median are approximately equal, the distribution is roughly <xref ref="def_histogram-symmetry" text="custom">symmetric</xref>.
+			It is often helpful to compute multiple summary statistics for comparison. One useful comparison is between the mean and the median. If the mean is greater than the median, the data distribution is typically <xref ref="para-histogram-symmetry" text="custom">skewed right</xref>. If the mean is less than the median, the distribution is <xref ref="para-histogram-symmetry" text="custom">skewed left</xref>. When the mean and median are approximately equal, the distribution is roughly <xref ref="para-histogram-symmetry" text="custom">symmetric</xref>.
 		</p>
 		<example>
 			<statement>

@@ -86,7 +86,7 @@
 		<p>
 			The simplest way to quantify the spread of a data set is to compute the <term>range</term>. The range tells us the <q>width</q> of the entire data set by taking the difference between the maximum and minimum value.
 		</p>
-		<definition xml:id="def_range">
+		<definition xml:id="def-range">
 			<idx>range</idx>
 			<idx><h>measures of spread</h><h>range</h></idx>
 			<statement>
@@ -99,14 +99,14 @@
 			</statement>
 		</definition>
 		<p>
-			While simple to compute, the range is not a very useful measure of variation because it is heavily influenced by extreme values, or <xref ref="def_outlier" text="custom">outliers</xref>. For example, consider the distribution of incomes of full-time workers in the United States. While many people earn near minimum wage, a few individuals<mdash/>such as CEOs of major corporations<mdash/>earn tens of millions of dollars or more. This creates an enormous range that reveals little about where most incomes actually fall or how they are distributed around the typical (<q>center</q>) value.
+			While simple to compute, the range is not a very useful measure of variation because it is heavily influenced by extreme values, or <xref ref="def-outlier" text="custom">outliers</xref>. For example, consider the distribution of incomes of full-time workers in the United States. While many people earn near minimum wage, a few individuals<mdash/>such as CEOs of major corporations<mdash/>earn tens of millions of dollars or more. This creates an enormous range that reveals little about where most incomes actually fall or how they are distributed around the typical (<q>center</q>) value.
 		</p>
-		<example xml:id="ex_center-spread_range_computation">
+		<example xml:id="ex-center-spread-range-computation">
 			<statement>
 				<p>
 					A certain pond has been well stocked with fish for the upcoming fishing season. A fish caught in this pond may be kept only if it is at least 13 inches long. To try to determine whether the fish in the pond are long enough to allow fishing, a fish and game warden randomly catches and releases 20 different fish, finding the following lengths, in inches. Find the range of these data.
 				</p>
-				<table xml:id="ex_center-spread_range_computation_data">
+				<table xml:id="table-center-spread-range-computation-data">
 					<title>Fish Lengths in Inches</title>
 					<tabular>
 						<row>
@@ -151,13 +151,13 @@
 			</solution>
 		</example>
 	</subsection>
-	<subsection xml:id="subsec_spread_IQR-quartiles">
+	<subsection xml:id="subsec-spread-iqr-quartiles">
 		<title>Interquartile Range (IQR)</title>
 	<p>
-		Recall from the previous section that the <xref ref="def_median" text="custom">median</xref> is resistant to outliers. To create a similarly resistant measure of variation, we can extend the logic used to create the median. The median divides data into two halves. If we further divide each half at its median, we create four quarters; the values that divide them are called <term>quartiles</term>.
+		Recall from the previous section that the <xref ref="def-median" text="custom">median</xref> is resistant to outliers. To create a similarly resistant measure of variation, we can extend the logic used to create the median. The median divides data into two halves. If we further divide each half at its median, we create four quarters; the values that divide them are called <term>quartiles</term>.
 		The <term>interquartile range (IQR)</term> measures the spread of the middle 50% of the data by finding the distance between the first quartile (<m>Q_1</m>) and third quartile (<m>Q_3</m>). Since the IQR ignores the lowest 25% and the highest 25% of the data, it is resistant to outliers.
 	</p>
-	<definition xml:id="def_quartiles">
+	<definition xml:id="def-quartiles">
 			<idx>quartiles</idx>
 			<idx><h>measures of relative standing</h><h>quartiles</h></idx>
 			<statement>
@@ -192,7 +192,7 @@
 				</p>
 			</statement>
 		</definition>
-		<definition xml:id="def_iqr">
+		<definition xml:id="def-iqr">
 			<idx>interquartile range (IQR)</idx>
 			<idx><h>measures of spread</h><h>interquartile range (IQR)</h></idx>
 			<idx><h>IQR</h><see>interquartile range (IQR)</see></idx>
@@ -308,12 +308,12 @@
 			</solution>
 		</example>
 	</subsection>
-	<subsection xml:id="subsec-dispersion-standard_deviation">
+	<subsection xml:id="subsec-dispersion-standard-deviation">
 	<title>Standard Deviation</title>
 		<p>
 			While the interquartile range is a good measure of spread, sometimes there are no outliers in a data set, or a measure of spread that takes all values into account is desirable. In this case, the <term>standard deviation</term> is used to describe variation. The <term>sample standard deviation</term>, denoted <m>s</m>, is a measure of variation that tells us roughly how far the data values typically are from the mean.
 		</p>
-		<definition xml:id="def_std_dev">
+		<definition xml:id="def-std-dev">
 			<idx>standard deviation</idx>
 			<idx><h>measures of spread</h><h>standard deviation</h></idx>
 			<idx><h>standard deviation</h><h>sample</h></idx>
