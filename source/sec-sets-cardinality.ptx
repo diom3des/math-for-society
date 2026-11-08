@@ -12,18 +12,18 @@
 			</li>
 			<li>
 				<p>
-					Use a Venn diagram to find the number of elements in each region of a 3-set problem.
+					Use a Venn diagram to find the number of elements in each region of a three-set problem.
 				</p>
 			</li>
 		</ul>
 	</objectives>
 	<introduction>
 		<p>
-			Counting is a core idea in mathematics, practiced since the dawn of history. Finite sets, with a specific number of distinct elements, are essential to this process. When dealing with two or three sets, we need to track elements that occur in multiple sets. Set operations—intersections, unions, and complements—are crucial tools for solving these counting problems.
+			Counting is a core idea in mathematics, practiced since the dawn of history. Finite sets, with a specific number of distinct elements, are essential to this process. When dealing with two or three sets, we need to track elements that occur in multiple sets. Set operations<mdash/>intersections, unions, and complements<mdash/>are crucial tools for solving these counting problems.
 		</p>
 	</introduction>
 	<subsection>
-		<title>Counting Problems with 2 Sets</title>
+		<title>Counting Problems with Two Sets</title>
 		<p>
 			Sometimes we are interested in the number of elements in the union or intersection of sets, but do not know the actual elements of each set. The following examples explore these ideas in problems involving two or three sets.
 		</p>
@@ -183,7 +183,7 @@
 	  	</statement>
 	  </definition>
 		<p>
-			A 2-set Venn diagram can be solved for any of the four regions found in such a diagram, as illustrated by the next example.
+			A two-set Venn diagram can be solved for any of the four regions found in such a diagram, as illustrated by the next example.
 		</p>
 		<example>
 			<statement>
@@ -224,14 +224,14 @@
 		</example>
 	</subsection>
 	<subsection>
-		<title>Counting Problems with 3 Sets</title>
+		<title>Counting Problems with Three Sets</title>
 		<p>
 			Counting problems involving three sets are solved similarly to those involving two sets. The primary difference is that while two sets divide the universal set into four potential regions, three sets divide the universal set into eight total regions as shown in <xref ref="fig-3-set-venn-diagram"/>. 
 			Computing the cardinality of these regions is thus more complex than for two-set problems. As we shall see in the following examples, it requires care to tease out correct values without double (or triple!) counting elements.
 			Note that the <xref text="title" ref="fact-sets-inclusion-exclusion-rule"/> can be updated for three-set problems, but we do not include the formula here.
 		</p>
 		<p>
-			To compute cardinality in 3-set counting problems, begin by finding the central intersection where all three sets overlap, if possible. Then, calculate the regions where exactly two sets overlap. 
+			To compute cardinality in three-set counting problems, begin by finding the central intersection where all three sets overlap, if possible. Then, calculate the regions where exactly two sets overlap. 
 			Using these values, determine how many elements belong uniquely to each individual set. Finally, add all these regions together and verify that they match the given total, or use the total to compute any missing values. The following examples demonstrate this approach.
 		</p>
 		<example>
@@ -273,7 +273,7 @@
 						To answer this question, it helps to create a Venn diagram that shows all the ways the three sets could overlap. We then work through the given survey results and use them to find the cardinality of each region of the diagram, starting at the center and working outward. When working by hand, we simply fill in the regions with the computed cardinality. However, to help understand the process, in this example we will refer to regions by the letters shown in the provided image. 
 					</p>
 					<figure xml:id="fig-3-set-venn-diagram">
-						<caption>A 3-set Venn diagram divides the plane into 8 distinct regions, here marked with <m>a</m> through <m>h</m>.</caption>
+						<caption>A three-set Venn diagram divides the plane into 8 distinct regions, here marked with <m>a</m> through <m>h</m>.</caption>
 						<image xml:id="tikz-3venn-courses" width="94%">
 							<shortdescription>A rectangle is drawn for the universal set U. There are three overlapping circles inside. One is labeled S, one H, and one R. The distinct regions are labeled with lower case letters a through h.</shortdescription>
 							<latex-image>
@@ -330,11 +330,11 @@
 				</p>
 				<sidebyside widths="48% 48%" margins="0% 0%" valigns="top top">
 					<p>
-						<alert>Note:</alert> The above work was directed at finding the number of students who were only taking a science class. However, it is a good idea to <q>solve</q> the 3-set diagram completely if possible. 
+						<alert>Note:</alert> The above work was directed at finding the number of students who were only taking a science class. However, it is a good idea to <q>solve</q> the three-set diagram completely if possible. 
 						Once this is done, any question about cardinality can be solved quickly. In this case, we can find that <m>n(c)=26-6-3-7=10</m>, and <m>n(g)=19-4-3-7=5</m>. The solved diagram is shown here.
 					</p>
 					<figure xml:id="fig-3-set-venn-diagram-solved">
-						<caption>The <q>solved</q> 3-set Venn diagram showing the cardinality of each region.</caption>
+						<caption>The <q>solved</q> three-set Venn diagram showing the cardinality of each region.</caption>
 						<image xml:id="tikz-3venn-courses-solved" width="100%">
 							<shortdescription>A rectangle is drawn for the universal set U. There are three overlapping circles inside. One is labeled S, one H, and one R. The distinct regions are labeled with numbers representing their cardinality.</shortdescription>
 							<latex-image>
@@ -435,7 +435,7 @@
 					These values are shown in the figure below.
 				</p>
 				<figure xml:id="fig-3-set-venn-diagram-consumer">
-					<caption>The <q>solved</q> 3-set Venn diagram showing the cardinality of each region.</caption>
+					<caption>The <q>solved</q> three-set Venn diagram showing the cardinality of each region.</caption>
 					<image xml:id="tikz-3venn-consumers-solved" width="45%">
 						<shortdescription>A rectangle is drawn for the universal set U. There are three overlapping circles inside. One is labeled C, one R, and one L. The distinct regions are labeled with numbers representing their cardinality.</shortdescription>
 						<latex-image>

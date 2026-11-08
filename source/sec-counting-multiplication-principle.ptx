@@ -12,7 +12,7 @@
 			</li>
 			<li>
 				<p>
-					Apply the multiplication principle to counting problems.
+					Apply the multiplication rule to counting problems.
 				</p>
 			</li>
 		</ul>
@@ -136,7 +136,7 @@
 			</statement>
 			<solution>
 				<p>
-					Note that the tree has 6 <em>leaves</em> <mdash></mdash> the number of outfits (outcomes) predicted by the multiplication rule.
+					Note that the tree has 6 <em>leaves</em><mdash/>the number of outfits (outcomes) predicted by the multiplication rule.
 				</p>
 				<figure xml:id="fig_counting_multiplication_2-step">
 					<caption>Tree diagram illustrating the 6 outcomes possible in <xref ref="ex_counting_multiplication_2-step"/>.</caption>

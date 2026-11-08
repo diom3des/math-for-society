@@ -141,7 +141,7 @@
 					Which of these sets is the sample space for this experiment?
 				</p>
 			</statement>
-			<answer><p>The set in (d) gives the possible sums. Set (a) includes 1, which cannot be a sum of two dice. Sets (b) and (e) contain only some of the possible sums, so they are events rather than the full sample space. Set (c) would be the sample space if we recorded the number on each die, but here we note only the sum.</p></answer>
+			<solution><p>The set in (d) gives the possible sums. Set (a) includes 1, which cannot be a sum of two dice. Sets (b) and (e) contain only some of the possible sums, so they are events rather than the full sample space. Set (c) would be the sample space if we recorded the number on each die, but here we note only the sum.</p></solution>
 		</example>
 		<p>
 			In <xref ref="ex_probabilty_basic-rules_coin-flip"/>, the event of interest was <m>E = \lbrace HT, TH \rbrace</m>. Notice that every outcome in that event is also an outcome in the sample space <m>S</m>. This is what it means to say that <m>E</m> is a <idx><h>sets</h><h>subset</h></idx><term>subset</term> of <m>S</m>. 
@@ -311,7 +311,7 @@
 			</solution>
 		</example>
 		<p>
-			The word <q>not</q> often appears in probability problems, and you likely have an instinctive understanding of how to deal with it. For example, suppose you were told there was a 40% chance (probability) of rain. What is the probability that it does not rain? That is right <mdash/> 60%!  This is the <term>complement rule</term>, which is closely related to the idea of the <xref ref="def_complement" text="custom">complement of a set</xref>, discussed in a previous section.
+			The word <q>not</q> often appears in probability problems, and you likely have an instinctive understanding of how to deal with it. For example, suppose you were told there was a 40% chance (probability) of rain. What is the probability that it does not rain? That is right<mdash/>60%!  This is the <term>complement rule</term>, which is closely related to the idea of the <xref ref="def_complement" text="custom">complement of a set</xref>, discussed in a previous section.
 		</p>
 		<definition xml:id="def-complement_event">
 			<idx><h>complement</h><h>of an event</h></idx>
@@ -442,7 +442,7 @@
 									<mrow>P(\text{Queen of Hearts, }\amp\text{Diamonds, Clubs, then Spades}) </mrow>
 									<mrow>\amp = \frac{1\times 1\times 1\times 1}{P(10,4)}</mrow>
 									<mrow>\amp = \frac{1}{10\times 9\times 8\times 7}</mrow>
-									<mrow>\amp = \frac{1}{5040}</mrow>
+									<mrow>\amp = \frac{1}{5{,}040}</mrow>
 								</md>
 							</p>
 						</li>

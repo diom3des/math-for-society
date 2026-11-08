@@ -120,11 +120,11 @@
 					</row>
 					<row>
 						<cell>$200</cell>
-						<cell><m>\sfrac{1}{1667}</m></cell>
+						<cell><m>\sfrac{1}{1{,}667}</m></cell>
 					</row>
 					<row>
 						<cell>$300</cell>
-						<cell><m>\sfrac{1}{2500}</m></cell>
+						<cell><m>\sfrac{1}{2{,}500}</m></cell>
 					</row>
 				</tabular>
 			</statement>
@@ -134,7 +134,7 @@
 				</p>
 				<p>
 					<md>
-						<mrow>P(\text{Win }\$0)\amp=1-\left(\frac{1}{417}+\frac{1}{833}+\frac{1}{1667}+\frac{1}{2500}\right)</mrow>
+						<mrow>P(\text{Win }\$0)\amp=1-\left(\frac{1}{417}+\frac{1}{833}+\frac{1}{1{,}667}+\frac{1}{2{,}500}\right)</mrow>
 						<mrow>\amp\approx 1-0.0046</mrow>
 						<mrow>\amp=0.9954.</mrow>
 					</md>
@@ -159,11 +159,11 @@
 					</row>
 					<row>
 						<cell>$200</cell>
-						<cell><m>\sfrac{1}{1667}</m></cell>
+						<cell><m>\sfrac{1}{1{,}667}</m></cell>
 					</row>
 					<row>
 						<cell>$300</cell>
-						<cell><m>\sfrac{1}{2500}</m></cell>
+						<cell><m>\sfrac{1}{2{,}500}</m></cell>
 					</row>
 					<row>
 						<cell>$0</cell>
@@ -173,7 +173,7 @@
 				<p>
 					<md>
 					<mrow>\text{Expected winnings}\amp=\$50\left(\frac{1}{417}\right)+\$100\left(\frac{1}{833}\right)</mrow>
-					<mrow>\amp +\$200\left(\frac{1}{1667}\right)+\$300\left(\frac{1}{2500}\right) </mrow>
+					<mrow>\amp +\$200\left(\frac{1}{1{,}667}\right)+\$300\left(\frac{1}{2{,}500}\right) </mrow>
 					<mrow>\amp +\$0(0.9954)</mrow>
 					<mrow>\amp \approx \$0.12+\$0.12+\$0.12+\$0.12+\$0</mrow>
 					<mrow>\amp =\$0.48.</mrow>

@@ -58,10 +58,10 @@
 			Why might rain and a traffic jam be <em>dependent</em>? Because heavy rain can make driving more difficult, increasing the likelihood of slowdowns or accidents that lead to traffic jams! The following example gives more illustrations of dependent and independent events.
 		</p>
 		<example xml:id="ex_conditional_independent-or-dependent">
-			<title>Determining if Events Are Independent or Dependent</title>
+			<title>Determining Whether Events Are Independent or Dependent</title>
 			<statement>
 				<p>
-					Determine if the pairs of events <m>A</m> and <m>B</m> described below are independent or dependent.
+					Determine whether the pairs of events <m>A</m> and <m>B</m> described below are independent or dependent.
 					<ol marker="a)">
 						<li>
 							<p>
@@ -137,8 +137,8 @@
 				<p>
 					A coin is flipped three times. Events <m>A</m> and <m>B</m> are defined as follows.
 					<ul cols="2">
-						<li><p><m>A</m>: the first flip is heads</p></li>
-						<li><p><m>B</m>: all three flips are heads</p></li>
+						<li><p><m>A =</m> <q>the first flip is heads</q></p></li>
+						<li><p><m>B =</m> <q>all three flips are heads</q></p></li>
 					</ul>
 				</p>
 				<p>
@@ -564,7 +564,7 @@
 					</md>.
 					Next, compute
 					<md>
-						P(T)\times P(R) = \frac{60}{665}\times\frac{150}{665} =\frac{9000}{442225}\approx 0.02035 
+						P(T)\times P(R) = \frac{60}{665}\times\frac{150}{665} =\frac{9{,}000}{442{,}225}\approx 0.02035 
 					</md>.
 					Since these values are not equal, the events <q>ticket</q> and <q>red car</q> are <alert>not</alert> independent. That is, they are dependent events.
 				</p>
@@ -809,7 +809,7 @@
 	<subsection xml:id="sec_probability_conditional_bayes">
 		<title>Bayesian Probability</title>
 		<p>
-			Tree diagrams provide a powerful visual tool for working with conditional probabilities, particularly when events occur in sequence. In multi-stage experiments, tree diagrams clearly illustrate the probability of outcomes at each stage, given what happened in previous stages. However, as we saw in the last example, sometimes we need to find conditional probabilities that run <q>backwards</q> through the diagram <mdash/> asking about earlier events given later ones. For these situations, we use Bayes' theorem, developed by Thomas Bayes, a British mathematician and Presbyterian minister. The theorem, named in his honor after his death, is presented below for the special case where the sample space is split into two cases, an event <m>A</m> and its complement.
+			Tree diagrams provide a powerful visual tool for working with conditional probabilities, particularly when events occur in sequence. In multi-stage experiments, tree diagrams clearly illustrate the probability of outcomes at each stage, given what happened in previous stages. However, as we saw in the last example, sometimes we need to find conditional probabilities that run <q>backwards</q> through the diagram<mdash/>asking about earlier events given later ones. For these situations, we use Bayes' theorem, developed by Thomas Bayes, a British mathematician and Presbyterian minister. The theorem, named in his honor after his death, is presented below for the special case where the sample space is split into two cases, an event <m>A</m> and its complement.
 		</p>
 		<fact xml:id="thm_bayes">
 			<title>Bayes' Theorem (Special Case)</title>

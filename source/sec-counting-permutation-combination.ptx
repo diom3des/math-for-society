@@ -20,13 +20,13 @@
 
 	<introduction>
 		<p>
-			In this section, we build on the multiplication principle discussed in the previous section. We start with factorials, which establish the mathematical foundation for the second topic: permutations. Permutations are in turn the building blocks of combinations.
+			In this section, we build on the multiplication rule discussed in the previous section. We start with factorials, which establish the mathematical foundation for the second topic: permutations. Permutations are in turn the building blocks of combinations.
 		</p>
 	</introduction>
 	<subsection xml:id="subsec-counting-factorial">
 		<title>Factorials</title>
 		<p>
-			The following example shows how the <term>factorial</term> is a special case of the <xref ref="thm_counting-rule_multiplication" text="custom">multiplication principle</xref>.
+			The following example shows how the <term>factorial</term> is a special case of the <xref ref="thm_counting-rule_multiplication" text="custom">multiplication rule</xref>.
 		</p>
 		<example xml:id="ex_counting_factorial_dolls">
 			<title>Arranging Items</title>
@@ -39,8 +39,8 @@
 				<p>This is an example of the multiplication rule using the following steps.
 					<ol>
 						<li><p>Choose which of the 4 items to place first (4 choices).</p></li>
-						<li><p>Choose which of the 3 remaining items to place 2nd (3 choices).</p></li>
-						<li><p>Choose which of the 2 remaining items to place 3rd (2 choices).</p></li>
+						<li><p>Choose which of the 3 remaining items to place second (3 choices).</p></li>
+						<li><p>Choose which of the 2 remaining items to place third (2 choices).</p></li>
 						<li><p>Place the last item at the end of the row (1 choice).</p></li>
 					</ol>
 					Therefore, according to the multiplication rule, the number of orderings is:
@@ -125,9 +125,9 @@
 				<p>
 					Using the multiplication rule, the steps in this process are:
 					<ol>
-						<li><p>Award first prize. Any of the 10 runners could be 1st.</p></li>
-						<li><p>Award second prize. Nine runners could come in 2nd.</p></li>
-						<li><p>Award third prize. Eight runners could come in 3rd.</p></li>
+						<li><p>Award first prize. Any of the 10 runners could be first.</p></li>
+						<li><p>Award second prize. Nine runners could come in second.</p></li>
+						<li><p>Award third prize. Eight runners could come in third.</p></li>
 					</ol>
 					Thus, prizes can be awarded
 					<md>10\times 9\times 8 = 720</md>
@@ -313,9 +313,9 @@
 			<idx><h>counting rules</h><h>combining</h></idx>
 				<p>
 					<ol>
-						<li><p>If the things you are counting come in two groups that don't overlap, count each group, then add together the results. (<xref ref="thm_counting-rule_addition-informal" text="custom">addition rule</xref> <mdash/> goes with <q>or</q>)</p></li>
+						<li><p>If the things you are counting come in two groups that don't overlap, count each group, then add together the results. (<xref ref="thm_counting-rule_addition-informal" text="custom">addition rule</xref><mdash/>goes with <q>or</q>)</p></li>
 						<li><p>If there is overlap between the two groups, remember to subtract the intersection. (<xref ref="fact-sets-inclusion-exclusion-rule" text="custom">inclusion-exclusion rule</xref>)</p></li>
-						<li><p>If the process you are counting can be broken down into steps, count the number of ways each step can be performed and multiply. (<xref ref="thm_counting-rule_multiplication" text="custom">multiplication rule</xref> <mdash/> goes with <q>and</q>)</p></li>
+						<li><p>If the process you are counting can be broken down into steps, count the number of ways each step can be performed and multiply. (<xref ref="thm_counting-rule_multiplication" text="custom">multiplication rule</xref><mdash/>goes with <q>and</q>)</p></li>
 						<li><p>If you are arranging things or selecting multiple items and the order of selection matters, use a permutation. (<xref ref="fact-permutation-formula" text="custom">permutation rule</xref>)</p></li>
 						<li><p>If you are selecting multiple items from a group of items and the order in which you pick them does not matter, use a combination. (<xref ref="fact_counting-rule_combination" text="custom">combination rule</xref>)</p></li>
 					</ol>
@@ -332,7 +332,7 @@
 			<solution>
 				<p>In a seating chart, the order would matter. Therefore, this must be a permutation, and the solution is:
 					<md>
-						P(8,4) = 8\times 7\times 6\times 5 = 1680
+						P(8,4) = 8\times 7\times 6\times 5 = 1{,}680
 					</md>.
 				</p>
 			</solution>
@@ -399,7 +399,7 @@
 					This is actually the most challenging problem in this section. The reason is that we have to use both the multiplication rule to split the process into steps and the addition rule to split the process into cases. Here's how we do it:
 					<ul>
 						<li><title>Case 1: exactly two sandwiches</title><p>Pick 2 of the 8 sandwiches and 2 of the 9 non-sandwich items (salads and chips)
-						  <md>C(8,2)\times C(9,2) = \frac{8\times 7}{2\times 1}\times\frac{9\times 8}{2\times 1} = 1008</md>.</p></li>
+						  <md>C(8,2)\times C(9,2) = \frac{8\times 7}{2\times 1}\times\frac{9\times 8}{2\times 1} = 1{,}008</md>.</p></li>
 						<li><title>Case 2: exactly three sandwiches</title><p>Pick 3 of the 8 sandwiches and 1 of the 9 non-sandwich items
 						  <md>C(8,3)\times C(9,1) = \frac{8\times 7\times 6}{3\times 2\times 1} \times 9 = 504</md>.</p></li>
 						<li><title>Case 3: exactly four sandwiches</title><p>Pick 4 of the 8 sandwiches and none of the 9 non-sandwich items
@@ -407,7 +407,7 @@
 					</ul>
 					Note that these three cases are mutually exclusive based on the number of sandwiches chosen, and that a picnic basket with at least two sandwiches would fall into exactly one of these cases. So using the addition rule, the total number of picnic baskets is:
 					<md>
-						1008 + 504 + 70 = 1582
+						1{,}008 + 504 + 70 = 1{,}582
 					</md>.
 				</p>
 				</solution>
