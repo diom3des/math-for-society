@@ -1,0 +1,10 @@
+# Local PreTeXt toolchain. Set up on any machine with:
+#   conda env create -f environment.yml
+# Update after changing requirements.txt with:
+#   conda env update -f environment.yml --prune
+name: pretext
+dependencies:
+  - python=3.13
+  - pip
+  - pip:
+      - -r requirements.txt
