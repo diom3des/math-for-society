@@ -7,7 +7,7 @@
 			<ul>
 			<li>
 				<p>
-					Define and identify categorical and quantitative data.
+					Define and identify qualitative (categorical) and quantitative data.
 				</p>
 			</li>
 			<li>
@@ -17,17 +17,22 @@
 			</li>
 			<li>
 				<p>
-					Make bar charts and pie charts for categorical variables.
+					Make bar graphs and pie graphs for qualitative variables.
 				</p>
 			</li>
 			<li>
 				<p>
-					Make histograms for quantitative variables.
+					Construct frequency distributions and histograms for quantitative variables.
 				</p>
 			</li>
 			<li>
 				<p>
 					Construct stem-and-leaf plots.
+				</p>
+			</li>
+			<li>
+				<p>
+					Describe a histogram by its center, modes, and symmetry.
 				</p>
 			</li>
 		</ul>
@@ -37,7 +42,7 @@
 
 		<introduction xml:id="sec_data_variables_intro">
 			<p>
-				Once we have collected data from an observational study or an experiment, we need to summarize and present it in a way that will be meaningful to our audience. Raw <term>data</term> is not very useful by itself. In this section we will begin with graphical presentations of data and in the rest of the chapter we will learn about numerical summaries of data.
+				Once we have collected data from an observational study or an experiment, we need to summarize and present it in a way that will be meaningful to our audience. Raw data is not very useful by itself. In this section we will begin with graphical presentations of data, and in the rest of the chapter we will learn about numerical summaries of data.
 			</p>
 			<definition xml:id="def_data">
 				<idx>data</idx>
@@ -48,7 +53,7 @@
 				</statement>
 			</definition>
 			<p>
-				We can understand and classify data better if we first understand the source from which the measurements are taken. Each type of measurement such as height, length of time, or favorite pizza topping, comes from a certain characteristic or property called a <term>variable</term>.
+				We can understand and classify data better if we first understand the source from which the measurements are taken. Each type of measurement, such as height, length of time, or favorite pizza topping, comes from a certain characteristic or property called a <term>variable</term>.
 			</p>
 			<definition xml:id="def_variable">
 				<idx>variable</idx>
@@ -115,7 +120,7 @@
 				<statement>
 					<p>
 						Identify each of the following data sets based on the number of variables being measured.
-						<ol marker="a.">
+						<ol marker="a)">
 							<li>
 								<p>
 									A wildlife conservationist records the species, length, and weight of 100 fish caught in a certain lake.
@@ -141,7 +146,7 @@
 				</statement>
 				<solution>
 					<p>
-						<ol marker="a.">
+						<ol marker="a)">
 							<li>
 								<p>
 									Multivariate. There are three variables: species, length, and weight.
@@ -168,7 +173,7 @@
 			</example>
 		</subsubsection>
 		<subsubsection xml:id="sec_data_variables_type">
-			<title>Types of Variable</title>
+			<title>Types of Variables</title>
 			<p>
 				Another way to classify data is based on the types of variables that are being measured. The type of a variable depends on what is being recorded. Consider the following example.
 			</p>
@@ -186,7 +191,7 @@
 							<li>
 								<title>Zip Code</title>
 								<p>
-									While the values recorded are numbers (i.e. 99324, 49103, 92357, etc) they
+									While the values recorded are numbers (e.g., 99324, 99201, 99301, etc.) they
 									actually represent categories and not numerical values. Notice that it would 
 									make no sense to <q>average</q> or add together two zip codes!
 								</p>
@@ -194,13 +199,13 @@
 							<li>
 								<title>Number of Residents</title>
 								<p>
-									These values are numbers (i.e. 2 residents, 5 residents, 1 resident, etc) and they do actually represent numerical quantities. Notice that it does make sense to talk about the <q>average number of residents</q> or to perform mathematical operations on these values. Also, note that the values that this variable can take on are all whole numbers.
+									These values are numbers (e.g., 2 residents, 5 residents, 1 resident, etc.) and they do actually represent numerical quantities. Notice that it does make sense to talk about the <q>average number of residents</q> or to perform mathematical operations on these values. Also, note that the values that this variable can take on are all whole numbers.
 								</p>
 							</li>
 							<li>
 								<title>Length of Residence</title>
 								<p>
-									The values for this final variable are also numbers (i.e. 1 year, 2 months, and 12 days = 1.2 years). It also makes sense to perform mathematical operations on these values. In contrast to the <q>number or residents</q> data, these values can be decimals or fractions.
+									The values for this final variable are also numbers (e.g., 1 year, 2 months, and 12 days is about 1.2 years). It also makes sense to perform mathematical operations on these values. In contrast to the <q>number of residents</q> data, these values can be decimals or fractions.
 								</p>
 							</li>
 						</ul>
@@ -208,7 +213,7 @@
 				</solution>
 			</example>
 			<p>
-				The example above illustrates the two main types of variables we will study. One example of the first type is <q>zip code</q>, a variable that yields non-numerical data. The values of such a variable represent categories into which individuals can be grouped, or <q>qualities</q> that the data possess. Such variables are called <term>qualitative</term>.
+				The example above illustrates the two main types of variables we will study. One example of the first type is <q>zip code</q>, a variable whose values, though written as numbers, are really labels for categories. The values of such a variable represent categories into which individuals can be grouped, or <q>qualities</q> that the data possess. Such variables are called <term>qualitative</term>.
 			</p>
 			<definition xml:id="def_qualitative-variable">
 				<idx>qualitative variable</idx>
@@ -237,7 +242,7 @@
 		<title>Graphing Qualitative Data</title>
 		<introduction>
 			<p>
-				Data, no matter the type, is not very informative in its raw form. A graph is a powerful way to summarize and display data. However, before a graph can be produced the data needs to be summarized in a table. For qualitative data this summary is called a frequency table.
+				Data, no matter the type, is not very informative in its raw form. A graph is a powerful way to summarize and display data. However, before a graph can be produced, the data needs to be summarized in a table. For qualitative data this summary is called a frequency table.
 			</p>
 			<p>
 				The following example motivates the need to organize data before it can be understood and will be used throughout this section.
@@ -408,7 +413,7 @@
 		<subsubsection xml:id="subsubsec_graph_qualitative_frequency-table">
 			<title>Frequency Tables</title>
 			<p>
-				The first step needed to graph qualitative data is to first summarize it. To do so, we construct a <term>frequency table</term>.
+				The first step in graphing qualitative data is to summarize it. To do so, we construct a <term>frequency table</term>.
 			</p>
 			<definition xml:id="def_frequency-table">
 				<idx>frequency table</idx>
@@ -423,7 +428,7 @@
 							</li>
 							<li>
 								<p>
-									The second column shows the frequency, or the number of times each category occurs in the dataset.
+									The second column shows the frequency, or the number of times each category occurs in the data set.
 								</p>
 							</li>
 						</ul>
@@ -521,14 +526,14 @@
 				</solution>
 			</example>
 			<p>
-				While a frequency table is useful for summarizing data, it can be hard to gauge how popular categories are relative to each other. For instance, in the previous example, two more customers preferred cheese over olives<mdash/>but is that a significant difference? To better analyze this, we can convert counts into percentages.
+				While a frequency table is useful for summarizing data, it can be hard to gauge how popular categories are relative to each other. For instance, in the previous example, two more customers preferred cheese over olives<mdash/>but is that a significant difference? To better analyze this, we can convert counts into proportions (or percentages).
 			</p>
 			<definition xml:id="def_relative-frequency-table">
 				<!-- <title>Relative Frequency Table</title> -->
 				<idx>relative frequency table</idx>
 				<statement>
 					<p>
-						A <term>relative frequency table</term> is a table in which each category is listed together with the ratio of the total values from the data set that fall into that category.
+						A <term>relative frequency table</term> is a table in which each category is listed together with the proportion of all values in the data set that fall into that category, found by dividing the category's frequency by the total number of values.
 					</p>
 				</statement>
 			</definition>
@@ -624,7 +629,7 @@
 				</solution>
 			</example>
 			<p>
-				While these tables are a good step in better displaying our data, we still need to translate this into a	picture. We will discuss ways to do that in the next section.
+				While these tables are a good step in better displaying our data, we still need to translate this into a	picture. We will discuss ways to do that below.
 			</p>			
 		</subsubsection>
 		<subsubsection xml:id="sec_graphs_qualitative_graphs">
@@ -633,7 +638,6 @@
 				One of the most basic ways to graphically represent data collected for a qualitative variable is by using a <term>bar graph</term>. First, create a frequency table. Once this is done, you can use computer software such as Microsoft Excel or Google Sheets to quickly construct a bar graph.
 			</p>
 			<definition xml:id="def_bar-graph">
-				<title>Bar Graph</title>
 				<idx>bar graph</idx>
 				<idx><h>graphs</h><h>bar graph</h></idx>
 				<statement>
@@ -649,7 +653,7 @@
 				<!-- <title>Constructing a Bar Graph</title> -->
 				<statement>
 					<p>
-						Construct a bar graph for the pizza topping data seen in <xref ref="ex_graphs_organizing-data" />
+						Construct a bar graph for the pizza topping data seen in <xref ref="ex_graphs_organizing-data"/>.
 					</p>
 				</statement>
 				<solution>
@@ -660,7 +664,7 @@
 						<caption>Pizza topping bar graph</caption>
 						<image xml:id="image_graphs_ex_bar-graph" width="90%">
 							<shortdescription>
-								A bar for each pizza topping with heights corresponding to the to frequency of the topping in our frequency table.
+								A bar for each pizza topping with heights corresponding to the frequency of the topping in our frequency table.
 							</shortdescription>
 							<latex-image>
 							\begin{tikzpicture}[font=\figfont] % Apply \figfont to the entire picture
@@ -671,7 +675,7 @@
 									ymin=0, ymax=20,
 									xtick={1,2,3,4,5,6,7,8,9,10},
 									ytick={0,5,10,15,20},
-									xticklabels={Anchovies,Bacon,Cheese,Pepper,Mushroom,Olive,Onion,Pepperoni,Pineapple,Sausage},
+									xticklabels={Anchovies,Bacon,Cheese,Green Peppers,Mushrooms,Olives,Onions,Pepperoni,Pineapple,Sausage},
 									ticklabel style={font=\normalsize\figfont},
 									xticklabel style={rotate=90},
 									xlabel style={font=\figfont, yshift=-0.5cm},
@@ -722,14 +726,14 @@
 				</solution>
 			</example>
 			<p>
-				Both bar graphs and relative frequency bar graphs are useful for comparing the number or percentage of values in one category with those in another. However, when the goal is to illustrate how each category contributes to the whole, a <term>pie graph</term> is often more useful. Pie graphs can be created using the same software we previously used to construct bar charts. As an example, let's revisit our pizza toppings scenario one more time.
+				Both bar graphs and relative frequency bar graphs are useful for comparing the number or percentage of values in one category with those in another. However, when the goal is to illustrate how each category contributes to the whole, a <term>pie graph</term> is often more useful. Pie graphs can be created using the same software we previously used to construct bar graphs. As an example, let's revisit our pizza toppings scenario one more time.
 			</p>
 			<definition xml:id="def_pie-graph">
 				<idx>pie graph</idx>
 				<idx><h>graphs</h><h>pie graph</h></idx>
 				<statement>
 					<p>
-						A <term>pie graph</term> is a type of graph used to represent qualitative data, where a circle is divided into sectors or wedges, each corresponding to a category. The area of each sector is proportional to the relative frequency of that category in the dataset.
+						A <term>pie graph</term> is a type of graph used to represent qualitative data, where a circle is divided into sectors or wedges, each corresponding to a category. The area of each sector is proportional to the relative frequency of that category in the data set.
 					</p>
 				</statement>
 			</definition>
@@ -748,28 +752,27 @@
 							</shortdescription>
 							<latex-image>
 								% This code started as Jonathan Duncan's from Optima Statistics, but I ran it through AI to improve the colors, readability, and efficiency. I also made some style tweaks. 
-								% Note: this code requires 
 								\begin{tikzpicture}
 
 										% Calculate cumulative angles and draw pie slices
 										\def\startangle{90}
 										\def\currentangle{\startangle}
 
-										% Loop through data to draw pie slices with bright colors
-										\foreach \percentage/\label/\color [count=\i] in {
+										% Loop through frequencies (out of 96 customers, so each customer is 360/96 = 3.75 degrees)
+										\foreach \freq/\label/\color [count=\i] in {
 												1/Anchovies/red,
-												9/Bacon/orange,
-												18/Cheese/yellow,
-												12/Pepper/green!70!yellow,
-												4/Mushroom/green,
-												15/Olive/cyan,
-												6/Onion/blue,
-												18/Pepperoni/blue!70!magenta,
+												10/Bacon/orange,
+												17/Cheese/yellow,
+												11/Green Peppers/green!70!yellow,
+												4/Mushrooms/green,
+												15/Olives/cyan,
+												5/Onions/blue,
+												17/Pepperoni/blue!70!magenta,
 												6/Pineapple/magenta,
-												11/Sausage/red!70!magenta} 
+												10/Sausage/red!70!magenta} 
 										{
 												% Calculate end angle
-												\pgfmathsetmacro{\endangle}{\currentangle - \percentage * 3.6}
+												\pgfmathsetmacro{\endangle}{\currentangle - \freq * 3.75}
 
 												% Draw pie slice with bright colors
 												\filldraw[fill=\color!70!white, draw=black, very thin]
@@ -781,31 +784,31 @@
 										}
 
 										% Establish precise coordinates for clean labeling (like first code)
-										\coordinate (left border) at (4.6,0);
-										\coordinate (right border) at (-4.6,0);
-										\coordinate (l1) at (88.2:1.75);    % Anchovies
-										\coordinate (l2) at (70.2:1.0);     % Bacon
-										\coordinate (l3) at (15:1.3);       % Cheese
-										\coordinate (l4) at (-32.5:1.2);    % Pepper
-										\coordinate (l5) at (-61:1.5);      % Mushroom
-										\coordinate (l6) at (-95.6:1.75);   % Olive
-										\coordinate (l7) at (-133.4:1.5);   % Onion
-										\coordinate (l8) at (-176.6:1.75);  % Pepperoni
-										\coordinate (l9) at (-219.8:1.5);   % Pineapple
-										\coordinate (l10) at (-250.3:1.75); % Sausage
+										\coordinate (left border) at (5.5,0);
+										\coordinate (right border) at (-5.5,0);
+										\coordinate (l1) at (88.1:1.75);    % Anchovies
+										\coordinate (l2) at (67.5:1.0);     % Bacon
+										\coordinate (l3) at (16.9:1.3);       % Cheese
+										\coordinate (l4) at (-35.6:1.2);    % Pepper
+										\coordinate (l5) at (-63.8:1.5);      % Mushroom
+										\coordinate (l6) at (-99.4:1.75);   % Olive
+										\coordinate (l7) at (-136.9:1.5);   % Onion
+										\coordinate (l8) at (-178.1:1.75);  % Pepperoni
+										\coordinate (l9) at (-221.2:1.5);   % Pineapple
+										\coordinate (l10) at (-251.2:1.75); % Sausage
 
 										% Attach labels with clean positioning
 										\begin{scope}[lab/.style={gray!80!white,thick,draw,font={\footnotesize\figfont}},outer sep=-0.75mm]
-											\fill[lab] (l1) circle(0.05) -- (l1-|left border) node[anchor=south east] {Anchovies (1\%)};
-											\fill[lab] (l2) circle(0.05) -- (l2-|left border) node[anchor=south east] {Bacon (9\%)};
-											\fill[lab] (l3) circle(0.05) -- (l3-|left border) node[anchor=south east] {Cheese (18\%)};
-											\fill[lab] (l4) circle(0.05) -- (l4-|left border) node[anchor=south east] {Pepper (12\%)};
-											\fill[lab] (l5) circle(0.05) -- (l5-|left border) node[anchor=south east] {Mushroom (4\%)};
-											\fill[lab] (l6) circle(0.05) -- (l6-|right border) node[anchor=south west] {Olive (15\%)};
-											\fill[lab] (l7) circle(0.05) -- (l7-|right border) node[anchor=south west] {Onion (6\%)};
-											\fill[lab] (l8) circle(0.05) -- (l8-|right border) node[anchor=south west] {Pepperoni (18\%)};
-											\fill[lab] (l9) circle(0.05) -- (l9-|right border) node[anchor=south west] {Pineapple (6\%)};
-											\fill[lab] (l10) circle(0.05) -- (l10-|right border) node[anchor=south west] {Sausage (11\%)};
+											\fill[lab] (l1) circle(0.05) -- (l1-|left border) node[anchor=south east] {Anchovies (1.0\%)};
+											\fill[lab] (l2) circle(0.05) -- (l2-|left border) node[anchor=south east] {Bacon (10.4\%)};
+											\fill[lab] (l3) circle(0.05) -- (l3-|left border) node[anchor=south east] {Cheese (17.7\%)};
+											\fill[lab] (l4) circle(0.05) -- (l4-|left border) node[anchor=south east] {Green Peppers (11.5\%)};
+											\fill[lab] (l5) circle(0.05) -- (l5-|left border) node[anchor=south east] {Mushrooms (4.2\%)};
+											\fill[lab] (l6) circle(0.05) -- (l6-|right border) node[anchor=south west] {Olives (15.6\%)};
+											\fill[lab] (l7) circle(0.05) -- (l7-|right border) node[anchor=south west] {Onions (5.2\%)};
+											\fill[lab] (l8) circle(0.05) -- (l8-|right border) node[anchor=south west] {Pepperoni (17.7\%)};
+											\fill[lab] (l9) circle(0.05) -- (l9-|right border) node[anchor=south west] {Pineapple (6.3\%)};
+											\fill[lab] (l10) circle(0.05) -- (l10-|right border) node[anchor=south west] {Sausage (10.4\%)};
 										\end{scope}
 
 										% Enhanced title styling
@@ -816,7 +819,7 @@
 						</image>
 					</figure>
 					<p>
-						Note that spreadsheet programs often convert relative frequencies into percents when constructing a pie graph.
+						Note that spreadsheet programs often convert relative frequencies into percents when constructing a pie graph, as we have done here (rounded to one decimal place).
 					</p>
 				</solution>
 			</example>
@@ -826,7 +829,7 @@
 		<title>Graphing Quantitative Data</title>
 		<introduction>
 			<p> 
-				When we wish to represent quantitative variable graphically we encounter many of the same issues we saw with qualitative data: raw numbers are rarely meaningful on their own. Just as we used frequency tables to summarize qualitative data before creating graphs, we must first organize quantitative data to make it interpretable. As we will see below, most of the time this means grouping the data into intervals before creating a graph. 
+				When we wish to represent a quantitative variable graphically we encounter many of the same issues we saw with qualitative data: raw numbers are rarely meaningful on their own. Just as we used frequency tables to summarize qualitative data before creating graphs, we must first organize quantitative data to make it interpretable. As we will see below, most of the time this means grouping the data into intervals before creating a graph. 
 			</p>
 		</introduction>
 		<subsubsection xml:id="sec_graphs_quantitative_tables">
@@ -856,7 +859,7 @@
 							</li>
 							<li>
 								<p>
-									<term>Class Width</term>: the difference between the upper class limit of a given class and the upper class limit of the previous class (or the minimum value in the data set for the	first class) is called the <term>class width</term>. This value should be the same for each class.
+									<term>Class Width</term>: the difference between the upper class limit of a given class and the upper class limit of the previous class (or, for the first class, the starting value, usually the minimum value in the data set or a convenient number just below it) is called the <term>class width</term>. This value should be the same for each class.
 								</p>
 							</li>
 						</ul>
@@ -970,7 +973,7 @@
 										<ol>
 											<li>
 												<p>
-													Find the difference between the highest number, 17.9, and the lowest, 8.1. We round to a range of 10.
+													Find the range by subtracting the lowest value, 8.1, from the highest, 17.9: <m>17.9 - 8.1 = 9.8</m>. We round this up to 10.
 												</p>
 											</li>
 											<li>
@@ -993,7 +996,7 @@
 								</li>
 								<li>
 									<p>
-										Finally, count the number of values that fall into each class. For example, there are 7 values bigger than 10, but less than or equal to 12.
+										Finally, count the number of values that fall into each class. For example, there are 8 values bigger than 10, but less than or equal to 12.
 									</p>
 								</li>
 							</ol>
@@ -1013,11 +1016,11 @@
 								</row>
 								<row>
 									<cell>10.1<ndash/>12</cell>
-									<cell>7</cell>
+									<cell>8</cell>
 								</row>
 								<row>
 									<cell>12.1<ndash/>14</cell>
-									<cell>14</cell>
+									<cell>13</cell>
 								</row>
 								<row>
 									<cell>14.1<ndash/>16</cell>
@@ -1033,13 +1036,13 @@
 				</solution>
 			</example>
 			<p>
-				Once we have summarized our data in a frequency distribution, we construct a relative frequency distribution by dividing each class frequency by the grand total. We can also create a representative graph called a <term>histogram</term>, which we will explore in the next section.
+				Once we have summarized our data in a frequency distribution, we construct a relative frequency distribution by dividing each class frequency by the grand total. We can also create a representative graph called a <term>histogram</term>, which we explore next.
 			</p>
 		</subsubsection>
 		<subsubsection xml:id="subsubsec_graphs_quantitative_histograms">
 			<title>Histograms</title>
 			<p>
-				The graph that we use to describe data summarized by a frequency distribution called a <term>histogram</term>. A histogram is very similar to	the <xref ref="def_bar-graph" text="custom">bar graphs</xref> we used to summarize data from a frequency table. There are,	however, some important differences.
+				The graph that we use to describe data summarized by a frequency distribution is called a <term>histogram</term>. A histogram is very similar to	the <xref ref="def_bar-graph" text="custom">bar graphs</xref> we used to summarize data from a frequency table. There are,	however, some important differences.
 			</p>
 			<definition xml:id="def_histogram">
 				<idx>histogram</idx>
@@ -1090,7 +1093,7 @@
 											width=12cm,
 											height=8cm
 										]
-										\addplot+[ybar interval,fill=CustomB2, draw=lightgray] plot coordinates { (8, 17) (10, 7) (12, 14) (14, 10) (16, 16) (18,0) };
+										\addplot+[ybar interval,fill=CustomB2, draw=lightgray] plot coordinates { (8, 17) (10, 8) (12, 13) (14, 10) (16, 16) (18,0) };
 									\end{axis}
 								\end{tikzpicture}
 							</latex-image>
@@ -1116,7 +1119,7 @@
 				</statement>
 				<solution>
 					<p>
-						Looking just at the <xref ref="ex_graphs_frequency-distribution_frequency-distribution" text="custom">frequency distribution</xref> we created for this data, this is not possible.  If all we have is the frequency distribution, we can only tell that there are 10 plants between 14.1 and 16 inches tall. Some of those may be 14.2 inches tall, but there is no way of knowing without going back to the raw data.
+						Looking just at the <xref ref="ex_graphs_frequency-distribution_frequency-distribution" text="custom">frequency distribution</xref> we created for this data, this is not possible. If all we have is the frequency distribution, we can only tell that there are 10 plants between 14.1 and 16 inches tall. Some of those may be 14.2 inches tall, but there is no way of knowing without going back to the raw data.
 					</p>
 				</solution>
 			</example>
@@ -1130,13 +1133,13 @@
 				</statement>
 			</definition>
 			<p>
-				Stem-and-leaf plots are typically created by hand, making them most useful for relatively small data sets when we want a quick visual impression of the data's shape. To ensure accuracy, each "leaf" should take up the same amount of space. If you're typing a stem-and-leaf plot on a computer, use a monospaced font like Courier so that narrower digits (like 1) don't take up less space than wider ones (like 8). Consider the following example.
+				Stem-and-leaf plots are typically created by hand, making them most useful for relatively small data sets when we want a quick visual impression of the data's shape. To ensure accuracy, each <q>leaf</q> should take up the same amount of space. If you're typing a stem-and-leaf plot on a computer, use a monospaced font like Courier so that narrower digits (like 1) don't take up less space than wider ones (like 8). Consider the following example.
 			</p>
 			<example xml:id="ex_graphs_stem-and-leaf">
 				<!-- <title>Constructing a Stem-and-Leaf Plot</title> -->
 				<statement>
 					<p>
-						The following is a list of number of quarter credits taken by 30 different college students. Construct a stem-and-leaf plot for this data.
+						The following is a list of the number of quarter credits taken by 30 different college students. Construct a stem-and-leaf plot for this data.
 					</p>
 					<table xml:id="ex_graphs_stem-and-leaf_table">
 						<title>Number of Credits Taken</title>
@@ -1187,7 +1190,7 @@
 							<ol>
 								<li>
 									<p>
-										Divide each value into the stem (10's	digit) and leaf (1's digit). This gives stems 0, 1, and 2.
+										Divide each value into the stem (tens digit) and leaf (ones digit). This gives stems 0, 1, and 2.
 									</p>
 								</li>
 								<li>
@@ -1208,9 +1211,9 @@
 <program>
 Stem | Leaf
 -----|-------------
-	 0 | 3689
-	 1 | 122334455555666666677889
-	 2 | 11
+   0 | 3689
+   1 | 122334455555666666677889
+   2 | 11
 </program>
 						</listing>
 					</sidebyside>
@@ -1224,7 +1227,7 @@ Stem | Leaf
 				<idx><h>graphs</h><h>expanded stem-and-leaf plot</h></idx>
 				<statement>
 					<p>
-						An <term>expanded stem-and-leaf plot</term> includes more than one row for each stem. The leaves are divided equally between the rows representing the associated stems.
+						An <term>expanded stem-and-leaf plot</term> includes more than one row for each stem. Each stem's leaves are split among its rows by digit. For example, with two rows per stem, leaves 0<ndash/>4 go in the first row and 5<ndash/>9 go in the second.
 					</p>
 				</statement>
 			</definition>
@@ -1246,17 +1249,17 @@ Stem | Leaf
 <program> 
 Stem | Leaf
 -----|-------------
-	 0 | 3
-	 0 | 689 
-	 1 | 1223344
-	 1 | 55555666666677889
-	 2 | 11
-	 2 |
+   0 | 3
+   0 | 689
+   1 | 1223344
+   1 | 55555666666677889
+   2 | 11
+   2 |
 </program>
 						</listing>	
 					</sidebyside>
 					<p>
-						This gives us a clearer picture of how the credit hour values are distributed!
+						This gives us a clearer picture of how the credit values are distributed!
 					</p>
 				</solution>
 			</example>
@@ -1265,7 +1268,7 @@ Stem | Leaf
 	<subsection xml:id="subsec_graphs_quantitative_interpreting">
 		<title>Interpreting Graphs</title>
 		<p>
-			We create graphs to better understand a set of data. So, it's important that we know how to interpret the graphs we create. In this class, we'll spend most of our time working with univariate quantitative variables. That means we need to be sure we know how to interpret histograms. There are three major things to look for in a histogram: does the histogram have a <term>center</term>, does it have one or more <term>modes</term>, and is it <term>symmetric</term> or <term>skewed</term>?
+			We create graphs to better understand a set of data. So, it's important that we know how to interpret the graphs we create. In this chapter, we'll spend most of our time working with univariate quantitative variables. That means we need to be sure we know how to interpret histograms. There are three major things to look for in a histogram: where is its <term>center</term>, does it have one or more <term>modes</term>, and is it <term>symmetric</term> or <term>skewed</term>?
 		</p>
 		<definition xml:id="def_histogram-center">
 			<idx><h>histogram</h><h>center</h></idx>
@@ -1281,7 +1284,7 @@ Stem | Leaf
 				<idx><h>histogram</h><h>bimodal</h></idx>
 				<idx><h>histogram</h><h>multimodal</h></idx>
 				<idx><h>histogram</h><h>uniform</h></idx>
-				One way to describe the shape of a histogram is based on the number and location of its <em>modes</em>. A <term>mode</term> is a class that contains significantly more data than the classes immediately	next to it. A histogram can be <term>unimodal</term> (one mode), <term>bimodal</term> (two modes), <term>multimodal</term> (more than two modes), or it may have no prominent modes in which case it is called <term>uniform</term>.
+				One way to describe the shape of a histogram is based on the number and location of its <em>modes</em>. A <term>mode</term> is a class that contains significantly more data than the classes immediately	next to it. A histogram can be <term>unimodal</term> (one mode), <term>bimodal</term> (two modes), <term>multimodal</term> (more than two modes), or it may have no prominent modes in which case it is called <term>uniform</term>. The class with the tallest bar is sometimes called the <term>modal class</term>.
 			</p>
 			<p xml:id="def_histogram-symmetry">
 				<idx><h>histogram</h><h>symmetric</h></idx>
@@ -1305,7 +1308,7 @@ Stem | Leaf
 									<caption></caption>
 									<image width="90%" xml:id="image_graphs_examp_describing-histograms-a">
 										<shortdescription>
-											Histogram bars increase from left to right with until the next-to-last bar, which is the highest.  The last bar is somewhat lower.
+											Histogram bars increase from left to right until the next-to-last bar, which is the highest.  The last bar is somewhat lower.
 										</shortdescription>
 										<latex-image>
 											\begin{tikzpicture}
@@ -1481,7 +1484,7 @@ Stem | Leaf
 									<caption></caption>
 									<image width="90%" xml:id="image_graphs_examp_describing-histograms-e">
 										<shortdescription>
-											The left most histogram bar is short, the second is quite tall, the third is short again (but a little taller than the first), the fourt is tall again (and a little taller than the second) and the last one is between the second and third in height.
+											The left most histogram bar is short, the second is quite tall, the third is short again (but a little taller than the first), the fourth is tall again (and a little taller than the second) and the last one is between the second and third in height.
 										</shortdescription>
 										<latex-image>
 											\begin{tikzpicture}
@@ -1569,7 +1572,7 @@ Stem | Leaf
 				</statement>
 				<solution>
 					<p>
-						<ol marker="a.">
+						<ol marker="a)">
 						<li>
 							<p>
 								This histogram has a single mode in the 15.1<ndash/>20 class. The histogram is skewed to the left (that tail is longer) and the center appears to be somewhere between the 10.1<ndash/>15 class and the 15.1<ndash/>20 class.
