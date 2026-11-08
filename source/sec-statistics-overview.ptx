@@ -88,11 +88,11 @@
 				</ul>
 			</p>
 			<p>
-				These claims are all statistical in nature. Some may sound familiar<mdash/>and if not, you have likely encountered similar ones. The examples span a wide range of fields: psychology, health, law, sports, business, and more. Clearly, data and its interpretation permeate nearly every aspect of modern life. However, many of these numbers do not represent careful statistical analysis and can be misleading, pushing you into decisions you might regret. This chapter will help you develop the skills to be a critical consumer of statistical claims.
+				These claims are all statistical in nature. Some may sound familiar<mdash/>and if not, you have likely encountered similar ones. The examples span a wide range of fields: psychology, health, law, sports, business, and more. Clearly, data and their interpretation permeate nearly every aspect of modern life. However, many of these numbers do not represent careful statistical analysis and can be misleading, pushing you into decisions you might regret. This chapter will help you develop the skills to be a critical consumer of statistical claims.
 			</p>
 	</introduction>
 	<subsection xml:id="subsec-statistics-populations">
-		<title>Populations and samples</title>
+		<title>Populations and Samples</title>
 		<p>
 			Before we begin gathering any data to analyze, we need to identify the population we are studying. The <term>population</term> of a study is the group we want to know something about. The population could be people, auto parts, or tomato plants.
 		</p>
@@ -130,7 +130,7 @@
 			<idx><h>statistics</h><h>population</h></idx>
 			<statement>
 				<p>
-					The <term>population</term> of a study is the complete group the collected data is intended to describe.
+					The <term>population</term> of a study is the complete group the collected data are intended to describe.
 				</p>
 			</statement>
 		</definition>
@@ -176,7 +176,7 @@
 		<example>
 			<statement>
 				<p>
-					A researcher wants to know how the citizens of Walla Walla feel about a voter initiative. To study this, they go downtown to Land Title Plaza and survey 500 pedestrians. Sixty percent indicate they are supportive of the initiative. Identify the population, parameter, sample and statistic. 
+					A researcher wants to know how the citizens of Walla Walla feel about a voter initiative. To study this, they go downtown to Land Title Plaza and survey 500 pedestrians. Sixty percent indicate they are supportive of the initiative. Identify the population, parameter, sample, and statistic. 
 				</p>
 			</statement>
 			<solution>
@@ -239,7 +239,7 @@
 		<title>Sampling Methods</title>	
 		<introduction>
 			<p>
-				Since it's important to select a sample that accurately represents the population we're studying, we must be careful in how we choose it. This means not only avoiding samples that fail to reflect the population but also guarding against unintentional bias in the way data is collected. To ensure a representative sample, the selection process must be truly random. However, there are several ways to achieve randomness. In this section, we'll explore four methods of random sampling, along with one method that falls short of being random.
+				Since it's important to select a sample that accurately represents the population we're studying, we must be careful in how we choose it. This means not only avoiding samples that fail to reflect the population but also guarding against unintentional bias in the way data are collected. To ensure a representative sample, the selection process must be truly random. However, there are several ways to achieve randomness. In this section, we'll explore four methods of random sampling, along with one method that falls short of being random.
 			</p>
 		</introduction>
 		<subsubsection xml:id="subsubsec-statistics_sampling_SRS">
@@ -497,7 +497,7 @@
 	<subsection>
 		<title>Statistical Bias</title>
 		<p>
-			There is no way to correct for biased data, so it is important to carefully plan the entire study and data analysis process in advance. One type of bias, discussed earlier, is <term>sampling bias</term> (or <term>selection bias</term>)<idx><h>bias</h><h>sampling</h></idx><idx><h>selection bias</h><see>bias, sampling</see></idx>, which occurs when the sample does not accurately reflect the population. A specific example of this is <term>voluntary response bias</term>, which arises when data is collected only from individuals who choose to participate. This can lead to bias if those who volunteer differ significantly from the general population. Below is a summary of other common sources of bias to consider.
+			There is no way to correct for biased data, so it is important to carefully plan the entire study and data analysis process in advance. One type of bias, discussed earlier, is <term>sampling bias</term> (or <term>selection bias</term>)<idx><h>bias</h><h>sampling</h></idx><idx><h>selection bias</h><see>bias, sampling</see></idx>, which occurs when the sample does not accurately reflect the population. A specific example of this is <term>voluntary response bias</term>, which arises when data are collected only from individuals who choose to participate. This can lead to bias if those who volunteer differ significantly from the general population. Below is a summary of other common sources of bias to consider.
 			<ul>
 				<li>
 					<p>

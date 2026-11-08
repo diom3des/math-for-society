@@ -298,10 +298,10 @@
 					<p>
 						First, define the necessary logical variables:
 						<ul>
-							<li>Let <m>S</m> = <q>The security system was activated</q></li>
-							<li>Let <m>A</m> = <q>The alarm went off</q></li>
+							<li>Let <m>S</m> be <q>The security system was activated.</q></li>
+							<li>Let <m>A</m> be <q>The alarm went off.</q></li>
 						</ul>
-						The first statement can be written as: <m>(S \lor A) \land \lnot(S \land A)</m>, which is more simply written using the symbol for the exclusive OR, <m>S \oplus A</m>.
+						The first statement can be written as: <m>(S \lor A) \land \lnot(S \land A)</m>, which is more simply written using the symbol for the exclusive OR (see <xref ref="ex-logic-xor"/>), <m>S \oplus A</m>.
 						Similarly, the second statement may be written as <m>\lnot A</m>, and the conclusion is simply <m>S</m>. 
 						In its briefest form, the argument is thus
 					</p>
@@ -378,9 +378,9 @@
 					<p>
 						Begin by clearly defining the necessary logical variables:
 						<ul>
-							<li>Let <m>p</m> = <q>It is snowing.</q></li>
-							<li>Let <m>q</m> = <q>It is warm.</q></li>
-							<li>Let <m>r</m> = <q>I can go swimming.</q></li>
+							<li>Let <m>p</m> be <q>It is snowing.</q></li>
+							<li>Let <m>q</m> be <q>It is warm.</q></li>
+							<li>Let <m>r</m> be <q>I can go swimming.</q></li>
 						</ul>
 						You could write <m>r</m> as the negative <q>I cannot go swimming</q>, but writing the statements without negatives reduces the confusion of potential double negatives later in a problem. Using these symbols, the argument can be summarized as:
 					</p>
@@ -532,9 +532,9 @@
 					<p>
 						First, define the necessary logical variables:
 						<ul>
-							<li>Let <m>p</m> = <q>Taxes are cut.</q></li>
-							<li>Let <m>q</m> = <q>Retail sales increase.</q></li>
-							<li>Let <m>r</m> = <q>The economy improves.</q></li>
+							<li>Let <m>p</m> be <q>Taxes are cut.</q></li>
+							<li>Let <m>q</m> be <q>Retail sales increase.</q></li>
+							<li>Let <m>r</m> be <q>The economy improves.</q></li>
 						</ul>
 						The argument is summarized symbolically as
 					</p>

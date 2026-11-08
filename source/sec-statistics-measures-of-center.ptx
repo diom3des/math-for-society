@@ -25,7 +25,7 @@
 
 	<introduction>
 		<p>
-			In addition to graphical and verbal descriptions, we can use numerical summaries to better understand quantitative distributions by examining where the data is centered and how spread out the values are. Together, measures of center and spread provide important information for estimating population parameters. This section focuses on measures of center, while the next will address measures of spread. We will begin by exploring three common ways to describe the center of a distribution: the mode, median, and mean, each suited to different situations.
+			In addition to graphical and verbal descriptions, we can use numerical summaries to better understand quantitative distributions by examining where the data are centered and how spread out the values are. Together, measures of center and spread provide important information for estimating population parameters. This section focuses on measures of center, while the next will address measures of spread. We will begin by exploring three common ways to describe the center of a distribution: the mode, median, and mean, each suited to different situations.
 		</p>
 	</introduction>
 
@@ -53,7 +53,7 @@
 					A breakout presentation at a business convention attracts 16 participants. The job title of each of these participants is as follows. Find the mode of this set of data.
 				</p>
 				<table xml:id="ex_center-spread_mode-qualitative_data">
-					<title>Job titles</title>
+					<title>Job Titles</title>
 					<tabular>
 						<row>
 							<cell>manager</cell>
@@ -84,7 +84,7 @@
 			</statement>
 			<solution>
 				<p>
-					The mode is the most commonly appearing value. One way to find that is to construct a <xref ref="def_frequency-table" text="custom">frequency table</xref>. Doing so for this data produces the following table, from which we can see that the mode is <q>manager</q>.
+					The mode is the most commonly appearing value. One way to find that is to construct a <xref ref="def_frequency-table" text="custom">frequency table</xref>. Doing so for these data produces the following table, from which we can see that the mode is <q>manager</q>.
 				</p>
 				<table xml:id="ex_center-spread_mode_frequency-table">
 					<title>Frequency Table</title>
@@ -116,7 +116,7 @@
 					A survey of sixteen grocery store shoppers asked how many times a month these shoppers visit their favorite grocery store. Find the mode of the resulting data, shown below.
 				</p>
 				<table xml:id="ex_center-spread_mode-quantitative_data">
-					<title>Number of visits per month</title>
+					<title>Number of Visits per Month</title>
 					<tabular>
 						<row>
 							<cell>6</cell>
@@ -199,7 +199,7 @@
 						</li>
 						<li>
 							<p>
-								This data contains only one repeated value, the 1. So the mode is 1. However, 1 is definitely not the <q>typical</q> value in the set since all other values are between 19 and 32.
+								These data contain only one repeated value, the 1. So the mode is 1. However, 1 is definitely not the <q>typical</q> value in the set since all other values are between 19 and 32.
 							</p>
 						</li>
 					</ol>
@@ -234,7 +234,7 @@
 					A certain pond has been well stocked with fish for the upcoming fishing season. In order to keep a fish from this pond, it must be at least 13 inches long. To try to determine if the fish in the pond are long enough to allow fishing, a fish and game warden randomly catches and releases 20 different fish, finding the following lengths, in inches. Find the midrange of these data.
 				</p>
 				<table xml:id="ex_center-spread_midrange_computation_data">
-					<title>Fish lengths in inches</title>
+					<title>Fish Lengths in Inches</title>
 					<tabular>
 						<row>
 							<cell>13.2</cell>
@@ -325,7 +325,7 @@
 				<me>
 					\text{midrange} = \frac{\$2{,}500{,}000 + \$8{,}000}{2} = \$1{,}254{,}000.
 				</me>
-				Do you think that the typical house really costs one and a quarter million dollars? Probably not! The midrange <em>is not an appropriate measure of center</em> for this data.
+				Do you think that the typical house really costs one and a quarter million dollars? Probably not! The midrange <em>is not an appropriate measure of center</em> for these data.
 			</p>
 		</example>
 		<p>
@@ -397,7 +397,7 @@
 	<subsection xml:id="subsec_center-spread_mean">
 		<title>Mean</title>
 		<p>
-			While the median effectively handles outliers, it has one significant limitation: it ignores the values of individual data points. When we want each value to influence our measure of center, we use the <term>arithmetic mean</term> (commonly called the average). Unlike the median, the arithmetic mean incorporates every data point in the data set. For a sample, we use <m>\overline{x}</m> (read <q>x bar</q>) to represent the mean.
+			While the median effectively handles outliers, it has one significant limitation: it ignores the values of individual data points. When we want each value to influence our measure of center, we use the <term>arithmetic mean</term> (commonly called the average). Unlike the median, the arithmetic mean incorporates every data point in the data set. For a sample, we use <m>\bar{x}</m> (read <q>x bar</q>) to represent the mean.
 		</p>
 		<definition xml:id="def_mean">
 			<idx>mean</idx>
@@ -531,7 +531,7 @@
 			How do we know when to use a particular measure of center? To better answer this question, let's review the strengths and weaknesses of each of these numerical summaries.
 		</p>
 		<table>
-			<title>Comparison of measures of center</title>
+			<title>Comparison of Measures of Center</title>
 			<tabular>
 				<col right="medium"></col>
 				<col halign="center"></col>
@@ -677,7 +677,7 @@
 		<example>
 			<statement>
 			<p>
-				Recent college graduates were asked how much student loan debt they have. The data has a mean of $46,265 and a median of $33,652. Based on this information, do you expect the distribution to be symmetric, skewed to the left, or skewed to the right?
+				Recent college graduates were asked how much student loan debt they have. The data have a mean of $46,265 and a median of $33,652. Based on this information, do you expect the distribution to be symmetric, skewed to the left, or skewed to the right?
 			</p>
 			</statement>
 			<solution>

@@ -107,7 +107,7 @@
 					A certain pond has been well stocked with fish for the upcoming fishing season. A fish caught in this pond may be kept only if it is at least 13 inches long. To try to determine if the fish in the pond are long enough to allow fishing, a fish and game warden randomly catches and releases 20 different fish, finding the following lengths, in inches. Find the range of these data.
 				</p>
 				<table xml:id="ex_center-spread_range_computation_data">
-					<title>Fish lengths in inches</title>
+					<title>Fish Lengths in Inches</title>
 					<tabular>
 						<row>
 							<cell>13.2</cell>
@@ -259,7 +259,7 @@
 				</md>
 				</p>
 				<p>
-					In this data <m>Q_{1}=62</m> inches, and <m>Q_{3}=68</m> inches. The IQR is thus
+					For these data, <m>Q_{1}=62</m> inches, and <m>Q_{3}=68</m> inches. The IQR is thus
 					<me>
 						\text{IQR} = Q_{3}-Q_{1} = 68 - 62 = 6\text{ inches}
 					</me>.
@@ -331,7 +331,7 @@
 		</p>
 		<example>
 			<p>
-				Returning to the quiz example used in the introduction of this section as motivation, let's suppose there is a fourth set of quiz scores for a 10-point quiz. The mean quiz score for Section D, like Sections A, B and C, is 5 points.
+				Returning to the quiz example used in the introduction of this section as motivation, let's suppose there is a fourth set of quiz scores for a 10-point quiz. The mean quiz score for Section D, like Sections A, B, and C, is 5 points.
 			</p>
 			<p>
 				<alert>Section D:</alert>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-set-multiplication-principle" xmlns:xi="http://www.w3.org/2001/XInclude">
-	<title>The Multiplication Principle</title>
+	<title>The Addition and Multiplication Rules</title>
 
 	<objectives>
 		<ul>
@@ -20,7 +20,7 @@
 
 	<introduction>
 		<p>
-			In the previous section, we explored the art of counting by examining the number of elements in finite sets. Building on that foundation, particularly the inclusion-exclusion rule, we now introduce our first result: the addition rule. Following our discussion of the addition rule, we will further expand our counting techniques by introducing and applying another foundational tool, the multiplication principle.
+			In the previous section, we explored the art of counting by examining the number of elements in finite sets. Building on that foundation, particularly the inclusion-exclusion rule, we now introduce our first result: the addition rule. Following our discussion of the addition rule, we will further expand our counting techniques by introducing and applying another foundational tool, the multiplication rule.
 		</p>
 	</introduction>
 	<subsection>
@@ -65,6 +65,7 @@
 			Some processes have two or more steps, rather than cases, each of which can happen in several different ways. To determine the total number of ways a multi-step process can occur, we use a new rule called the <term>multiplication rule</term>.
 		</p>
 		<principle xml:id="thm_counting-rule_multiplication">
+			<title>Multiplication Rule</title>
 			<idx>multiplication rule (counting)</idx>
 			<idx><h>counting rules</h><h>multiplication</h></idx>
 			<statement>

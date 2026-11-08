@@ -4,38 +4,38 @@
   <title>Finance</title>
 
   <objectives>
-  <introduction>
-    <p>
-      Students will be able to:
-      <ul>
-        <li>
-          <p>
-            Solve problems involving simple interest and discounted loans.
-          </p>
-        </li>
-        <li>
-          <p>
-            Solve problems involving compound interest.
-          </p>
-        </li>
-        <li>
-          <p>
-            Find the future value of an annuity and the payment required for a sinking fund.
-          </p>
-        </li>
-        <li>
-          <p>
-            Find the present value of an annuity and the installment payment on a loan.
-          </p>
-        </li>
-        <li>
-          <p>
-            Calculate income tax from tables, including calculating gross income, adjusted gross income, and deductions.
-          </p>
-        </li>
-      </ul>
-    </p>
-	</introduction>
+    <introduction>
+      <p>
+        Students will be able to:
+      </p>
+    </introduction>
+    <ul>
+      <li>
+        <p>
+          Solve problems involving simple interest and discounted loans.
+        </p>
+      </li>
+      <li>
+        <p>
+          Solve problems involving compound interest.
+        </p>
+      </li>
+      <li>
+        <p>
+          Find the future value of an annuity and the payment required for a sinking fund.
+        </p>
+      </li>
+      <li>
+        <p>
+          Find the present value of an annuity and the installment payment on a loan.
+        </p>
+      </li>
+      <li>
+        <p>
+          Calculate income tax from tables, including calculating gross income, adjusted gross income, and deductions.
+        </p>
+      </li>
+    </ul>
   </objectives>
 
   <introduction>

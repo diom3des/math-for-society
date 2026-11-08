@@ -38,11 +38,11 @@
 		</ul>
 	</objectives>
 	<subsection xml:id="sec_data_data">
-		<title>What is Data?</title>
+		<title>What Is Data?</title>
 
 		<introduction xml:id="sec_data_variables_intro">
 			<p>
-				Once we have collected data from an observational study or an experiment, we need to summarize and present it in a way that will be meaningful to our audience. Raw data is not very useful by itself. In this section we will begin with graphical presentations of data, and in the rest of the chapter we will learn about numerical summaries of data.
+				Once we have collected data from an observational study or an experiment, we need to summarize and present them in a way that will be meaningful to our audience. Raw data are not very useful by itself. In this section we will begin with graphical presentations of data, and in the rest of the chapter we will learn about numerical summaries of data.
 			</p>
 			<definition xml:id="def_data">
 				<idx>data</idx>
@@ -186,7 +186,7 @@
 				</statement>
 				<solution>
 					<p>
-						The three variables in this multivariate set of data are: zip code, number of residents, and length of time in residence. The characteristics of these variables are:
+						The three variables in this multivariate set of data are zip code, number of residents, and length of time in residence. The characteristics of these variables are:
 						<ul>
 							<li>
 								<title>Zip Code</title>
@@ -246,13 +246,13 @@
 				Data, no matter the type, is not very informative in its raw form. A graph is a powerful way to summarize and display data. However, before a graph can be produced, the data needs to be summarized in a table. For qualitative data this summary is called a frequency table.
 			</p>
 			<p>
-				The following example motivates the need to organize data before it can be understood and will be used throughout this section.
+				The following example motivates the need to organize data before they can be understood and will be used throughout this section.
 			</p>
 			<example xml:id="ex_graphs_organizing-data">
 				<!-- <title>Organizing Data</title> -->
 				<statement>
 					<p>
-						To better understand their customers, a pizza parlor decides to collect a list of favorite pizza toppings. They choose an appropriate sampling technique and gather the following data from 96 customers. What does this data tell you?
+						To better understand their customers, a pizza parlor decides to collect a list of favorite pizza toppings. They choose an appropriate sampling technique and gather the following data from 96 customers. What do these data tell you?
 					</p>
 					<table xml:id="ex_graphs_organizing-data_table">
 						<title>Raw Pizza Topping Data</title>
@@ -406,7 +406,7 @@
 				</statement>
 				<solution>
 					<p>
-						Without proper organization, this data is difficult to interpret. We need to simplify it to uncover trends and extract meaningful insights.
+						Without proper organization, these data are difficult to interpret. We need to simplify them to uncover trends and extract meaningful insights.
 					</p>
 				</solution>
 			</example>
@@ -414,7 +414,7 @@
 		<subsubsection xml:id="subsubsec_graph_qualitative_frequency-table">
 			<title>Frequency Tables</title>
 			<p>
-				The first step in graphing qualitative data is to summarize it. To do so, we construct a <term>frequency table</term>.
+				The first step in graphing qualitative data is to summarize them. To do so, we construct a <term>frequency table</term>.
 			</p>
 			<definition xml:id="def_frequency-table">
 				<idx>frequency table</idx>
@@ -469,7 +469,7 @@
 							This definitely gives us a clearer picture of the data set. We can now see the number of times each topping was selected as somebody's favorite.
 						</p>
 						<table xml:id="ex_graphs_frequency-table_table">
-							<title>Pizza toppings frequency table</title>
+							<title>Pizza Toppings Frequency Table</title>
 							<tabular>
 								<col right="medium" halign="left"></col>
 								<col halign="center"></col>
@@ -572,7 +572,7 @@
 							The relative frequency table allows for a clearer comparison between categories.
 						</p>
 						<table xml:id="ex_graphs_relative-frequency-table_table">
-							<title>Pizza toppings relative frequency table</title>
+							<title>Pizza Toppings Relative Frequency Table</title>
 							<tabular>
 								<col halign="left" right="medium"></col>
 								<col halign="center"></col>
@@ -659,7 +659,7 @@
 				</statement>
 				<solution>
 					<p>
-						Based on the <xref ref="ex_graphs_frequency-table_table" text="custom">frequency table for this data</xref>, we get the following bar graph.
+						Based on the <xref ref="ex_graphs_frequency-table_table" text="custom">frequency table for these data</xref>, we get the following bar graph.
 					</p>
 					<figure xml:id="fig_graphs_ex_bar-graph">
 						<caption>Pizza topping bar graph</caption>
@@ -744,7 +744,7 @@
 					<p>Construct a pie graph for the pizza topping data seen in <xref ref="ex_graphs_organizing-data"/>.</p>
 				</statement>
 				<solution>
-					<p>Based on the <xref ref="ex_graphs_relative-frequency-table_table" text="custom">relative frequency table</xref> previously constructed for this data, we get the following pie graph.</p>
+					<p>Based on the <xref ref="ex_graphs_relative-frequency-table_table" text="custom">relative frequency table</xref> previously constructed for these data, we get the following pie graph.</p>
 					<figure xml:id="fig_graphs_ex_pie-graph">
 						<caption>Pizza topping pie graph</caption>
 						<image xml:id="image_graphs_ex_pie-graph"  width="80%">
@@ -830,13 +830,13 @@
 		<title>Graphing Quantitative Data</title>
 		<introduction>
 			<p> 
-				When we wish to represent a quantitative variable graphically we encounter many of the same issues we saw with qualitative data: raw numbers are rarely meaningful on their own. Just as we used frequency tables to summarize qualitative data before creating graphs, we must first organize quantitative data to make it interpretable. As we will see below, most of the time this means grouping the data into intervals before creating a graph. 
+				When we wish to represent a quantitative variable graphically we encounter many of the same issues we saw with qualitative data: raw numbers are rarely meaningful on their own. Just as we used frequency tables to summarize qualitative data before creating graphs, we must first organize quantitative data to make them interpretable. As we will see below, most of the time this means grouping the data into intervals before creating a graph. 
 			</p>
 		</introduction>
 		<subsubsection xml:id="sec_graphs_quantitative_tables">
 			<title>Summarizing Quantitative Data with Tables</title>
 			<p>
-				The first step in graphing quantitative data is to find a way to summarize it in a table, just as we used <xref ref="def_frequency-table" text="custom">frequency tables</xref> for qualitative variables. However, unlike qualitative data, quantitative data doesn't come with ready-made categories to use as table rows. So, before we can build the table, we need to create appropriate groupings for the data.
+				The first step in graphing quantitative data is to find a way to summarize them in a table, just as we used <xref ref="def_frequency-table" text="custom">frequency tables</xref> for qualitative variables. However, unlike qualitative data, quantitative data don't come with ready-made categories to use as table rows. So, before we can build the table, we need to create appropriate groupings for the data.
 			</p>
 			<definition xml:id="def_frequency-distribution">
 				<idx><h>frequency distribution</h></idx>
@@ -1003,7 +1003,7 @@
 							</ol>
 						</p>
 						<table xml:id="ex_graphs_frequency-distribution_frequency-distribution">
-							<title>Frequency distribution of tomato plant heights</title>
+							<title>Frequency Distribution of Tomato Plant Heights</title>
 							<tabular  halign="center">
 								<col halign="center" right="medium"></col>
 								<col halign="center"></col>
@@ -1119,7 +1119,7 @@
 				</statement>
 				<solution>
 					<p>
-						Looking just at the <xref ref="ex_graphs_frequency-distribution_frequency-distribution" text="custom">frequency distribution</xref> we created for this data, this is not possible. If all we have is the frequency distribution, we can only tell that there are 10 plants between 14.1 and 16 inches tall. Some of those may be 14.2 inches tall, but there is no way of knowing without going back to the raw data.
+						Looking just at the <xref ref="ex_graphs_frequency-distribution_frequency-distribution" text="custom">frequency distribution</xref> we created for these data, this is not possible. If all we have is the frequency distribution, we can only tell that there are 10 plants between 14.1 and 16 inches tall. Some of those may be 14.2 inches tall, but there is no way of knowing without going back to the raw data.
 					</p>
 				</solution>
 			</example>
@@ -1139,7 +1139,7 @@
 				<!-- <title>Constructing a Stem-and-Leaf Plot</title> -->
 				<statement>
 					<p>
-						The following is a list of the number of quarter credits taken by 30 different college students. Construct a stem-and-leaf plot for this data.
+						The following is a list of the number of quarter credits taken by 30 different college students. Construct a stem-and-leaf plot for these data.
 					</p>
 					<table xml:id="ex_graphs_stem-and-leaf_table">
 						<title>Number of Credits Taken</title>

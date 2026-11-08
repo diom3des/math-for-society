@@ -136,7 +136,7 @@
       </solution>
     </example>
     <assemblage>
-      <title>A note on rounding</title>
+      <title>A Note on Rounding</title>
       <p>
         If you are using the formulas and round during intermediate steps you will probably have some roundoff error. For this reason, enter the whole expression into the calculator. Alternatively, enter the parts of the equation separately but use the calculator's stored values for subsequent computations. 
         Do not write down rounded intermediate steps and then key them back into the calculator. In the examples in this section we show intermediate values to guide you, but use the unrounded value stored in the calculator to find the final answer shown.
