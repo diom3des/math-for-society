@@ -148,29 +148,29 @@
 			<solution>
 				<p>
 					Since the experiment involves flipping a coin three times, a sample outcome would be <m>HHT</m>, representing the first flip coming up heads, the second heads, and the last tails. The set of all outcomes is therefore:
-					<me>
+					<md>
 						S = \lbrace HHH, HHT, HTH, HTT, THH, THT, TTH, TTT \rbrace
-					</me>.
+					</md>.
 				</p>
 				<p>
 					The first event of interest, <m>A</m>, consists of all of the outcomes above resulting in heads on the first flip. This is:
-					<me>
+					<md>
 						A = \lbrace HHH, HHT, HTH, HTT \rbrace
-					</me>.
+					</md>.
 					We can therefore conclude that
-					<me>
+					<md>
 						P(A) = \frac{n(A)}{n(S)} = \frac{4}{8} = \frac{1}{2} = 0.50
-					</me>.
+					</md>.
 				</p>
 				<p>
 					But what about <m>B</m>? The event <m>B</m> is:
-					<me>
+					<md>
 						B = \lbrace HHH \rbrace
-					</me>.
+					</md>.
 					If we know that <m>B</m> has happened, then we automatically know that <m>A</m> has happened as well.  This is because if all three flips are heads, the first one must have been heads (<m>B</m> is a subset of <m>A</m>). Therefore, 
-					<me>
+					<md>
 						P(A\mid B) = 1
-					</me>.
+					</md>.
 				</p>
 				<p>
 					Note that <m>P(A\mid B)</m> and <m>P(A)</m> are different! This is equivalent to saying that <m>A</m> and <m>B</m> are dependent events.
@@ -227,15 +227,15 @@
 			<sidebyside>
 				<p>
 					To compute <m>P(A)</m> we ignore <m>B</m> and take the ratio of the yellow area in <m>A</m> to the area of the whole box. This is equivalent to saying that
-					<me>
+					<md>
 						P(A) = \frac{P(A)}{P(S)} = \frac{P(A)}{1}
-					</me>
+					</md>
 				</p>
 				<p>
 					When computing <m>P(A\mid B)</m>, we know <m>B</m> has happened, so we are in the pink area above.  To figure out how likely <m>A</m> is, we take the ratio of the area in common to <m>A</m> and <m>B</m> to the area in <m>B</m>. This is equivalent to saying that 
-					<me>
+					<md>
 						P(A\mid B) = \frac{P(A\cap B)}{P(B)}
-					</me>
+					</md>
 				</p>
 			</sidebyside>
 		</sbsgroup>
@@ -245,9 +245,9 @@
 			<statement>
 				<p>
 					If <m>A</m> and <m>B</m> are events in a sample space <m>S</m> with <m>P(B) \gt 0</m>, then the conditional probability of <m>A</m> given <m>B</m> is:
-					<me>
+					<md>
 						P(A\mid B) = \frac{P(A\cap B)}{P(B)} = \frac{n(A\cap B)}{n(B)}
-					</me>.
+					</md>.
 					<alert>Note:</alert> You can compute a conditional probability from probabilities or, when outcomes are equally likely, from counts.
 				</p>
 			</statement>
@@ -361,9 +361,9 @@
 			<statement>
 				<p>
 					If <m>A</m> and <m>B</m> are events in a sample space <m>S</m>, then 
-					<me>
+					<md>
 						P(A\cap B) = P(B)P(A\mid B)\quad\text{and}\quad P(A\cap B) = P(A)P(B\mid A)
-					</me>.
+					</md>.
 				</p>
 			</statement>
 		</fact>
@@ -461,9 +461,9 @@
 					<li>
 						<p>
 							The probability that the first marble is red is <m>\frac{7}{10}</m> since seven of the 10 marbles are red. In (a), we saw that the probability the second marble is red given that the first was red is <m>\frac{2}{3}</m>. Using the general multiplication rule, the probability that the first and second marbles are red is
-							<me>
+							<md>
 								P(\text{1st }R) \times P(\text{2nd }R\mid\text{1st }R) = \frac{7}{10} \times \frac{2}{3} = \frac{14}{30} = \frac{7}{15}
-							</me>.
+							</md>.
 						</p>
 					</li>
 				</ol></p>
@@ -471,9 +471,9 @@
 		</example>
 		<p>
 			In the special case where <m>A</m> and <m>B</m> are <xref ref="def_independent" text="custom">independent</xref>, the conditional probability for <m>B</m> given <m>A</m> is the same as the probability for <m>B</m>. That is, <m>P(B\mid A) = P(B)</m>. The general multiplication rule then becomes:
-			<me>
+			<md>
 				P(A\cap B) = P(A)P(B)
-			</me>.
+			</md>.
 			In fact, this is one of the best ways to test two events for independence.
 		</p>
 		<fact xml:id="thm_independence-test">
@@ -507,9 +507,9 @@
 				</p>
 				<p>
 					Next, we check using our test of independence.
-					<me>
+					<md>
 						P(A)P(B) = 0.36 \times 0.25 = 0.09 = P(A\cap B)
-					</me>.
+					</md>.
 				</p>
 				<p>
 					Since the above equation is true, <m>A</m> and <m>B</m> are in fact independent.
@@ -559,13 +559,13 @@
 			<solution>
 				<p>
 					Apply the test for independence. First, note that 
-					<me>
+					<md>
 						P(T\cap R)=\frac{15}{665} \approx 0.02256
-					</me>.
+					</md>.
 					Next, compute
-					<me>
+					<md>
 						P(T)\times P(R) = \frac{60}{665}\times\frac{150}{665} =\frac{9000}{442225}\approx 0.02035 
-					</me>.
+					</md>.
 					Since these values are not equal, the events <q>ticket</q> and <q>red car</q> are <alert>not</alert> independent. That is, they are dependent events.
 				</p>
 			</solution>
@@ -818,9 +818,9 @@
 			<statement>
 				<p>
 					If <m>A</m> is an event in a sample space, <m>A^C</m> is its complement, and <m>B</m> is any event with <m>P(B) \gt 0</m>, then:
-				  <me>
+				  <md>
 						P(A\mid B) = \frac{P(A)P(B\mid A)}{P(A)P(B\mid A) + P(A^C)P(B\mid A^C)}
-					</me>.
+					</md>.
 				</p>
 			</statement>
 		</fact>
@@ -876,21 +876,21 @@
 			<solution>
 				<p>
 					We wish to find <m>P(\text{1st }W\mid\text{2nd }R)</m>. Unfortunately, our tree diagram is <q>backwards</q> for this computation. The probabilities on the branches are the probability of a particular color on the 2nd marble given that we got a certain color on the first. So, we must resort to the conditional probability formula.
-					<me>
+					<md>
 						P(\text{1st }W\mid\text{2nd }R) = \frac{P(\text{1st }W\cap\text{2nd }R)}{P(\text{2nd }R)}
-					</me>.
+					</md>.
 				</p>
 				<p>
 					The numerator of this fraction can be found by multiplying along a single branch in the tree: <m>\frac{1}{6} \times \frac{2}{5} = \frac{2}{30}</m>. To get the denominator, we need to add together the probabilities for all possible ways the second marble can be red. This is:
-				  <me>
+				  <md>
 						P(\text{2nd }R) = \left(\frac{3}{6}\times\frac{2}{5}\right) + \left(\frac{2}{6}\times\frac{1}{5}\right) + \left(\frac{1}{6}\times\frac{2}{5}\right) = \frac{1}{3}
-					</me>.
+					</md>.
 				</p>
 				<p>
 					Therefore, the desired conditional probability is:
-				  <me>
+				  <md>
 						P(\text{1st }W\mid\text{2nd }R) = \frac{2/30}{1/3} = \frac{1}{5} = 0.20
-					</me>.
+					</md>.
 				</p>
 			</solution>
 		</example>

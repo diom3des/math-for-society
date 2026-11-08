@@ -65,9 +65,9 @@
 				<p>
 					This question can be most easily answered by creating a Venn diagram.  We see that we can find the people who drink tea by adding those who drink only tea to those who drink both: 60 people.
 					We can also see that those who drink neither are those not contained in any of the three other groupings, so we can count those by subtracting from the cardinality of the universal set, 200.  
-					<me>
+					<md>
 						200 - 20 - 80 - 40 = 60
-					</me>
+					</md>
 					people who drink neither.
 				</p>
 				<image xml:id="tigs-2venn-coffee-tea" width="100%">
@@ -164,9 +164,9 @@
 			<statement>
 				<p>
 					Let <m>A</m> and <m>B</m> be two finite sets. Then
-					<me>
+					<md>
 						n(A\cup B) = n(A) + n(B) - n(A\cap B).
-					</me>
+					</md>
 				</p>
 			</statement>
 		</fact>
@@ -195,9 +195,9 @@
 				<p>
 					Let <m>P</m> represent the set of people who bought popcorn, and <m>S</m> represent the set of people who bought soda. Then we are told that <m>n(P)=200</m>, <m>n(S)=150</m>, and <m>n(P\cap S) = 90</m>. 
 					The number of people who bought popcorn but no soda is the cardinality of <m>P\cap S^C</m>. This is the part of the Venn diagram inside of <m>P</m> but outside of <m>S</m>. Note that
-					<me>
+					<md>
 						n\left(P\cap S^C\right) = n(P)-n(P\cap S) = 200-90 = 110.
-					</me>
+					</md>
 					That is, 110 people bought popcorn but not soda.
 				</p>
 				<image xml:id="tigs-2venn-popcorn" width="45%">

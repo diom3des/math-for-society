@@ -346,7 +346,7 @@
           </p>
           <p>
             Avery would owe $7,175 in taxes. Note that her overall tax rate is somewhere between 10% and 22%. We can calculate the actual rate by dividing her tax owed by her taxable income:
-            <me>\frac{\$7{,}175}{\$55{,}100}\approx 0.1302,</me>
+            <md>\frac{\$7{,}175}{\$55{,}100}\approx 0.1302,</md>
             or about 13%.
           </p>
         </solution>
@@ -603,9 +603,9 @@
       <solution>
         <p>
           The first step is to reduce John's taxes by the full amount of the tax credit.
-          <me>\$4{,}342.50-\$2{,}300=\$2{,}042.50</me>
+          <md>\$4{,}342.50-\$2{,}300=\$2{,}042.50</md>
           Next, we subtract the amount withheld from his paychecks by his employer. Since his withholdings are greater than the amount he owes after applying the tax credit, he will receive a refund equal to the difference.
-          <me>\$2{,}042.50-\$3{,}135=-\$1{,}092.50</me>
+          <md>\$2{,}042.50-\$3{,}135=-\$1{,}092.50</md>
         </p>
         <p>
           John will receive a refund of $1,092.50. Notice that having a negative amount after subtracting credits and withholdings means you will receive a refund, while having a positive amount means you still owe money.
@@ -622,9 +622,9 @@
       <solution>
         <p>
           To determine whether they will receive a refund or if they will still owe money, we will first subtract the full amount of the electric car credit.
-          <me>\$19{,}146-\$7{,}500=\$11{,}646</me>
+          <md>\$19{,}146-\$7{,}500=\$11{,}646</md>
           We now subtract their withholdings:
-          <me>\$11{,}646-\$9{,}905=\$1{,}741</me>
+          <md>\$11{,}646-\$9{,}905=\$1{,}741</md>
           Since the value is positive, Taylor and Casey still owe $1,741 in taxes.
         </p>
       </solution>

@@ -31,9 +31,9 @@
 	<introduction>
 		<p>
 			The idea of a <term>set</term> allows us to treat a group of distinct objects as a single entity. For example, we could use <m>S</m> to represent the four seasons: spring, summer, fall, and winter.  That is,
-			<me>
+			<md>
 				S = \left\{\text{spring, summer, fall, winter} \right\}.
-			</me>
+			</md>
 			By classifying items as groups (sets), we can also investigate relationships between groups, or consider overlap between groups when counting items.
 		</p>
 		<definition>
@@ -133,9 +133,9 @@
 		<example>
 			<p>
 				Consider the three sets
-				<me>
+				<md>
 					A = \{1,2,3\},\quad B = \{1,2,3,4,5\},\quad C = \{3,2,1\}.
-				</me>
+				</md>
 				Then each of the following set relationships is true:
 				<ol marker="a)">
 					<li>
@@ -273,9 +273,9 @@
 	  	<statement>
 	  		<p>
 					The <term>intersection</term> of two sets, <m>A</m> and <m>B</m>, denoted <m>A \cap B</m>, is the set containing all elements that are in both <m>A</m> and <m>B</m>.  That is,
-					<me>
+					<md>
 						A \cap B = \{x\mid x\in A \text{ AND } x\in B \}.
-					</me>
+					</md>
 				</p>
 	  	</statement>
 	  </definition>
@@ -288,9 +288,9 @@
 	  	<statement>
 	  		<p>
 					The <term>union</term> of two sets, <m>A</m> and <m>B</m>, denoted <m>A\cup B</m>, is the set containing all elements that are in <m>A</m> or in <m>B</m> (or both). That is,
-					<me>
+					<md>
 						A \cup B = \{x\mid x\in A \text{ OR } x\in B \}.
-					</me>
+					</md>
 				</p>
 	  	</statement>
 	  </definition>
@@ -303,9 +303,9 @@
   		<statement>
   			<p>
 					The <term>complement</term> of a set <m>A</m> in a universal set <m>U</m> is the set <m>A^C</m> consisting of all elements in <m>U</m> that are not in <m>A</m>. That is,
-					<me>
+					<md>
 						A^{C} = \{x\in U\mid x \notin A \}.
-					</me>
+					</md>
 				</p>
 				<p>
 					<alert>Note:</alert> The complement of a set <m>A</m> may also be denoted by <m>A'</m> or <m>\overline{A}</m>.

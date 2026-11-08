@@ -38,13 +38,13 @@
       For example, if you borrow $100 from a friend and agree to repay it with 5% interest, then the amount of interest you would pay would be 5% of $100. It is important to remember to change the interest rate, <m>r</m>, of 5% into a decimal by moving the decimal point two places to the left before performing any calculation.
     </p>
     <p>
-      <me>(0.05)(\$100)=\$5</me>
+      <md>(0.05)(\$100)=\$5</md>
     </p>
     <p>
       The total amount you would repay is called the <term>future value</term><idx>future value</idx> and would be $105, the original principal plus the interest.
     </p>
     <p>
-      <me>\$100+\$5=\$105</me>
+      <md>\$100+\$5=\$105</md>
     </p>
     <p>
       One-time simple interest as in the above example is only common for extremely short-term or informal loans. For longer-term loans or investments, it is common for interest to be paid on a daily, monthly, quarterly, or annual basis. 
@@ -55,13 +55,13 @@
       How much would you need to repay at the end of the loan? The amount of interest you would pay would be 5% of $100 each year for three years, that is:    
     </p>
     <p>
-      <me> (0.05)(\$100)(3) = \$15. </me>
+      <md> (0.05)(\$100)(3) = \$15. </md>
     </p>
     <p>
       The future value of the loan would be $115, which is the original principal plus the interest.
     </p>
     <p>
-      <me>\$100+\$15=\$115</me>
+      <md>\$100+\$15=\$115</md>
     </p>
     <p>
       These ideas are summarized in the block below.
@@ -74,7 +74,7 @@
         If an amount <m>P</m> is borrowed for a time <m>t</m> at an interest rate <m>r</m>, then the interest <m>I</m> is 
       </p>
       <p>
-        <me>I=Prt.</me>
+        <md>I=Prt.</md>
       </p>
       <p>
         The amount <m>A</m> owed at the end of time <m>t</m> is given by
@@ -122,14 +122,14 @@
           Each year, you would earn 5% interest, so over the course of five years, you would earn:
         </p>
         <p>
-          <me>\$1{,}000(0.05)(5)=\$250</me>
+          <md>\$1{,}000(0.05)(5)=\$250</md>
         </p>
 
         <p>
           When the bond matures, you would receive back the $1,000 you originally paid and the $250 in interest, so we could also put that into a single calculation:
         </p>
         <p>
-          <me>\$1{,}000+\$1{,}000(0.05)(5)=\$1{,}250</me>
+          <md>\$1{,}000+\$1{,}000(0.05)(5)=\$1{,}250</md>
         </p>
       </solution>
     </example>
@@ -146,16 +146,16 @@
         <p>
           The interest is computed by multiplying the principal by the interest rate and the time.
 
-          <me>
+          <md>
             I = \$600(0.15)\left(\frac{5}{12}\right) = \$37.50.
-          </me>
+          </md>
           Note that here the rate is per year but the time is given in months, so we convert 5 months to years by dividing by 12.
         </p>
         <p>
           The total amount is thus
         </p>
         <p>
-          <me> A = P + I = \$600 + \$37.50 = \$637.50.</me>
+          <md> A = P + I = \$600 + \$37.50 = \$637.50.</md>
           This total can be computed directly using
           <md>
             <mrow> A =\amp P(1+rt) </mrow>
@@ -200,7 +200,7 @@
       If a loan with maturity value <m>L</m> is discounted for a time <m>t</m> at a simple interest rate <m>r</m>, then the discount <m>D</m> is 
     </p>
     <p>
-      <me> D = Lrt. </me>
+      <md> D = Lrt. </md>
     </p>
     <p>
       The proceeds <m>R</m> are given by
@@ -248,7 +248,7 @@
           <mrow> =\amp \$1{,}200(0.15)\left(\frac{10}{12}\right) </mrow>
           <mrow> =\amp \$150 </mrow>
         </md>
-        Therefore, the bank deducts $150 from the maturity value of $1,200 and gives Francisco $1,050. That is, <me> R = \$1{,}200 - \$150 = \$1{,}050.</me>  Francisco is obligated to repay the bank $1,200.
+        Therefore, the bank deducts $150 from the maturity value of $1,200 and gives Francisco $1,050. That is, <md> R = \$1{,}200 - \$150 = \$1{,}050.</md>  Francisco is obligated to repay the bank $1,200.
       </p>
     </solution>
   </example>

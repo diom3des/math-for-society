@@ -38,9 +38,9 @@
 		</principle>
 		<p>
 			Note that the addition rule can be extended to processes that can occur in one of <m>k</m> distinct, non-overlapping ways. If there are <m>n_1</m> possibilities of the first kind, <m>n_2</m> of the second, and so forth, then there are 
-			<me>
+			<md>
 				n_1 + n_2 + \cdots + n_k
-			</me>
+			</md>
 			total possibilities. 
 			To see this common-sense counting rule in action, consider the following example.
 		</p>
@@ -76,9 +76,9 @@
 		</principle>
 		<p>
 			<alert>Note:</alert> If a process has <m>k</m> steps and the <m>i^\text{th}</m> step can happen in <m>n_i</m> ways, then the total number of ways the process can be done is:
-			<me>
+			<md>
 				n_1 \times n_2 \times \cdots \times n_k
-			</me>.
+			</md>.
 		</p>
 		<example xml:id="ex_counting_multiplication_2-step">
 			<statement>
@@ -94,7 +94,7 @@
 						<li><p>Choosing a shirt from 3 choices.</p></li>
 					</ol>
 					Thus, by the multiplication rule the total number of outfits is:
-					<me>2 \times 3 = 6</me>.
+					<md>2 \times 3 = 6</md>.
 				</p>
 			</solution>
 		</example>
@@ -113,7 +113,7 @@
 						<li><p>Choosing a dessert from 3 options.</p></li>
 					</ol>
 					The total number of lunch combinations is thus:
-					<me>4\times 5\times 3 = 60</me>.
+					<md>4\times 5\times 3 = 60</md>.
 				</p>
 			</solution>
 		</example>

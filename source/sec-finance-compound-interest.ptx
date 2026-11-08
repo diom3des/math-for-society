@@ -49,7 +49,7 @@
     </p>
   
     <p>
-      <me>\frac{0.06}{12}=0.005</me>
+      <md>\frac{0.06}{12}=0.005</md>
     </p>
     
     <p>
@@ -57,7 +57,7 @@
     </p>
     
     <p>
-      <me>\frac{0.04}{4}=0.01</me>
+      <md>\frac{0.04}{4}=0.01</md>
     </p>
   
     <example>
@@ -70,7 +70,7 @@
       <p>
         The principal is <m>P = \$1{,}000</m>. Since interest is being paid semi-annually (twice a year), the 4% will be divided into two 2% payments.
 
-        <me>r=\frac{0.04}{2}=0.02.</me>
+        <md>r=\frac{0.04}{2}=0.02.</md>
       </p>
       <p>
         Four years with two interest payments per year gives <m>t=4\cdot 2=8</m> half-years. Thus
@@ -252,7 +252,7 @@
       The amount <m>A</m> after <m>t</m> years due to a principal <m>P</m> invested at an annual interest rate <m>r</m> compounded <m>n</m> times per year is given by
     </p>
 		<p>
-			<me>A=P\left(1+\frac{r}{n}\right)^{nt}.</me>
+			<md>A=P\left(1+\frac{r}{n}\right)^{nt}.</md>
 		</p>
     <p>
       Glossary:
@@ -336,9 +336,9 @@
             <mrow> \$5{,}000 =\amp P(1.56822519).</mrow>
           </md>
           Dividing to solve for <m>P</m> yields
-          <me>
+          <md>
             P = \frac{\$5{,}000}{1.56822519} = \$3{,}188.32.
-          </me>
+          </md>
         </p>
         <p>
           Thus, $3,188.32 invested in an account paying 9% compounded daily will accumulate to $5,000 in five years.
@@ -480,7 +480,7 @@
           To find the total amount of interest earned, we subtract the principal from the total balance.
         </p>
         <p>
-          <me>\$5{,}009.92-\$3{,}500=\$1{,}509.92.</me>
+          <md>\$5{,}009.92-\$3{,}500=\$1{,}509.92.</md>
         </p>
         
         <p>
@@ -490,7 +490,7 @@
           To find the percentage of the total that is interest, divide the amount of interest by the total amount of the future value.
         </p>
         <p>
-          <me>\frac{\$1{,}509.92}{\$5{,}009.92}\approx 0.3014\text{, or } 30.1\%.</me>
+          <md>\frac{\$1{,}509.92}{\$5{,}009.92}\approx 0.3014\text{, or } 30.1\%.</md>
           That is, after 4 years, 30.1% of the account balance is due to interest.
         </p>
       </example>
@@ -511,16 +511,16 @@
         </p>
         <p>
           <alert>Bank A:</alert> If we deposit $1 in this bank and leave it for a year, we will have
-          <me>
+          <md>
             1\left(1+\frac{0.072}{12}\right)^{12} \approx 1.0744.
-          </me>
+          </md>
           In an account at Bank A, the interest earned is <m>\$1.0744-\$1.00 = \$0.0744</m> on an investment of $1. The effective interest rate (or APY) is 7.44% for this account.
         </p>
         <p>
           <alert>Bank B:</alert> The effective rate is calculated as 
-          <me>
+          <md>
             1\left(1+\frac{0.0725}{2}\right)^2-1 \approx 0.0738.
-          </me>
+          </md>
           The effective interest rate for this account is 7.38%.
         </p>
         <p>
@@ -532,9 +532,9 @@
         <idx>effective rate</idx>
         <idx><h>financial formulas</h><h>effective rate</h></idx>
         <p>The <term>effective interest rate</term> or <term>annual percentage yield</term> is given by
-          <me>
+          <md>
             r_{\text{eff}} = \left(1 + \frac{r}{n}\right)^n -1, 
-          </me>
+          </md>
           where <m>r_{\text{eff}}</m> is the effective interest rate, <m>r</m> is the nominal interest rate per year, and <m>n</m> is the number of compounding periods per year.
         </p>
       </assemblage>

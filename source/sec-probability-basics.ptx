@@ -58,9 +58,9 @@
 			<statement>
 				<p>
 					The <term>theoretical probability</term> of a certain event <m>E</m> happening in an experiment is found by counting the number of possible outcomes of the experiment in which <m>E</m> happens and dividing by the total number of outcomes, assuming each outcome is equally likely. That is:
-					<me>
+					<md>
 						P(E)=\frac{\text{number of outcomes corresponding to the event E}}{\text{total number of equally likely outcomes}}
-					</me>
+					</md>
 				</p>
 			</statement>
 		</definition>
@@ -109,21 +109,21 @@
 			</p>
 			<p>
 				The <term>experiment</term> here is flipping a coin twice. Each flip lands on <q>heads</q> (<m>H</m>) or <q>tails</q> (<m>T</m>), so the possible outcomes are the four sequences of two flips. This set of possible outcomes is called the <term>sample space</term> and is typically named <m>S</m>.  We write the sample space as
-				<me>
+				<md>
 					S = \lbrace HH, HT, TH, TT \rbrace
-				</me>.
+				</md>.
 			</p>
 			<p>
 				The second set needed is the set containing all of the outcomes from <m>S</m> which meet our criterion of having exactly one head. Any <xref ref="def-subset" text="custom">subset</xref> of the sample space is called an <term>event</term>.  For this problem, the event is
-				<me>
+				<md>
 					E = \lbrace HT, TH \rbrace
-				</me>.
+				</md>.
 			</p>
 			<p>
 				If we assume that each of the outcomes is equally likely, then (applying <xref ref="def_theoretical-probability"/>)
-				<me>
+				<md>
 					P(E) = \frac{ n(E)}{n(S)} = \frac{2}{4} = \frac{1}{2} = 0.50
-				</me>.
+				</md>.
 			</p>
 		</example>
 		<example xml:id="ex_probability_basic-rules-2">
@@ -174,9 +174,9 @@
 				<p>First, we must find the sample space. There are two ways we could look at this.
 					<ol>
 						<li><p>We could pretend that we can tell each marble apart, regardless of its color. In that case, the sample space is:
-							<me>S = \lbrace R_1, R_2, R_3, R_4, B_1, B_2, B_3, G_1, G_2, W_1 \rbrace</me>.</p></li>
+							<md>S = \lbrace R_1, R_2, R_3, R_4, B_1, B_2, B_3, G_1, G_2, W_1 \rbrace</md>.</p></li>
 						<li><p>Since we can't actually tell the marbles of the same color apart, it is more accurate to say that the sample space is:
-							<me>S = \lbrace R, B, G, W\rbrace</me>.</p></li>
+							<md>S = \lbrace R, B, G, W\rbrace</md>.</p></li>
 					</ol>
 					The best answer for the sample space is <m>S = \lbrace R,B,G, W\rbrace</m> as shown in (2). To assign probabilities, however, we use the sample space from (1), where each of the 10 marbles is equally likely.
 					<ul marker="">
@@ -200,13 +200,13 @@
 			<statement>
 				<p>
 					The <term>general addition rule</term> states that if <m>A</m> and <m>B</m> are events in a sample space, then:
-					<me>
+					<md>
 						P(A\cup B) = P(A) + P(B) - P(A\cap B)
-					</me>.
+					</md>.
 					<alert>Note:</alert> If <m>A</m> and <m>B</m> are <xref ref="def_mutually-exclusive" text="custom">mutually exclusive</xref>, this reduces to
-					<me>
+					<md>
 						P(A\cup B) = P(A) + P(B)
-					</me>.
+					</md>.
 				</p>
 			</statement>
 		</fact>
@@ -331,7 +331,7 @@
 			<statement>
 				<p>
 					The <term>complement rule</term> states that if <m>E</m> is an event in a sample space <m>S</m>, then the probability of the complement of <m>E</m> is:
-					<me>P(E^C) = 1 - P(E)</me>.
+					<md>P(E^C) = 1 - P(E)</md>.
 				</p>
 			</statement>
 		</fact>
@@ -345,15 +345,15 @@
 			<solution>
 				<p>
 					The set <m>E = \lbrace 2, 4, 6 \rbrace</m> consists of all even numbers. The complement of <m>E</m> is <m>E^C = \lbrace 1, 3, 5 \rbrace</m>. The probability of each of these sets is <m>\frac{3}{6} = \frac{1}{2}</m>. Note that <m>P(E^C)</m> can also be calculated as
-					<me>
+					<md>
 						P(E^C)=1-\frac{1}{2}=\frac{1}{2}.
-					</me>
+					</md>
 				</p>
 				<p>
 					The set <m>F = \lbrace 5, 6 \rbrace</m> has probability <m>P(F) = \frac{2}{6} = \frac{1}{3}</m>. The complement of <m>F</m> is <m>F^C = \lbrace 1,2,3,4 \rbrace</m>. The probability of this set is <m>P(F^C) = \frac{4}{6} = \frac{2}{3}</m>. Again, this agrees with the complement rule:
-					<me>
+					<md>
 						P(F^C) = 1-\frac{1}{3} = \frac{2}{3}
-					</me>.
+					</md>.
 				</p>
 			</solution>
 		</example>

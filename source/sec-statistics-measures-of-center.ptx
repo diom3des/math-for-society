@@ -221,9 +221,9 @@
 			<statement>
 				<p>
 					The <term>midrange</term> of a set of data is the value halfway between its minimum and maximum values. To compute the midrange, use the formula:
-					<me>
+					<md>
 						\text{midrange} = \frac{\text{maximum} + \text{minimum}}{2}
-					</me>
+					</md>
 					where <term>maximum</term> is the maximum value in the data set and <term>minimum</term> is the minimum value.
 				</p>
 			</statement>
@@ -270,9 +270,9 @@
 			<solution>
 				<p>
 					To find the midrange we need to identify the maximum and minimum values in the data set. The largest value is 18.3 and the smallest is 6.5. Thus we compute the midrange using:
-					<me>
+					<md>
 						\text{midrange} = \frac{18.3+6.5}{2} = 12.4
-					</me>.
+					</md>.
 					It looks like the pond is not yet ready to open for fishing. The typical fish, as measured by the midrange, is only 12.4 inches long and could not be kept.
 				</p>
 			</solution>
@@ -300,9 +300,9 @@
 			<solution>
 				<p>
 					Without the 6.5-inch outlier, the new minimum is 8.7. This gives the following values:
-					<me>
+					<md>
 						\text{midrange} = \frac{18.3+8.7}{2} = 13.5
-					</me>.
+					</md>.
 					With this new computation, it looks like the fish are in fact large enough to be caught<mdash/>the typical fish length, as measured by the midrange, is 13.5 inches.
 				</p>
 			</solution>
@@ -322,9 +322,9 @@
 			</p>
 			<p>
 				To answer this question, let's first compute the midrange. This is:
-				<me>
+				<md>
 					\text{midrange} = \frac{\$2{,}500{,}000 + \$8{,}000}{2} = \$1{,}254{,}000.
-				</me>
+				</md>
 				Do you think that the typical house really costs one and a quarter million dollars? Probably not! The midrange <em>is not an appropriate measure of center</em> for these data.
 			</p>
 		</example>
@@ -371,18 +371,18 @@
 						<li>
 							<p>
 								Our first step is to rearrange this set of numbers in order, from smallest to largest:
-								<me>
+								<md>
 									\lbrace \overbrace{9, 10, 10, 12,}^{\text{lower half}} \overbrace{13, 14,}^{\text{middle pair}} \overbrace{15, 16, 17, 19}^{\text{upper half}}\rbrace
-								</me>
+								</md>
 								Then we find the middle number. Since there is an even number of values (ten of them), the exact middle lies halfway between the two center values (5th and 6th) which are 13 and 14. So the median is <m>\frac{13+14}{2} = 13.5</m>.
 							</p>
 						</li>
 						<li>
 							<p>
 								Again, we start by ordering the data:
-								<me>
+								<md>
 									\lbrace \overbrace{100, 117, 164,}^{\text{lower half}} \overbrace{178,}^{\text{median}} \overbrace{205, 215, 1000}^{\text{upper half}} \rbrace
-								</me>
+								</md>
 								As there is an odd number of values in this data set (seven of them), the median is the single value in the exact center (the 4th value), which is 178.
 							</p>
 						</li>
@@ -406,9 +406,9 @@
 			<statement>
 				<p>
 					The <term>arithmetic mean</term>, which we will call simply the <term>mean</term>, is a measure of center found by taking the sum of all values in the data set and dividing by the number of values in the data set. Symbolically,
-					<me>
+					<md>
 						\bar{x}=\frac{\text{sum of data values}}{n}
-					</me>,
+					</md>,
 					where <m>n</m> is the number of values in the data set.
 				</p>
 			</statement>
@@ -427,7 +427,7 @@
 					To find the mean test score we need to find the sum of her test scores, then divide the sum by the number of test scores (<m>n=4</m>). The mean is:
 				</p>
 				<p>
-					<me>\bar{x}=\frac{79+86+82+94}{4}=85.25\text{ points}</me>
+					<md>\bar{x}=\frac{79+86+82+94}{4}=85.25\text{ points}</md>
 				</p>
 				<p>
 					Notice that the mean has the same units as the data and that it is important to label it.
@@ -484,9 +484,9 @@
 			<solution>
 				<p>
 					Calculating the mean by hand could get tedious if we try to write out all 100 values:
-					<me>
+					<md>
 						\bar{x}=\frac{\overbrace{15 + \cdots + 15}^{6 \text{ terms}} + \overbrace{20 + \cdots + 20}^{8 \text{ terms}} +\cdots+ \overbrace{50 + \cdots + 50}^{7 \text{ terms}}}{100}
-					</me>
+					</md>
 				</p>
 				<p>
 					However, we can calculate this easily using multiplication to deal with repeated values. Doing so, the sum of the data values (the numerator of the mean) is
@@ -496,7 +496,7 @@
 						<mrow> \amp= 3390 </mrow>
 					</md>.
 					The mean is then
-					<me>\bar{x}=\frac{3390}{100}=33.9</me>
+					<md>\bar{x}=\frac{3390}{100}=33.9</md>
 					That is, the mean household income of our sample is 33.9 thousand dollars or $33,900.
 				</p>
 			</solution>

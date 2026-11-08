@@ -44,7 +44,7 @@
 						<li><p>Place the last item at the end of the row (1 choice).</p></li>
 					</ol>
 					Therefore, according to the multiplication rule, the number of orderings is:
-					<me> 4\times 3\times 2 \times 1 = 24</me>.
+					<md> 4\times 3\times 2 \times 1 = 24</md>.
 				</p>
 			</solution>
 		</example>
@@ -56,13 +56,13 @@
 			<statement>
 				<p>
 					For any positive integer <m>n</m>, <m>n!</m> (read <q><m>n</m> <em>factorial</em></q>) is the product of the integers from <m>1</m> to <m>n</m>. That is:
-					<me>
+					<md>
 						n! = n\times(n-1)\times \cdots \times 2\times 1
-					</me>.
+					</md>.
 					Also, by definition, 
-					<me>
+					<md>
 						0! = 1.
-					</me>
+					</md>
 				</p>
 			</statement>
 		</definition>
@@ -101,9 +101,9 @@
 			<solution>
 				<p>
 					Because each student can only be placed in one position, the number of students left to place decreases with each choice. That is, any of the 6 students can be on the top step, but then only 5 remain to be selected for the second step, 4 for the third step, and so on. Thus, there are
-					<me>
+					<md>
 						6! = 6\times 5\times 4\times 3\times 2\times 1 = 720
-					</me>
+					</md>
 					possible arrangements.
 				</p>
 			</solution>
@@ -130,7 +130,7 @@
 						<li><p>Award third prize. Eight runners could come in 3rd.</p></li>
 					</ol>
 					Thus, prizes can be awarded
-					<me>10\times 9\times 8 = 720</me>
+					<md>10\times 9\times 8 = 720</md>
 					ways.
 				</p>
 			</solution>
@@ -151,9 +151,9 @@
 			<statement>
 				<p>
 					The number of <term>permutations of <m>n</m> items taken <m>r</m> at a time</term>, written <m>P(n,r)</m>, is the number of ways to arrange (or permute) <m>r</m> items chosen from <m>n</m> possible items. The formula is:
-					<me>
+					<md>
 						P(n,r) = \frac{n!}{(n-r)!}
-					</me>.
+					</md>.
 			</p>
 			<p>
 				<alert>Note:</alert> Scientific calculators have built-in permutation functions, usually labeled <c>nPr</c>. If you're unsure how to use yours or whether to use it instead of the formula above, ask your instructor for guidance.
@@ -162,9 +162,9 @@
 		</fact>
 		<p>
 			Applying this formula to the foot-race example above, we could have computed:
-			<me>
+			<md>
 				P(10,3) = \frac{10!}{(10-3)!} = \frac{10\times 9\times 8\times 7!}{7!} = 10\times 9\times 8 = 720
-			</me>.
+			</md>.
 			Permutations are a general method used to count the number of ways to complete a process when the order of completion matters. A race is a good example of a situation where order is important. Another example is provided below.
 		</p>
 		<example xml:id="ex_counting_permutation_bands">
@@ -177,9 +177,9 @@
 			<solution>
 				<p>
 					Since there are 6 bands to choose from and only 3 are needed, and because the order of performance matters (changing the order creates a different schedule), the number of possible schedules is:
-					<me>
+					<md>
 						P(6,3) = \frac{6!}{3!} = 6\times 5\times 4 = 120
-					</me>.
+					</md>.
 				</p>
 			</solution>
 		</example>
@@ -191,9 +191,9 @@
 			<li><p><m>P(n,1) = \frac{n!}{(n-1)!} = \frac{n\times (n-1)!}{(n-1)!} = n</m></p></li>
 		</ul>
 		Additionally, the formula shown in <xref ref="fact-permutation-formula"/> algebraically reduces to the following form,
-		<me>
+		<md>
 			P(n,r) = \underbrace{n\times (n-1) \times \cdots \times (n-r+1)}_{r \text{ factors}}
-		</me>,
+		</md>,
 		which looks like the multiplication rule.  You may find this easier to use than the version written with factorials.
 		</p>
 	</subsection>
@@ -212,9 +212,9 @@
 			<solution>
 				<p>
 					Suppose your friends' names are Alice, Bob, Candace, and David. If you try to count the number of ways you could invite two friends using a permutation, you get:
-					<me>
+					<md>
 						P(4,2) = 4\times 3 = 12
-					</me>.
+					</md>.
 					However, this is not the correct answer. To see why, make a list of possible choices that the permutation counts.
 				</p>
 				<table>
@@ -243,9 +243,9 @@
 				<p>
 					Notice that each pair appears twice. For example, AB and BA are counted separately but these two pairs represent inviting the same group of friends to a movie. This is because in a permutation, the order in which you hand out the tickets makes a difference. 
 					But really, you don't care who got the first ticket; you just want to know who is going. Since each pair appears twice, the actual number of ways to pick the two friends to go with you is:
-					<me>
+					<md>
 						\frac{P(4,2)}{P(2,2)} = \frac{12}{2} = 6
-					</me>.
+					</md>.
 					The <m>P(2,2)</m> in the denominator is the number of orderings of 2 objects, which needs to be divided out of the permutation because order doesn't matter here.
 				</p>
 			</solution>
@@ -260,7 +260,7 @@
 			<statement>
 				<p>
 					The number of <term>combinations of <m>n</m> items taken <m>r</m> at a time</term>, written <m>C(n,r)</m>, is the number of ways to choose <m>r</m> items from <m>n</m> possible items if the order in which we select them does not matter. The formula is:
-					<me>C(n,r) = \frac{P(n,r)}{r!} = \frac{n!}{r!(n-r)!}</me>.
+					<md>C(n,r) = \frac{P(n,r)}{r!} = \frac{n!}{r!(n-r)!}</md>.
 				</p>
 				<p>
 					<alert>Note:</alert> Scientific calculators also have built-in combination functions, usually labeled <c>nCr</c>. Ask your instructor for help finding this if appropriate.
@@ -269,9 +269,9 @@
 		</fact>
 			<p>
 				Applying this formula to the movie ticket example, we get:
-				<me>
+				<md>
 					C(4,2) = \frac{4!}{2!(4-2)!} = \frac{4\times 3\times 2!}{2!\times 2!} = \frac{4\times 3}{2\times 1} = 6
-				</me>.
+				</md>.
 			</p>
 		<example xml:id="ex_counting_combination_committee">
 			<title>Using a Combination</title>
@@ -283,9 +283,9 @@
 			<solution>
 				<p>
 					The order in which a subcommittee is selected does not matter<mdash/>a person is either on the subcommittee or not on the subcommittee. Therefore, this is a combination and the solution is:
-					<me>
+					<md>
 						C(10,3) = \frac{10!}{3!(10-3)!} = \frac{10\times 9\times 8 \times 7!}{3!\times 7!} = \frac{10\times 9\times 8}{3\times 2\times 1} = 120
-					</me>.
+					</md>.
 				</p>
 			</solution>
 		</example>
@@ -298,9 +298,9 @@
 		  	<li><p><m>C(n,r) = C(n,n-r)</m></p></li>
 		  </ul>
 			The combination formula shown above simplifies to a form you may find easier to use: 
-		 	<me> 
+		 	<md> 
 				C(n,r) = \frac{\overbrace{n\times (n-1) \times \cdots \times (n-r+1)}^{r \text{ factors}}}{r!}
-			</me>.
+			</md>.
 		</p>
 	</subsection>
 	<subsection xml:id="sec_counting_mixed">
@@ -331,9 +331,9 @@
 			</statement>
 			<solution>
 				<p>In a seating chart, the order would matter. Therefore, this must be a permutation, and the solution is:
-					<me>
+					<md>
 						P(8,4) = 8\times 7\times 6\times 5 = 1680
-					</me>.
+					</md>.
 				</p>
 			</solution>
 		</example>
@@ -352,17 +352,17 @@
 						<li><p>Pick the one woman to go on the trip.</p></li>
 					</ol>
 					The number of ways to pick the three men from the 6 male committee members is:
-					<me>
+					<md>
 						C(6,3) = \frac{6\times 5\times 4}{3\times 2\times 1} = 20
-					</me>.
+					</md>.
 					The number of ways to pick the one woman is:
-					<me>
+					<md>
 						C(3,1) = 3
-					</me>.
+					</md>.
 					Therefore, by applying the multiplication rule, the total number of ways to select the four people for the trip is:
-					<me>
+					<md>
 						C(6,3)\times C(3,1) = 20\times 3 = 60
-					</me>.
+					</md>.
 				</p>
 			</solution>
 		</example>
@@ -376,13 +376,13 @@
 			<solution>
 				<p>
 					This problem specifically mentions the order of the trains, so the order will matter. However, we are not asked in how many ways the trains can arrive in general, which would be 
-					<me>
+					<md>
 						P(5,5) = 5! = 120
-					</me>.
+					</md>.
 					Instead, the Salzburg train must arrive immediately before the Berlin train. Treat that pair as a single block, SB, and arrange the four units SB, M, V, H. The order inside the block is fixed (Salzburg, then Berlin), so we do not multiply by 2. We can order the four units in 
-					<me>
+					<md>
 						P(4,4) = 4! = 24
-					</me> 
+					</md> 
 					ways.
 				</p>
 			</solution>
@@ -399,16 +399,16 @@
 					This is actually the most challenging problem in this section. The reason is that we have to use both the multiplication rule to split the process into steps and the addition rule to split the process into cases. Here's how we do it:
 					<ul>
 						<li><title>Case 1: exactly two sandwiches</title><p>Pick 2 of the 8 sandwiches and 2 of the 9 non-sandwich items (salads and chips)
-						  <me>C(8,2)\times C(9,2) = \frac{8\times 7}{2\times 1}\times\frac{9\times 8}{2\times 1} = 1008</me>.</p></li>
+						  <md>C(8,2)\times C(9,2) = \frac{8\times 7}{2\times 1}\times\frac{9\times 8}{2\times 1} = 1008</md>.</p></li>
 						<li><title>Case 2: exactly three sandwiches</title><p>Pick 3 of the 8 sandwiches and 1 of the 9 non-sandwich items
-						  <me>C(8,3)\times C(9,1) = \frac{8\times 7\times 6}{3\times 2\times 1} \times 9 = 504</me>.</p></li>
+						  <md>C(8,3)\times C(9,1) = \frac{8\times 7\times 6}{3\times 2\times 1} \times 9 = 504</md>.</p></li>
 						<li><title>Case 3: exactly four sandwiches</title><p>Pick 4 of the 8 sandwiches and none of the 9 non-sandwich items
-						  <me>C(8,4)\times C(9,0) = \frac{8\times 7\times 6\times 5}{4\times 3\times 2\times 1}\times 1 = 70</me>.</p></li>
+						  <md>C(8,4)\times C(9,0) = \frac{8\times 7\times 6\times 5}{4\times 3\times 2\times 1}\times 1 = 70</md>.</p></li>
 					</ul>
 					Note that these three cases are mutually exclusive based on the number of sandwiches chosen, and that a picnic basket with at least two sandwiches would fall into exactly one of these cases. So using the addition rule, the total number of picnic baskets is:
-					<me>
+					<md>
 						1008 + 504 + 70 = 1582
-					</me>.
+					</md>.
 				</p>
 				</solution>
 		</example>

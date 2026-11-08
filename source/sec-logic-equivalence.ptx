@@ -35,9 +35,9 @@
 		<fact>
 			<statement>
 				<p>
-					<me>
+					<md>
 						p \to q \equiv \neg p \lor q.
-					</me>
+					</md>
 				</p>
 			</statement>
 		</fact>
@@ -112,9 +112,9 @@
 			<idx><h>negation</h><h>of a conditional</h></idx>
 			<statement>
 				<p>
-					<me>
+					<md>
 						\neg(p \to q) \equiv p \land \neg q.
-					</me>
+					</md>
 				</p>
 			</statement>
 		</fact>
@@ -357,9 +357,9 @@
 			</p>
 			<p>
 				A biconditional is written as 
-				<me>
+				<md>
 					p \leftrightarrow q
-				</me>
+				</md>
 			and is read as <q><m>p</m> if and only if <m>q</m>.</q><idx>if and only if</idx>
 			</p>
 		</assemblage>

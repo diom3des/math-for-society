@@ -78,17 +78,17 @@
       <p>
         To answer this question we use the compound interest formula from <xref ref="sec-finance-compound-interest"/> with <m>r = 0.04</m> and <m>n = 1</m> for annual compounding to determine the present value of each payment of $1,000.
         Consider the first payment of $1,000 at the end of year 1. Let <m>P_1</m> be its present value:
-        <me>
+        <md>
            \$1{,}000 = P_1(1.04)^1 \Rightarrow P_1 \approx \$961.54.
-        </me>
+        </md>
         Now consider the second payment of $1,000 at the end of year 2. Let <m>P_2</m> be its present value:
-        <me>
+        <md>
           \$1{,}000 = P_2(1.04)^2 \Rightarrow P_2 \approx \$924.56.
-        </me>
+        </md>
         To make the $1,000 payments at the specified times in the future, the amount that Carlos needs to deposit now is the present value 
-        <me>
+        <md>
           P = P_1 + P_2 = \$961.54 + \$924.56 = \$1{,}886.10.
-        </me>
+        </md>
         <alert>Note:</alert> Carlos needs to save less than $2,000 now because his deposit will earn interest while it is waiting to be withdrawn. 
       </p>
       <p>
@@ -102,9 +102,9 @@
         <idx><h>annuities</h><h>present value</h></idx>
         <p>
           If payments of <m>d</m> dollars are made <m>n</m> times a year for <m>t</m> years, at an annual interest rate <m>r</m> compounded <m>n</m> times per year, then the present value <m>P</m> of the annuity is
-          <me>
+          <md>
             P = d \left[\frac{1-\left(1+\frac{r}{n}\right)^{-nt}}{\frac{r}{n}}\right].
-          </me>
+          </md>
         </p>
         <p>
           Glossary:
@@ -244,9 +244,9 @@
       </p>    
       <p>
         To find the amount of interest you will pay for this loan, calculate the total of all your payments.
-        <me>\$200(5)(12)=\$12{,}000</me>
+        <md>\$200(5)(12)=\$12{,}000</md>
         Then take the difference between the total payments and the loan amount.
-        <me>\$12{,}000-\$11{,}130.47=\$869.53</me>
+        <md>\$12{,}000-\$11{,}130.47=\$869.53</md>
         In this case, you would be paying $869.53 in interest.
       </p>
       </solution>
@@ -270,9 +270,9 @@
             <mrow>  \approx\amp\$347.65 </mrow>
           </md>
           For the first loan option, Teresa's payment is $347.65 per month. Over the course of this loan, she would pay
-          <me>
+          <md>
             12(3)(\$347.65) - \$12{,}000 = \$515.40
-          </me>
+          </md>
           of interest.
         </p>
         <p>
@@ -284,9 +284,9 @@
             <mrow>  \approx\amp\$221.00 </mrow>
           </md>
           For the second loan option, Teresa's payment is $221.00 per month. Over the course of this loan, she would pay
-          <me>
+          <md>
             12(5)(\$221.00) - \$12{,}000 = \$1{,}260.00
-          </me>
+          </md>
           of interest. That is, for the second loan her monthly payment would be less, but because she is paying off the loan more slowly and at a higher rate, she pays more interest.
         </p>
       </solution>
@@ -314,14 +314,14 @@
       </p>
       <p>
         To find out what percentage of the total will go towards interest, we need to total up all of the payments.
-        <me>\$839.37(30)(12)=\$302{,}173.20</me>
+        <md>\$839.37(30)(12)=\$302{,}173.20</md>
         Then, subtract the loan amount from the total payments.
-        <me>\$302{,}173.20-\$140{,}000=\$162{,}173.20</me>
+        <md>\$302{,}173.20-\$140{,}000=\$162{,}173.20</md>
         In this case, you would be paying $162,173.20 in interest over the life of the loan. 
       </p>   
       <p>     
         To find the percentage, we divide the interest by the total amount paid.
-        <me>\frac{\$162{,}173.20}{\$302{,}173.20} \approx 0.5367</me>
+        <md>\frac{\$162{,}173.20}{\$302{,}173.20} \approx 0.5367</md>
       </p>
       <p>
         About 53.7% of the total is being paid towards interest.
@@ -404,14 +404,14 @@
         <solution>
           <p>
             First we will see what she owes with the 17.99% APR using the compound interest formula for 35 days:
-            <me>\$900\left(1+\frac{0.1799}{365}\right)^{35} \approx \$915.66</me>
+            <md>\$900\left(1+\frac{0.1799}{365}\right)^{35} \approx \$915.66</md>
             With interest, when her first payment is due, Amira owes $915.66.
           </p>
           <p>
              Next, we find one percent of the new balance, which is
-             <me>\$915.66(0.01) \approx \$9.16</me>
+             <md>\$915.66(0.01) \approx \$9.16</md>
             Since $25 is larger than $9.16, her minimum payment is $25. If she makes the minimum payment we can subtract to find her new balance:
-            <me>\$915.66-\$25 = \$890.66</me>
+            <md>\$915.66-\$25 = \$890.66</md>
             Her new balance will be $890.66.
           </p>
         </solution>

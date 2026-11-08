@@ -92,9 +92,9 @@
 			<statement>
 				<p>
 					The <term>range</term> of a set of data is the difference between the highest and lowest values in the data set. That is:
-				<me>
+				<md>
 					\text{range} = \text{maximum} - \text{minimum}
-				</me>.
+				</md>.
 			</p>
 			</statement>
 		</definition>
@@ -143,9 +143,9 @@
 			<solution>
 				<p>
 					To find the range we need to identify the maximum and minimum values in the data set. The largest value is 18.3 and the smallest is 6.5. Thus the range is:
-					<me>
+					<md>
 						\text{range} = 18.3 - 6.5 = 11.8
-					</me>.
+					</md>.
 					That is, the range in observed fish lengths is 11.8 inches.
 				</p>
 			</solution>
@@ -199,9 +199,9 @@
 			<statement>
 				<p>
 					The <term>interquartile range</term> or <term>IQR</term> is the difference between the third and first quartiles. That is,
-				<me>
+				<md>
 					\text{IQR} = Q_3 - Q_1
-				</me>.
+				</md>.
 			</p>
 			</statement>
 		</definition>
@@ -260,9 +260,9 @@
 				</p>
 				<p>
 					For these data, <m>Q_{1}=62</m> inches, and <m>Q_{3}=68</m> inches. The IQR is thus
-					<me>
+					<md>
 						\text{IQR} = Q_{3}-Q_{1} = 68 - 62 = 6\text{ inches}
-					</me>.
+					</md>.
 					This tells us that the middle 50% of the women's heights lie within an interval 6 inches wide that contains the median height of 65 inches. Said another way, 50% of the heights fall between 62 and 68 inches.
 				</p>
 			</solution>
@@ -293,13 +293,13 @@
 			<solution>
 				<p>
 					The data are already in order, but now we have an odd number of values.  We use the median value of 66 as both the maximum value for the lower half of the data and the minimum value for the upper half.
-					<me>
+					<md>
 						\overbrace{59,60, 61, \underbrace{63,}_{Q_1=63} 64, 64, 6}^{\text{Lower Half}} \overbrace{6, 66, 67, \underbrace{68,}_{Q_3=68} 69, 70, 72}^{\text{Upper Half}}
-					</me>
+					</md>
 					The interquartile range is then
-					<me>
+					<md>
 						\text{IQR} = Q_{3} - Q_{1} = 68 - 63 = 5\text{ inches}	
-					</me>.
+					</md>.
 					That is, the middle 50% of the women's heights lie within an interval 5 inches wide that contains the median height of 66 inches. In other words, 50% of the heights are between 63 and 68 inches.
 				</p>
 				<p>
@@ -319,9 +319,9 @@
 			<idx><h>standard deviation</h><h>sample</h></idx>
 			<statement>
 				<p> The <term>sample standard deviation</term>, <m>s</m>, measures the typical distance of the data values from the mean of a data set. It is given by
-				<me>
+				<md>
 					s=\sqrt{\frac{\text{sum of the squared deviations from the mean}}{n-1}}
-				</me>,
+				</md>,
 				where <m>n</m> is the sample size.
 				</p>
 			</statement>
@@ -461,9 +461,9 @@
 			</tabular>
 			<p>
 				Next, we add the squared deviations and we get
-				<me>
+				<md>
 					25+0+0+0+0+0+0+0+0+25=50
-				</me>.
+				</md>.
 			</p>
 			<p>
 				To find the mean of the squared deviations, we would typically divide this total (50) by the number of scores, <m>n</m> (in this case, 10). However, we divide by <m>n</m> only when the data represents a population. For sample data (which is more common), we divide by <m>n-1</m> (in this case, 9).
@@ -473,9 +473,9 @@
 			</p>
 			<p>
 				Thus, the sample standard deviation for Section D is
-				<me>
+				<md>
 					s=\sqrt{\frac{50}{9}} \approx 2.36\text{ points}
-				</me>.
+				</md>.
 				This means that, roughly speaking, a typical score in Section D is about 2.36 points away from the mean of 5 points. For comparison, the standard deviations for the other sections are:
 				<ul>
 					<li>
@@ -555,9 +555,9 @@
 			<solution>
 				<p>
 					First we need to calculate the sample mean:
-					<me>
+					<md>
 						\bar{x}=\frac{3.29 + 3.59 + 3.79 + 3.75+ 3.99}{5} = \$3.68
-					</me>.
+					</md>.
 					Keep in mind we divide by <m>n=5</m> here.
 				</p>
 				<p>
@@ -597,13 +597,13 @@
 				</tabular>
 				<p>
 					The sum of the deviations squared is
-					<me>		
+					<md>		
 						0.1521+0.0081+0.0121+0.0049+0.0961=0.2733
-					</me>.
+					</md>.
 					Therefore, the sample standard deviation is
-					<me>
+					<md>
 						s=\sqrt{\frac{0.2733}{4}} \approx \$0.2614
-					</me>.
+					</md>.
 					Since the units are dollars, we round to two decimal places. This gives us a standard deviation of $0.26. This means that, roughly speaking, the price of a typical pint of peanut butter in our data set is about $0.26 away from the mean price of $3.68.
 				</p>
 			</solution>

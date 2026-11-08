@@ -44,9 +44,9 @@
       <idx><h>annuities</h><h>future value</h></idx>
       <p>
         If a regular payment of <m>d</m> dollars is made in an account <m>n</m> times a year, and the account earns an annual interest rate <m>r</m> compounded <m>n</m> times per year, then the future value <m>A</m> of the annuity after <m>t</m> years is
-        <me>
+        <md>
           A = d \left[\frac{\left(1+\frac{r}{n}\right)^{nt}-1}{\frac{r}{n}}\right].
-        </me>
+        </md>
       </p>
       <p>
         Glossary:
@@ -112,14 +112,14 @@
           To find the <alert>amount of interest earned</alert>, first calculate the total of all the deposits.
         </p>
         <p>
-          <me>\$100(20)(12)=\$24{,}000</me>
+          <md>\$100(20)(12)=\$24{,}000</md>
         </p>
     
         <p>
           The difference between the total amount and the total of the deposits is the interest earned.
         </p>
         <p>
-          <me>\$46{,}204.09-\$24{,}000=\$22{,}204.09</me>
+          <md>\$46{,}204.09-\$24{,}000=\$22{,}204.09</md>
         </p>
         <p>
           The total amount of interest earned was $22,204.09.
@@ -128,7 +128,7 @@
           To find the <alert>percentage of the balance that is interest</alert>, divide the interest by the total balance.
         </p>
         <p>
-          <me>\frac{\$22{,}204.09}{\$46{,}204.09}\approx 0.4806</me>
+          <md>\frac{\$22{,}204.09}{\$46{,}204.09}\approx 0.4806</md>
         </p>
         <p>
           or 48.1%. After 20 years, 48.1% of the balance is from interest.
@@ -154,9 +154,9 @@
       <solution>
       <p>
         This problem is solved by applying the compound interest formula to the initial deposit, and the future value of an annuity formula to the sequence of monthly payments, and then adding the results.  That is,
-        <me>
+        <md>
           \text{Total} = A_1 + A_2,
-        </me>
+        </md>
         where <m>A_1</m> is the future value of the lump sum and <m>A_2</m> the future value of the payments. For both computations <m>r = 0.055</m>, <m>n = 12</m>, and <m>t = 30</m>.
       </p>
       <p>
@@ -178,9 +178,9 @@
       </p>
       <p>
         Adding and rounding to the penny, in 30 years our account will contain 
-        <me>
+        <md>
           A_1 + A_2 = \$144{,}822.87.
-        </me>
+        </md>
       </p>
     </solution>
     </example>
@@ -222,9 +222,9 @@
     <solution>
       <p>
         In this problem, we seek a value <m>d</m> such that
-        <me>
+        <md>
           \$450{,}000 = d \left[\frac{\left(1+\frac{0.09}{4}\right)^{4\cdot 5}-1}{\frac{0.09}{4}}\right].
-        </me>
+        </md>
       </p>
       <p>
         Solving,
@@ -251,14 +251,14 @@
         To find the amount of interest earned, first calculate the total of all the deposits.
       </p>
       <p>
-        <me>\$18{,}063.93(4)(5)=\$361{,}278.60</me>
+        <md>\$18{,}063.93(4)(5)=\$361{,}278.60</md>
       </p>
   
       <p>
         The difference between the final balance and the total deposits is the interest earned.
       </p>
       <p>
-        <me>\$450{,}000.00-\$361{,}278.60=\$88{,}721.40.</me>
+        <md>\$450{,}000.00-\$361{,}278.60=\$88{,}721.40.</md>
       </p>
       <p>
         The total amount of interest earned by the sinking fund was $88,721.40.
@@ -267,7 +267,7 @@
         To find the percentage of the balance that is interest, we divide the interest by the total balance.
       </p>
       <p>
-        <me>\frac{\$88{,}721.40}{\$450{,}000.00}\approx 0.1972</me>
+        <md>\frac{\$88{,}721.40}{\$450{,}000.00}\approx 0.1972</md>
       </p>
       <p>
         or 19.7%. After 5 years, 19.7% of the balance is from interest.
@@ -280,13 +280,13 @@
     <p>
       If you are interested in where the future value of an annuity formula came from, we explain it here. A savings plan with regular payments can be described recursively. Recall that basic compound interest follows from the relationship for each compounding period:
 
-      <me>A=P\left(1+\frac{r}{n}\right)</me>
+      <md>A=P\left(1+\frac{r}{n}\right)</md>
     </p>
   
     <p>
       For a savings plan, we need to add a deposit, <m>d</m>, to the account with each compounding period:
 
-      <me>A=P\left(1+\frac{r}{n}\right)+d</me>
+      <md>A=P\left(1+\frac{r}{n}\right)+d</md>
     </p>
   
     <p>
@@ -312,7 +312,7 @@
  
     <p>
       Using <m>P_{m}</m> to represent the balance after <m>m</m> compounding periods, the recursive equation is
-      <me>P_{m}=\left(1+\frac{0.06}{12}\right)P_{m-1}+100=(1.005)P_{m-1}+100.</me>
+      <md>P_{m}=\left(1+\frac{0.06}{12}\right)P_{m-1}+100=(1.005)P_{m-1}+100.</md>
     </p>
 
     <p>
@@ -336,7 +336,7 @@
 
     <p>
       Continuing this pattern, after <m>m</m> deposits, we'd have saved:
-      <me>P_{m}=100(1.005)^{m-1}+100(1.005)^{m-2}+\cdots+100(1.005)+100</me>
+      <md>P_{m}=100(1.005)^{m-1}+100(1.005)^{m-2}+\cdots+100(1.005)+100</md>
     </p>
   
     <p>
@@ -346,26 +346,26 @@
     <p>
       This equation leaves a lot to be desired, though<mdash/>it doesn't make calculating the ending balance any easier! To simplify things, multiply both sides of the equation by 1.005:
 
-      <me>1.005P_{m}=1.005[100(1.005)^{m-1}+100(1.005)^{m-2}+\cdots+100(1.005)+100]</me>
+      <md>1.005P_{m}=1.005[100(1.005)^{m-1}+100(1.005)^{m-2}+\cdots+100(1.005)+100]</md>
     </p>
   
     <p>
       Distributing on the right side of the equation gives
 
-      <me>1.005P_{m}=100(1.005)^{m}+100(1.005)^{m-1}+\cdots+100(1.005)^{2}+100(1.005)</me>
+      <md>1.005P_{m}=100(1.005)^{m}+100(1.005)^{m-1}+\cdots+100(1.005)^{2}+100(1.005)</md>
     </p>
     <p>
       Now we'll line this up with like terms from our original equation and subtract:
-      <me>1.005P_{m}=100(1.005)^{m}+100(1.005)^{m-1}+\cdots+ 100(1.005).</me>
+      <md>1.005P_{m}=100(1.005)^{m}+100(1.005)^{m-1}+\cdots+ 100(1.005).</md>
     </p>
 
     <p>
-      <me>P_{m} = 100(1.005)^{m-1}+\cdots+ 100(1.005)+100</me>
+      <md>P_{m} = 100(1.005)^{m-1}+\cdots+ 100(1.005)+100</md>
     </p>
   
     <p>
       Almost all the terms cancel on the right side when we subtract, leaving
-      <me>1.005P_{m}-P_{m}=100(1.005)^{m}-100</me>
+      <md>1.005P_{m}-P_{m}=100(1.005)^{m}-100</md>
     </p>
     <p>
       Solving for <m>P_{m}</m>:
@@ -378,7 +378,7 @@
     <p>
       Replacing <m>P_{m}</m> with <m>A</m> (the future value), <m>m</m> months with <m>12t</m>, where <m>t</m> is measured in years, gives
 
-      <me>A=\frac{100\left((1.005)^{12t}-1\right)}{0.005}</me>
+      <md>A=\frac{100\left((1.005)^{12t}-1\right)}{0.005}</md>
     </p>
   
     <p>
