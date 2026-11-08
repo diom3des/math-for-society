@@ -189,7 +189,7 @@
 							A Venn diagram with two circles, A and B.  Circle A is shaded a light yellow.  Circle B is not shaded.
 						</shortdescription>
 						<latex-image>
-							\begin{tikzpicture}
+							\begin{tikzpicture}[font=\figfont]
 								\draw (-1.5,-1.5) rectangle (2.5,1.5);
 								\begin{scope}[blend group = soft light]
 									\fill[yellow!30!white]  (0,0) circle (1);
@@ -209,7 +209,7 @@
 							A Venn diagram with two circles, A and B.  Circle A is shaded a light yellow.  Circle B is shaded a light pink.  The region inside both circles A and B is a mixture of the two colors.
 						</shortdescription>
 						<latex-image>
-							\begin{tikzpicture}
+							\begin{tikzpicture}[font=\figfont]
 								\draw (-1.5,-1.5) rectangle (2.5,1.5);
 								\begin{scope}[blend group = multiply]
 									\fill[yellow!25!white]  (0,0) circle (1);

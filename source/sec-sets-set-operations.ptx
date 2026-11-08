@@ -378,7 +378,7 @@
 				<image xml:id="img-set-intersection" width="100%">
 				<shortdescription>A Venn diagram of two overlapping sets A and B inside a rectangle labeled U; only the region where the two circles overlap is shaded, showing the intersection.</shortdescription>
 				<latex-image>
-					\begin{tikzpicture}
+					\begin{tikzpicture}[font=\figfont]
 						% Define the universe as a rectangle
 						\draw[thin] (0,0) rectangle (2.625,2);
 						% Draw A
@@ -408,7 +408,7 @@
 				<image xml:id="img-set-union" width="100%">
 					<shortdescription>A Venn diagram of two overlapping sets A and B inside a rectangle labeled U; both circles, including their overlap, are shaded to show the union.</shortdescription>
 					<latex-image>
-						\begin{tikzpicture}
+						\begin{tikzpicture}[font=\figfont]
 							% Define the universe as a rectangle
 							\draw[thin] (0,0) rectangle (2.625,2);
 							% Draw A
@@ -432,7 +432,7 @@
 				<image xml:id="img-set-complement" width="100%">
 					<shortdescription>A Venn diagram with only one set A; The region outside of circle A but inside the rectangle is shaded to represent the complement of the set, or elements not in set A.</shortdescription>
 					<latex-image>
-						\begin{tikzpicture}
+						\begin{tikzpicture}[font=\figfont]
 							% Define the universe as a rectangle
 							\draw[thin, fill=yellow!70] (0,0) rectangle (2.625,2);
 							% Draw A
@@ -460,7 +460,7 @@
 							A Venn diagram with two circles, one for A and one for B, which overlap in the middle.  Elements a and c are in circle A but not circle B, element f is in circle B but not circle A, elements d and e are in both circles, and element b is not in either circle.
 						</shortdescription>
 						<latex-image>
-							\begin{tikzpicture}
+							\begin{tikzpicture}[font=\figfont]
 								\draw[fill=white, thin] (-1.5,-1.5) rectangle (2.5,1.5);
 								\draw[fill=white, thin] (0,0) circle (1);
 								\draw[fill=white, thin] (1,0) circle (1);
@@ -496,7 +496,7 @@
 							A Venn diagram with two circles, one for A and one for B, which overlap in the middle.  The shaded region is a crescent shape in B that is not in A.
 						</shortdescription>
 						<latex-image>
-							\begin{tikzpicture}
+							\begin{tikzpicture}[font=\figfont]
 								% Define the universe as a rectangle
 								\draw[thin,fill=white] (0,0) rectangle (2.625,2);
 								% Draw A

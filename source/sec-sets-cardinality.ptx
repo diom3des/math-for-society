@@ -278,6 +278,7 @@
 							<shortdescription>A rectangle is drawn for the universal set U. There are three overlapping circles inside. One is labeled S, one H, and one R. The distinct regions are labeled with lower case letters a through h.</shortdescription>
 							<latex-image>
 								\begin{venndiagram3sets}[
+										tikzoptions={font=\figfont},
 										labelA={},
 										labelB={},
 										labelC={},
@@ -339,6 +340,7 @@
 							<shortdescription>A rectangle is drawn for the universal set U. There are three overlapping circles inside. One is labeled S, one H, and one R. The distinct regions are labeled with numbers representing their cardinality.</shortdescription>
 							<latex-image>
 								\begin{venndiagram3sets}[
+										tikzoptions={font=\figfont},
 										labelA={},
 										labelB={},
 										labelC={},
@@ -440,6 +442,7 @@
 						<shortdescription>A rectangle is drawn for the universal set U. There are three overlapping circles inside. One is labeled C, one R, and one L. The distinct regions are labeled with numbers representing their cardinality.</shortdescription>
 						<latex-image>
 							\begin{venndiagram3sets}[
+								tikzoptions={font=\figfont},
 							labelA={$C$},
 							labelB={$R$},
 							labelC={$L$},
@@ -498,6 +501,154 @@
 						</li>
 					</ol>
 				</p>
+			</solution>
+		</example>
+		<p>
+			Sometimes the given information does not allow us to fill in every region by working outward from the center. This happens when one of the two-set overlaps is not given, because then neither of the two single-set regions next to it can be computed either.
+			In this case, we represent the unknown region by a variable such as <m>x</m>, write the neighboring regions in terms of <m>x</m>, and use the total number of elements to set up an equation and solve for <m>x</m>.
+		</p>
+		<example>
+			<statement>
+				<p>
+					A farmers market surveyed 75 shoppers about what they bought that morning. The results are:
+					<ul>
+						<li>
+							<p>46 bought vegetables,</p>
+						</li>
+						<li>
+							<p>34 bought baked goods,</p>
+						</li>
+						<li>
+							<p>22 bought flowers,</p>
+						</li>
+						<li>
+							<p>12 bought vegetables and flowers,</p>
+						</li>
+						<li>
+							<p>9 bought baked goods and flowers,</p>
+						</li>
+						<li>
+							<p>5 bought all three,</p>
+						</li>
+						<li>
+							<p>8 bought none of these items.</p>
+						</li>
+					</ul>
+					How many shoppers bought vegetables and baked goods?
+				</p>
+			</statement>
+			<solution>
+				<sidebyside widths="48% 48%" margins="0% 0%" valigns="top top">
+					<p>
+						Label the sets of shoppers who bought vegetables, baked goods, and flowers by <m>V</m>, <m>B</m>, and <m>F</m>. As before, we start at the center: 5 shoppers bought all three items. Since 12 bought vegetables and flowers, <m>12 - 5 = 7</m> bought only those two, and since 9 bought baked goods and flowers, <m>9 - 5 = 4</m> bought only those two. That leaves <m>22 - 5 - 7 - 4 = 6</m> who bought only flowers, and 8 shoppers are outside all three circles.
+					</p>
+					<figure xml:id="fig-3-set-venn-diagram-market">
+						<caption>The three-set Venn diagram with the unknown region labeled <m>x</m>.</caption>
+						<image xml:id="img-3venn-market-unknown" width="94%">
+							<shortdescription>A rectangle is drawn for the universal set U. There are three overlapping circles inside, labeled V, B, and F. The regions are labeled with numbers or with expressions involving x.</shortdescription>
+							<latex-image>
+								\begin{venndiagram3sets}[
+								tikzoptions={font=\figfont},
+								labelA={$V$},
+								labelB={$B$},
+								labelC={$F$},
+								labelOnlyA={$34-x$},
+								labelOnlyB={$25-x$},
+								labelOnlyC={6},
+								labelOnlyAB={$x$},
+								labelOnlyAC={7},
+								labelOnlyBC={4},
+								labelABC={5},
+								labelNotABC={8},
+								]
+
+								% Add shading for subregions
+								\setkeys{venn}{shade=yellow!25}
+								\fillOnlyA
+								\setkeys{venn}{shade=cyan!25}
+								\fillOnlyB
+								\setkeys{venn}{shade=magenta!25}
+								\fillOnlyC
+								\setkeys{venn}{shade=green!15}
+								\fillACapBNotC
+								\setkeys{venn}{shade=orange!15}
+								\fillACapCNotB
+								\setkeys{venn}{shade=violet!25}
+								\fillBCapCNotA
+								\setkeys{venn}{shade=white!25}
+								\fillACapBCapC
+								\setkeys{venn}{shade=white}
+								\fillNotABC
+
+								% Add label for U
+								\node at (4.75, 4.75) {$U$};
+
+								\end{venndiagram3sets}
+							</latex-image>
+						</image>
+					</figure>
+				</sidebyside>
+				<p>
+					We are not told how many shoppers bought vegetables and baked goods, so we cannot find the region for <m>V</m> and <m>B</m> only. Without it, we also cannot find the regions for <m>V</m> only or <m>B</m> only. Instead, let <m>x</m> be the number of shoppers who bought vegetables and baked goods but not flowers.
+					Since 46 shoppers bought vegetables, the number who bought only vegetables is <m>46 - x - 5 - 7 = 34 - x</m>. Similarly, the number who bought only baked goods is <m>34 - x - 5 - 4 = 25 - x</m>.
+				</p>
+				<p>
+					All 75 shoppers belong to exactly one of the eight regions, so the regions must add up to 75:
+					<md>
+						<mrow> (34-x) + (25-x) + 6 + x + 7 + 4 + 5 + 8 =\amp 75 </mrow>
+						<mrow> 89 - x =\amp 75 </mrow>
+						<mrow> x =\amp 14. </mrow>
+					</md>
+					So 14 shoppers bought vegetables and baked goods but not flowers. The question asks for everyone who bought vegetables and baked goods, which also includes the 5 who bought all three. Therefore <m>14 + 5 = 19</m> shoppers bought vegetables and baked goods.
+				</p>
+				<p>
+					With <m>x = 14</m>, we can also find that 20 shoppers bought only vegetables and 11 bought only baked goods. The solved diagram is shown below.
+				</p>
+				<figure xml:id="fig-3-set-venn-diagram-market-solved">
+					<caption>The <q>solved</q> three-set Venn diagram showing the cardinality of each region.</caption>
+					<image xml:id="img-3venn-market-solved" width="45%">
+						<shortdescription>A rectangle is drawn for the universal set U. There are three overlapping circles inside, labeled V, B, and F. The distinct regions are labeled with numbers representing their cardinality.</shortdescription>
+						<latex-image>
+							\begin{venndiagram3sets}[
+							tikzoptions={font=\figfont},
+							labelA={$V$},
+							labelB={$B$},
+							labelC={$F$},
+							labelOnlyA={20},
+							labelOnlyB={11},
+							labelOnlyC={6},
+							labelOnlyAB={14},
+							labelOnlyAC={7},
+							labelOnlyBC={4},
+							labelABC={5},
+							labelNotABC={8},
+							]
+
+							% Add shading for subregions
+							\setkeys{venn}{shade=yellow!25}
+							\fillOnlyA
+							\setkeys{venn}{shade=cyan!25}
+							\fillOnlyB
+							\setkeys{venn}{shade=magenta!25}
+							\fillOnlyC
+							\setkeys{venn}{shade=green!15}
+							\fillACapBNotC
+							\setkeys{venn}{shade=orange!15}
+							\fillACapCNotB
+							\setkeys{venn}{shade=violet!25}
+							\fillBCapCNotA
+							\setkeys{venn}{shade=white!25}
+							\fillACapBCapC
+							\setkeys{venn}{shade=white}
+							\fillNotABC
+
+							% Add label for U
+							\node at (4.75, 4.75) {$U$};
+
+							\end{venndiagram3sets}
+						</latex-image>
+					</image>
+				</figure>
 			</solution>
 		</example>
 	</subsection>
