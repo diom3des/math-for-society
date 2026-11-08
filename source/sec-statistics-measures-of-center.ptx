@@ -7,7 +7,17 @@
 			<ul>
 			<li>
 				<p>
-					Describe the <q>center</q> of a data set using the mean, mode, and median, and describe the strengths and weaknesses of each of these measures.
+					Describe the <q>center</q> of a data set using the mode, midrange, median, and mean, and describe the strengths and weaknesses of each of these measures.
+				</p>
+			</li>
+			<li>
+				<p>
+					Identify outliers and explain which measures of center are resistant to them.
+				</p>
+			</li>
+			<li>
+				<p>
+					Use the mean and median to judge whether a distribution is skewed.
 				</p>
 			</li>
 		</ul>
@@ -22,7 +32,7 @@
 	<subsection xml:id="subsec_center-spread_mode">
 		<title>Mode</title>
 		<p>
-			We have already seen the term <term>mode</term> used in the context of a graph. Recall that the <xref ref="def_histogram-mode" text="custom">mode of a histogram or bar graph</xref> is the class or category that has the tallest bar. That is, it is the class or category that appears the most in the data set. This seems to be a reasonable way to describe a <q>typical</q> element of a data set and leads to the following definition.
+			We have already seen the term <term>mode</term> used in the context of a graph. Recall that a <xref ref="def_histogram-mode" text="custom">mode of a histogram</xref> is a class with noticeably more data than its neighbors, and that the class with the tallest bar is called the modal class. In a bar graph, the tallest bar marks the category that appears most often in the data set. Choosing the value that appears most often seems a reasonable way to describe a <q>typical</q> element of a data set and leads to the following definition.
 		</p>
 		<definition xml:id="def_mode">
 			<idx>mode</idx>
@@ -74,7 +84,7 @@
 			</statement>
 			<solution>
 				<p>
-					The mode is the most commonly appearing value. One way to find that is to construct a <xref ref="def_frequency-table" text="custom">frequency table</xref>.  Doing so for this data produces the following table, from which we can see that the mode is <q>manager</q>.
+					The mode is the most commonly appearing value. One way to find that is to construct a <xref ref="def_frequency-table" text="custom">frequency table</xref>. Doing so for this data produces the following table, from which we can see that the mode is <q>manager</q>.
 				</p>
 				<table xml:id="ex_center-spread_mode_frequency-table">
 					<title>Frequency Table</title>
@@ -103,7 +113,7 @@
 			<!-- <title>The Mode of a Quantitative Variable</title> -->
 			<statement>
 				<p>
-					A survey of twelve grocery store shoppers asked how many times a month these shoppers visit their favorite grocery store. Find the mode of the resulting data, shown below.
+					A survey of sixteen grocery store shoppers asked how many times a month these shoppers visit their favorite grocery store. Find the mode of the resulting data, shown below.
 				</p>
 				<table xml:id="ex_center-spread_mode-quantitative_data">
 					<title>Number of visits per month</title>
@@ -172,7 +182,7 @@
 		<example xml:id="ex_center-spread_mode_bad-example">
 			<statement>
 				<p>Find the mode of the following sets of numbers.
-					<ol marker="a.">
+					<ol marker="a)">
 						<li><p><m>\lbrace 1, 2, 5, 7, 12, 15, 19, 22, 50 \rbrace</m></p></li>
 						<li><p><m>\lbrace 1, 1, 20, 23, 26, 24, 29, 30, 27, 32, 19\rbrace</m></p></li>
 					</ol>
@@ -181,7 +191,7 @@
 			<solution>
 				<p>
 					The modes of these sets of numbers are as follows:
-					<ol marker="a">
+					<ol marker="a)">
 						<li>
 							<p>
 								This data set contains no repeated values. Therefore, according to <xref ref="def_mode" text="custom">the definition</xref>, there is no mode for this set.
@@ -203,14 +213,14 @@
 	<subsection xml:id="subsec_center-midrange">
 		<title>Midrange</title>
 		<p>
-			When we think of the <q>typical</q> value in a set of data, we may also think of the word <term>middle</term>. Our next measure of center, the <term>midrange</term>, is exactly that<mdash/>the middle of the data set. Note that the midrange is not a very useful measure of center. Rather, we introduce it in order to discuss <term>outliers</term> and why some measures of center are more appropriate than others depending on characteristics of the data.
+			When we think of the <q>typical</q> value in a set of data, we may also think of the word <q>middle</q>. Our next measure of center, the <term>midrange</term>, is exactly that<mdash/>the middle of the data's range. Note that the midrange is not a very useful measure of center. Rather, we introduce it in order to discuss outliers and why some measures of center are more appropriate than others depending on characteristics of the data.
 		</p>
 		<definition xml:id="def_midrange">
 			<idx>midrange</idx>
 			<idx><h>measures of center</h><h>midrange</h></idx>
 			<statement>
 				<p>
-					The <term>midrange</term> of a set of data is the value in the exact center of the data. To compute the midrange, use the formula:
+					The <term>midrange</term> of a set of data is the value halfway between its minimum and maximum values. To compute the midrange, use the formula:
 					<me>
 						\text{midrange} = \frac{\text{maximum} + \text{minimum}}{2}
 					</me>
@@ -259,7 +269,7 @@
 			</statement>
 			<solution>
 				<p>
-					To find the midrange we need to identify the maximum and minimum values in the data set. The largest value is 18.3 and the smallest is 6.5, Thus we compute the midrange using:
+					To find the midrange we need to identify the maximum and minimum values in the data set. The largest value is 18.3 and the smallest is 6.5. Thus we compute the midrange using:
 					<me>
 						\text{midrange} = \frac{18.3+6.5}{2} = 12.4
 					</me>.
@@ -268,7 +278,7 @@
 			</solution>
 		</example>
 		<p>
-			The midrange is useful for measuring the center of a dataset, but it has significant limitations. Most importantly, the midrange is extremely sensitive to <term>outliers</term>. Additionally, it only considers the maximum and minimum values, ignoring all other data points. Ideally, a measure of center should incorporate every value in the dataset when determining the <q>typical</q> value.
+			The midrange is easy to compute, but it has significant limitations. Most importantly, the midrange is extremely sensitive to <term>outliers</term>. Additionally, it only considers the maximum and minimum values, ignoring all other data points. Ideally, a measure of center should incorporate every value in the data set when determining the <q>typical</q> value.
 		</p>
 		<definition xml:id="def_outlier">
 			<idx>outlier</idx>
@@ -285,11 +295,11 @@
 			<!-- <title>The Effect of Outliers on the Midrange and Range</title> -->
 			<statement>
 				<p>
-					The game warden believes that the 6.5 inch fish she caught in the <xref ref="ex_center-spread_midrange_computation_data" text="custom">sample above</xref> is an outlier. She decides to redo the computation without that fish. Find the new midrange.</p>
+					The game warden believes that the 6.5-inch fish she caught in the <xref ref="ex_center-spread_midrange_computation_data" text="custom">sample above</xref> is an outlier. She decides to redo the computation without that fish. Find the new midrange.</p>
 			</statement>
 			<solution>
 				<p>
-					Without the 6.5 inch outlier, the new minimum is 8.7. This gives the following values:
+					Without the 6.5-inch outlier, the new minimum is 8.7. This gives the following values:
 					<me>
 						\text{midrange} = \frac{18.3+8.7}{2} = 13.5
 					</me>.
@@ -298,7 +308,7 @@
 			</solution>
 		</example>
 		<p>
-			Notice what a big difference the single 6.5 inch fish made! This is what we mean when we say that the midrange is sensitive to outliers.
+			Notice what a big difference the single 6.5-inch fish made! This is what we mean when we say that the midrange is sensitive to outliers.
 		</p>
 	</subsection>
 	<subsection xml:id="sec_center-spread_median">
@@ -308,18 +318,21 @@
 		</p>
 		<example xml:id="ex_center-spread_median_outlier">
 			<p>
-				The most expensive house in a certain market is a $2,500,000.00 mansion. The least expensive house is an $8,000.00 mobile home. Do you think that the midrange is an accurate measure of the <q>typical</q> home value in this market?
+				The most expensive house in a certain market is a $2,500,000 mansion. The least expensive house is an $8,000 mobile home. Do you think that the midrange is an accurate measure of the <q>typical</q> home value in this market?
 			</p>
 			<p>
 				To answer this question, let's first compute the midrange. This is:
 				<me>
-					\text{midrange} = \frac{2500000 + 8000}{2} = 1254000.
+					\text{midrange} = \frac{\$2{,}500{,}000 + \$8{,}000}{2} = \$1{,}254{,}000.
 				</me>
 				Do you think that the typical house really costs one and a quarter million dollars? Probably not! The midrange <em>is not an appropriate measure of center</em> for this data.
 			</p>
 		</example>
 		<p>
 			As we saw before, the outliers in this data set are affecting the midrange. To address these limitations, we need a measure of center that is resistant to outliers and uses more than just the extreme values.
+		</p>
+		<p>
+			You may have heard of the median, a common measure of center that's especially useful when a data set includes outliers, such as housing prices or household incomes. The term <q>median household income</q> is often used because it reflects typical earnings more accurately in such cases. This is especially helpful in places like Washington State, where billionaires like Bill Gates can skew the data.
 		</p>
 		<definition xml:id="def_median">
 			<idx>median</idx>
@@ -331,13 +344,13 @@
 			</statement>
 		</definition>
 		<p>
-			You may have heard of the <term>median</term>, a common measure of center that's especially useful when a data set includes outliers, such as housing prices or household incomes. The term <q>median household income</q> is often used because it reflects typical earnings more accurately in such cases. This is especially helpful in places like Washington State, where billionaires like Bill Gates can skew the data. Let's practice finding the median.
+			Let's practice finding the median.
 		</p>
 		<example xml:id="ex_center-spread_median">
 			<!-- <title>Computing the Median</title> -->
 			<statement>
 				<p>Find the median of each set of data below.
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								<m>\lbrace 14, 17, 10, 9, 16, 19, 12, 10, 15, 13 \rbrace</m>
@@ -354,14 +367,14 @@
 			<solution>
 				<p>
 					To find the median, first arrange the data values from least to greatest, then locate the middle value. Let's apply this process to both data sets above.
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
-								Our first step is to re-arrange this set of numbers in order, from smallest to largest:
+								Our first step is to rearrange this set of numbers in order, from smallest to largest:
 								<me>
 									\lbrace \overbrace{9, 10, 10, 12,}^{\text{lower half}} \overbrace{13, 14,}^{\text{middle pair}} \overbrace{15, 16, 17, 19}^{\text{upper half}}\rbrace
 								</me>
-								Then we find the middle number. Since there are an even number of values (ten of them), the exact middle lies half way between the two center values (5th and 6th) which are 13 and 14. So the median is <m>\frac{13+14}{2} = 13.5</m>.
+								Then we find the middle number. Since there is an even number of values (ten of them), the exact middle lies halfway between the two center values (5th and 6th) which are 13 and 14. So the median is <m>\frac{13+14}{2} = 13.5</m>.
 							</p>
 						</li>
 						<li>
@@ -370,7 +383,7 @@
 								<me>
 									\lbrace \overbrace{100, 117, 164,}^{\text{lower half}} \overbrace{178,}^{\text{median}} \overbrace{205, 215, 1000}^{\text{upper half}} \rbrace
 								</me>
-								As there are an odd number of values in this data set (seven of them), the median is the single value in the exact center (the 4th value), which is 178.
+								As there is an odd number of values in this data set (seven of them), the median is the single value in the exact center (the 4th value), which is 178.
 							</p>
 						</li>
 					</ol>
@@ -384,7 +397,7 @@
 	<subsection xml:id="subsec_center-spread_mean">
 		<title>Mean</title>
 		<p>
-			While the median effectively handles outliers, it has one significant limitation: it ignores the values of individual data points. When we want each value to influence our measure of center, we use the <term>arithmetic mean</term> (commonly called the average). Unlike the median, the arithmetic mean incorporates every data point in the dataset. For a sample, we use <m>\overline{x}</m> (read <q>x bar</q>) to represent the mean.
+			While the median effectively handles outliers, it has one significant limitation: it ignores the values of individual data points. When we want each value to influence our measure of center, we use the <term>arithmetic mean</term> (commonly called the average). Unlike the median, the arithmetic mean incorporates every data point in the data set. For a sample, we use <m>\overline{x}</m> (read <q>x bar</q>) to represent the mean.
 		</p>
 		<definition xml:id="def_mean">
 			<idx>mean</idx>
@@ -405,7 +418,7 @@
 		<example>
 			<statement>
 				<p>
-					Mirabel's exam scores for her last math class were: 79, 86, 82, and 94. What is her mean test score?
+					Mirabel's exam scores for her last math class were 79, 86, 82, and 94. What is her mean test score?
 				</p>
 			</statement>
 			<solution>
@@ -469,9 +482,9 @@
 			</statement>
 			<solution>
 				<p>
-					Calculating the mean by hand could get tedious if we try to type in all 100 values:
+					Calculating the mean by hand could get tedious if we try to write out all 100 values:
 					<me>
-						\bar{x}=\frac{\overbrace{15+ \cdot + 15}^{6 \text{ terms}} + \overbrace{20+ \cdot + 20}^{8 \text{ terms}} +\cdots+ \overbrace{50 + \cdot + 50}^{7 \text{ terms}}}{100}
+						\bar{x}=\frac{\overbrace{15 + \cdots + 15}^{6 \text{ terms}} + \overbrace{20 + \cdots + 20}^{8 \text{ terms}} +\cdots+ \overbrace{50 + \cdots + 50}^{7 \text{ terms}}}{100}
 					</me>
 				</p>
 				<p>
@@ -536,11 +549,11 @@
 					<cell>Data</cell>
 					<cell>Data</cell>
 					<cell>to Outliers</cell>
-					<cell>every Value</cell>
+					<cell>Every Value</cell>
 				</row>
 				<row>
 					<cell><term>Mode</term></cell>
-					<cell>sometimes</cell>
+					<cell>yes</cell>
 					<cell>sometimes</cell>
 					<cell>no</cell>
 					<cell>no</cell>
@@ -563,7 +576,7 @@
 					<cell><term>Mean</term></cell>
 					<cell>no</cell>
 					<cell>yes</cell>
-					<cell>somewhat</cell>
+					<cell>yes</cell>
 					<cell>yes</cell>
 				</row>
 			</tabular>
@@ -583,7 +596,7 @@
 					<li>
 						<title>Midrange</title>
 						<p>
-							The midrange may be used for a quick estimate of center and variation, but should not be used if there are any indications of outliers.
+							The midrange may be used for a quick estimate of center, but should not be used if there are any indications of outliers.
 						</p>
 					</li>
 					<li>
@@ -595,7 +608,7 @@
 					<li>
 						<title>Mean</title>
 						<p>
-							The mean is the best all-purpose measure of center and variation for quantitative data. Unless your data set has strong outliers, this is the summary value you should use.
+							The mean is the best all-purpose measure of center for quantitative data. Unless your data set has strong outliers, this is the summary value you should use.
 						</p>
 					</li>
 				</ul>
@@ -605,8 +618,8 @@
 			<!-- <title>Picking Appropriate Measures</title> -->
 			<statement>
 				<p>
-					Determine which measure of center would be best in each of the following data sets.
-					<ol marker="a.">
+					Determine which measure of center would be best for each of the following situations.
+					<ol marker="a)">
 						<li>
 							<p>
 								The salaries of all employees at IBM
@@ -619,12 +632,12 @@
 						</li>
 						<li>
 							<p>
-								Determine the typical hair color in a group of teenagers.
+								The typical hair color in a group of teenagers
 							</p>
 						</li>
 						<li>
 							<p>
-								Finding the typical height of a pine tree in a given acre of forest.
+								The typical height of a pine tree in a given acre of forest
 							</p>
 						</li>
 					</ol>
@@ -632,7 +645,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								Salaries of all employees at a large firm such as IBM are likely to include outliers, such as the CEO's salary. For this reason, the median is probably the best measure of center.
