@@ -44,7 +44,7 @@
 			<statement>
 			<p>
 				Which of the following are propositions?
-				<ol marker="a">
+				<ol marker="a)">
 					<li>
 						<p>
 							I am reading a math book.
@@ -88,7 +88,7 @@
 				<statement>
 				<p>
 					Write the negation of the following propositions.
-				<ol marker="a">
+				<ol marker="a)">
 					<li>
 						<p>
 							I am reading a math book.
@@ -114,7 +114,7 @@
 			</statement>
 				<solution>
 					<p>
-					<ol marker="a">
+					<ol marker="a)">
 						<li>
 							<p>
 								Negation: I am not reading a math book.
@@ -153,7 +153,7 @@
 				<statement>
 				<p>
 					Write two different negations of each statement.
-					<ol marker="a">
+					<ol marker="a)">
 					<li>
 						<p>
 							All college students take psychology.
@@ -169,7 +169,7 @@
 				</statement>
 				<solution>
 					<p>
-					<ol marker="a">
+					<ol marker="a)">
 					<li>
 						<p>
 							Negations: Not all college students take psychology, or, Some college students <alert>don't</alert> take psychology.
@@ -243,7 +243,7 @@
 			<statement>
 			<p>
 				Determine whether each compound statement is true or false.
-			<ol marker="a">
+			<ol marker="a)">
 				<li>
 					<p>
 						Six is an even number and Olympia is the capital of Washington.
@@ -279,7 +279,7 @@
 			</statement>
 			<solution>
 				<p>
-				<ol marker="a">
+				<ol marker="a)">
 					<li>
 						<p>
 							True. Six is even and Olympia is the capital of Washington. Since both parts are true, the <q>and</q> statement is true.
@@ -323,7 +323,7 @@
 			<statement>
 			<p>
 				Determine whether each <em>or</em> statement is inclusive or exclusive.
-				<ol marker="a">
+				<ol marker="a)">
 					<li>
 						<p>
 							Would you like a chicken or vegan meal?
@@ -437,7 +437,7 @@
 			<statement>
 			<p>
 				Determine whether each conditional statement is true or false.
-			<ol marker="a">
+			<ol marker="a)">
 				<li>
 					<p>
 						If tricycles have three wheels, then bicycles have two wheels.
@@ -463,7 +463,7 @@
 			</statement>
 			<solution>
 				<p>
-				<ol marker="a">
+				<ol marker="a)">
 					<li>
 						<p>
 							True. Tricycles have three wheels and bicycles have two wheels. The hypothesis and conclusion are both true, so the statement is true.
@@ -558,7 +558,7 @@
 				Which of the following are propositions?
 			</p>
 			<p>
-				<ol marker="a">
+				<ol marker="a)">
 					<li>
 						<p>
 							Pigs can fly.
@@ -584,7 +584,7 @@
 			</statement>
 			<solution>
 				<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							Proposition
@@ -616,7 +616,7 @@
 				Which of the following are propositions?
 			</p>
 			<p>
-				<ol marker="a">
+				<ol marker="a)">
 					<li>
 						<p>
 							How far?
@@ -642,7 +642,7 @@
 			</statement>
 			<solution>
 				<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							Not a proposition
@@ -674,7 +674,7 @@
 				Write the negation of each proposition.
 			</p>
 			<p>
-				<ol marker="a">
+				<ol marker="a)">
 					<li>
 						<p>
 							I ride my bike to campus.
@@ -690,7 +690,7 @@
 			</statement>
 			<solution>
 				<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							I do not ride my bike to campus.
@@ -712,7 +712,7 @@
 				Write the negation of each proposition.
 			</p>
 			<p>
-				<ol marker="a">
+				<ol marker="a)">
 					<li>
 						<p>
 							You should see this movie.
@@ -728,7 +728,7 @@
 			</statement>
 			<solution>
 				<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							You should not see this movie.
@@ -750,7 +750,7 @@
 				Write the negation of each proposition.
 			</p>
 			<p>
-				<ol marker="a">
+				<ol marker="a)">
 					<li>
 						<p>
 							Nobody rides their bike to campus.
@@ -766,7 +766,7 @@
 			</statement>
 			<solution>
 				<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							Some people ride their bike to campus, or There are people who ride their bike to campus.
@@ -788,7 +788,7 @@
 				Write the negation of each proposition.
 			</p>
 			<p>
-				<ol marker="a">
+				<ol marker="a)">
 					<li>
 						<p>
 							Everyone should see this movie.
@@ -804,7 +804,7 @@
 			</statement>
 			<solution>
 				<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							Not everyone should see this movie, or Some people should not see this movie.
@@ -852,7 +852,7 @@
 				For each situation, decide whether the <q>or</q> is most likely exclusive or inclusive.
 			</p>
 			<p>
-				<ol marker="a">
+				<ol marker="a)">
 					<li>
 						<p>
 							An entrée at a restaurant includes soup or salad.
@@ -868,7 +868,7 @@
 			</statement>
 			<solution>
 				<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							Exclusive
@@ -890,7 +890,7 @@
 				For each situation, decide whether the <q>or</q> is most likely exclusive or inclusive.
 			</p>
 			<p>
-				<ol marker="a">
+				<ol marker="a)">
 					<li>
 						<p>
 							We can keep driving on I-84 or get on I-82 at the next exit.
@@ -906,7 +906,7 @@
 			</statement>
 			<solution>
 				<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							Exclusive
@@ -928,7 +928,7 @@
 				For each situation, decide whether the <q>or</q> is most likely exclusive or inclusive.
 			</p>
 			<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							I will wear a sweater or a jacket.
@@ -944,7 +944,7 @@
 			</statement>
 			<solution>
 			<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							Inclusive
@@ -966,7 +966,7 @@
 				For each situation, decide whether the <q>or</q> is most likely exclusive or inclusive.
 			</p>
 			<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							While in California I will go to the beach or Disneyland.
@@ -982,7 +982,7 @@
 			</statement>
 			<solution>
 			<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							Inclusive
@@ -1004,7 +1004,7 @@
 				Rewrite each statement in the conditional form <em>if</em> <m>p</m>, <em>then</em> <m>q</m>.
 			</p>
 			<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							Whenever it is sunny, I go swimming.
@@ -1020,7 +1020,7 @@
 			</statement>
 			<solution>
 			<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							If it is sunny, then I will go swimming.
@@ -1042,7 +1042,7 @@
 				Rewrite each statement in the conditional form <em>if</em> <m>p</m>, <em>then</em> <m>q</m>.
 			</p>
 			<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							I always carry an umbrella when it rains.
@@ -1058,7 +1058,7 @@
 			</statement>
 			<solution>
 			<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							If it is raining, then I carry an umbrella.
@@ -1080,7 +1080,7 @@
 				Determine whether each statement is true or false.
 			</p>
 			<p>
-				<ol marker="a">
+				<ol marker="a)">
 					<li>
 						<p>
 							An apple is a vegetable or an apple is a fruit.
@@ -1106,7 +1106,7 @@
 			</statement>
 			<solution>
 				<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							True
@@ -1138,7 +1138,7 @@
 				Determine whether each statement is true or false.
 			</p>
 			<p>
-				<ol marker="a">
+				<ol marker="a)">
 					<li>
 						<p>
 							A horse is not a mammal.
@@ -1164,7 +1164,7 @@
 			</statement>
 			<solution>
 				<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							False
@@ -1196,7 +1196,7 @@
 				Determine whether each statement is true or false.
 			</p>
 			<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							A square has four sides and all sides are equal.
@@ -1222,7 +1222,7 @@
 			</statement>
 			<solution>
 			<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							True
@@ -1254,7 +1254,7 @@
 				Determine whether each statement is true or false.
 			</p>
 			<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							An octagon has 8 sides or a rectangle has 5 sides.
@@ -1280,7 +1280,7 @@
 			</statement>
 			<solution>
 			<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							True

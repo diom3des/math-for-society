@@ -125,7 +125,7 @@
 			<statement>
 				<p>
 					Consider the statement <q>If you park here, then you will get a ticket.</q> What set of conditions would prove this statement false?
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								You don't park here and you get a ticket.
@@ -367,7 +367,7 @@
 			<statement>
 			<p>
 				Suppose this statement is true: <q>The garbage truck comes down my street if and only if it is Thursday morning.</q> Which of the following statements could be true?
-				<ol marker="a">
+				<ol marker="a)">
 					<li>
 						<p>
 							It is noon on Thursday and the garbage truck did not come down my street this morning.
@@ -389,7 +389,7 @@
 			<solution>
 			<p>
 				Let <m>p</m> be <q>The garbage truck comes down my street,</q> and let <m>q</m> be <q>It is Thursday morning.</q>
-				<ol marker="a">
+				<ol marker="a)">
 					<li>
 						<p>
 							This cannot be true. This is like the third row of the truth table; it is false that the garbage truck came, but it is true that it was Thursday morning.
@@ -573,7 +573,7 @@
 					Suppose this statement is true: <q>If I eat this giant cookie, then I will feel sick.</q> Which of the following statements must also be true?
 				</p>
 				<p>
-					<ol marker="a">
+					<ol marker="a)">
 						<li>
 							<p>
 								If I feel sick, then I ate the giant cookie.
@@ -605,7 +605,7 @@
 					Consider the statement <q>If you finish your chores, then you can have dessert.</q>
 				</p>
 				<p>
-					<ol marker="a">
+					<ol marker="a)">
 						<li>
 							<p>
 								Write the converse, the inverse, and the contrapositive of this statement in words.
@@ -629,7 +629,7 @@
 					Let <m>p</m> be <q>You finish your chores,</q> and let <m>q</m> be <q>You can have dessert.</q> The statement is <m>p \to q</m>.
 				</p>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								Converse (<m>q \to p</m>): <q>If you can have dessert, then you finished your chores.</q> Inverse (<m>\neg p \to \neg q</m>): <q>If you don't finish your chores, then you can't have dessert.</q> Contrapositive (<m>\neg q \to \neg p</m>): <q>If you can't have dessert, then you didn't finish your chores.</q>
@@ -656,7 +656,7 @@
 					Which of the following is equivalent to the negation of <q>If you don't grease the pan, then the food will stick to it</q>?
 				</p>
 				<p>
-					<ol marker="a">
+					<ol marker="a)">
 						<li>
 							<p>
 								You don't grease the pan, and the food doesn't stick to it.
@@ -743,7 +743,7 @@
 					The first of De Morgan's laws is <m>\neg(p \lor q) \equiv \neg p \land \neg q</m>.
 				</p>
 				<p>
-					<ol marker="a">
+					<ol marker="a)">
 						<li>
 							<p>
 								Create a truth table that shows this equivalence.
@@ -759,7 +759,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								See the truth table below. The last two columns match in every row, so the two statements are equivalent.
@@ -828,7 +828,7 @@
 					The second of De Morgan's laws is <m>\neg(p \land q) \equiv \neg p \lor \neg q</m>.
 				</p>
 				<p>
-					<ol marker="a">
+					<ol marker="a)">
 						<li>
 							<p>
 								Let <m>p</m> be <q>Jordan is at the game,</q> and let <m>q</m> be <q>Priya is at the game.</q> Use De Morgan's law to write two sentences with equivalent meaning.
@@ -844,7 +844,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								Answers will vary, for example <q>Jordan and Priya are not both at the game</q> and <q>Either Jordan is not at the game, or Priya is not at the game.</q>
@@ -913,7 +913,7 @@
 					A friend claims that the exclusive or <m>p \oplus q</m> (see <xref ref="ex-logic-xor"/>) is equivalent to <m>(p \land \neg q) \lor (\neg p \land q)</m>.
 				</p>
 				<p>
-					<ol marker="a">
+					<ol marker="a)">
 						<li>
 							<p>
 								Let <m>p</m> be <q>You can have fries with your meal,</q> and let <m>q</m> be <q>You can have a baked potato with your meal.</q> Argue whether or not your friend is correct.
@@ -929,7 +929,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								Your friend is correct. If a server says <q>You can have fries or a baked potato,</q> they mean the <em>or</em> exclusively: you can have one or the other, but not both. This is exactly what the right-hand side says: <q>You can have fries and not a baked potato, or a baked potato and not fries.</q>
@@ -1003,7 +1003,7 @@
 					Suppose this statement is true: <q>The store is open if and only if it is a weekday.</q> Which of the following statements could be true?
 				</p>
 				<p>
-					<ol marker="a">
+					<ol marker="a)">
 						<li>
 							<p>
 								It is Saturday, and the store is open.
@@ -1027,7 +1027,7 @@
 					Let <m>p</m> be <q>The store is open,</q> and let <m>q</m> be <q>It is a weekday.</q>
 				</p>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								This cannot be true. It is like the second row of the truth table for <m>p \leftrightarrow q</m>: the store is open, but it is not a weekday.
@@ -1051,7 +1051,7 @@
 		<exercise><!--  #10 (new) -->
 			<statement>
 				<p>
-					<ol marker="a">
+					<ol marker="a)">
 						<li>
 							<p>
 								Create a truth table for <m>p \leftrightarrow \neg q</m>.

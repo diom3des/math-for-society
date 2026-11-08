@@ -74,7 +74,7 @@
 			<statement>
 				<p>
 					Find the value of each expression below.
-					<ol marker="a." cols="3">
+					<ol marker="a)" cols="3">
 						<li><p><m>5!</m></p></li>
 						<li><p><m>8!</m></p></li>
 						<li><p><m>\frac{8!}{5!}</m></p></li>
@@ -84,7 +84,7 @@
 			<solution>
 				<p>
 					Using the definition above,
-					<ol marker="a.">
+					<ol marker="a)">
 						<li><p><m>5! = 5\times 4\times 3\times 2\times 1 = 120</m></p></li>
 						<li><p><m>8! = 8\times 7\times 6\times 5! = 336\times 120 = 40{,}320</m></p></li>
 						<li><p><m>\frac{8!}{5!} = \frac{8\times 7\times 6\times 5!}{5!} = \frac{8\times 7\times 6}{1} = 336</m>.</p></li>

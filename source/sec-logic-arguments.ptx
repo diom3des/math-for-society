@@ -157,7 +157,7 @@
 			<statement>
 			<p>
 				Rewrite the following arguments in a precise <q>premise, premise, conclusion</q> form, and determine if the argument is inductive or deductive.
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							A whole number greater than one is prime if its only divisors are one and itself. Since 13 is greater than one and its only divisors are one and itself, 13 must be prime.
@@ -173,7 +173,7 @@
 			</statement>
 			<solution>
 			<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<tabular>
 							<row>
@@ -819,7 +819,7 @@
 					Determine whether each argument is inductive or deductive.
 				</p>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								Anyone who scores 90% or higher on the final exam earns an A on it. Theo scored 93% on the final exam. Therefore, Theo earned an A on the final exam.
@@ -845,7 +845,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								Deductive. It reasons from a general rule about everyone who scores 90% or higher to a specific conclusion about Theo.
@@ -877,7 +877,7 @@
 					Rewrite each argument in <q>premise, premise, conclusion</q> form, and determine whether it is inductive or deductive. If the argument is inductive, describe its strength. If it is deductive, decide whether it is valid and whether it is sound.
 				</p>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								All bicycles have two wheels. My friend's Harley-Davidson has two wheels, so it must be a bicycle.
@@ -898,7 +898,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<tabular>
 								<row>
@@ -963,7 +963,7 @@
 					Each of the following arguments is inductive. Decide whether each is strong or weak, and explain why.
 				</p>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								A survey of 2,000 randomly selected adults in Washington found that 58% of them own a pet. Therefore, about 58% of adults in Washington own a pet.
@@ -984,7 +984,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								Strong. The sample is large and randomly chosen from the group the conclusion is about, so it is likely to be representative.
@@ -1011,7 +1011,7 @@
 					Fill in the blank to complete each argument. Then state whether the argument is inductive or deductive.
 				</p>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								All birds are <fillin characters="10"/>. A robin is a bird. Therefore, a robin is red.
@@ -1032,7 +1032,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								All birds are <em>red</em>. (Deductive; it is valid, but not sound, since not all birds are red.)
@@ -1059,7 +1059,7 @@
 					Decide whether each argument is valid. If it is valid, decide whether it is sound. Explain your answers.
 				</p>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								All animals have four legs. A giraffe has four legs. Therefore, a giraffe is an animal.
@@ -1080,7 +1080,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								<alert>Invalid</alert>, and therefore not sound. Let <m>a</m> be <q>It is an animal</q> and <m>f</m> be <q>It has four legs.</q> The argument has the form <m>a \to f</m>, <m>f</m>, therefore <m>a</m>. In the row of the truth table where <m>a</m> is false and <m>f</m> is true, both premises are true but the conclusion is false. In words, having four legs does not make something an animal (a table has four legs, too). The conclusion happens to be true, but it does not follow from the premises. (The first premise is also false: birds are animals.)
@@ -1104,7 +1104,7 @@
 		<exercise><!-- #6 (new) -->
 			<statement>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								Write an argument whose premises and conclusion are all true, but which is <em>not</em> valid.
@@ -1128,7 +1128,7 @@
 					Answers to parts a and b will vary. Sample answers:
 				</p>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								<q>If a number is divisible by 4, then it is even. The number 8 is even. Therefore, 8 is divisible by 4.</q> Each statement is true, but the conclusion does not follow from the premises: the number 6 is also even, and it is not divisible by 4.
@@ -1155,7 +1155,7 @@
 					Each truth table below belongs to an argument with premises labeled P and conclusion C. The columns marked <m>*</m> are intermediate steps. Decide whether each argument is valid, and explain how you can tell.
 				</p>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
 								<row header="yes">
@@ -1254,7 +1254,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								<alert>Valid</alert>. All three premises are true only in row 3, and the conclusion is true in that row.
@@ -1276,7 +1276,7 @@
 					Use a truth table to decide whether each argument is valid.
 				</p>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<tabular>
 								<row>
@@ -1318,7 +1318,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
 								<row header="yes">
@@ -1568,7 +1568,7 @@
 					An art student is deciding whether to pursue a creative career. She reasons, <q>Either I pursue financial security or I pursue my passion for art. If I pursue financial security, I will be content. If I pursue my passion for art, I will be content. Therefore, I will be content.</q>
 				</p>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								Write the argument in symbolic form. (Hint: you need three propositions.)
@@ -1584,7 +1584,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								Let <m>p</m> be <q>I pursue financial security,</q> <m>q</m> be <q>I pursue my passion for art,</q> and <m>r</m> be <q>I will be content.</q>
@@ -1716,7 +1716,7 @@
 					Someone makes the following argument: <q>If people exercise regularly, then they maintain a healthy weight. If people maintain a healthy weight, then they have low cholesterol. Mel does not exercise regularly. Therefore, Mel does not have low cholesterol.</q>
 				</p>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								Write the argument in symbolic form.
@@ -1732,7 +1732,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								Let <m>p</m> be <q>Mel exercises regularly,</q> <m>q</m> be <q>Mel maintains a healthy weight,</q> and <m>r</m> be <q>Mel has low cholesterol.</q>
@@ -1864,7 +1864,7 @@
 					For each argument, decide whether it is valid. If it is valid, name the form it uses (law of detachment, law of contraposition, or transitive property). If it is not valid, explain why.
 				</p>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								If today is Tuesday, then the library closes early. Today is Tuesday. Therefore, the library closes early.
@@ -1895,7 +1895,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								Valid, by the law of detachment.
@@ -2078,7 +2078,7 @@
 					</row>
 				</tabular>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								The argument contains four propositions. Name them <m>p</m>, <m>q</m>, <m>r</m>, and <m>s</m>, and write the argument in symbolic form.
@@ -2104,7 +2104,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								Let <m>p</m> be <q>God exists,</q> <m>q</m> be <q>God is good enough to want to prevent evil,</q> <m>r</m> be <q>God is powerful enough to get rid of evil,</q> and <m>s</m> be <q>Evil exists.</q>

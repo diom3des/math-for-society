@@ -772,7 +772,7 @@
 					Mia tells Noah, <q>If you help me move on Saturday, then I'll buy you pizza.</q>
 				</p>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								List all four possibilities for what could happen on Saturday (Noah helps or doesn't; Mia buys pizza or doesn't). For each one, decide whether Mia kept her promise or broke it.
@@ -793,7 +793,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
 								<row header="yes">
@@ -847,7 +847,7 @@
 					Let <m>p</m> be <q>To put this shelf together, I need a screwdriver,</q> and let <m>q</m> be <q>To put this shelf together, I need a wrench.</q>
 				</p>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								Make one truth table with columns for <m>p \land q</m>, <m>p \lor q</m>, and <m>\neg q</m>.
@@ -863,7 +863,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
 								<row header="yes">
@@ -924,7 +924,7 @@
 					The rows of each truth table below are in an unusual order, and one value is missing. Fill in the missing value, and explain how you know.
 				</p>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
 								<row header="yes">
@@ -988,7 +988,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								F. The exclusive or <m>p \oplus q</m> is true when exactly one of <m>p</m> and <m>q</m> is true. When both are true, it is false.
@@ -1007,7 +1007,7 @@
 		<exercise><!-- #4 (new) -->
 			<statement>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								How many rows does a truth table need for a statement with one proposition? With two? With three? With four?
@@ -1023,7 +1023,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								One proposition needs 2 rows, two need 4, three need 8, and four need 16.
@@ -1045,7 +1045,7 @@
 					Create a truth table for each statement. Then describe in words when the statement is true.
 				</p>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								<m>\neg p \land q</m>
@@ -1071,7 +1071,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
 								<row header="yes">
@@ -1256,7 +1256,7 @@
 					Suppose <m>p</m> is true, <m>q</m> is false, and <m>r</m> is true. Find the truth value of each statement without making a full truth table. (Work from the inside of the parentheses out.)
 				</p>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								<m>p \land (q \lor r)</m>
@@ -1282,7 +1282,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								<m>q \lor r</m> is <m>F \lor T = T</m>, so <m>p \land (q \lor r)</m> is <m>T \land T</m>, which is <alert>true</alert>.
@@ -1314,7 +1314,7 @@
 					Let <m>F</m> represent <q>She finishes her bachelor's degree</q> and <m>G</m> represent <q>She gets the job.</q>
 				</p>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								Write <q>She finishes her bachelor's degree but doesn't get the job</q> in symbols.
@@ -1335,7 +1335,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								<m>F \land \neg G</m>
@@ -1411,7 +1411,7 @@
 					</ul>
 				</p>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								Translate <m>P \land \neg Q</m> into smooth English.
@@ -1432,7 +1432,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								<q>The restaurant is open, but the chef is not working tonight.</q>
@@ -1533,7 +1533,7 @@
 					Consider the statement <q>If it is raining and there is lightning, then Service Day will be canceled.</q>
 				</p>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								Choose letters for the three propositions, and write the statement in symbols.
@@ -1554,7 +1554,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								Let <m>r</m> be <q>It is raining,</q> <m>l</m> be <q>There is lightning,</q> and <m>c</m> be <q>Service Day will be canceled.</q> The statement is <m>(r \land l) \to c</m>.
@@ -1662,7 +1662,7 @@
 					</ul>
 				</p>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								Write <q>If artificial intelligence surpasses human intelligence, then many jobs will be automated and education systems need to be reformed</q> in symbols.
@@ -1683,7 +1683,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								<m>A \to (J \land E)</m>
@@ -1898,7 +1898,7 @@
 					A car rental company has this rule: <q>You can rent a car if you are at least 25 years old, or if you are at least 21 years old and you pay a young-driver fee.</q> Let <m>p</m> be <q>You are at least 25,</q> <m>q</m> be <q>You are at least 21,</q> and <m>r</m> be <q>You pay the young-driver fee.</q>
 				</p>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								Write the condition for renting a car in symbols.
@@ -1919,7 +1919,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								<m>p \lor (q \land r)</m>

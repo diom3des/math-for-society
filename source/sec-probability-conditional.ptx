@@ -62,7 +62,7 @@
 			<statement>
 				<p>
 					Determine if the pairs of events <m>A</m> and <m>B</m> described below are independent or dependent.
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								A coin is flipped three times and <m>A =</m> <q>the first flip is heads</q> while <m>B =</m> <q>the last flip is heads.</q>
@@ -88,7 +88,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								Does knowing if the first flip was heads or tails change the probability that the third flip will be heads? Coins do not have memories. Anything we know about the first flip has no effect on what happens on the third flip, so <m>A</m> and <m>B</m> are <term>independent</term>.
@@ -296,7 +296,7 @@
 				</table>
 				<p>
 					Suppose one of these people is randomly selected. Use the given table to answer the following questions.
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								Find <m>P(\text{H. Gone})</m>, the probability the person's headache is gone.
@@ -318,7 +318,7 @@
 			<solution>
 				<p>
 					Using the data table we compute the following probabilities.
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								<m>P(\text{H. Gone}) = \frac{86}{138} \approx 0.6232</m> since 86 of the 138 people's headaches were gone after 45 minutes.
@@ -372,7 +372,7 @@
 		<statement>
 			<p>
 				Suppose you have a bag containing 6 red Legos, 4 green Legos, and 3 black Legos. We will make exactly two Lego selections from the bag. What is the probability of selecting:
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							two red Legos in a row if we put the first red Lego back in the bag?
@@ -393,7 +393,7 @@
 		</statement>
 		<solution>
 			<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 								Since the outcomes are equally likely, the probability of selecting a red Lego is the number of red Legos divided by the total number of Legos, or <m>P(\text{red}) = \frac{6}{13}</m>.
@@ -437,7 +437,7 @@
 			<statement>
 				<p>
 					A jar contains 10 marbles: 7 red and 3 white. Two marbles are drawn randomly, one after the other, without replacement. Find the probabilities that:
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								the second marble is red given that the first marble was red.
@@ -452,7 +452,7 @@
 				</p>
 			</statement>
 			<solution>
-				<p><ol marker="a.">
+				<p><ol marker="a)">
 					<li>
 						<p>
 							Since we are told that the first marble was red, when drawing the second marble we have 9 marbles remaining, 6 of which are red. Thus, the probability the second marble is red is <m>\frac{6}{9} = \frac{2}{3}</m>.
@@ -587,7 +587,7 @@
 			<statement>
 				<p>
 					A jar contains six marbles: 3 blue marbles, 2 red marbles, and 1 white marble. Two marbles are drawn, one after the other, without replacement and their colors are noted. Draw a tree diagram and label the branches with appropriate probabilities for this experiment. Use the tree diagram to find
-					<ol marker="a." cols="2">
+					<ol marker="a)" cols="2">
 						<li>
 							<p>
 								<m>P(\text{2nd }W\mid\text{1st }R)</m>
@@ -648,7 +648,7 @@
 					</figure>
 				<p>
 					Using this tree diagram, we find the desired probabilities.
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								Note that <m>P(\text{2nd }W\mid\text{1st }R)</m> can be read directly from the tree. Since we are given that the first marble was red, we go across that middle <m>R</m> branch. Now, the probability the second is white is the probability on the <m>W</m> branch, so <m>\frac{1}{5}</m>.
@@ -700,7 +700,7 @@
 					According to OHSU's Center for Women's Health, approximately 1 in 4 women and 1 in 7 men will experience 
 					intimate partner violence (IPV) at some point in their lives.<fn><url href="https://www.ohsu.edu/womens-health/domestic-violence-more-common-you-might-think" visual="ohsu.edu/womens-health/domestic-violence-more-common-you-might-think"/></fn>
 					Assume a population made up of equal numbers of men and women, and answer the following questions.
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>What is the probability that a randomly selected person experiences IPV?</li>
 						<li>Given that a person has experienced IPV, what is the probability that the person is a woman?</li>
 						<li>Given that a person has experienced IPV, what is the probability that the person is a man?</li>
@@ -749,7 +749,7 @@
 					</image>
 				</figure>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								Denote the probability that a randomly selected person has experienced IPV by <m>P(V)</m>. Notice that either a man or a woman can experience IPV. That is, <m>P(V)</m> is composed of cases where either men or women experience IPV. These two mutually exclusive cases are summed using the mutually exclusive case of the <xref ref="thm_probability-rule_general-addition" text="custom">general addition rule</xref>, and are shown in the tree diagram above as the first and third of the four right-most branches. Multiplying to the end of each branch,

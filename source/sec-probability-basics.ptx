@@ -131,7 +131,7 @@
 			<statement>
 				<p>
 					An experiment consists of rolling two fair dice and noting the sum of the numbers rolled. Below are several sets related to this experiment.
-					<ol marker="a.">
+					<ol marker="a)">
 						<li><p><m>\lbrace 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 \rbrace</m></p></li>
 						<li><p><m>\lbrace 2, 4, 6, 8, 10, 12 \rbrace</m></p></li>
 						<li><p><m>\lbrace (1,1), (1,2), \ldots, (5,6), (6,6) \rbrace</m></p></li>
@@ -215,7 +215,7 @@
 			<statement>
 			<p>
 				A prize machine is filled with 10 yellow erasers, 6 green erasers, 4 red pencil sharpeners, 8 yellow pencil sharpeners, and 5 red bouncy balls. Each prize is inside a plastic sphere, and the spheres are well mixed in the prize machine. Each game gets you just one prize. Determine the probability of
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							getting a yellow prize.
@@ -236,7 +236,7 @@
 		</statement>
 		<solution>
 			<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							Since <q>yellow</q> is a single event, we just need to know how many prizes there are in total, and how many of the prizes are yellow. The yellow prizes include the 10 yellow erasers and the 8 yellow pencil sharpeners.
@@ -371,7 +371,7 @@
 			<statement>
 				<p>
 					A woman owns 12 cats. She has 3 male tabby cats, 4 female tabby cats, 3 female calico cats, and 2 male Siamese cats. A single cat is chosen from the group at random. Find the probability that the cat is:
-					<ol marker="a." cols="3">
+					<ol marker="a)" cols="3">
 						<li><p>male</p></li>
 						<li><p>a tabby cat</p></li>
 						<li><p>a male or a calico</p></li>
@@ -381,7 +381,7 @@
 			<solution>
 				<p>
 					Since we are told the cat is chosen at random, we know that each cat is equally likely to be chosen. Thus, we can use the theoretical probability definition to solve these problems. For each of these events, note that the sample space is all of the cats owned by this woman. Thus, <m>n(S) = 12</m> for each problem. Let <m>M</m>, <m>T</m>, and <m>C</m> be the events that the chosen cat is male, a tabby, and a calico, respectively.
-					<ol marker="a.">
+					<ol marker="a)">
 						<li><p>There are <m>3 + 2 = 5</m> male cats, so <m>n(M) = 5</m> and <m>P(M) = \frac{5}{12}</m>.</p></li>
 						<li><p>There are <m>3 + 4 = 7</m> tabby cats, so <m>n(T) = 7</m> and <m>P(T) = \frac{7}{12}</m>.</p></li>
 						<li><p>Since all of the calico cats are female, <m>M</m> and <m>C</m> do not overlap. So <m>n(M \cup C) = 5 + 3 = 8</m>, so <m>P(M\cup C) = \frac{8}{12} = \frac{2}{3}</m>.</p></li>
@@ -397,7 +397,7 @@
 			<statement>
 				<p>
 					A special deck of cards contains only 10 cards taken from a standard deck of 52 cards. These 10 cards are the two black aces, two red kings, all four queens, and the two red jacks from the regular deck. Four cards are drawn at random from the deck without replacement. What is the probability that:
-					<ol marker="a.">
+					<ol marker="a)">
 						<li><p>none of the cards are aces?</p></li>
 						<li><p>two of the cards are black, and two are red?</p></li>
 						<li><p>at least one of the cards is a queen?</p></li>
@@ -408,7 +408,7 @@
 			<solution>
 				<p>
 					Notice that nothing is said about the order in which cards are drawn for the first three events.  So we will use <xref ref="fact_counting-rule_combination" text="custom">combinations</xref> to count both the sample space and the number of outcomes in these events.  The common sample space is found by counting the number of ways to select 4 of the 10 cards if order doesn't matter: <m>C(10,4) = \frac{10 \times 9\times 8\times 7}{4\times 3\times 2\times 1} = 210</m>.
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								If none of the cards are aces, then all four are selected from the remaining 8 non-ace cards. This can be done in <m>C(8,4) = 70</m> ways. So, <m>P(\text{no aces}) = \frac{70}{210} = \frac{1}{3}</m>.
@@ -455,7 +455,7 @@
 			<statement>
 				<p>
 					An experiment consists of randomly selecting three marbles from a jar containing six red marbles, four white marbles, and two green marbles. What is the probability that:
-					<ol marker="a.">
+					<ol marker="a)">
 						<li><p>all three marbles are green?</p></li>
 						<li><p>all three marbles are white?</p></li>
 						<li><p>all three marbles are the same color?</p></li>
@@ -465,7 +465,7 @@
 			<solution>
 				<p>
 					We start by counting the sample space, which will be the same for all three events. We are drawing three marbles from a jar containing 12 total marbles. We don't care about the order in which we draw the marbles, just the colors that are drawn. Therefore, <m>n(S) = C(12,3) = 220</m>.
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								Since there are only two green marbles, it is impossible for all three marbles we draw to be green. Therefore, <m>P(\text{all three are green}) = 0</m>.
