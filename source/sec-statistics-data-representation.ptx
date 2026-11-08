@@ -100,7 +100,7 @@
 							</li>
 							<li>
 								<p>
-									<term>Bivariate data</term> contains measurements from two variables. This is sometimes called <term>paired data</term>.
+									<term>Bivariate data</term> contains measurements from two variables. This is sometimes called <term>paired data</term><idx><h>paired data</h><see>data, bivariate</see></idx>.
 								</p>
 							</li>
 							<li>
@@ -218,6 +218,7 @@
 			<definition xml:id="def_qualitative-variable">
 				<idx>qualitative variable</idx>
 				<idx><h>variable</h><h>qualitative</h></idx>
+				<idx><h>categorical variable</h><see>qualitative variable</see></idx>
 				<statement>
 					<p>
 						A <term>qualitative variable</term> (also called a <term>categorical variable</term>) is one that takes on values representing categories or descriptions as opposed to numerical values.
@@ -647,7 +648,7 @@
 				</statement>
 			</definition>
 			<p>
-				Note that you can also make a bar graph using a relative frequency table. This type of graph is technically called a <term>relative frequency bar graph</term>, but it looks just like a regular bar graph. The only difference is that the vertical scale represents percentages instead of raw frequencies.
+				Note that you can also make a bar graph using a relative frequency table. This type of graph is technically called a <term>relative frequency bar graph</term><idx>relative frequency bar graph</idx><idx><h>graphs</h><h>relative frequency bar graph</h></idx>, but it looks just like a regular bar graph. The only difference is that the vertical scale represents percentages instead of raw frequencies.
 			</p>
 			<example xml:id="ex_graphs_bar-graph">
 				<!-- <title>Constructing a Bar Graph</title> -->
@@ -1047,7 +1048,6 @@
 			<definition xml:id="def_histogram">
 				<idx>histogram</idx>
 				<idx><h>graphs</h><h>histogram</h></idx>
-				<idx><h>graphs</h><h>histogram</h><seealso>histogram</seealso></idx>
 				<statement>
 					<p>
 						A <term>histogram</term> is a graph that displays the frequency distribution of quantitative data using adjacent bars. Each bar represents a class, and its height corresponds to the class's frequency. The bars are ordered by class and must touch to reflect the continuous nature of the data.
@@ -1284,6 +1284,8 @@ Stem | Leaf
 				<idx><h>histogram</h><h>bimodal</h></idx>
 				<idx><h>histogram</h><h>multimodal</h></idx>
 				<idx><h>histogram</h><h>uniform</h></idx>
+				<idx><h>histogram</h><h>modal class</h></idx>
+				<idx><h>modal class</h><see>histogram, modal class</see></idx>
 				One way to describe the shape of a histogram is based on the number and location of its <em>modes</em>. A <term>mode</term> is a class that contains significantly more data than the classes immediately	next to it. A histogram can be <term>unimodal</term> (one mode), <term>bimodal</term> (two modes), <term>multimodal</term> (more than two modes), or it may have no prominent modes in which case it is called <term>uniform</term>. The class with the tallest bar is sometimes called the <term>modal class</term>.
 			</p>
 			<p xml:id="def_histogram-symmetry">
