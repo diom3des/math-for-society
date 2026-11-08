@@ -77,7 +77,7 @@
 			Notice that all three data sets have a mean of 5 points and median of 5 points, yet the sets of scores are clearly quite different from each other. In Section A, everyone had the same score; in Section B half the class earned no points and the other half got a perfect score. The scores for Section C vary a little, but they stay much closer to the central score of 5 than the scores in Section B do.
 		</p>
 		<p>
-			Thus, in addition to the measures of center, we also need a measure of how <q>spread out</q> (or <q>varied</q>, or <q>dispersed</q>) each data set is in order to characterize it well.  There are several ways to measure the variation of a distribution. In this section we will look at the <alert>range</alert>, <alert>interquartile range (IQR)</alert>, and <alert>standard deviation</alert>.
+			Thus, in addition to the measures of center, we also need a measure of how <q>spread out</q> (or <q>varied</q>, or <q>dispersed</q>) each data set is<idx><h>dispersion</h><see>measures of spread</see></idx><idx><h>variation</h><see>measures of spread</see></idx> in order to characterize it well.  There are several ways to measure the variation of a distribution. In this section we will look at the <alert>range</alert>, <alert>interquartile range (IQR)</alert>, and <alert>standard deviation</alert>.
 		</p>
 	</introduction>
 
@@ -195,6 +195,7 @@
 		<definition xml:id="def_iqr">
 			<idx>interquartile range (IQR)</idx>
 			<idx><h>measures of spread</h><h>interquartile range (IQR)</h></idx>
+			<idx><h>IQR</h><see>interquartile range (IQR)</see></idx>
 			<statement>
 				<p>
 					The <term>interquartile range</term> or <term>IQR</term> is the difference between the third and first quartiles. That is,
@@ -315,6 +316,7 @@
 		<definition xml:id="def_std_dev">
 			<idx>standard deviation</idx>
 			<idx><h>measures of spread</h><h>standard deviation</h></idx>
+			<idx><h>standard deviation</h><h>sample</h></idx>
 			<statement>
 				<p> The <term>sample standard deviation</term>, <m>s</m>, measures the typical distance of the data values from the mean of a data set. It is given by
 				<me>
@@ -467,7 +469,7 @@
 				To find the mean of the squared deviations, we would typically divide this total (50) by the number of scores, <m>n</m> (in this case, 10). However, we divide by <m>n</m> only when the data represents a population. For sample data (which is more common), we divide by <m>n-1</m> (in this case, 9).
 			</p>
 			<p>
-				We assume Section D represents a sample, so we will divide by 9. The result, <m>50/9 \approx 5.56</m>, is called the <term>sample variance</term> and is written <m>s^2</m>. Note that its units are <q>points-squared</q> because we squared all of the deviations. It is more meaningful to use the units we started with, so we take the square root of this quantity to convert back to <q>points</q>.
+				We assume Section D represents a sample, so we will divide by 9. The result, <m>50/9 \approx 5.56</m>, is called the <term>sample variance</term><idx><h>variance</h><h>sample</h></idx> and is written <m>s^2</m>. Note that its units are <q>points-squared</q> because we squared all of the deviations. It is more meaningful to use the units we started with, so we take the square root of this quantity to convert back to <q>points</q>.
 			</p>
 			<p>
 				Thus, the sample standard deviation for Section D is
