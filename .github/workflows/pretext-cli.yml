@@ -45,6 +45,22 @@ jobs:
             - name: stage deployment
               run: pretext deploy --stage-only
 
+            # PreTeXt makes no sitemap; list every page so search engines
+            # find them all. index.html only redirects to the home page.
+            - name: add sitemap.xml and robots.txt
+              run: |
+                base="https://mathforsociety.org/"
+                cd output/stage
+                {
+                  echo '<?xml version="1.0" encoding="UTF-8"?>'
+                  echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+                  for f in $(ls *.html | grep -v '^index\.html$' | sort); do
+                    echo "  <url><loc>${base}${f}</loc></url>"
+                  done
+                  echo '</urlset>'
+                } > sitemap.xml
+                printf 'User-agent: *\nAllow: /\nSitemap: %ssitemap.xml\n' "$base" > robots.txt
+
             - name: Bundle output/stage as artifact
               uses: actions/upload-artifact@v4
               with:
