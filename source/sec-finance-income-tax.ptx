@@ -74,7 +74,7 @@
         Not all income is taxed, and not all income that gets taxed is taxed at the same rate. The general process of calculating the amount of federal income tax you owe is outlined in the figure below.
       </p>
       <figure>
-        <caption>Steps to Calculate Federal Income Tax</caption>
+        <caption>Steps to calculate federal income tax</caption>
         <image width="100%">
         <shortdescription>Five rectangles showing the steps: 1. Calculate gross income by adding all income; 2. Calculate adjusted gross income (AGI) by subtracting any pre-tax adjustments; 3. Calculate taxable income by subtracting deductions (itemized or standard); 4. Calculate tax using tax table for your filing status; 5. Calculate refund or amount owed by subtracting credits and withholdings. If the amount is negative you get a refund; if the amount is positive you owe money.</shortdescription>
           <latex-image>
@@ -597,7 +597,7 @@
     <example>
       <statement>
         <p>
-          John's taxes are $4,342.50. He can claim an American opportunity tax credit of $2,300, and he had $3,135 withheld from his paychecks. Determine if John will owe money or get a refund.
+          John's taxes are $4,342.50. He can claim an American opportunity tax credit of $2,300, and he had $3,135 withheld from his paychecks. Determine whether John will owe money or get a refund.
         </p>
       </statement>
       <solution>

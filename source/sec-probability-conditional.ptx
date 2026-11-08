@@ -606,7 +606,7 @@
 					In the tree diagram below, the labels represent the color of marble drawn. The fractions on the branches represent the probability of drawing that color marble at that stage in the experiment.
 				</p>
 				<figure xml:id="fig_conditional_ex_probability-tree">
-						<caption>Tree Diagram</caption>
+						<caption>Tree diagram</caption>
 						<image xml:id="image_conditional_ex_probability-tree" width="55%">
 							<shortdescription>
 								A tree with three branches off of the start.  Branch B has a probability 3/6, branch R has a probability 2/6, and branch W has a probability 1/6.  Off of branch B, there are three branches: B with probability 2/5, R with probability 2/5, and W with probability 1/5.  Off of the initial branch R, there are also three branches: B with probability 3/5, R with probability 1/5, and W with probability 1/5.  Finally, off of the original branch W there are just two branches: B with probability 3/5 and R with probability 2/5.
@@ -712,7 +712,7 @@
 					While not strictly necessary, drawing a tree diagram will help us find the required probabilities. Let <m>M</m> represent the event <q>person is a man</q>, <m>W</m> be the event <q>person is a woman</q>, and <m>V</m> be the event <q>person has experienced intimate partner violence</q>. In this notation, <m>V^C</m> is the complement of <m>V</m>, that is, the people who have not experienced IPV.
 				</p>
 				<figure xml:id="fig_conditional_ex_probability-tree-IPV">
-					<caption>Tree Diagram</caption>
+					<caption>Tree diagram</caption>
 					<image xml:id="image_conditional_ex_probability-tree-IPV" width="45%">
 						<shortdescription>
 							A tree two branches from the root. The top is labeled M for men, the second W for women. The edge from the root to the M node is labeled 1/2 as is the edge from the root to the W node. The M node has two children, labeled V and V complement. The edges are labeled 1/7 and 6/7, respectively. Similarly, the W node has two children labeled V and V complement with edges labeled 1/4 and 3/4.
@@ -832,7 +832,7 @@
 			<statement>
 				<p>Recall from <xref ref="ex_conditional_probability-tree-1"/> that the tree diagram below gives us the probabilities for an experiment in which two marbles are drawn, without replacement, from a jar containing 3 blue marbles, 2 red marbles, and 1 white marble. Use the tree to help find the probability that the 1st marble was white given that the second is red.</p>
 				<figure xml:id="fig_conditional_bayes-tree">
-					<caption>Tree Diagram</caption>
+					<caption>Tree diagram</caption>
 					<image xml:id="image_conditional_bayes-tree" width="55%">
 						<shortdescription>
 							A tree with three branches off of the start.  Branch B has a probability 3/6, branch R has a probability 2/6, and branch W has a probability 1/6.  Off of branch B, there are three branches: B with probability 2/5, R with probability 2/5, and W with probability 1/5.  Off of the initial branch R, there are also three branches: B with probability 3/5, R with probability 1/5, and W with probability 1/5.  Finally, off of the original branch W there are just two branches: B with probability 3/5 and R with probability 2/5.

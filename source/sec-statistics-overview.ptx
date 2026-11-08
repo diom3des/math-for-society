@@ -33,12 +33,11 @@
 		</ul>
 	</objectives>
 	<introduction>
-		<title>Introduction to Statistics</title>
-		<p>
+				<p>
 			We are constantly exposed to information and statistics. Without the ability to separate credible data from misleading claims, we risk being misled and making poor decisions. Statistics equips us with the tools to think critically and make informed choices, making it an essential subject to study.
 		</p>
 		<p>
-			Statistics are often used to lend credibility to arguments. Consider the following examples (Note: I am not suggesting these statements are true!):
+			Statistics are often used to lend credibility to arguments. Consider the following examples (Note: these statements are not necessarily true!):
 				<ul>
 					<li>
 						<p>
@@ -283,10 +282,10 @@
 				</p>
 			</example>
 			<figure xml:id="fig_data_def_systematic-sample">
-				<caption>Systematic Sample: subject #2 selected, then every 5th subject thereafter.</caption>
+				<caption>Systematic sample: subject #2 selected, then every fifth subject thereafter</caption>
 				<image width="55%" xml:id="image_data_def_systematic-sample">
 					<shortdescription>
-						One of the first 5 dots was randomly selected, and then every 5th dot thereafter is selected for the sample.
+						One of the first 5 dots was randomly selected, and then every fifth dot thereafter is selected for the sample.
 					</shortdescription>
 					<latex-image>
 						\begin{tikzpicture}[font=\figfont]
@@ -319,7 +318,7 @@
 				</p>
 			</example>
 			<figure xml:id="fig_data_def_stratified-sample">
-				<caption>Stratified Sample: Three subjects are sampled from each stratum</caption>
+				<caption>Stratified sample: three subjects sampled from each stratum</caption>
 				<image width="75%" xml:id="image_data_def_stratified-sample">
 					<shortdescription>
 						The dots have been divided into six groups, and then three dots are randomly selected from each group to form the sample.
@@ -384,7 +383,7 @@
 				</p>
 			</example>
 			<figure xml:id="fig_data_def_cluster-sample">
-				<caption>Cluster Sample: All Individuals in Three Clusters</caption>
+				<caption>Cluster sample: all individuals in three clusters</caption>
 				<image width="75%" xml:id="image_data_def_cluster-sample">
 					<shortdescription>
 						The dots have been divided into six groups, and then three of those groups are randomly selected and every dot from the selected groups is added to the sample.
@@ -548,7 +547,7 @@
 				<ol marker="a)">
 					<li>
 						<p>
-							Consider a 2009 study which found that chewing gum may raise math grades in teenagers.<fn>Reuters. <url href="https://www.reuters.com/article/lifestyle/chewing-gum-may-raise-math-grades-in-teens-idUSTRE53L793/" visual="reuters.com"/> Retrieved 5/27/2025</fn> This study was conducted by the Wrigley Science Institute, a branch of the Wrigley chewing gum company. This is an example of a self-interest study: one in which the researchers have a vested interest in the outcome of the study. While this does not necessarily mean the study was biased, we should subject the study to extra scrutiny.
+							Consider a 2009 study which found that chewing gum may raise math grades in teenagers.<fn>Reuters. <url href="https://www.reuters.com/article/lifestyle/chewing-gum-may-raise-math-grades-in-teens-idUSTRE53L793/" visual="reuters.com"/> Retrieved May 27, 2025.</fn> This study was conducted by the Wrigley Science Institute, a branch of the Wrigley chewing gum company. This is an example of a self-interest study: one in which the researchers have a vested interest in the outcome of the study. While this does not necessarily mean the study was biased, we should subject the study to extra scrutiny.
 						</p>
 					</li>
 					<li>
@@ -568,7 +567,7 @@
 					</li>
 					<li>
 						<p>
-							A survey asks, <q>Do you support funding research on alternative energy sources to reduce our reliance on high-polluting fossil fuels?</q> This is an example of a loaded or leading question<mdash/>one whose wording leads the respondent towards a certain answer.
+							A survey asks, <q>Do you support funding research on alternative energy sources to reduce our reliance on high-polluting fossil fuels?</q> This is an example of a loaded or leading question<mdash/>one whose wording leads the respondent toward a certain answer.
 						</p>
 					</li>
 					<li>
@@ -580,7 +579,7 @@
 			</p>
 		</example>
 		<p>
-			Loaded questions can occur intentionally by pollsters with an agenda, or accidentally through poor question wording. A related concern is question order, where the order of questions changes the results. Here is an example from a psychology researcher:<fn>Schwarz, Norbert. <url href="https://web.archive.org/web/20050413172152/http://www.umich.edu/~newsinfo/MT/01/Fal01/mt6f01.html" visual="umich.edu"/> Retrieved 5/27/2025</fn>
+			Loaded questions can occur intentionally by pollsters with an agenda, or accidentally through poor question wording. A related concern is question order, where the order of questions changes the results. Here is an example from a psychology researcher:<fn>Schwarz, Norbert. <url href="https://web.archive.org/web/20050413172152/http://www.umich.edu/~newsinfo/MT/01/Fal01/mt6f01.html" visual="umich.edu"/> Retrieved May 27, 2025.</fn>
 		</p>
 		<example>
 			<p>
@@ -594,7 +593,7 @@
 			Even when a study or experiment has successfully avoided bias and has been well done, there is still an element of variation. If we took 5 different random samples of 100 college students and calculated their average textbook cost, we wouldn't expect to get the exact same average for each sample. This is due to sampling variation. To account for this, researchers publish their margin of error or a confidence interval for their statistics. These numbers describe the precision of the estimate for a certain confidence level. 
 		</p>
 		<p>
-			You've probably heard something like, <q>The candidate has 54 percent of the likely voters, plus or minus three percentage points.</q> The 3 percentage points are called the <term>margin of error</term><idx><h>confidence interval</h><h>margin of error</h></idx><idx>margin of error</idx>, so the true percentage is somewhere between 51% and 57%, with a certain level of confidence. To write this as a <term>confidence interval</term><idx><h>confidence interval</h></idx>, we place the numbers in parentheses, from smallest to largest, separated by a comma: (51%, 57%).
+			You've probably heard something like, <q>The candidate has 54 percent of the likely voters, plus or minus three percentage points.</q> The three percentage points are called the <term>margin of error</term><idx><h>confidence interval</h><h>margin of error</h></idx><idx>margin of error</idx>, so the true percentage is somewhere between 51% and 57%, with a certain level of confidence. To write this as a <term>confidence interval</term><idx><h>confidence interval</h></idx>, we place the numbers in parentheses, from smallest to largest, separated by a comma: (51%, 57%).
 		</p>
 		<p>
 			The most common <term>confidence level</term><idx><h>confidence interval</h><h>confidence level</h></idx> is 95%, which means if the poll were conducted repeatedly, and we made a confidence interval each time, we would expect about 95 out of every 100 of those intervals to contain the true percentage, or parameter. You can learn more on how to calculate the margin of error for different confidence levels in a statistics class.

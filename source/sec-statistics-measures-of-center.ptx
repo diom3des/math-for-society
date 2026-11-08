@@ -231,7 +231,7 @@
 		<example xml:id="ex_center-spread_midrange_computation">
 			<statement>
 				<p>
-					A certain pond has been well stocked with fish for the upcoming fishing season. In order to keep a fish from this pond, it must be at least 13 inches long. To try to determine if the fish in the pond are long enough to allow fishing, a fish and game warden randomly catches and releases 20 different fish, finding the following lengths, in inches. Find the midrange of these data.
+					A certain pond has been well stocked with fish for the upcoming fishing season. In order to keep a fish from this pond, it must be at least 13 inches long. To try to determine whether the fish in the pond are long enough to allow fishing, a fish and game warden randomly catches and releases 20 different fish, finding the following lengths, in inches. Find the midrange of these data.
 				</p>
 				<table xml:id="ex_center-spread_midrange_computation_data">
 					<title>Fish Lengths in Inches</title>
@@ -358,7 +358,7 @@
 						</li>
 						<li>
 							<p>
-								<m>\lbrace 100, 215, 164, 117, 1000, 205, 178 \rbrace</m>
+								<m>\lbrace 100, 215, 164, 117, 1{,}000, 205, 178 \rbrace</m>
 							</p>
 						</li>
 					</ol>
@@ -374,16 +374,16 @@
 								<md>
 									\lbrace \overbrace{9, 10, 10, 12,}^{\text{lower half}} \overbrace{13, 14,}^{\text{middle pair}} \overbrace{15, 16, 17, 19}^{\text{upper half}}\rbrace
 								</md>
-								Then we find the middle number. Since there is an even number of values (ten of them), the exact middle lies halfway between the two center values (5th and 6th) which are 13 and 14. So the median is <m>\frac{13+14}{2} = 13.5</m>.
+								Then we find the middle number. Since there is an even number of values (ten of them), the exact middle lies halfway between the two center values (fifth and sixth) which are 13 and 14. So the median is <m>\frac{13+14}{2} = 13.5</m>.
 							</p>
 						</li>
 						<li>
 							<p>
 								Again, we start by ordering the data:
 								<md>
-									\lbrace \overbrace{100, 117, 164,}^{\text{lower half}} \overbrace{178,}^{\text{median}} \overbrace{205, 215, 1000}^{\text{upper half}} \rbrace
+									\lbrace \overbrace{100, 117, 164,}^{\text{lower half}} \overbrace{178,}^{\text{median}} \overbrace{205, 215, 1{,}000}^{\text{upper half}} \rbrace
 								</md>
-								As there is an odd number of values in this data set (seven of them), the median is the single value in the exact center (the 4th value), which is 178.
+								As there is an odd number of values in this data set (seven of them), the median is the single value in the exact center (the fourth value), which is 178.
 							</p>
 						</li>
 					</ol>
@@ -391,7 +391,7 @@
 			</solution>
 		</example>
 		<p>
-			Notice that the 1000 in the second data set is an outlier. But when finding the median, the actual value doesn't matter<mdash/>only its position in the data set does. You could replace 1000 with a more typical number like 220, and the median would stay the same. Bill Gates could earn just $200,000 a year, and the median household income in Washington State wouldn't change! This is what it means for the median to be <em>resistant to outliers</em><idx>resistant to outliers</idx>.
+			Notice that the 1,000 in the second data set is an outlier. But when finding the median, the actual value doesn't matter<mdash/>only its position in the data set does. You could replace 1,000 with a more typical number like 220, and the median would stay the same. Bill Gates could earn just $200,000 a year, and the median household income in Washington State wouldn't change! This is what it means for the median to be <em>resistant to outliers</em><idx>resistant to outliers</idx>.
 		</p>
 	</subsection>
 	<subsection xml:id="subsec_center-spread_mean">
@@ -493,10 +493,10 @@
 					<md>
 						<mrow> \amp (15)(6)+(20)(8) + (25)(11)+(30)(17)</mrow>
 						<mrow> \amp +(35)(19)+(40)(20) +(45)(12)+(50)(7) </mrow>
-						<mrow> \amp= 3390 </mrow>
+						<mrow> \amp= 3{,}390 </mrow>
 					</md>.
 					The mean is then
-					<md>\bar{x}=\frac{3390}{100}=33.9</md>
+					<md>\bar{x}=\frac{3{,}390}{100}=33.9</md>
 					That is, the mean household income of our sample is 33.9 thousand dollars or $33,900.
 				</p>
 			</solution>

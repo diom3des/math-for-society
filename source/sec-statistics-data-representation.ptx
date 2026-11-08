@@ -42,7 +42,7 @@
 
 		<introduction xml:id="sec_data_variables_intro">
 			<p>
-				Once we have collected data from an observational study or an experiment, we need to summarize and present them in a way that will be meaningful to our audience. Raw data are not very useful by itself. In this section we will begin with graphical presentations of data, and in the rest of the chapter we will learn about numerical summaries of data.
+				Once we have collected data from an observational study or an experiment, we need to summarize and present them in a way that will be meaningful to our audience. Raw data are not very useful by themselves. In this section we will begin with graphical presentations of data, and in the rest of the chapter we will learn about numerical summaries of data.
 			</p>
 			<definition xml:id="def_data">
 				<idx>data</idx>
@@ -75,7 +75,7 @@
 				</statement>
 				<solution>
 					<p>
-						The three characteristics measured are: fish species, fish length, and fish weight. These are the variables.
+						The three characteristics measured are fish species, fish length, and fish weight. These are the variables.
 					</p>
 				</solution>
 			</example>
@@ -95,17 +95,17 @@
 						<ul>
 							<li>
 								<p>
-									<term>Univariate data</term> contains measurements from a single variable.
+									<term>Univariate data</term> contain measurements from a single variable.
 								</p>
 							</li>
 							<li>
 								<p>
-									<term>Bivariate data</term> contains measurements from two variables. This is sometimes called <term>paired data</term><idx><h>paired data</h><see>data, bivariate</see></idx>.
+									<term>Bivariate data</term> contain measurements from two variables. This is sometimes called <term>paired data</term><idx><h>paired data</h><see>data, bivariate</see></idx>.
 								</p>
 							</li>
 							<li>
 								<p>
-									<term>Multivariate data</term> contains measurements from three or more variables.
+									<term>Multivariate data</term> contain measurements from three or more variables.
 								</p>
 							</li>
 						</ul>
@@ -181,7 +181,7 @@
 				<title>Classifying Variables</title>
 				<statement>
 					<p> 
-						The post office, wishing to better understand its customers, decides to collect	data from 1000 households in eastern Washington. They mail each household a questionnaire asking the residents to confirm their zip code, list the number of people who live in that household, and give the length of time that they have lived there. What are the variables in this study, and how do the measurements differ?
+						The post office, wishing to better understand its customers, decides to collect	data from 1,000 households in eastern Washington. They mail each household a questionnaire asking the residents to confirm their zip code, list the number of people who live in that household, and give the length of time that they have lived there. What are the variables in this study, and how do the measurements differ?
 					</p>
 				</statement>
 				<solution>
@@ -243,7 +243,7 @@
 		<title>Graphing Qualitative Data</title>
 		<introduction>
 			<p>
-				Data, no matter the type, is not very informative in its raw form. A graph is a powerful way to summarize and display data. However, before a graph can be produced, the data needs to be summarized in a table. For qualitative data this summary is called a frequency table.
+				Data, no matter the type, are not very informative in their raw form. A graph is a powerful way to summarize and display data. However, before a graph can be produced, the data need to be summarized in a table. For qualitative data this summary is called a frequency table.
 			</p>
 			<p>
 				The following example motivates the need to organize data before they can be understood and will be used throughout this section.
@@ -1206,7 +1206,7 @@
 							</ol>
 						</p>
 						<listing xml:id="listing_graphs_examp_stem-and-leaf">
-							<caption>Stem-and-Leaf Plot</caption>
+							<caption>Stem-and-leaf plot</caption>
 							<!-- Leave indent at far left of spacing won't work out in HTML! -->
 <program>
 Stem | Leaf
@@ -1303,7 +1303,7 @@ Stem | Leaf
 						Locate the center of each histogram and then classify it by number of modes and symmetry.
 					</p>
 					<figure xml:id="fig_graphs_examp_describing-histograms">
-						<caption>Various Histograms to Classify</caption>
+						<caption>Various histograms to classify</caption>
 						<sbsgroup margins="auto" widths="40% 40%">
 							<sidebyside>
 								<figure xml:id="fig_graphs_examp_describing-histograms-a">

@@ -104,7 +104,7 @@
 		<example xml:id="ex_center-spread_range_computation">
 			<statement>
 				<p>
-					A certain pond has been well stocked with fish for the upcoming fishing season. A fish caught in this pond may be kept only if it is at least 13 inches long. To try to determine if the fish in the pond are long enough to allow fishing, a fish and game warden randomly catches and releases 20 different fish, finding the following lengths, in inches. Find the range of these data.
+					A certain pond has been well stocked with fish for the upcoming fishing season. A fish caught in this pond may be kept only if it is at least 13 inches long. To try to determine whether the fish in the pond are long enough to allow fishing, a fish and game warden randomly catches and releases 20 different fish, finding the following lengths, in inches. Find the range of these data.
 				</p>
 				<table xml:id="ex_center-spread_range_computation_data">
 					<title>Fish Lengths in Inches</title>
@@ -255,7 +255,7 @@
 				</p>
 				<p>
 					<md>
-					<mrow>\overbrace{59,60,\underbrace{61,63,}_{Q_1=\frac{61+63}{2}=62} 64,64,}^{\text{Lower Half}} \overbrace{66,66,\underbrace{67, 69,}_{Q_3 =\frac{67+69}{2}=68} 70,72}^{\text{Upper Half}}</mrow>
+					<mrow>\overbrace{59,60,\underbrace{61,63,}_{Q_1=\frac{61+63}{2}=62} 64,64,}^{\text{lower half}} \overbrace{66,66,\underbrace{67, 69,}_{Q_3 =\frac{67+69}{2}=68} 70,72}^{\text{upper half}}</mrow>
 				</md>
 				</p>
 				<p>
@@ -294,7 +294,7 @@
 				<p>
 					The data are already in order, but now we have an odd number of values.  We use the median value of 66 as both the maximum value for the lower half of the data and the minimum value for the upper half.
 					<md>
-						\overbrace{59,60, 61, \underbrace{63,}_{Q_1=63} 64, 64, 6}^{\text{Lower Half}} \overbrace{6, 66, 67, \underbrace{68,}_{Q_3=68} 69, 70, 72}^{\text{Upper Half}}
+						\overbrace{59,60, 61, \underbrace{63,}_{Q_1=63} 64, 64, 6}^{\text{lower half}} \overbrace{6, 66, 67, \underbrace{68,}_{Q_3=68} 69, 70, 72}^{\text{upper half}}
 					</md>
 					The interquartile range is then
 					<md>
@@ -466,7 +466,7 @@
 				</md>.
 			</p>
 			<p>
-				To find the mean of the squared deviations, we would typically divide this total (50) by the number of scores, <m>n</m> (in this case, 10). However, we divide by <m>n</m> only when the data represents a population. For sample data (which is more common), we divide by <m>n-1</m> (in this case, 9).
+				To find the mean of the squared deviations, we would typically divide this total (50) by the number of scores, <m>n</m> (in this case, 10). However, we divide by <m>n</m> only when the data represent a population. For sample data (which is more common), we divide by <m>n-1</m> (in this case, 9).
 			</p>
 			<p>
 				We assume Section D represents a sample, so we will divide by 9. The result, <m>50/9 \approx 5.56</m>, is called the <term>sample variance</term><idx><h>variance</h><h>sample</h></idx> and is written <m>s^2</m>. Note that its units are <q>points-squared</q> because we squared all of the deviations. It is more meaningful to use the units we started with, so we take the square root of this quantity to convert back to <q>points</q>.
@@ -499,7 +499,7 @@
 			<ul>
 				<li>
 					<p>
-						The standard deviation is never negative. It will be zero if all the data values are equal and get larger as the data <q>spreads out</q>.
+						The standard deviation is never negative. It will be zero if all the data values are equal and get larger as the data <q>spread out</q>.
 					</p>
 				</li>
 				<li>

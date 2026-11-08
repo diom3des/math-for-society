@@ -180,7 +180,7 @@
   <subsection xml:id="subsec-amortization">
     <title>Installment Loans</title>
     <p>
-      Because the payment on an installment loan stays the same over the life of the loan, the amounts going towards the principal (amount owed) and towards the interest must vary. At the beginning of the loan, the amount owed is the largest, so the interest charged is also the largest. As the loan is repaid, the amount owed shrinks, and so does the interest. Therefore, at the beginning of an installment loan, payments go mostly towards interest; towards the end, they go mostly towards principal.
+      Because the payment on an installment loan stays the same over the life of the loan, the amounts going toward the principal (amount owed) and toward the interest must vary. At the beginning of the loan, the amount owed is the largest, so the interest charged is also the largest. As the loan is repaid, the amount owed shrinks, and so does the interest. Therefore, at the beginning of an installment loan, payments go mostly toward interest; toward the end, they go mostly toward principal.
     </p>
     <figure xml:id="fig-installment-loan-interest-principal">
       <caption>Interest and principal paid each year on a 10-year, $34,000 loan at 10% APR with monthly payments of $449.31 ($5,391.72 per year). In the first year, $3,305.92 went to interest and $2,085.80 to principal; in the last year, only $281.04 went to interest and $5,110.68 to principal. Over 10 years, a total of $53,917.20 was paid on the $34,000 loan.</caption>
@@ -297,7 +297,7 @@
     <example>
       <statement>
       <p>
-        You want to take out a $140,000 mortgage (home loan). The interest rate on the loan is 6%, and the loan is for 30 years. How much will your monthly payments be? What percentage of your total payments will go towards interest?
+        You want to take out a $140,000 mortgage (home loan). The interest rate on the loan is 6%, and the loan is for 30 years. How much will your monthly payments be? What percentage of your total payments will go toward interest?
       </p>
       </statement>
       <solution>
@@ -313,7 +313,7 @@
         You would make payments of $839.37 per month for 30 years. 
       </p>
       <p>
-        To find out what percentage of the total will go towards interest, we need to total up all of the payments.
+        To find out what percentage of the total will go toward interest, we need to total up all of the payments.
         <md>\$839.37(30)(12)=\$302{,}173.20</md>
         Then, subtract the loan amount from the total payments.
         <md>\$302{,}173.20-\$140{,}000=\$162{,}173.20</md>
@@ -324,7 +324,7 @@
         <md>\frac{\$162{,}173.20}{\$302{,}173.20} \approx 0.5367</md>
       </p>
       <p>
-        About 53.7% of the total is being paid towards interest.
+        About 53.7% of the total is being paid toward interest.
       </p>
     </solution>
     </example>
@@ -332,7 +332,7 @@
       With loans, it is sometimes desirable to determine what the remaining loan balance<idx><h>loans</h><h>remaining balance</h></idx> will be after some number of years. For example, if you purchase a home and plan to sell it in five years, you might want to know how much of the loan balance you will have paid off and how much you will have to pay from the sale.
     </p>
     <p>
-      To determine the remaining loan balance after some number of years, we first need to calculate the payment amount, if we don't already know it. Remember that only a portion of your loan payments go towards the loan balance; a portion is going to go towards interest. For example, if your payments were $1,000 a month, after a year you will <em>not</em> have paid off $12,000 of the loan balance.
+      To determine the remaining loan balance after some number of years, we first need to calculate the payment amount, if we don't already know it. Remember that only a portion of your loan payments go toward the loan balance; a portion is going to go toward interest. For example, if your payments were $1,000 a month, after a year you will <em>not</em> have paid off $12,000 of the loan balance.
     </p>
     <p>
       To determine the remaining loan balance, we can think <q>how much of the loan balance can these payments pay off in the remaining time?</q>
