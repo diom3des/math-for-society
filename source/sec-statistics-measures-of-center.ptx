@@ -391,7 +391,7 @@
 			</solution>
 		</example>
 		<p>
-			Notice that the 1000 in the second data set is an outlier. But when finding the median, the actual value doesn't matter<mdash/>only its position in the data set does. You could replace 1000 with a more typical number like 220, and the median would stay the same. Bill Gates could earn just $200,000 a year, and the median household income in Washington State wouldn't change! This is what it means for the median to be <em>resistant to outliers</em>.
+			Notice that the 1000 in the second data set is an outlier. But when finding the median, the actual value doesn't matter<mdash/>only its position in the data set does. You could replace 1000 with a more typical number like 220, and the median would stay the same. Bill Gates could earn just $200,000 a year, and the median household income in Washington State wouldn't change! This is what it means for the median to be <em>resistant to outliers</em><idx>resistant to outliers</idx>.
 		</p>
 	</subsection>
 	<subsection xml:id="subsec_center-spread_mean">
@@ -401,6 +401,7 @@
 		</p>
 		<definition xml:id="def_mean">
 			<idx>mean</idx>
+			<idx><h>arithmetic mean</h><see>mean</see></idx>
 			<idx><h>measures of center</h><h>mean</h></idx>
 			<statement>
 				<p>
