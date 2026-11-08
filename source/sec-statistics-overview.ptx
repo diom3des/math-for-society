@@ -248,6 +248,7 @@
 				The simplest way to use randomness to collect a sample is to collect a <term>simple random sample</term>.
 			</p>
 			<definition xml:id="def_simple-random-sample">
+				<idx>simple random sample</idx>
 				<idx><h>sample</h><h>simple random sample</h></idx>
 				<statement>
 					<p>
@@ -270,6 +271,7 @@
 				A <term>systematic sample</term> is particularly useful when the population from which we are sampling is already ordered. Examples of this include products coming off an assembly line, or cars moving through a sobriety checkpoint.
 			</p>
 			<definition xml:id="def_systematic_sample">
+				<idx>systematic sample</idx>
 				<idx><h>sample</h><h>systematic sample</h></idx>
 				<statement>
 					<p>A <term>systematic sample</term> is a random sample collected from an ordered population by randomly choosing one of the first <m>k</m> subjects, and then selecting every <m>k</m>th subject thereafter.</p>
@@ -305,6 +307,7 @@
 				In a <term>stratified sample</term> we group the population by characteristics which we think may make a difference, and then select randomly from each group. For example, we may want to ensure that both men and women are included in a drug study, so we select some men and some women. Or we may wish to ensure that voters of all political leanings are included in an election poll.
 			</p>
 			<definition xml:id="def_stratified_sample">
+				<idx>stratified sample</idx>
 				<idx><h>sample</h><h>stratified sample</h></idx>
 				<statement>
 					<p>In a <term>stratified sample</term>, a population is broken into several groups (called strata) and then a simple random sample is collected from each of these groups.</p>
@@ -367,6 +370,7 @@
 				The difference between a <term>cluster sample</term> and a stratified sample lies in how the groups are used. In a stratified sample, the population is divided into groups (strata), and a random sample is taken from each group. In contrast, a cluster sample involves dividing the population into clusters, then randomly selecting entire clusters and including all individuals within those clusters in the sample.
 			</p>
 			<definition xml:id="def_cluster_sample">
+				<idx>cluster sample</idx>
 				<idx><h>sample</h><h>cluster sample</h></idx>
 				<statement>
 					<p>
@@ -485,7 +489,7 @@
 			</statement>
 		</definition>
 		<definition xml:id="def_experiment">
-			<idx>experiment</idx>
+			<idx>experiment (study design)</idx>
 			<idx><h>study types</h><h>experiment</h></idx>
 			<statement>
 				<p>

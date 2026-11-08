@@ -72,9 +72,9 @@
 			Before we can discuss the basic rules of probability, it is important to understand the terminology used. The terms we need to define are rooted in sets, which we discussed earlier in this chapter.  First, we need to define what we mean by an <term>experiment</term> in probability theory.
 		</p>
 		<definition xml:id="def-experiment_probability">
-			<idx>experiment</idx>
+			<idx>experiment (probability)</idx>
 			<idx><h>probability</h><h>experiment</h></idx>
-			<idx><h>trial</h><see>experiment</see></idx>
+			<idx><h>trial</h><see>experiment (probability)</see></idx>
 			<statement>
 				<p>
 					An <term>experiment</term> or <term>trial</term> is any procedure that can be repeated any number of times and has a well-defined set of possible outcomes, known as the <term>sample space</term>.
