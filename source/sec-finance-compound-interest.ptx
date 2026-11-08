@@ -36,13 +36,13 @@
     </p>
   </introduction>
   <subsection>
-    <title>APR <mdash/> Annual Percentage Rate</title>
+    <title>APR<mdash/>Annual Percentage Rate</title>
     <p>
-      Interest rates are usually stated as an <term>annual percentage rate (APR)</term><idx>annual percentage rate (APR)</idx><idx><h>APR</h><see>annual percentage rate (APR)</see></idx> <mdash/> the total interest that will be paid in the year. Unless stated otherwise, assume the interest rate is an annual rate or APR. If the interest is paid in smaller time increments, the APR will be divided by the number of periods per year.
+      Interest rates are usually stated as an <term>annual percentage rate (APR)</term><idx>annual percentage rate (APR)</idx><idx><h>APR</h><see>annual percentage rate (APR)</see></idx><mdash/>the total interest that will be paid in the year. Unless stated otherwise, assume the interest rate is an annual rate or APR. If the interest is paid in smaller time increments, the APR will be divided by the number of periods per year.
       The APR divided by the number of periods per year is called the <term>periodic interest rate</term>.<idx><h>interest rate</h><h>periodic</h></idx>
     </p>
     <p>
-      Note: The Federal Truth in Lending Act requires that every consumer be given the true APR, which includes the interest and any fees.
+      <alert>Note:</alert> The Federal Truth in Lending Act requires that every consumer be given the true APR, which includes the interest and any fees.
     </p>
     <p>
       For example, a 6% APR paid monthly would be divided by 12, because you would get one-twelfth of the rate per month, which is a periodic interest rate of half a percent per month.
@@ -63,12 +63,12 @@
     <example>
       <statement>
       <p>
-        Suppose you buy a $1,000 federal bond with a 4% annual simple interest rate, paid semi-annually, with a maturity in 4 years. How much interest will you earn? What will be the future value of the bond?
+        Suppose you buy a $1,000 federal bond with a 4% annual simple interest rate, paid semiannually, with a maturity in 4 years. How much interest will you earn? What will be the future value of the bond?
       </p>
       </statement>
       <solution>
       <p>
-        The principal is <m>P = \$1{,}000</m>. Since interest is being paid semi-annually (twice a year), the 4% will be divided into two 2% payments.
+        The principal is <m>P = \$1{,}000</m>. Since interest is being paid semiannually (twice a year), the 4% will be divided into two 2% payments.
 
         <md>r=\frac{0.04}{2}=0.02.</md>
       </p>
@@ -104,7 +104,7 @@
       Suppose that we deposit $1,000 in a bank account offering 3% interest, compounded monthly. How will our money grow?
     </p>
     <p>
-      The 3% interest is an annual percentage rate (APR) <mdash></mdash> the total interest to be paid during the year. Since interest is paid monthly, each month we earn <m>\frac{0.03}{12}=0.0025</m>, or 0.25%, of our balance.
+      The 3% interest is an annual percentage rate (APR)<mdash/>the total interest to be paid during the year. Since interest is paid monthly, each month we earn <m>\frac{0.03}{12}=0.0025</m>, or 0.25%, of our balance.
     </p>
     <p>
       In the first month,
@@ -310,7 +310,7 @@
           <mrow> A =\amp P\left(1+\frac{r}{n}\right)^{nt} </mrow>
           <mrow> =\amp \$3{,}500\left(1+\frac{0.09}{12}\right)^{12\cdot 4} </mrow>
           <mrow> =\amp \$3{,}500(1+0.0075)^{48}</mrow>
-          <mrow> =\amp \$5{,}009.92.</mrow>
+          <mrow> \approx\amp \$5{,}009.92.</mrow>
         </md>
       </p>
       <p>
@@ -337,7 +337,7 @@
           </md>
           Dividing to solve for <m>P</m> yields
           <md>
-            P = \frac{\$5{,}000}{1.56822519} = \$3{,}188.32.
+            P = \frac{\$5{,}000}{1.56822519} \approx \$3{,}188.32.
           </md>
         </p>
         <p>
@@ -472,9 +472,12 @@
       <p>
         In <xref ref="ex_future_value_compound_interest"/> suppose we also want to know how much interest was earned and what percentage of the final balance is from interest. The future value of the investment is $5,009.92. To figure out how much of that was interest, we need to subtract the amount initially deposited.
       </p>
-      <p>
-        <alert>Key Idea:</alert> Total interest is always the difference between the account balance and the amount deposited (or paid).
-      </p>
+      <assemblage>
+        <title>Key Idea</title>
+        <p>
+          Total interest is always the difference between the account balance and the amount deposited (or paid).
+        </p>
+      </assemblage>
       <example>
         <p>
           To find the total amount of interest earned, we subtract the principal from the total balance.
@@ -499,7 +502,7 @@
       <title>Effective Rate</title>
       <p>
         If you are shopping around for different investments, you might need to compare different rates that have different compounding periods. If the rate and period are different, it is hard to know which account will give the better result. 
-        Banks are required to state their interest rate in terms of an "effective yield" or "effective interest rate", for comparison purposes.  The effective rate is also called the <term>Annual Percentage Yield (APY)</term>.<idx><h>APY</h><see>effective rate</see></idx><idx><h>annual percentage yield (APY)</h><see>effective rate</see></idx> 
+        Banks are required to state their interest rate in terms of an <q>effective yield</q> or <q>effective interest rate</q> for comparison purposes.  The effective rate is also called the <term>annual percentage yield (APY)</term>.<idx><h>APY</h><see>effective rate</see></idx><idx><h>annual percentage yield (APY)</h><see>effective rate</see></idx> 
       </p>
       <p>
         The <term>effective rate</term> is the interest rate compounded annually that would be equivalent to the stated rate and compounding periods. To examine several investments to see which has the best rate, we find and compare the effective rate for each investment. The next example shows how to calculate the effective rate.
@@ -533,9 +536,24 @@
         <idx><h>financial formulas</h><h>effective rate</h></idx>
         <p>The <term>effective interest rate</term> or <term>annual percentage yield</term> is given by
           <md>
-            r_{\text{eff}} = \left(1 + \frac{r}{n}\right)^n -1, 
+            r_{\text{eff}} = \left(1 + \frac{r}{n}\right)^n -1.
           </md>
-          where <m>r_{\text{eff}}</m> is the effective interest rate, <m>r</m> is the nominal interest rate per year, and <m>n</m> is the number of compounding periods per year.
+        </p>
+        <p>
+          Glossary:
+        </p>
+        <p>
+          <ul>
+            <li>
+              <p><m>r_{\text{eff}}</m> is the effective interest rate (APY) in decimal form</p>
+            </li>
+            <li>
+              <p><m>r</m> is the annual interest rate (APR) in decimal form</p>
+            </li>
+            <li>
+              <p><m>n</m> is the number of compounding periods per year</p>
+            </li>
+          </ul>
         </p>
       </assemblage>
     </subsection>

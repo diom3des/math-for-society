@@ -111,7 +111,7 @@
         <term>Gross income</term><idx>gross income</idx> includes all wages, tips, earned interest, dividends, rents and royalties, alimony (for divorces finalized before 2019), property gains, some state income tax refunds, etc. Note that this includes all forms of income. Even income from illegal activities must be reported.
       </p>
       <p>
-        <term>Adjustments</term><idx>adjustments (to income)</idx> are eligible expenses that reduce your gross income. Eligible expenses include contributions to tax-deferred savings plans (such as a 401(k) or an Individual Retirement Account (IRA)), student loan interest, moving expenses for members of the military, business expenses for the self-employed, flexible spending accounts, and health savings account contributions.
+        <term>Adjustments</term><idx>adjustments (to income)</idx> are eligible expenses that reduce your gross income. Eligible expenses include contributions to tax-deferred savings plans (such as a 401(k) or an individual retirement account (IRA)), student loan interest, moving expenses for members of the military, business expenses for the self-employed, flexible spending accounts, and health savings account contributions.
       </p>
       <p>
         <term>Taxable income</term><idx>taxable income</idx> is determined by subtracting your <term>deductions</term><idx>deductions</idx> from your adjusted gross income. You may choose to take <em>either</em> a <term>standard deduction</term><idx><h>deductions</h><h>standard</h></idx><idx><h>standard deduction</h><see>deductions, standard</see></idx>, which is determined by your filing status, or you may choose to <term>itemize</term><idx><h>deductions</h><h>itemized</h></idx><idx><h>itemized deductions</h><see>deductions, itemized</see></idx> your deductions. Itemized deductions may include state and local income taxes, property taxes, medical expenses, mortgage interest, and charitable donations.
@@ -125,7 +125,7 @@
       <example>
         <statement>
         <p>
-          Sasha received $45,000 in wages and earned $1,300 in interest from his savings plan. He paid $1,400 in student loan interest, and put $4,000 into his Individual Retirement Account (IRA). Determine Sasha's adjusted gross income.
+          Sasha received $45,000 in wages and earned $1,300 in interest from his savings plan. He paid $1,400 in student loan interest, and put $4,000 into his individual retirement account (IRA). Determine Sasha's adjusted gross income.
         </p>
         </statement>
         <solution>
@@ -616,7 +616,7 @@
     <example>
       <statement>
         <p>
-          As we discovered in <xref ref="ex_taylor_casey"></xref>, Taylor and Casey owe $19,146 in taxes. Their employers withheld $9,905, and they received a $7,500 credit for their purchase of an electric car. Will they receive a refund, or will they need to make a payment?
+          As we discovered in <xref ref="ex_taylor_casey"/>, Taylor and Casey owe $19,146 in taxes. Their employers withheld $9,905, and they received a $7,500 credit for their purchase of an electric car. Will they receive a refund, or will they need to make a payment?
         </p>
       </statement>
       <solution>

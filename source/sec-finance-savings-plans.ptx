@@ -28,9 +28,12 @@
       A sequence of equal periodic payments is called an <term>annuity</term>.<idx>annuities</idx> The payments (or deposits) can be made annually, quarterly, monthly, or at any other fixed interval of time. When the payments are made at the same time the interest is credited to the account, the annuity is called a <term>simple</term> annuity.<idx><h>annuities</h><h>simple</h></idx> When these payments are at the end of the payment period, the annuity is called <term>ordinary</term>.<idx><h>annuities</h><h>ordinary</h></idx>
       There are many other types of annuities, but we will not consider them here. This text will only discuss simple, ordinary annuities with equal-sized payments. 
     </p>
-    <p>
-      <alert>Tip:</alert> If the compounding frequency is not explicitly stated in a problem, assume that the number of compounding periods per year is the same as the number of deposits per year.
-    </p>
+    <assemblage xml:id="assemblage-finance-compounding-tip">
+      <title>Tip</title>
+      <p>
+        If the compounding frequency is not explicitly stated in a problem, assume that the number of compounding periods per year is the same as the number of deposits per year.
+      </p>
+    </assemblage>
   </introduction>
   <subsection xml:id="subsec-annuities">
     <title>Future Value of an Annuity</title>
@@ -80,7 +83,7 @@
       <solution>
       
       <p>
-        In this example the monthly deposit is <m>d=\$100</m>, and since deposits are monthly (and, following the tip above, so is compounding), <m>n = 12</m>. The annual interest rate is <m>r=0.06</m>, and since we want the amount after 20 years, <m>t=20</m>. The unknown value is <m>A</m>, which is the value we need to compute. Putting these values into the annuity equation we have:
+        In this example the monthly deposit is <m>d=\$100</m>, and since deposits are monthly (and, following the <xref ref="assemblage-finance-compounding-tip" text="custom">tip</xref> above, so is compounding), <m>n = 12</m>. The annual interest rate is <m>r=0.06</m>, and since we want the amount after 20 years, <m>t=20</m>. The unknown value is <m>A</m>, which is the value we need to compute. Putting these values into the annuity equation we have:
       </p>
       <p>
         <md>
@@ -98,9 +101,12 @@
     <p>
       Depositing $100 a month for 20 years takes a lot of discipline!  Was it worth it? How much interest did this annuity earn over 20 years?
     </p>
-    <p>
-      <alert>Key Idea:</alert> Total interest is always the difference between the account balance and the amount deposited (or paid).
-    </p>
+    <assemblage>
+      <title>Key Idea</title>
+      <p>
+        Total interest is always the difference between the account balance and the amount deposited (or paid).
+      </p>
+    </assemblage>
     <example>
       <statement>
         <p>
@@ -128,9 +134,7 @@
           To find the <alert>percentage of the balance that is interest</alert>, divide the interest by the total balance.
         </p>
         <p>
-          <md>\frac{\$22{,}204.09}{\$46{,}204.09}\approx 0.4806</md>
-        </p>
-        <p>
+          <md>\frac{\$22{,}204.09}{\$46{,}204.09}\approx 0.4806,</md>
           or 48.1%. After 20 years, 48.1% of the balance is from interest.
         </p>
       </solution>
@@ -179,7 +183,7 @@
       <p>
         Adding and rounding to the penny, in 30 years our account will contain 
         <md>
-          A_1 + A_2 = \$144{,}822.87.
+          A_1 + A_2 \approx \$144{,}822.87.
         </md>
       </p>
     </solution>
@@ -267,9 +271,7 @@
         To find the percentage of the balance that is interest, we divide the interest by the total balance.
       </p>
       <p>
-        <md>\frac{\$88{,}721.40}{\$450{,}000.00}\approx 0.1972</md>
-      </p>
-      <p>
+        <md>\frac{\$88{,}721.40}{\$450{,}000.00}\approx 0.1972,</md>
         or 19.7%. After 5 years, 19.7% of the balance is from interest.
       </p>
     </solution>
@@ -293,7 +295,7 @@
       Taking this equation from recursive form to explicit form is a bit trickier than with compound interest. It will be easiest to see by working with an example rather than working in general.
     </p>
     <p>
-      Suppose we will deposit $100 each month into an account paying 6% APR. The compounding frequency is not given, but as stated in the <q>tip</q> at the beginning of the section, since deposits are made monthly we assume that the compounding period is monthly too.
+      Suppose we will deposit $100 each month into an account paying 6% APR. The compounding frequency is not given, but as stated in the <xref ref="assemblage-finance-compounding-tip" text="custom">tip</xref> at the beginning of the section, since deposits are made monthly we assume that the compounding period is monthly too.
     </p>
     <p>
       In this example:

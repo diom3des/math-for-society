@@ -45,7 +45,7 @@
     </p>
 
       <p>
-        Suppose Carlos owns a small business and employs an assistant manager to help him run the business.  Assume it is January 1 now.  Carlos plans to pay his assistant manager a $1,000 bonus at the end of this year and another $1,000 bonus at the end of the following year. Carlos' business earned good profits last year, so he wants to put the money for his assistant's future bonuses into a savings account now.  The money he puts in now will earn interest at the rate of 4% per year compounded annually while in the savings account. 
+        Suppose Carlos owns a small business and employs an assistant manager to help him run the business.  Assume it is January 1 now.  Carlos plans to pay his assistant manager a $1,000 bonus at the end of this year and another $1,000 bonus at the end of the following year. Carlos's business earned good profits last year, so he wants to put the money for his assistant's future bonuses into a savings account now.  The money he puts in now will earn interest at the rate of 4% per year compounded annually while in the savings account. 
       </p>
       <p>
         How much money should Carlos put into the savings account now so that he will be able to withdraw $1,000 one year from now and another $1,000 two years from now? At first, this sounds like a sinking fund, but the situation is actually different.  In a sinking fund, we put money into the fund with periodic payments to accumulate a specified lump sum that is the future value at the end of a specified time period.
@@ -372,7 +372,7 @@
     </example>
     <p>
       Sometimes answering remaining balance questions requires two steps, both of which we have done in this section:
-      <ol marker="1">
+      <ol>
         <li>
           <p>
             Calculate the monthly payment on the loan

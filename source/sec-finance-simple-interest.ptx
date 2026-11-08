@@ -22,7 +22,7 @@
 
   <introduction>
     <p>
-      It costs to borrow money.  The "rent" one pays for the use of money is called the <term>interest</term>.<idx>interest</idx> The amount of money that is being borrowed or loaned is called the <term>principal</term> or <term>present value</term>.<idx>principal</idx><idx>present value</idx>
+      It costs to borrow money.  The <q>rent</q> one pays for the use of money is called the <term>interest</term>.<idx>interest</idx> The amount of money that is being borrowed or loaned is called the <term>principal</term> or <term>present value</term>.<idx>principal</idx><idx>present value</idx>
     </p>
   </introduction>
 
@@ -269,7 +269,7 @@
           <mrow>\$1{,}200 =\amp L(1-0.125)</mrow>
           <mrow>\$1{,}200 =\amp L(0.875)</mrow>
           <mrow>L =\amp \frac{\$1{,}200}{0.875} </mrow>
-          <mrow> =\amp \$1{,}371.43. </mrow>
+          <mrow> \approx\amp \$1{,}371.43. </mrow>
         </md>
         Therefore, Francisco should ask for a loan of $1,371.43. The lender will discount the loan by $171.43 and Francisco will receive $1,200.
       </p>
