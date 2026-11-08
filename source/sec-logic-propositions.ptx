@@ -33,6 +33,12 @@
 		</ul>
 	</objectives>
 
+	<introduction>
+		<p>
+			Logic begins with statements (or propositions) that are either true or false. In this section we define propositions, see how to negate them, and combine them using the connectors <em>and</em>, <em>or</em>, and <em>if, then</em>. We end with the mathematical notation used throughout the rest of the chapter.
+		</p>
+	</introduction>
+
 	<subsection>
 		<title>Propositions</title>
 		<p>  

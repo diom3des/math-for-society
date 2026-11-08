@@ -45,10 +45,10 @@
 
 	<introduction>
 		<p>
-			Symbolic logic emerged from ancient Greek foundations and was revolutionized in the 19th and early 20th centuries when mathematicians like Boole, Frege, and Russell transformed philosophical reasoning into precise mathematical systems. By replacing ambiguous language with clear symbols and operations, they created a universal framework for analyzing arguments with unprecedented rigor.
+			Symbolic logic emerged from ancient Greek foundations and was revolutionized in the nineteenth and early twentieth centuries when mathematicians like Boole, Frege, and Russell transformed philosophical reasoning into precise mathematical systems. By replacing ambiguous language with clear symbols and operations, they created a universal framework for analyzing arguments with unprecedented rigor.
 		</p>
 		<p>
-			Symbolic logic lets us check whether an argument is valid without the ambiguity of everyday language. It is used throughout computer science, mathematics, philosophy, and linguistics, and the habits it builds, such as stating claims clearly and checking whether a conclusion really follows from its premises, are useful in any field.
+			Symbolic logic lets us check whether an argument is valid without the ambiguity of everyday language. It is used throughout computer science, mathematics, philosophy, and linguistics, and the habits it builds, such as stating claims clearly and checking whether a conclusion really follows from its premises, are useful in any field. In this chapter we start with propositions and the connectors that join them, use truth tables to decide when compound statements are true, identify logically equivalent statements, and then evaluate arguments, ending with some common fallacies.
 		</p>
 	</introduction>
 

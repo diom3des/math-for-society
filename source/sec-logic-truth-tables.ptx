@@ -22,6 +22,12 @@
 			</li>
 		</ul>
 	</objectives>
+
+	<introduction>
+		<p>
+			In the previous section, we decided whether compound statements were true by thinking through each case. A truth table organizes that work by listing every possible combination of truth values, so that we can find the truth value of even a complicated statement. In this section we build truth tables first for the basic connectors and then for more complex statements.
+		</p>
+	</introduction>
 <subsection>
 	<title>Basic Truth Tables</title>
 	<introduction>

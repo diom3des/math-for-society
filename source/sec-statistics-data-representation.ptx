@@ -37,13 +37,17 @@
 			</li>
 		</ul>
 	</objectives>
+
+	<introduction>
+		<p>
+			Once we have collected data from an observational study or an experiment, we need to summarize and present them in a way that will be meaningful to our audience. Raw data are not very useful by themselves. In this section we will begin with graphical presentations of data, and in the rest of the chapter we will learn about numerical summaries of data.
+		</p>
+	</introduction>
+
 	<subsection xml:id="sec_data_data">
 		<title>What Is Data?</title>
 
 		<introduction xml:id="sec_data_variables_intro">
-			<p>
-				Once we have collected data from an observational study or an experiment, we need to summarize and present them in a way that will be meaningful to our audience. Raw data are not very useful by themselves. In this section we will begin with graphical presentations of data, and in the rest of the chapter we will learn about numerical summaries of data.
-			</p>
 			<definition xml:id="def_data">
 				<idx>data</idx>
 				<statement>
