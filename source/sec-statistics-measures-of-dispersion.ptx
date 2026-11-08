@@ -10,6 +10,11 @@
 					Calculate, describe, and interpret the measures of variation for a data set including the range, interquartile range (IQR), and standard deviation.
 				</p>
 			</li>
+			<li>
+				<p>
+					Find the quartiles of a data set.
+				</p>
+			</li>
 		</ul>
 	</objectives>
 
@@ -69,7 +74,7 @@
 			</row>
 		</tabular>
 		<p>
-			Notice that all three data sets have a mean of 5 points and median of 5 points, yet the sets of scores are clearly quite different from each other. In Section A, everyone had the same score; in Section B half the class earned no points and the other half got a perfect score. The scores for Section C are less consistent than the other sections but grouped closer to the central score of 5.
+			Notice that all three data sets have a mean of 5 points and median of 5 points, yet the sets of scores are clearly quite different from each other. In Section A, everyone had the same score; in Section B half the class earned no points and the other half got a perfect score. The scores for Section C vary a little, but they stay much closer to the central score of 5 than the scores in Section B do.
 		</p>
 		<p>
 			Thus, in addition to the measures of center, we also need a measure of how <q>spread out</q> (or <q>varied</q>, or <q>dispersed</q>) each data set is in order to characterize it well.  There are several ways to measure the variation of a distribution. In this section we will look at the <alert>range</alert>, <alert>interquartile range (IQR)</alert>, and <alert>standard deviation</alert>.
@@ -94,12 +99,12 @@
 			</statement>
 		</definition>
 		<p>
-			While simple to compute, the range is not a very useful measure of variation because it is heavily influenced by extreme values, or <xref ref="def_outlier" text="custom">outliers</xref>. For example, consider the distribution of full-time salaries in the United States. While many people earn near minimum wage, a few individuals<mdash/>such as CEOs of major corporations<mdash/>earn millions or even billions of dollars. This creates an enormous range that reveals little about where most salaries actually fall or how they are distributed around the typical (<q>center</q>) value.
+			While simple to compute, the range is not a very useful measure of variation because it is heavily influenced by extreme values, or <xref ref="def_outlier" text="custom">outliers</xref>. For example, consider the distribution of incomes of full-time workers in the United States. While many people earn near minimum wage, a few individuals<mdash/>such as CEOs of major corporations<mdash/>earn tens of millions of dollars or more. This creates an enormous range that reveals little about where most incomes actually fall or how they are distributed around the typical (<q>center</q>) value.
 		</p>
 		<example xml:id="ex_center-spread_range_computation">
 			<statement>
 				<p>
-					A certain pond has been well stocked with fish for the upcoming fishing season. In order to keep a fish from this pond, it must be at least 13 inches long. To try to determine if the fish in the pond are long enough to allow fishing, a fish and game warden randomly catches and releases 20 different fish, finding the following lengths, in inches. Find the range of these data.
+					A certain pond has been well stocked with fish for the upcoming fishing season. A fish caught in this pond may be kept only if it is at least 13 inches long. To try to determine if the fish in the pond are long enough to allow fishing, a fish and game warden randomly catches and releases 20 different fish, finding the following lengths, in inches. Find the range of these data.
 				</p>
 				<table xml:id="ex_center-spread_range_computation_data">
 					<title>Fish lengths in inches</title>
@@ -149,8 +154,8 @@
 	<subsection xml:id="subsec_spread_IQR-quartiles">
 		<title>Interquartile Range (IQR)</title>
 	<p>
-		Recall from the previous section that the <xref ref="def_median" text="custom">median</xref> is the most outlier-resistant measure of center. To create a similarly resistant measure of variation, we can extend the logic used to create the median. The median divides data into two halves. If we further divide each half at its median, we create four quarters (<term>quartiles</term>). 
-		The <term>interquartile range (IQR)</term> measures the spread of the middle 50% of the data by finding the distance between the first quartile (<m>Q_1</m>) and third quartile (<m>Q_3</m>). Since the IQR excludes the extreme 25% of data on each end, it remains unaffected by outliers.
+		Recall from the previous section that the <xref ref="def_median" text="custom">median</xref> is resistant to outliers. To create a similarly resistant measure of variation, we can extend the logic used to create the median. The median divides data into two halves. If we further divide each half at its median, we create four quarters; the values that divide them are called <term>quartiles</term>.
+		The <term>interquartile range (IQR)</term> measures the spread of the middle 50% of the data by finding the distance between the first quartile (<m>Q_1</m>) and third quartile (<m>Q_3</m>). Since the IQR ignores the lowest 25% and the highest 25% of the data, it is resistant to outliers.
 	</p>
 	<definition xml:id="def_quartiles">
 			<idx>quartiles</idx>
@@ -180,7 +185,7 @@
 						</li>
 				  	<li>
 							<p>
-								the <term>fourth quartile</term> (<m>Q_4</m>), is the maximum value in the data set.
+								the <term>fourth quartile</term> (<m>Q_4</m>), which is the maximum value in the data set.
 							</p>
 						</li>
 				  </ul>
@@ -192,7 +197,7 @@
 			<idx><h>measures of spread</h><h>interquartile range (IQR)</h></idx>
 			<statement>
 				<p>
-					The <term>Interquartile Range</term> or <term>IQR</term> is the difference between the 3rd and 1st quartiles. That is,
+					The <term>interquartile range</term> or <term>IQR</term> is the difference between the third and first quartiles. That is,
 				<me>
 					\text{IQR} = Q_3 - Q_1
 				</me>.
@@ -200,7 +205,7 @@
 			</statement>
 		</definition>
 		<p>
-			Note that there are different methods for computing quartiles, so your results may vary when using spreadsheets or computer algebra systems. The following examples demonstrate how we will compute <m>Q_1</m> and <m>Q_3</m> in this course. If you obtain different values using technology, consult your instructor.
+			Note that there are different methods for computing quartiles, so your results may vary when using spreadsheets or computer algebra systems. The following examples demonstrate how we will compute <m>Q_1</m> and <m>Q_3</m> in this book. If you obtain different values using technology, consult your instructor.
 		</p>
 		<example>
 			<statement>
@@ -256,8 +261,8 @@
 					In this data <m>Q_{1}=62</m> inches, and <m>Q_{3}=68</m> inches. The IQR is thus
 					<me>
 						\text{IQR} = Q_{3}-Q_{1} = 68 - 62 = 6\text{ inches}
-					</me>
-					This tells us the that the middle 50% of the women's heights lie within an interval of 6 inches centered around the median height of 65 inches. Said another way, 50% of the heights fall between 62 and 68 inches.
+					</me>.
+					This tells us that the middle 50% of the women's heights lie within an interval 6 inches wide that contains the median height of 65 inches. Said another way, 50% of the heights fall between 62 and 68 inches.
 				</p>
 			</solution>
 		</example>
@@ -288,13 +293,16 @@
 				<p>
 					The data are already in order, but now we have an odd number of values.  We use the median value of 66 as both the maximum value for the lower half of the data and the minimum value for the upper half.
 					<me>
-						\overbrace{59,60, 61, \underbrace{63,}_{Q1=63} 64, 64, 6}^{\text{Lower Half}} \overbrace{6, 66, 67, \underbrace{68,}_{Q3=68} 69, 70, 72}^{\text{Upper Half}}
+						\overbrace{59,60, 61, \underbrace{63,}_{Q_1=63} 64, 64, 6}^{\text{Lower Half}} \overbrace{6, 66, 67, \underbrace{68,}_{Q_3=68} 69, 70, 72}^{\text{Upper Half}}
 					</me>
 					The interquartile range is then
 					<me>
 						\text{IQR} = Q_{3} - Q_{1} = 68 - 63 = 5\text{ inches}	
 					</me>.
-					That is, the middle 50% of the women's heights lie within an interval of 5 inches centered around the median value of 66 inches. That is, 50% of the heights are between 63 and 68 inches.
+					That is, the middle 50% of the women's heights lie within an interval 5 inches wide that contains the median height of 66 inches. In other words, 50% of the heights are between 63 and 68 inches.
+				</p>
+				<p>
+					Including the median in both halves when <m>n</m> is odd is known as Tukey's method. Calculators such as the TI-84 set the median aside instead, which here gives <m>Q_1 = 62</m> and <m>Q_3 = 68.5</m>, so technology may give slightly different quartiles.
 				</p>
 			</solution>
 		</example>
@@ -302,13 +310,13 @@
 	<subsection xml:id="subsec-dispersion-standard_deviation">
 	<title>Standard Deviation</title>
 		<p>
-			While the interquartile range is a good measure of spread, sometimes there are no outliers in a data set, or a measure of spread that takes all values into account is desirable. In this case, the <term>standard deviation</term> is used to describe variation. The <term>sample standard deviation</term>, denoted <m>s</m>, is a measure of variation that tells us how far, on average, the data values deviate from the mean.
+			While the interquartile range is a good measure of spread, sometimes there are no outliers in a data set, or a measure of spread that takes all values into account is desirable. In this case, the <term>standard deviation</term> is used to describe variation. The <term>sample standard deviation</term>, denoted <m>s</m>, is a measure of variation that tells us roughly how far the data values typically are from the mean.
 		</p>
 		<definition xml:id="def_std_dev">
 			<idx>standard deviation</idx>
 			<idx><h>measures of spread</h><h>standard deviation</h></idx>
 			<statement>
-				<p> The <term>sample standard deviation</term>, <m>s</m> is the average distance of a data point from the mean of a data set. That is, 
+				<p> The <term>sample standard deviation</term>, <m>s</m>, measures the typical distance of the data values from the mean of a data set. It is given by
 				<me>
 					s=\sqrt{\frac{\text{sum of the squared deviations from the mean}}{n-1}}
 				</me>,
@@ -317,7 +325,7 @@
 			</statement>
 		</definition>
 		<p>
-			The following example illustrates the whole process for calculating the standard deviation and is provided to help you understand how to compute the standard deviation.
+			The following example walks through the whole process of computing a standard deviation.
 		</p>
 		<example>
 			<p>
@@ -390,7 +398,7 @@
 				</row>
 			</tabular>
 			<p>
-				We want to find the <q>average</q> deviation from the mean, but if we find the average of the values in the second column, the negative and positive values cancel each other out (this will always happen), so to prevent this we square the deviations to make them all positive.
+				We want to find the <q>average</q> deviation from the mean, but if we find the average of the values in the second column, the negative and positive values cancel each other out (this will always happen), so to prevent this we square the deviations so that none of them are negative.
 			</p>
 			<tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
 				<row header="yes">
@@ -452,22 +460,21 @@
 			<p>
 				Next, we add the squared deviations and we get
 				<me>
-					25+0+0+0+0+0+0+0+0+25=50	
-				</me>
-				Ordinarily, when computing an average (mean) we would then divide this total by the number of scores, <m>n</m>, (in this case, 10) to find the mean of the deviations, but the division by <m>n</m> is only done if the data set represents a population. When the data set represents a sample (as it almost always does), we divide by <m>n-1</m> (in this case 9).
+					25+0+0+0+0+0+0+0+0+25=50
+				</me>.
 			</p>
 			<p>
-				To find the mean of the deviations, we would typically divide this total (50) by the number of scores, <m>n</m> (in this case, 10). However, we divide by <m>n</m> only when the data represents a population. For sample data (which is more common), we divide by <m>n-1</m> (in this case, 9).
+				To find the mean of the squared deviations, we would typically divide this total (50) by the number of scores, <m>n</m> (in this case, 10). However, we divide by <m>n</m> only when the data represents a population. For sample data (which is more common), we divide by <m>n-1</m> (in this case, 9).
 			</p>
 			<p>
-				We assume Section D represents a sample, so we will divide by 9. Note that units of <m>50/9</m> are now <q>points-squared</q> because we squared all of the deviations. It is more meaningful to use the units we started with, so we take the square root of this quantity to convert back to <q>points</q>.
+				We assume Section D represents a sample, so we will divide by 9. The result, <m>50/9 \approx 5.56</m>, is called the <term>sample variance</term> and is written <m>s^2</m>. Note that its units are <q>points-squared</q> because we squared all of the deviations. It is more meaningful to use the units we started with, so we take the square root of this quantity to convert back to <q>points</q>.
 			</p>
 			<p>
 				Thus, the sample standard deviation for Section D is
 				<me>
 					s=\sqrt{\frac{50}{9}} \approx 2.36\text{ points}
 				</me>.
-				This means that, on average, the data in Section D is 2.36 points away from the mean value of 5 points. For comparison, the standard deviations for the other sections are:
+				This means that, roughly speaking, a typical score in Section D is about 2.36 points away from the mean of 5 points. For comparison, the standard deviations for the other sections are:
 				<ul>
 					<li>
 						<p><m>s_{A}=0</m> points,</p>
@@ -482,7 +489,7 @@
 						<p><m>s_{D}=2.36</m> points.</p>
 					</li>
 				</ul>
-				Note that these values show that the data from Section C has the smallest average distance from the mean, meaning these scores are the least spread out. This matches what we observe when we look at the data.
+				Apart from Section A, where every score is the same, Section C has the smallest standard deviation, so its scores are the least spread out. Section B has the largest, since every score in it is as far from the mean as a score on this quiz can be. These values match what we observe when we look at the data.
 			</p>
 		</example>
 		<p>
@@ -495,7 +502,7 @@
 				</li>
 				<li>
 					<p>
-						The standard deviation has the same units as the original data and it is important to label it.
+						The standard deviation has the same units as the original data, and it is important to label it.
 					</p>
 				</li>
 				<li>
@@ -594,8 +601,8 @@
 					Therefore, the sample standard deviation is
 					<me>
 						s=\sqrt{\frac{0.2733}{4}} \approx \$0.2614
-					</me>
-					Since the units are dollars, we round to two decimal places. This gives us a standard deviation of $0.26. This means that, on average, the cost of a pint jar of peanut butter in our data set is $0.26 away from the mean value of $3.68.
+					</me>.
+					Since the units are dollars, we round to two decimal places. This gives us a standard deviation of $0.26. This means that, roughly speaking, the price of a typical pint of peanut butter in our data set is about $0.26 away from the mean price of $3.68.
 				</p>
 			</solution>
 		</example>
