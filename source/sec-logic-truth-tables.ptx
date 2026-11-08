@@ -23,7 +23,7 @@
 		</ul>
 	</objectives>
 <subsection>
-	<title>Truth Tables</title>
+	<title>Basic Truth Tables</title>
 	<introduction>
 		<p>
 			In logic, we can use a <term>truth table</term><idx>truth table</idx> to analyze a complex statement by summarizing all its possibilities and their <term>truth values</term><idx>truth value</idx> (true or false). To do this, we break the statement down into its smallest elements, the propositions. We can then see the outcome of the complex statement for all possible combinations of true and false for the propositions.
