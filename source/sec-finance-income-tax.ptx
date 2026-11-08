@@ -519,7 +519,7 @@
       <solution>
         <p>
           We will calculate Adira's taxes first the long way:
-          <md><!-- try this example with another filing status to see if it comes out exact -->
+          <md>
             <mrow>\text{Tax}\amp=0.10(\$16{,}550)+0.12(\$63{,}100-\$16{,}550)+0.22(\$100{,}500-\$63{,}100)+0.24(\$106{,}450-\$100{,}500)</mrow>
             <mrow>\amp=0.10(\$16{,}550)+0.12(\$46{,}550)+0.22(\$37{,}400)+0.24(\$5{,}950)</mrow>
             <mrow>\amp=\$1{,}655+\$5{,}586+\$8{,}228+\$1{,}428</mrow>
@@ -913,7 +913,7 @@
     
     <exercise>
       <statement>
-      <p><!-- place -->
+      <p>
         Francis and Edward are planning to get married and they want to determine whether there is an advantage or disadvantage to marrying before the end of the year and filing their taxes jointly. Use the information below to calculate the amount they would owe or receive if they each filed as single, and the amount they would owe or receive if they filed jointly as a married couple. Which is the better choice?
       </p>
       <p>

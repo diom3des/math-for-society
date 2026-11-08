@@ -52,7 +52,6 @@
         In this case we want to put a lump sum into the savings account now, so that lump sum is our principal, <m>P</m>.  Then we want to withdraw that amount as a series of periodic payments; here the withdrawals are an annuity with $1,000 payments at the end of each of two years.
         This scenario is illustrated in <xref ref="fig-amortization-cartoon"/>.
       </p>   
-      <!-- <p> </p> paragraph contains non-breaking space -->
       <figure xml:id="fig-amortization-cartoon">
         <caption>How much should Carlos invest now to be able to withdraw two payments of $1,000 at the end of the next two years and end with a zero account balance?</caption>
         <image xml:id="tigz-amortization-cartoon" width="85%">

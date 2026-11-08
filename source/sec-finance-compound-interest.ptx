@@ -383,7 +383,6 @@
       <p>
         Let us compare the growth of $3,000 invested at 6% simple interest with the growth of $3,000 invested at 6% compounded monthly. From the table and graph below we can see that over a long period of time, compounding makes a large difference in the account balance. You may recognize this as the difference between linear growth and exponential growth.
       </p>
-      <!-- Note: widths are set to make pdf look good, not as good for web version -->
       <sidebyside valign="bottom" widths="60% 36%" margins="0%">
         <tabular row-headers="yes" top="minor" left="minor" right="minor" bottom="minor" halign="left">
         <row header="yes">

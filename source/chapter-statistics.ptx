@@ -39,7 +39,6 @@
 		</p>
 	</introduction>
 
-	<!-- include sections -->
   <xi:include href="sec-statistics-overview.ptx" />
 	<xi:include href="sec-statistics-data-representation.ptx" />
 	<xi:include href="sec-statistics-measures-of-center.ptx" />

@@ -65,7 +65,6 @@
 		</p>
 	</introduction>
 
-	<!-- include sections -->
 	<xi:include href="sec-sets-set-operations.ptx" />
 	<xi:include href="sec-sets-cardinality.ptx" />
 	<xi:include href="sec-counting-multiplication-principle.ptx" />

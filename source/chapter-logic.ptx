@@ -52,7 +52,6 @@
 		</p>
 	</introduction>
 
-	<!-- include sections -->
 	<xi:include href="sec-logic-propositions.ptx" />
 	<xi:include href="sec-logic-truth-tables.ptx" />
 	<xi:include href="sec-logic-equivalence.ptx" />

@@ -46,7 +46,6 @@
     </p>
   </introduction>
 
-  <!-- include sections -->
   <xi:include href="sec-finance-simple-interest.ptx" />
   <xi:include href="sec-finance-compound-interest.ptx" />
   <xi:include href="sec-finance-savings-plans.ptx" />
