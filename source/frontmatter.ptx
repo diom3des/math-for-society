@@ -18,7 +18,7 @@
  -->
 
     <copyright>
-      <year>2025–2026</year>
+      <year>2025<ndash/>2026</year>
       <holder>Benjamin D. Jackson</holder>
         <shortlicense> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License except for the components listed separately on the <xref ref="attributions" text="custom">attributions</xref> page. To view a copy of this license, visit <url href="https://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0">CreativeCommons.org</url>.
       </shortlicense>
@@ -30,19 +30,19 @@
     <titlepage-items/>
   </titlepage>
 
+  <colophon xml:id="front-colophon">
+    <colophon-items/>
+  </colophon>
+
   <dedication>
 		<p>
 			This book is dedicated to all my students who <q>had to take a math class.</q> Remember that <em>everyone can learn mathematics!</em>
 		</p>
-    <sidebyside widths="60% 40%">
-      <p></p>
-      <p><em><mdash/>BDJ, College Place, WA</em></p>
-    </sidebyside>
+		<p>
+			<em><mdash/>BDJ, College Place, WA</em>
+		</p>
 	</dedication>
 
-  <colophon xml:id="front-colophon">
-    <colophon-items/>
-  </colophon>
 
   <preface>
     <title>Introduction</title>

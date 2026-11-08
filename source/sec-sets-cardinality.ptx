@@ -158,9 +158,9 @@
 			</image>
 		</example>
 		<fact xml:id="fact-sets-inclusion-exclusion-rule">
+			<title>Inclusion-Exclusion Rule</title>
 			<idx>inclusion-exclusion rule</idx>
 			<idx><h>sets</h><h>inclusion-exclusion rule</h></idx>
-			<title>Inclusion-Exclusion Rule</title>
 			<statement>
 				<p>
 					Let <m>A</m> and <m>B</m> be two finite sets. Then

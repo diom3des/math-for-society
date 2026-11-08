@@ -299,18 +299,18 @@
     </p>
     <p>
       In this example:
+      <ul>
+        <li>
+          <p> <m>r=0.06</m></p>
+        </li>
+        <li>
+          <p> <m>n=12</m></p>
+        </li>
+        <li>
+          <p> <m>d=\$100</m></p>
+        </li>
+      </ul>
     </p>
-    <ul>
-      <li>
-        <p> <m>r=0.06</m></p>
-      </li>
-      <li>
-        <p> <m>n=12</m></p>
-      </li>
-      <li>
-        <p> <m>d=\$100</m></p>
-      </li>
-    </ul>
  
     <p>
       Using <m>P_{m}</m> to represent the balance after <m>m</m> compounding periods, the recursive equation is

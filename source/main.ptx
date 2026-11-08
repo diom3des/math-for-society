@@ -1,33 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <!-- we first include a file which contains the docinfo element: -->
   <xi:include href="./docinfo.ptx" />
 
-  <book xml:id="math-for-society-WWU">
+  <book xml:id="math-for-society">
     <title>Math for Society</title>
-    <!-- <subtitle>Tools for living</subtitle> -->
 
+    <!-- Cover photo on the home page. The schema does not allow an     -->
+    <!-- introduction here, but PreTeXt 2.36 has no supported web cover; -->
+    <!-- revisit at the next PreTeXt upgrade.                           -->
     <introduction>
       <p>
         <image source="images/denys-nevozhai-crop.jpg">
-				  <shortdescription>Aerial photography of concrete roads in Shanghai, China</shortdescription>
-			  </image>
+          <shortdescription>Aerial photography of concrete roads in Shanghai, China</shortdescription>
+        </image>
       </p>
     </introduction>
 
-    <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
 
-    <!-- Include chapters -->
     <xi:include href="./chapter-finance.ptx" />
     <xi:include href="./chapter-logic.ptx" />
     <xi:include href="./chapter-sets.ptx" />
     <xi:include href="./chapter-statistics.ptx" />
 
-
-    <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
-
   </book>
 </pretext>

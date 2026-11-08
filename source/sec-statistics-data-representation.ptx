@@ -1210,7 +1210,7 @@
 							</ol>
 						</p>
 						<listing xml:id="listing_graphs_examp_stem-and-leaf">
-							<caption>Stem-and-leaf plot</caption>
+							<title>Stem-and-Leaf Plot</title>
 							<!-- Leave indent at far left of spacing won't work out in HTML! -->
 <program>
 Stem | Leaf
@@ -1248,7 +1248,7 @@ Stem | Leaf
 							This is done in almost exactly the same way as <xref ref="ex_graphs_stem-and-leaf" text="custom">our last example</xref>. The only difference is that	each stem gets two rows. The leaves are then split up with 0<ndash/>4 going in the first row and 5<ndash/>9 in the second row for a given stem. The result is	shown to the right.
 						</p>
 						<listing xml:id="listing_graphs_ex_expanded-stem-and-leaf">
-							<caption>Expanded stem-and-leaf plot</caption>
+							<title>Expanded Stem-and-Leaf Plot</title>
 							<!-- Leave indent at far left of spacing won't work out in HTML! -->
 <program> 
 Stem | Leaf
