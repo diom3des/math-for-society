@@ -663,7 +663,8 @@
 			</example>
 			<p>
 				<xref ref="ex-logic-invalid-argument-table"/> is invalid because it commits the fallacy of <term>denying the antecedent</term><idx><h>fallacy</h><h>denying the antecedent</h></idx><idx><h>denying the antecedent</h><see>fallacy, denying the antecedent</see></idx> (or <term>fallacy of the inverse</term><idx><h>fallacy of the inverse</h><see>fallacy, denying the antecedent</see></idx>), which is based on the mistaken assumption that a conditional and its inverse are equivalent, as described in <xref ref="fact-logic-equivalence-contrapositive"/>.
-				Even with the premises being true, the economy could still improve for reasons completely unrelated to tax cuts and retail sales. If you are interested in learning more about common logical fallacies, consider reading the next section of this chapter, <xref ref="sec-logic-fallacies"/>.
+				Even with the premises being true, the economy could still improve for reasons completely unrelated to tax cuts and retail sales. A closely related mistake is <term>affirming the consequent</term><idx><h>fallacy</h><h>affirming the consequent</h></idx><idx><h>affirming the consequent</h><see>fallacy, affirming the consequent</see></idx> (or the <term>fallacy of the converse</term><idx><h>fallacy of the converse</h><see>fallacy, affirming the consequent</see></idx>): reasoning from <m>p \to q</m> and <m>q</m> to the conclusion <m>p</m>. This assumes that a conditional and its converse are equivalent, which they are not. For example, <q>If it rained, then the grass is wet. The grass is wet. Therefore, it rained.</q> is invalid, since a sprinkler could have watered the grass.
+				If you are interested in learning more about common logical fallacies, consider reading the next section of this chapter, <xref ref="sec-logic-fallacies"/>.
 			</p>
 	</subsection>
 	<subsection>
