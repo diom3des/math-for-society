@@ -33,12 +33,12 @@
 			<ul>
 				<li>
 					<p>
-						<m>R</m>: You paid your rent this month.
+						Let <m>R</m> be <q>You paid your rent this month.</q>
 					</p>
 				</li>
 				<li>
 					<p>
-						<m>E</m>: You paid your electric bill this month.
+						Let <m>E</m> be <q>You paid your electric bill this month.</q>
 					</p>
 				</li>
 			</ul>
@@ -743,7 +743,7 @@
 					</row>
 				</tabular>
 				<p>
-					When <m>m</m> is true, <m>p</m> is false, and <m>r</m> is false—the fourth row of the table—then the hypothesis <m>m \land \neg\,p</m> will be true, but the conclusion (<m>r</m>) is false, so the conditional statement is false; every other case gives a true result.
+					When <m>m</m> is true, <m>p</m> is false, and <m>r</m> is false<mdash/>the fourth row of the table<mdash/>then the hypothesis <m>m \land \neg\,p</m> will be true, but the conclusion (<m>r</m>) is false, so the conditional statement is false; every other case gives a true result.
 				</p>
 			</solution>
 		</example>
@@ -1405,9 +1405,9 @@
 				</p>
 				<p>
 					<ul>
-						<li><p><m>P</m>: The restaurant is open.</p></li>
-						<li><p><m>Q</m>: The chef is working tonight.</p></li>
-						<li><p><m>R</m>: We can make a reservation.</p></li>
+						<li><p>Let <m>P</m> be <q>The restaurant is open.</q></p></li>
+						<li><p>Let <m>Q</m> be <q>The chef is working tonight.</q></p></li>
+						<li><p>Let <m>R</m> be <q>We can make a reservation.</q></p></li>
 					</ul>
 				</p>
 				<p>
@@ -1656,9 +1656,9 @@
 				</p>
 				<p>
 					<ul>
-						<li><p><m>A</m>: Artificial intelligence will surpass human intelligence.</p></li>
-						<li><p><m>J</m>: Many jobs will be automated.</p></li>
-						<li><p><m>E</m>: Education systems need to be reformed.</p></li>
+						<li><p>Let <m>A</m> be <q>Artificial intelligence will surpass human intelligence.</q></p></li>
+						<li><p>Let <m>J</m> be <q>Many jobs will be automated.</q></p></li>
+						<li><p>Let <m>E</m> be <q>Education systems need to be reformed.</q></p></li>
 					</ul>
 				</p>
 				<p>

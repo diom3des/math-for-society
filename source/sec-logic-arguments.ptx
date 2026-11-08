@@ -156,7 +156,7 @@
 		<example>
 			<statement>
 			<p>
-				Rewrite the following arguments in a precise <q>premise, premise, conclusion</q> form, and determine if the argument is inductive or deductive.
+				Rewrite the following arguments in a precise <q>premise, premise, conclusion</q> form, and determine whether the argument is inductive or deductive.
 				<ol marker="a)">
 					<li>
 						<p>
@@ -672,7 +672,7 @@
 		<introduction>
 			<p>
 				Although evaluating arguments by truth table is accurate and powerful, making the tables can be tedious and exhausting. Also, it is sometimes redundant, as arguments about different topics may have the same logical form. 
-				If we are able to recognize certain common forms of arguments as valid (or invalid), we can evaluate validity without the tedium of creating a table. The following is a sampling of valid logical forms. Invalid logical forms (or fallacies) are discussed in <xref ref="sec-logic-fallacies"/>.
+				If we are able to recognize certain common forms of arguments as valid (or invalid), we can evaluate validity without the tedium of creating a table. The following is a sampling of valid logical forms. The two most common invalid forms, denying the antecedent and affirming the consequent, appear at the end of the previous subsection; other kinds of fallacies are discussed in <xref ref="sec-logic-fallacies"/>.
 			</p>
 		</introduction>
 		<subsubsection>

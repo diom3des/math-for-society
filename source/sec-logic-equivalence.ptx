@@ -380,7 +380,7 @@
 					</li>
 					<li>
 						<p>
-							It is Wednesday at 11:59 PM and the garbage truck did not come down my street today.
+							It is Wednesday at 11:59 p.m. and the garbage truck did not come down my street today.
 						</p>
 					</li>
 				</ol>
@@ -506,7 +506,7 @@
 			In 1847, Augustus De Morgan published two rules of logic that had previously been known only informally. These rules allow us to rewrite the negation of an AND statement with OR, and the negation of an OR statement with AND. 
 		</p>
 		<p>
-			To illustrate the intuitive sense of <term>De Morgan's laws</term>, suppose you want to schedule a meeting with two colleagues at 4:30 PM on Friday, and you need both of them to be available at that time. Let <m>A</m> be <q>Colleague A is available,</q> and let <m>B</m> be <q>Colleague B is available.</q> What situation would make it impossible to have the meeting? That is, what would it mean if it were not the case that Colleague A and Colleague B could both meet? Writing this in logic, what is equivalent to <m>\neg(A \land B)</m>?
+			To illustrate the intuitive sense of <term>De Morgan's laws</term>, suppose you want to schedule a meeting with two colleagues at 4:30 p.m. on Friday, and you need both of them to be available at that time. Let <m>A</m> be <q>Colleague A is available,</q> and let <m>B</m> be <q>Colleague B is available.</q> What situation would make it impossible to have the meeting? That is, what would it mean if it were not the case that Colleague A and Colleague B could both meet? Writing this in logic, what is equivalent to <m>\neg(A \land B)</m>?
 			This situation is equivalent to either Colleague A not being available or Colleague B not being available. That is, (again writing the result in logic) <m>\neg A \lor \neg B</m> is an equivalent form.
 		</p>
 		<fact xml:id="fact-logic-deMorgan">
