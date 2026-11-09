@@ -411,8 +411,8 @@
 		</p>
 		<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
 			<row header="yes">
-				<cell><em>Posting the Photo</em> (<m>P</m>)</cell>
-				<cell><em>Losing Your Job</em> (<m>L</m>)</cell>
+				<cell><em>Posting the Photo</em> <m>(P)</m></cell>
+				<cell><em>Losing Your Job</em> <m>(L)</m></cell>
 				<cell>If <m>P</m>, then <m>L</m></cell>
 			</row>
 			<row>

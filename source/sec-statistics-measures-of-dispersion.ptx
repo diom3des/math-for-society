@@ -155,7 +155,7 @@
 		<title>Interquartile Range (IQR)</title>
 	<p>
 		Recall from the previous section that the <xref ref="def-median" text="custom">median</xref> is resistant to outliers. To create a similarly resistant measure of variation, we can extend the logic used to create the median. The median divides data into two halves. If we further divide each half at its median, we create four quarters; the values that divide them are called <term>quartiles</term>.
-		The <term>interquartile range (IQR)</term> measures the spread of the middle 50% of the data by finding the distance between the first quartile (<m>Q_1</m>) and third quartile (<m>Q_3</m>). Since the IQR ignores the lowest 25% and the highest 25% of the data, it is resistant to outliers.
+		The <term>interquartile range (IQR)</term> measures the spread of the middle 50% of the data by finding the distance between the first quartile <m>(Q_1)</m> and third quartile <m>(Q_3)</m>. Since the IQR ignores the lowest 25% and the highest 25% of the data, it is resistant to outliers.
 	</p>
 	<definition xml:id="def-quartiles">
 			<idx>quartiles</idx>
@@ -165,27 +165,27 @@
 				  <ul>
 				  	<li>
 							<p>
-								the <term>zeroth quartile</term> (<m>Q_0</m>), which is the minimum value in the data set.
+								the <term>zeroth quartile</term> <m>(Q_0)</m>, which is the minimum value in the data set.
 							</p>
 						</li>
 				  	<li>
 							<p>
-								the <term>first quartile</term> (<m>Q_1</m>), which divides the bottom quarter of the data from the rest of the data.
+								the <term>first quartile</term> <m>(Q_1)</m>, which divides the bottom quarter of the data from the rest of the data.
 							</p>
 						</li>
 				  	<li>
 							<p>
-								the <term>second quartile</term> (<m>Q_2</m>), which divides the bottom half of the data from the top half. This is more commonly called the median.
+								the <term>second quartile</term> <m>(Q_2)</m>, which divides the bottom half of the data from the top half. This is more commonly called the median.
 							</p>
 						</li>
 				  	<li>
 							<p>
-								the <term>third quartile</term> (<m>Q_3</m>), which divides the bottom three-quarters of the data from the top quarter.
+								the <term>third quartile</term> <m>(Q_3)</m>, which divides the bottom three-quarters of the data from the top quarter.
 							</p>
 						</li>
 				  	<li>
 							<p>
-								the <term>fourth quartile</term> (<m>Q_4</m>), which is the maximum value in the data set.
+								the <term>fourth quartile</term> <m>(Q_4)</m>, which is the maximum value in the data set.
 							</p>
 						</li>
 				  </ul>

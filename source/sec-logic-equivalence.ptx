@@ -30,7 +30,7 @@
 	<subsection xml:id="subsec-logic-conditional-equivalence">
 		<title>Logical Equivalence and the Conditional</title>
 		<p>
-			It may seem counterintuitive at first, but the conditional statement <em>if</em> <m>p</m>, <em>then</em> <m>q</m> (<m>p \to q</m>) can be written using negation and an OR statement. To be precise,
+			It may seem counterintuitive at first, but the conditional statement <em>if</em> <m>p</m>, <em>then</em> <m>q</m> <m>(p \to q)</m> can be written using negation and an OR statement. To be precise,
 		</p>
 		<fact>
 			<statement>
@@ -632,7 +632,7 @@
 					<ol marker="a)">
 						<li>
 							<p>
-								Converse (<m>q \to p</m>): <q>If you can have dessert, then you finished your chores.</q> Inverse (<m>\neg p \to \neg q</m>): <q>If you don't finish your chores, then you can't have dessert.</q> Contrapositive (<m>\neg q \to \neg p</m>): <q>If you can't have dessert, then you didn't finish your chores.</q>
+								Converse <m>(q \to p)</m>: <q>If you can have dessert, then you finished your chores.</q> Inverse <m>(\neg p \to \neg q)</m>: <q>If you don't finish your chores, then you can't have dessert.</q> Contrapositive <m>(\neg q \to \neg p)</m>: <q>If you can't have dessert, then you didn't finish your chores.</q>
 							</p>
 						</li>
 						<li>

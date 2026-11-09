@@ -748,7 +748,7 @@
 					</row>
 				</tabular>
 				<p>
-					When <m>m</m> is true, <m>p</m> is false, and <m>r</m> is false<mdash/>the fourth row of the table<mdash/>then the hypothesis <m>m \land \neg\,p</m> will be true, but the conclusion (<m>r</m>) is false, so the conditional statement is false; every other case gives a true result.
+					When <m>m</m> is true, <m>p</m> is false, and <m>r</m> is false<mdash/>the fourth row of the table<mdash/>then the hypothesis <m>m \land \neg\,p</m> will be true, but the conclusion <m>(r)</m> is false, so the conditional statement is false; every other case gives a true result.
 				</p>
 			</solution>
 		</example>

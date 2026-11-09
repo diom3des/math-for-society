@@ -237,7 +237,7 @@
 		<example>
 			<statement>
 				<p>
-					Suppose that fifty students are surveyed and asked if they would be taking a science (<m>S</m>), a humanities (<m>H</m>), or a religion (<m>R</m>) course next quarter. The results are:
+					Suppose that fifty students are surveyed and asked if they would be taking a science <m>(S)</m>, a humanities <m>(H)</m>, or a religion <m>(R)</m> course next quarter. The results are:
 					<ul>
 						<li>
 							<p> 21 were taking a science course,</p>

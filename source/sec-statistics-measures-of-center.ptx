@@ -424,7 +424,7 @@
 			</statement>
 			<solution>
 				<p>
-					To find the mean test score we need to find the sum of her test scores, then divide the sum by the number of test scores (<m>n=4</m>). The mean is:
+					To find the mean test score we need to find the sum of her test scores, then divide the sum by the number of test scores <m>(n=4)</m>. The mean is:
 				</p>
 				<p>
 					<md>\bar{x}=\frac{79+86+82+94}{4}=85.25\text{ points}</md>

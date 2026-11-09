@@ -108,7 +108,7 @@
 				A fair coin is flipped twice, and the result of each flip is noted. What is the probability that exactly one head appears in these two flips?
 			</p>
 			<p>
-				The <term>experiment</term> here is flipping a coin twice. Each flip lands on <q>heads</q> (<m>H</m>) or <q>tails</q> (<m>T</m>), so the possible outcomes are the four sequences of two flips. This set of possible outcomes is called the <term>sample space</term> and is typically named <m>S</m>.  We write the sample space as
+				The <term>experiment</term> here is flipping a coin twice. Each flip lands on <q>heads</q> <m>(H)</m> or <q>tails</q> <m>(T)</m>, so the possible outcomes are the four sequences of two flips. This set of possible outcomes is called the <term>sample space</term> and is typically named <m>S</m>.  We write the sample space as
 				<md>
 					S = \lbrace HH, HT, TH, TT \rbrace
 				</md>.
