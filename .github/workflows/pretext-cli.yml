@@ -16,6 +16,9 @@ jobs:
     build:
         runs-on: ubuntu-latest
         container: oscarlevin/pretext:full
+        # <today/> in frontmatter uses the build clock; keep it on Bellingham time
+        env:
+            TZ: America/Los_Angeles
 
         steps:
             - name: Checkout source
