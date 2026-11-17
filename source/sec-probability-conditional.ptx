@@ -432,6 +432,9 @@
 				</p>
 			</solution>
 		</example>
+		<p>
+			This calculation can be visualized using a tree diagram, in which each selection is a stage and multiplying along the branches gives the general multiplication rule. Tree diagrams are covered later in this section, in <xref ref="subsec-probability-conditional-trees"/>.
+		</p>
 		<example xml:id="ex-conditional-multiplication-rule-2">
 			<title>Using the General Multiplication Rule</title>
 			<statement>
