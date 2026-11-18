@@ -556,4 +556,453 @@
         </p>
       </assemblage>
     </subsection>
+
+  <exercises>
+    <!-- Sources: Exercises 1, 2, 3, 4, 5, 9, and 10 are adapted from
+    Benjamin Jackson's MATH 105 lecture slides, clicker questions, and
+    warm-up (Objective 2), Walla Walla University, Fall 2026. Exercises 6,
+    7, and 8 are based on his MATH 105 written-homework question library
+    (Fall 2026). Exercises 11 through 15 are new.
+    -->
+    <title>Exercises</title>
+
+    <exercise><!--  #1 (Obj 2 slides: 12% APR monthly) -->
+      <statement>
+        <p>
+          Find the periodic interest rate for each account.
+          <ol marker="a)">
+            <li><p>12% APR compounded monthly</p></li>
+            <li><p>5% APR compounded quarterly</p></li>
+            <li><p>4.8% APR compounded semiannually</p></li>
+            <li><p>7.3% APR compounded daily</p></li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Divide the APR by the number of periods per year.
+          <ol marker="a)">
+            <li><p><m>0.12/12 = 0.01</m>, or 1% per month</p></li>
+            <li><p><m>0.05/4 = 0.0125</m>, or 1.25% per quarter</p></li>
+            <li><p><m>0.048/2 = 0.024</m>, or 2.4% per half-year</p></li>
+            <li><p><m>0.073/365 = 0.0002</m>, or 0.02% per day</p></li>
+          </ol>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #2 (Obj 2 warm-up: Randy continued) -->
+      <statement>
+        <p>
+          You took out a payday loan and owe $230 at the end of two weeks, but you can't pay. The lender charges 15% every two weeks on whatever you owe.
+          <ol marker="a)">
+            <li>
+              <p>
+                How much do you owe after 4 weeks? After 6 weeks?
+              </p>
+            </li>
+            <li>
+              <p>
+                True or false: the amount you owe still goes up by $30 every two weeks. Explain.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a)">
+            <li>
+              <p>
+                After 4 weeks: <m>\$230(1.15) = \$264.50</m>. After 6 weeks: <m>\$264.50(1.15) \approx \$304.18</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                False. The increases are $30, then $34.50, then about $39.68. Each 15% is charged on a larger balance, which includes the interest already added, so interest is being charged on interest. This is compound interest.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #3 (Obj 2 slides: $800 quarterly) -->
+      <statement>
+        <p>
+          You borrow $800 from a bank at 5% annual interest compounded quarterly. How much do you owe after 3 years? How does that compare with the amount you would owe at 5% simple interest?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Here <m>n = 4</m> and <m>nt = 12</m>.
+          <md>
+            A = \$800\left(1+\frac{0.05}{4}\right)^{12} = \$800(1.0125)^{12} \approx \$928.60
+          </md>
+          With simple interest, <m>A = \$800[1+(0.05)(3)] = \$920</m>, so compounding costs you $8.60 more.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #4 (Obj 2 clicker: future value, new numbers) -->
+      <statement>
+        <p>
+          You invest $1,500 in an account paying 6% annual interest compounded monthly. How much do you have after 30 months? What answer would you get if you mistakenly used <m>t = 30</m>?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Thirty months is <m>t = 2.5</m> years, so <m>nt = 12(2.5) = 30</m>.
+          <md>
+            A = \$1{,}500\left(1+\frac{0.06}{12}\right)^{30} = \$1{,}500(1.005)^{30} \approx \$1{,}742.10
+          </md>
+          Using <m>t = 30</m> treats the time as 30 years: <m>\$1{,}500(1.005)^{360} \approx \$9{,}033.86</m>, far too much.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #5 (Obj 2 clicker: present value, new numbers) -->
+      <statement>
+        <p>
+          You want $8,000 in 4 years. How much should you invest now in an account paying 7.5% annual interest compounded monthly?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Here <m>nt = 12(4) = 48</m>.
+          <md>
+            <mrow>\$8{,}000 =\amp P\left(1+\frac{0.075}{12}\right)^{48}</mrow>
+            <mrow>P =\amp \frac{\$8{,}000}{(1.00625)^{48}} \approx \$5{,}932.08</mrow>
+          </md>
+          You should invest $5,932.08.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #6 (based on written 02a) -->
+      <statement>
+        <p>
+          Priya deposits $2,500 in a two-year certificate of deposit (CD) and will need $2,700 for school expenses when it matures.
+          <ol marker="a)">
+            <li>
+              <p>
+                Bank A pays 4.6% compounded daily. Will Priya have enough after 2 years?
+              </p>
+            </li>
+            <li>
+              <p>
+                Bank B pays 4.5% compounded monthly. Is this a better deal?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a)">
+            <li>
+              <p>
+                <m>A = \$2{,}500\left(1+\frac{0.046}{365}\right)^{365\cdot 2} \approx \$2{,}740.90</m>. Yes, she will have enough.
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>A = \$2{,}500\left(1+\frac{0.045}{12}\right)^{12\cdot 2} \approx \$2{,}734.98</m>. Priya would still have enough, but Bank B is not a better deal; Bank A pays $5.92 more.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #7 (based on written 02b) -->
+      <statement>
+        <p>
+          A family expects to need $15,000 for a new roof in 6 years. If their account earns 3.8% compounded monthly, how much should they deposit now? How much of the $15,000 will be interest?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Here <m>nt = 12(6) = 72</m>.
+          <md>
+            <mrow>\$15{,}000 =\amp P\left(1+\frac{0.038}{12}\right)^{72}</mrow>
+            <mrow>P =\amp \frac{\$15{,}000}{\left(1+\frac{0.038}{12}\right)^{72}} \approx \$11{,}946.17</mrow>
+          </md>
+          They should deposit $11,946.17. The interest is <m>\$15{,}000 - \$11{,}946.17 = \$3{,}053.83</m>.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #8 (based on written 02c) -->
+      <statement>
+        <p>
+          How many years will it take for $6,000 to grow to $9,000 at 4.5% compounded monthly? Since interest is added once a month, in which month does the balance first pass $9,000?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\$9{,}000 =\amp \$6{,}000\left(1+\frac{0.045}{12}\right)^{12t}</mrow>
+            <mrow>1.5 =\amp (1.00375)^{12t}</mrow>
+            <mrow>\log(1.5) =\amp 12t\log(1.00375)</mrow>
+            <mrow>t =\amp \frac{\log(1.5)}{12\log(1.00375)} \approx 9.03 \text{ years}</mrow>
+          </md>
+          That is about 108.3 months. After 108 months the balance is about $8,989.00, and after 109 months it is about $9,022.71, so the balance first passes $9,000 at the end of month 109 (9 years and 1 month).
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #9 (Obj 2 slides: doubling time) -->
+      <statement>
+        <p>
+          You invest $300 in an account paying 2% compounded quarterly.
+          <ol marker="a)">
+            <li>
+              <p>
+                How long does it take your money to double?
+              </p>
+            </li>
+            <li>
+              <p>
+                How long will it take to have $400?
+              </p>
+            </li>
+            <li>
+              <p>
+                How long would it take $50,000 to double in the same account? Why does this come out the way it does?
+              </p>
+            </li>
+            <li>
+              <p>
+                The <term>Rule of 72</term><idx>Rule of 72</idx> estimates the doubling time in years as 72 divided by the interest rate in percent. What does it estimate here, and how close is it to your answer to (a)?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a)">
+            <li>
+              <p>
+                Doubling means <m>A = \$600</m>.
+                <md>
+                  <mrow>\$600 =\amp \$300(1.005)^{4t}</mrow>
+                  <mrow>2 =\amp 1.005^{4t}</mrow>
+                  <mrow>4t =\amp \frac{\log 2}{\log 1.005} \approx 138.98</mrow>
+                  <mrow>t \approx\amp 34.7 \text{ years}</mrow>
+                </md>
+                Because interest is paid quarterly, the balance first passes $600 after 139 quarters (34.75 years).
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\frac{4}{3} = 1.005^{4t}</m>, so <m>4t = \frac{\log(4/3)}{\log 1.005} \approx 57.68</m> and <m>t \approx 14.4</m> years.
+              </p>
+            </li>
+            <li>
+              <p>
+                Also about 34.7 years. Dividing both sides by <m>P</m> always leaves <m>2 = 1.005^{4t}</m>, so the doubling time does not depend on the principal.
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>72/2 = 36</m> years, within about a year and a half of the exact answer. The Rule of 72 is a good rough check.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #10 (Obj 2 slides: simple vs. compound graph) -->
+      <statement>
+        <p>
+          You invest $1,000 at 5% for 25 years. Find the final balance with simple interest and with interest compounded annually. How much more does compounding earn?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Simple interest: <m>A = \$1{,}000[1+(0.05)(25)] = \$2{,}250</m>.
+          Compounded annually: <m>A = \$1{,}000(1.05)^{25} \approx \$3{,}386.35</m>.
+          Compounding earns <m>\$3{,}386.35 - \$2{,}250 = \$1{,}136.35</m> more.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #11 (new) -->
+      <statement>
+        <p>
+          You invest $5,000 at 6% compounded quarterly and leave it for 20 years. What is the final balance? How much interest did you earn, and what percent of the final balance is interest?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            A = \$5{,}000\left(1+\frac{0.06}{4}\right)^{80} = \$5{,}000(1.015)^{80} \approx \$16{,}453.31
+          </md>
+          The interest is <m>\$16{,}453.31 - \$5{,}000 = \$11{,}453.31</m>, and <m>\frac{\$11{,}453.31}{\$16{,}453.31} \approx 0.696</m>, so about 69.6% of the final balance is interest.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #12 (new) -->
+      <statement>
+        <p>
+          Find the effective rate (APY) of an account paying 5.4% compounded monthly and of an account paying 5.5% compounded semiannually. Which account pays more?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\left(1+\frac{0.054}{12}\right)^{12} - 1 \approx\amp 0.0554 \text{, or } 5.54\%</mrow>
+            <mrow>\left(1+\frac{0.055}{2}\right)^{2} - 1 \approx\amp 0.0558 \text{, or } 5.58\%</mrow>
+          </md>
+          The account paying 5.5% compounded semiannually pays more.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #13 (new) -->
+      <statement>
+        <p>
+          A credit card charges 24% APR, compounded monthly. What is the effective annual rate on a balance that is never paid down?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            \left(1+\frac{0.24}{12}\right)^{12} - 1 = (1.02)^{12} - 1 \approx 0.2682
+          </md>
+          The effective rate is about 26.82%.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #14 (new) -->
+      <statement>
+        <p>
+          A student computes the value of $2,000 invested at 6% compounded monthly for 5 years as <m>\$2{,}000(1.06)^{60}</m>. What did the student do wrong? What is the correct value?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The student used the annual rate 0.06 where the monthly (periodic) rate <m>0.06/12 = 0.005</m> belongs, which gives a wildly large <m>\$65{,}975.38</m>. The correct value is
+          <md>
+            \$2{,}000(1.005)^{60} \approx \$2{,}697.70.
+          </md>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #15 (new; continuous compounding) -->
+      <statement>
+        <p>
+          How often should interest compound? Suppose $1,000 is invested at 6% for one year.
+          <ol marker="a)">
+            <li>
+              <p>
+                Complete the table, rounding to the nearest cent. These are the compounding periods that real accounts use.
+              </p>
+            </li>
+            <li>
+              <p>
+                Now imagine a bank that compounded every hour (<m>n = 8{,}760</m>), then every minute, then every second. Would the balance keep growing without limit? Find the balance with hourly compounding to help you decide.
+              </p>
+            </li>
+            <li>
+              <p>
+                If interest could be compounded more and more often, the balance would approach <m>A = Pe^{rt}</m>, where <m>e \approx 2.71828</m> (most calculators have an <m>e^x</m> key). This limit is called <term>continuous compounding</term>.<idx><h>compound interest</h><h>continuous</h></idx> Find this limiting balance and compare it with your table.
+              </p>
+            </li>
+            <li>
+              <p>
+                For $12,500 invested at 6% for 18 years, how much more would continuous compounding give than monthly compounding? Is it more worthwhile to hunt for an account that compounds more often than monthly, or to compare rates?
+              </p>
+            </li>
+          </ol>
+        </p>
+        <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+          <row header="yes">
+            <cell>Compounded</cell>
+            <cell><m>n</m></cell>
+            <cell>Balance after 1 year</cell>
+          </row>
+          <row>
+            <cell>annually</cell>
+            <cell>1</cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>quarterly</cell>
+            <cell>4</cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>monthly</cell>
+            <cell>12</cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>daily</cell>
+            <cell>365</cell>
+            <cell></cell>
+          </row>
+        </tabular>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a)">
+            <li>
+              <p>
+                Using <m>A = \$1{,}000\left(1+\frac{0.06}{n}\right)^{n}</m>:
+              </p>
+            </li>
+            <li>
+              <p>
+                No. Hourly compounding gives <m>\$1{,}000\left(1+\frac{0.06}{8{,}760}\right)^{8{,}760} \approx \$1{,}061.84</m>, about a cent more than daily. Each increase in <m>n</m> adds less than the one before, and the balance levels off.
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\$1{,}000e^{0.06} \approx \$1{,}061.84</m>, the ceiling that the table is approaching. Hourly compounding already matches it to the cent.
+              </p>
+            </li>
+            <li>
+              <p>
+                Continuous: <m>\$12{,}500e^{(0.06)(18)} \approx \$36{,}808.49</m>. Monthly: <m>\$12{,}500\left(1+\frac{0.06}{12}\right)^{216} \approx \$36{,}709.57</m>. Continuous compounding gives only $98.92 more over 18 years. By comparison, a rate just 0.1 percentage point higher, 6.1% compounded monthly, gives about $37,372.96, which is $564.46 more than continuous compounding at 6%. It is more worthwhile to compare rates (or APYs); beyond monthly, the compounding frequency hardly matters.
+              </p>
+            </li>
+          </ol>
+        </p>
+        <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+          <row header="yes">
+            <cell>Compounded</cell>
+            <cell><m>n</m></cell>
+            <cell>Balance after 1 year</cell>
+          </row>
+          <row>
+            <cell>annually</cell>
+            <cell>1</cell>
+            <cell>$1,060.00</cell>
+          </row>
+          <row>
+            <cell>quarterly</cell>
+            <cell>4</cell>
+            <cell>$1,061.36</cell>
+          </row>
+          <row>
+            <cell>monthly</cell>
+            <cell>12</cell>
+            <cell>$1,061.68</cell>
+          </row>
+          <row>
+            <cell>daily</cell>
+            <cell>365</cell>
+            <cell>$1,061.83</cell>
+          </row>
+        </tabular>
+      </solution>
+    </exercise>
+  </exercises>
 </section>
