@@ -387,4 +387,409 @@
       Recall <m>0.005</m> was <m>r/n</m> and 100 was the deposit <m>d</m>. The value 12 is <m>n</m>, the number of deposits per year. Generalizing this result gives the formula for the future value of an ordinary annuity in <xref ref="subsec-annuities"/>.
     </p>
   </subsection>
+
+  <exercises>
+    <!-- Sources: Exercises 1 through 6 and 13 are adapted from Benjamin
+    Jackson's MATH 105 lecture slides, clicker questions, lecture notes,
+    and warm-up (Objective 3), Walla Walla University, Fall 2026.
+    Exercises 7 and 8 are based on his MATH 105 written-homework question
+    library (Fall 2026). Exercises 9 through 12 are new.
+    -->
+    <title>Exercises</title>
+
+    <exercise xml:id="exer-finance-annuity-mia-noah"><!--  #1 (Obj 3 warm-up: Mia and Noah, new numbers) -->
+      <statement>
+        <p>
+          Mia and Noah each save $4,000 over 4 years in accounts paying 8% interest compounded annually. Mia deposits all $4,000 today. Noah deposits $1,000 at the end of each year, so his plan is an ordinary annuity.
+          <ol marker="a)">
+            <li>
+              <p>
+                How much does Mia have after 4 years?
+              </p>
+            </li>
+            <li>
+              <p>
+                Complete the table to find how much Noah has after 4 years.
+              </p>
+            </li>
+            <li>
+              <p>
+                Both put in $4,000. Why do they end up with different amounts?
+              </p>
+            </li>
+          </ol>
+        </p>
+        <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+          <row header="yes">
+            <cell>Noah's deposit</cell>
+            <cell>Years earning interest</cell>
+            <cell>Value after 4 years</cell>
+          </row>
+          <row>
+            <cell>End of year 1</cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>End of year 2</cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>End of year 3</cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>End of year 4</cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Total</cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a)">
+            <li>
+              <p>
+                <m>\$4{,}000(1.08)^4 \approx \$5{,}441.96</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Noah has $4,506.11; see the table.
+              </p>
+            </li>
+            <li>
+              <p>
+                All of Mia's money earns interest for the full 4 years. Noah's later deposits sit in the account for less time, and his last deposit earns no interest at all.
+              </p>
+            </li>
+          </ol>
+        </p>
+        <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+          <row header="yes">
+            <cell>Noah's deposit</cell>
+            <cell>Years earning interest</cell>
+            <cell>Value after 4 years</cell>
+          </row>
+          <row>
+            <cell>End of year 1</cell>
+            <cell>3</cell>
+            <cell><m>\$1{,}000(1.08)^3 = \$1{,}259.71</m></cell>
+          </row>
+          <row>
+            <cell>End of year 2</cell>
+            <cell>2</cell>
+            <cell><m>\$1{,}000(1.08)^2 = \$1{,}166.40</m></cell>
+          </row>
+          <row>
+            <cell>End of year 3</cell>
+            <cell>1</cell>
+            <cell><m>\$1{,}000(1.08)^1 = \$1{,}080.00</m></cell>
+          </row>
+          <row>
+            <cell>End of year 4</cell>
+            <cell>0</cell>
+            <cell><m>\$1{,}000(1.08)^0 = \$1{,}000.00</m></cell>
+          </row>
+          <row>
+            <cell>Total</cell>
+            <cell></cell>
+            <cell>$4,506.11</cell>
+          </row>
+        </tabular>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #2 (Obj 3 lecture notes: checking the formula on Noah) -->
+      <statement>
+        <p>
+          Use the future value of an annuity formula to find the amount in Noah's account in <xref ref="exer-finance-annuity-mia-noah"/>. Does it match your table?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Here <m>d = \$1{,}000</m>, <m>r/n = 0.08</m>, and <m>nt = 4</m>.
+          <md>
+            A = \$1{,}000\left[\frac{(1.08)^4 - 1}{0.08}\right] = \$1{,}000(4.506112) \approx \$4{,}506.11
+          </md>
+          Yes, it matches. The formula adds up the same four deposits in one calculation.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #3 (Obj 3 slides and clicker: Georgia, new numbers) -->
+      <statement>
+        <p>
+          You deposit $40 each month into an account paying 4.8% compounded monthly. How much do you have after 8 years? How much did you deposit, how much interest did you earn, and what percent of the balance is interest?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Here <m>r/n = 0.048/12 = 0.004</m> and <m>nt = 12(8) = 96</m> deposits.
+          <md>
+            A = \$40\left[\frac{(1.004)^{96} - 1}{0.004}\right] \approx \$4{,}670.21
+          </md>
+          You deposited <m>\$40(96) = \$3{,}840</m> and earned <m>\$4{,}670.21 - \$3{,}840 = \$830.21</m> in interest. Since <m>\frac{\$830.21}{\$4{,}670.21} \approx 0.178</m>, about 17.8% of the balance is interest.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #4 (Obj 3 lecture notes: Georgia rounding) -->
+      <statement>
+        <p>
+          Georgia deposits $25 each month into an account paying 6% compounded monthly for 10 years. To find her balance, a student first rounds <m>(1.005)^{120}</m> to 1.82, then computes <m>\$25\left[\frac{1.82 - 1}{0.005}\right] = \$4{,}100</m>. Find the correct balance. What went wrong?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            A = \$25\left[\frac{(1.005)^{120} - 1}{0.005}\right] = \$25\left[\frac{1.819397 - 1}{0.005}\right] \approx \$4{,}096.98
+          </md>
+          The student rounded in the middle of the calculation. The small error in <m>(1.005)^{120}</m> was then divided by 0.005 (that is, multiplied by 200) and multiplied by 25, so it grew into an error of about $3. Keep the unrounded value in the calculator and round only the final answer.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #5 (Obj 3 slides: Robert's car) -->
+      <statement>
+        <p>
+          Robert wants $10,000 for a new car in 5 years. He plans to make quarterly deposits into an account paying 2% compounded quarterly. How much should he deposit each quarter? How much of the $10,000 will be interest?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Here <m>r/n = 0.02/4 = 0.005</m> and <m>nt = 4(5) = 20</m> deposits.
+          <md>
+            <mrow>\$10{,}000 =\amp d\left[\frac{(1.005)^{20} - 1}{0.005}\right]</mrow>
+            <mrow>\$10{,}000 =\amp d(20.979115)</mrow>
+            <mrow>d =\amp \frac{\$10{,}000}{20.979115} \approx \$476.66</mrow>
+          </md>
+          Robert should deposit $476.66 each quarter. His deposits total <m>\$476.66(20) = \$9{,}533.20</m>, so about <m>\$10{,}000 - \$9{,}533.20 = \$466.80</m> is interest.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #6 (Obj 3 slides and lecture notes: retirement at 65) -->
+      <statement>
+        <p>
+          You want $1,000,000 in an IRA when you retire at age 65. The account earns 6% compounded annually, and you make one deposit at the end of each year.
+          <ol marker="a)">
+            <li>
+              <p>
+                Complete the table.
+              </p>
+            </li>
+            <li>
+              <p>
+                What does the table say about when to start saving?
+              </p>
+            </li>
+          </ol>
+        </p>
+        <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+          <row header="yes">
+            <cell>Start at age</cell>
+            <cell>Number of deposits</cell>
+            <cell>Deposit per year</cell>
+            <cell>Total deposited</cell>
+          </row>
+          <row>
+            <cell>20</cell>
+            <cell>45</cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>30</cell>
+            <cell>35</cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>40</cell>
+            <cell>25</cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a)">
+            <li>
+              <p>
+                For a start at age 20,
+                <md>
+                  \$1{,}000{,}000 = d\left[\frac{(1.06)^{45} - 1}{0.06}\right] = d(212.743514),
+                </md>
+                so <m>d \approx \$4{,}700.50</m> and the total deposited is <m>45(\$4{,}700.50) = \$211{,}522.50</m>. The other rows work the same way with 35 and 25 deposits.
+              </p>
+            </li>
+            <li>
+              <p>
+                Starting at 20, about $211,500 of your own money grows to $1,000,000; nearly 79% of the balance is interest. Waiting until 40 more than doubles the total you must deposit, because each deposit has less time to grow.
+              </p>
+            </li>
+          </ol>
+        </p>
+        <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+          <row header="yes">
+            <cell>Start at age</cell>
+            <cell>Number of deposits</cell>
+            <cell>Deposit per year</cell>
+            <cell>Total deposited</cell>
+          </row>
+          <row>
+            <cell>20</cell>
+            <cell>45</cell>
+            <cell>$4,700.50</cell>
+            <cell>$211,522.50</cell>
+          </row>
+          <row>
+            <cell>30</cell>
+            <cell>35</cell>
+            <cell>$8,973.86</cell>
+            <cell>$314,085.10</cell>
+          </row>
+          <row>
+            <cell>40</cell>
+            <cell>25</cell>
+            <cell>$18,226.72</cell>
+            <cell>$455,668.00</cell>
+          </row>
+        </tabular>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #7 (based on written 03a) -->
+      <statement>
+        <p>
+          Sam opens a Roth IRA with $1,000 and, starting the next month, deposits $75 at the end of every month. The account earns 7% compounded monthly. How much will Sam have after 25 years? How much did Sam deposit, and how much is interest?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Here <m>r/n = 0.07/12</m> and <m>nt = 12(25) = 300</m>. The initial $1,000 grows by compound interest, and the monthly deposits form an annuity.
+          <md>
+            <mrow>A_1 =\amp \$1{,}000\left(1+\frac{0.07}{12}\right)^{300} \approx \$5{,}725.42</mrow>
+            <mrow>A_2 =\amp \$75\left[\frac{\left(1+\frac{0.07}{12}\right)^{300} - 1}{\frac{0.07}{12}}\right] \approx \$60{,}755.38</mrow>
+          </md>
+          Sam will have <m>A_1 + A_2 \approx \$66{,}480.80</m>. The deposits total <m>\$1{,}000 + \$75(300) = \$23{,}500</m>, so the interest is <m>\$66{,}480.80 - \$23{,}500 = \$42{,}980.80</m>, about 64.7% of the balance.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #8 (based on written 03b) -->
+      <statement>
+        <p>
+          A rural fire district needs $750,000 to buy a new fire engine in 8 years. It sets up a sinking fund that earns 4% compounded semiannually. How much should the district deposit every six months? How much interest will the fund earn?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Here <m>r/n = 0.04/2 = 0.02</m> and <m>nt = 2(8) = 16</m> deposits.
+          <md>
+            <mrow>\$750{,}000 =\amp d\left[\frac{(1.02)^{16} - 1}{0.02}\right]</mrow>
+            <mrow>\$750{,}000 =\amp d(18.639285)</mrow>
+            <mrow>d =\amp \frac{\$750{,}000}{18.639285} \approx \$40{,}237.59</mrow>
+          </md>
+          The district should deposit $40,237.59 every six months. The deposits total <m>16(\$40{,}237.59) = \$643{,}801.44</m>, so the fund earns about <m>\$750{,}000 - \$643{,}801.44 = \$106{,}198.56</m> in interest.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #9 (new) -->
+      <statement>
+        <p>
+          Ana deposits $2,000 at the end of each year for 10 years, then stops and leaves the money in the account for 30 more years. Ben waits 10 years, then deposits $2,000 at the end of each year for 30 years. Both accounts earn 7% compounded annually, and both end at the same time, 40 years from now. Who ends up with more, and how much did each deposit?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          After her 10 deposits, Ana has
+          <md>
+            \$2{,}000\left[\frac{(1.07)^{10} - 1}{0.07}\right] \approx \$27{,}632.90,
+          </md>
+          which then grows for 30 years: <m>\$27{,}632.90(1.07)^{30} \approx \$210{,}348.65</m>. Ben has
+          <md>
+            \$2{,}000\left[\frac{(1.07)^{30} - 1}{0.07}\right] \approx \$188{,}921.57.
+          </md>
+          Ana ends up with about $21,427 more, even though she deposited only $20,000 and Ben deposited $60,000.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #10 (new) -->
+      <statement>
+        <p>
+          You deposit $200 every quarter into an account earning 5% APR. How much will you have after 12 years? How much of that is interest?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The compounding is not stated, so by the <xref ref="assemblage-finance-compounding-tip" text="custom">tip</xref> at the start of this section, assume it is quarterly, like the deposits: <m>r/n = 0.0125</m> and <m>nt = 48</m>.
+          <md>
+            A = \$200\left[\frac{(1.0125)^{48} - 1}{0.0125}\right] \approx \$13{,}045.68
+          </md>
+          You deposited <m>\$200(48) = \$9{,}600</m>, so the interest is <m>\$3{,}445.68</m>.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #11 (new) -->
+      <statement>
+        <p>
+          You deposit $20 every week into an account paying 5.2% compounded weekly. How much will you have after 3 years? How much of that is interest?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Here <m>r/n = 0.052/52 = 0.001</m> and <m>nt = 52(3) = 156</m>.
+          <md>
+            A = \$20\left[\frac{(1.001)^{156} - 1}{0.001}\right] \approx \$3{,}374.70
+          </md>
+          You deposited <m>\$20(156) = \$3{,}120</m>, so the interest is <m>\$254.70</m>.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #12 (new) -->
+      <statement>
+        <p>
+          A student wants $6,000 for a study-abroad semester in 3 years. How much should she deposit each month into an account paying 4% compounded monthly? How much of the $6,000 will be interest?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Here <m>r/n = 0.04/12</m> and <m>nt = 36</m>.
+          <md>
+            <mrow>\$6{,}000 =\amp d\left[\frac{\left(1+\frac{0.04}{12}\right)^{36} - 1}{\frac{0.04}{12}}\right]</mrow>
+            <mrow>\$6{,}000 =\amp d(38.181562)</mrow>
+            <mrow>d \approx\amp \$157.14</mrow>
+          </md>
+          She should deposit $157.14 each month. The deposits total <m>36(\$157.14) = \$5{,}657.04</m>, so about $342.96 is interest.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #13 (Obj 3 warm-up discussion question) -->
+      <statement>
+        <p>
+          Two friends each deposit $100 a month into accounts earning the same interest rate, and both stop at age 65. One starts at 25 and the other at 35, so the first friend deposits one-third more money. Without computing, explain whether the first friend's balance at 65 will be about one-third larger, or a lot more than that.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          A lot more. The extra ten years of deposits come first, so they have the longest time to compound, and every deposit that follows also grows on top of a larger balance. For example, at 6% compounded monthly the friend who starts at 25 deposits $48,000 and has about $199,149 at 65, while the friend who starts at 35 deposits $36,000 and has about $100,452, so one-third more money in gives nearly twice the balance.
+        </p>
+      </solution>
+    </exercise>
+  </exercises>
 </section>
