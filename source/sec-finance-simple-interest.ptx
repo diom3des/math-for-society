@@ -276,4 +276,358 @@
     </solution>
   </example>
   </subsection>
+
+  <exercises>
+    <!-- Sources: Exercises 1, 2, 4, 5, 6, 11, 12, and 13 are adapted from
+    Benjamin Jackson's MATH 105 lecture slides, clicker questions, and
+    warm-up (Objective 1), Walla Walla University, Fall 2026. Exercises 7,
+    8, and 14 are based on his MATH 105 written-homework question library
+    (Fall 2026). Exercises 3, 9, and 10 are new.
+    -->
+    <title>Exercises</title>
+
+    <exercise><!--  #1 (Obj 1 clicker: 80% of 70) -->
+      <statement>
+        <p>
+          <ol marker="a)">
+            <li>
+              <p>
+                Write 6%, 4.5%, and 0.75% as decimals.
+              </p>
+            </li>
+            <li>
+              <p>
+                What is 35% of 80?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a)">
+            <li>
+              <p>
+                Move the decimal point two places to the left: <m>6\% = 0.06</m>, <m>4.5\% = 0.045</m>, and <m>0.75\% = 0.0075</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>(0.35)(80) = 28</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #2 (Obj 1 slides: $1,000 at 3%) -->
+      <statement>
+        <p>
+          You borrow $1,000 at a simple interest rate of 3% per year. How much do you owe after 1 year? After 2 years? After 3 years? By how much does the amount you owe grow each year, and why is it the same every year?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Using <m>A = P(1+rt)</m>:
+          <md>
+            <mrow>t = 1\colon \amp\quad A = \$1{,}000[1+(0.03)(1)] = \$1{,}030</mrow>
+            <mrow>t = 2\colon \amp\quad A = \$1{,}000[1+(0.03)(2)] = \$1{,}060</mrow>
+            <mrow>t = 3\colon \amp\quad A = \$1{,}000[1+(0.03)(3)] = \$1{,}090</mrow>
+          </md>
+          The amount owed grows by $30 each year. With simple interest, the interest is always computed on the original $1,000, so each year adds the same <m>(\$1{,}000)(0.03) = \$30</m>.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #3 (new) -->
+      <statement>
+        <p>
+          You invest $800 in an account that pays 4.5% simple interest per year. How much money is in the account after 4 years? How much of that is interest?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            A = \$800[1+(0.045)(4)] = \$800(1.18) = \$944
+          </md>
+          The account holds $944, of which <m>\$944 - \$800 = \$144</m> is interest.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #4 (Obj 1 slides: Hillary) -->
+      <statement>
+        <p>
+          A loan at a simple interest rate of 4.5% per year has grown to $10,000 after 8 years. How much was originally borrowed?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\$10{,}000 =\amp P[1+(0.045)(8)]</mrow>
+            <mrow>\$10{,}000 =\amp P(1.36)</mrow>
+            <mrow>P =\amp \frac{\$10{,}000}{1.36} \approx \$7{,}352.94</mrow>
+          </md>
+          About $7,352.94 was originally borrowed.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #5 (Obj 1 slides: Randy; Obj 1 warm-up) -->
+      <statement>
+        <p>
+          You are $200 short on rent until your next paycheck. A lender offers to give you $200 today if you pay back $230 in two weeks.
+          <ol marker="a)">
+            <li>
+              <p>
+                What annual simple interest rate is the lender charging? (Use 52 weeks in a year.)
+              </p>
+            </li>
+            <li>
+              <p>
+                A friend says, <q>That's only 15% interest. My credit card charges 24%, so this is a better deal.</q> Is your friend right? Explain.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a)">
+            <li>
+              <p>
+                The interest is <m>\$230 - \$200 = \$30</m> and the time is <m>t = 2/52</m> year.
+                <md>
+                  <mrow>\$30 =\amp \$200 \cdot r \cdot \frac{2}{52}</mrow>
+                  <mrow>r =\amp \frac{(30)(52)}{(200)(2)} = 3.9</mrow>
+                </md>
+                The annual rate is 390%.
+              </p>
+            </li>
+            <li>
+              <p>
+                No. The 15% is charged for only two weeks, while the credit card's 24% is for a whole year. There are 26 two-week periods in a year, so the yearly rate is <m>26 \times 15\% = 390\%</m>, far more than 24%.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #6 (Obj 1 clicker: Jaqueline) -->
+      <statement>
+        <p>
+          A borrower is getting a loan at a simple interest rate of 6% per year. She plans to pay off the loan in 6 months and wants the total she pays back (principal plus interest) to be exactly $1,000. How much should she borrow?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\$1{,}000 =\amp P[1+(0.06)(0.5)]</mrow>
+            <mrow>\$1{,}000 =\amp P(1.03)</mrow>
+            <mrow>P =\amp \frac{\$1{,}000}{1.03} \approx \$970.87</mrow>
+          </md>
+          She should borrow $970.87.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #7 (based on written 01a) -->
+      <statement>
+        <p>
+          Mateo wants to buy a used e-bike for $1,800 in 15 months. How much should he invest now at 4% simple interest per year to have the money he needs then? How much interest will he earn?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Here <m>t = 15/12 = 1.25</m> years.
+          <md>
+            <mrow>\$1{,}800 =\amp P[1+(0.04)(1.25)]</mrow>
+            <mrow>\$1{,}800 =\amp P(1.05)</mrow>
+            <mrow>P =\amp \frac{\$1{,}800}{1.05} \approx \$1{,}714.29</mrow>
+          </md>
+          Mateo should invest $1,714.29 now. He will earn <m>\$1{,}800 - \$1{,}714.29 = \$85.71</m> in interest.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #8 (based on written 01b) -->
+      <statement>
+        <p>
+          A furniture store lets you finance a $2,400 sofa at a simple interest rate of 9% per year for 18 months, paid off in equal monthly payments.
+          <ol marker="a)">
+            <li>
+              <p>
+                How much interest will you be charged?
+              </p>
+            </li>
+            <li>
+              <p>
+                What is the total amount you will repay?
+              </p>
+            </li>
+            <li>
+              <p>
+                What is the monthly payment?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a)">
+            <li>
+              <p>
+                With <m>t = 18/12 = 1.5</m> years, <m>I = \$2{,}400(0.09)(1.5) = \$324</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\$2{,}400 + \$324 = \$2{,}724</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Eighteen equal payments are <m>\$2{,}724/18 \approx \$151.33</m> each.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #9 (new) -->
+      <statement>
+        <p>
+          How many months will it take for $2,500 to grow to $2,575 at a simple interest rate of 3.6% per year?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The interest is <m>\$2{,}575 - \$2{,}500 = \$75</m>.
+          <md>
+            <mrow>\$75 =\amp \$2{,}500(0.036)t</mrow>
+            <mrow>\$75 =\amp \$90t</mrow>
+            <mrow>t =\amp \frac{75}{90} = \frac{5}{6} \text{ year}</mrow>
+          </md>
+          That is <m>\frac{5}{6}(12) = 10</m> months.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #10 (new) -->
+      <statement>
+        <p>
+          You pay $980 for a Treasury bill that pays you $1,000 in 26 weeks. What annual simple interest rate are you earning? Round to the nearest hundredth of a percent.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The interest is <m>\$1{,}000 - \$980 = \$20</m>, the principal is $980, and 26 weeks is <m>t = 0.5</m> year.
+          <md>
+            <mrow>\$20 =\amp \$980 \cdot r \cdot 0.5</mrow>
+            <mrow>r =\amp \frac{20}{490} \approx 0.0408</mrow>
+          </md>
+          You are earning about 4.08% per year.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="exer-finance-simple-discount-note"><!--  #11 (Obj 1 slides: $5,000 discounted note) -->
+      <statement>
+        <p>
+          A borrower signs a note for a discounted loan and agrees to pay the lender $5,000 in 18 months at a simple interest rate of 3% per year. What is the discount? How much does the borrower receive?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>D =\amp Lrt = \$5{,}000(0.03)(1.5) = \$225</mrow>
+            <mrow>R =\amp L - D = \$5{,}000 - \$225 = \$4{,}775</mrow>
+          </md>
+          The discount is $225, and the borrower receives $4,775.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #12 (Obj 1 clicker: $4,775 loan; cheat-sheet closing point) -->
+      <statement>
+        <p>
+          This exercise continues <xref ref="exer-finance-simple-discount-note"/>.
+          <ol marker="a)">
+            <li>
+              <p>
+                Suppose instead you take an ordinary (not discounted) loan of $4,775 at a simple interest rate of 3% per year and pay it off in 18 months. How much interest do you pay?
+              </p>
+            </li>
+            <li>
+              <p>
+                Both loans put $4,775 in the borrower's hands for 18 months. Which one costs more in interest, and by how much?
+              </p>
+            </li>
+            <li>
+              <p>
+                What annual simple interest rate is the discounted loan really charging on the $4,775 the borrower receives? Round to the nearest hundredth of a percent.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a)">
+            <li>
+              <p>
+                <m>I = \$4{,}775(0.03)(1.5) = \$214.875 \approx \$214.88</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The discounted loan costs more: <m>\$225 - \$214.88 = \$10.12</m> more.
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\$225 = \$4{,}775 \cdot r \cdot 1.5</m>, so <m>r = \frac{225}{7{,}162.5} \approx 0.0314</m>, or about 3.14%. The same advertised rate costs more when the interest is taken out first.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #13 (Obj 1 slides: Same Rate, Different Cost) -->
+      <statement>
+        <p>
+          Two lenders each charge 10% simple interest for one year. Lender A gives you $1,000, and you repay $1,100. Lender B takes the interest out first: you get $900 and repay $1,000. Both charge $100 in interest. What annual simple interest rate is Lender B really charging on the money you receive? Round to the nearest hundredth of a percent.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\$100 = \$900 \cdot r \cdot 1</m>, so <m>r = \frac{100}{900} \approx 0.1111</m>. Lender B is really charging about 11.11%, compared with 10% for Lender A.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #14 (based on written 01c) -->
+      <statement>
+        <p>
+          A farmer needs $15,000 to buy an irrigation pump. The bank offers a discounted loan at a simple interest rate of 8% per year for 6 months. What loan amount (maturity value) should the farmer agree to repay so that the proceeds are $15,000? What is the discount?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>R =\amp L(1-rt)</mrow>
+            <mrow>\$15{,}000 =\amp L[1-(0.08)(0.5)]</mrow>
+            <mrow>\$15{,}000 =\amp L(0.96)</mrow>
+            <mrow>L =\amp \frac{\$15{,}000}{0.96} = \$15{,}625</mrow>
+          </md>
+          The farmer should agree to repay $15,625. The discount is <m>\$15{,}625 - \$15{,}000 = \$625</m>.
+        </p>
+      </solution>
+    </exercise>
+  </exercises>
 </section>
