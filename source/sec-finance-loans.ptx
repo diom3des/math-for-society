@@ -415,5 +415,727 @@
           </p>
         </solution>
       </example>
-    </subsection>    
+    </subsection>
+
+  <exercises>
+    <!-- Sources: Exercises 1 through 6 and 15 are adapted from Benjamin
+    Jackson's MATH 105 lecture slides, clicker questions, lecture notes,
+    and warm-up (Objective 4 and the Objectives 1-4 review), Walla Walla
+    University, Fall 2026. Exercises 7 and 8 are based on his MATH 105
+    written-homework question library (Fall 2026). Exercises 9 through 14
+    and 16 through 20 are new.
+    -->
+    <title>Exercises</title>
+
+    <exercise xml:id="exer-finance-loans-noah-withdraws"><!--  #1 (Obj 4 warm-up: Noah cashes out, new numbers) -->
+      <statement>
+        <p>
+          Noah from <xref ref="exer-finance-annuity-mia-noah"/> now wants to <em>withdraw</em> $2,000 at the end of each of the next 3 years from an account paying 5% interest compounded annually. After the third withdrawal, the account will be empty.
+          <ol marker="a)">
+            <li>
+              <p>
+                Complete the table to find how much Noah needs in the account today. Each withdrawal is a lump sum, so find its present value as in <xref ref="sec-finance-compound-interest"/>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Noah takes out $6,000 in all. Why does he need less than $6,000 today?
+              </p>
+            </li>
+          </ol>
+        </p>
+        <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+          <row header="yes">
+            <cell>Withdrawal</cell>
+            <cell>Years from today</cell>
+            <cell>Needed today</cell>
+          </row>
+          <row>
+            <cell>End of year 1</cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>End of year 2</cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>End of year 3</cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Total</cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a)">
+            <li>
+              <p>
+                Noah needs $5,446.50 today; see the table.
+              </p>
+            </li>
+            <li>
+              <p>
+                The money waiting in the account keeps earning interest until it is withdrawn, so the interest pays for part of the $6,000.
+              </p>
+            </li>
+          </ol>
+        </p>
+        <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+          <row header="yes">
+            <cell>Withdrawal</cell>
+            <cell>Years from today</cell>
+            <cell>Needed today</cell>
+          </row>
+          <row>
+            <cell>End of year 1</cell>
+            <cell>1</cell>
+            <cell><m>\$2{,}000/(1.05)^1 \approx \$1{,}904.76</m></cell>
+          </row>
+          <row>
+            <cell>End of year 2</cell>
+            <cell>2</cell>
+            <cell><m>\$2{,}000/(1.05)^2 \approx \$1{,}814.06</m></cell>
+          </row>
+          <row>
+            <cell>End of year 3</cell>
+            <cell>3</cell>
+            <cell><m>\$2{,}000/(1.05)^3 \approx \$1{,}727.68</m></cell>
+          </row>
+          <row>
+            <cell>Total</cell>
+            <cell></cell>
+            <cell>$5,446.50</cell>
+          </row>
+        </tabular>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #2 (Obj 4 lecture notes: checking the formula on Noah) -->
+      <statement>
+        <p>
+          Use the present value of an annuity formula to find the amount Noah needs today in <xref ref="exer-finance-loans-noah-withdraws"/>. Does it match your table?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Here <m>d = \$2{,}000</m>, <m>r/n = 0.05</m>, and <m>nt = 3</m>.
+          <md>
+            P = \$2{,}000\left[\frac{1 - (1.05)^{-3}}{0.05}\right] = \$2{,}000(2.723248) \approx \$5{,}446.50
+          </md>
+          Yes, it matches. The formula adds up the present values of all three withdrawals in one calculation.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #3 (Obj 4 clicker: which equation, new numbers) -->
+      <statement>
+        <p>
+          You have $80,000 in an annuity paying 4% interest compounded monthly, and you want to make equal monthly withdrawals for the next 15 years. Which equation gives the amount you can withdraw each month? Then solve it.
+          <ol marker="a)">
+            <li>
+              <p>
+                <m>\$80{,}000 = d\left[\frac{1-\left(1+\frac{0.04}{12}\right)^{-15}}{\frac{0.04}{12}}\right]</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\$80{,}000 = d\left[\frac{1-\left(1+\frac{0.04}{12}\right)^{-180}}{\frac{0.04}{12}}\right]</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\$80{,}000 = d\left[\frac{1-(1.04)^{-15}}{0.04}\right]</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>P = \$80{,}000\left[\frac{1-\left(1+\frac{0.04}{12}\right)^{-180}}{\frac{0.04}{12}}\right]</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The answer is (b). There are <m>nt = 12(15) = 180</m> withdrawals, the monthly rate is <m>0.04/12</m>, and the $80,000 is the present value, so the unknown is <m>d</m>. Choice (a) uses 15 instead of 180 withdrawals, (c) uses a yearly rate and yearly withdrawals, and (d) puts $80,000 in place of the payment <m>d</m>.
+          <md>
+            <mrow>\$80{,}000 =\amp d(135.192149)</mrow>
+            <mrow>d =\amp \frac{\$80{,}000}{135.192149} \approx \$591.75</mrow>
+          </md>
+          You can withdraw $591.75 each month.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #4 (Obj 4 slides: Garcias' lease, new numbers) -->
+      <statement>
+        <p>
+          A family leases a car for 3 years at $380 per month. If money is worth 6% per year compounded monthly, what is the equivalent cash payment of this lease today? How much of the lease payments is interest?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Here <m>d = \$380</m>, <m>r/n = 0.06/12 = 0.005</m>, and <m>nt = 36</m>.
+          <md>
+            P = \$380\left[\frac{1 - (1.005)^{-36}}{0.005}\right] = \$380(32.871016) \approx \$12{,}490.99
+          </md>
+          The lease is worth $12,490.99 in cash today. The family pays <m>\$380(36) = \$13{,}680</m> in all, so <m>\$13{,}680 - \$12{,}490.99 = \$1{,}189.01</m> is interest.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #5 (Obj 4 slides: Teresa, new numbers) -->
+      <statement>
+        <p>
+          Devon needs to borrow $18,000 for a car. One lender offers a 4-year loan at 5.4% APR, and another offers a 6-year loan at 6.6% APR, both with monthly payments. Find the monthly payment and the total interest for each loan. Which loan costs less?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <em>4-year loan:</em> <m>r/n = 0.054/12</m> and <m>nt = 48</m>.
+          <md>
+            <mrow>\$18{,}000 =\amp d\left[\frac{1-\left(1+\frac{0.054}{12}\right)^{-48}}{\frac{0.054}{12}}\right]</mrow>
+            <mrow>\$18{,}000 =\amp d(43.083153)</mrow>
+            <mrow>d \approx\amp \$417.80</mrow>
+          </md>
+          The interest is <m>48(\$417.80) - \$18{,}000 = \$2{,}054.40</m>.
+        </p>
+        <p>
+          <em>6-year loan:</em> <m>r/n = 0.066/12</m> and <m>nt = 72</m>.
+          <md>
+            <mrow>\$18{,}000 =\amp d\left[\frac{1-\left(1+\frac{0.066}{12}\right)^{-72}}{\frac{0.066}{12}}\right]</mrow>
+            <mrow>\$18{,}000 =\amp d(59.320487)</mrow>
+            <mrow>d \approx\amp \$303.44</mrow>
+          </md>
+          The interest is <m>72(\$303.44) - \$18{,}000 = \$3{,}847.68</m>.
+        </p>
+        <p>
+          The 6-year loan has a lower monthly payment, but the 4-year loan costs $1,793.28 less in interest.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #6 (Obj 4 clickers: Sarah and Mike, new numbers) -->
+      <statement>
+        <p>
+          Jada and Luis buy a house for $320,000. They make a 15% down payment and finance the rest with a 30-year loan at 6.5% APR, paid monthly.
+          <ol marker="a)">
+            <li>
+              <p>
+                What is their down payment?
+              </p>
+            </li>
+            <li>
+              <p>
+                What is their monthly payment?
+              </p>
+            </li>
+            <li>
+              <p>
+                One classmate got a monthly payment of $2,022.62, and another got $20,829.06. What did each one do wrong?
+              </p>
+            </li>
+            <li>
+              <p>
+                How much interest will they pay over the life of the loan?
+              </p>
+            </li>
+            <li>
+              <p>
+                Instead, they pay $300 more than the required payment each month, which pays off the loan in about 242 payments. Treating this as exactly 242 payments, how much interest do they pay? How much do they save, and how many years early is the loan paid off?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a)">
+            <li>
+              <p>
+                <m>0.15(\$320{,}000) = \$48{,}000</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The loan is <m>\$320{,}000 - \$48{,}000 = \$272{,}000</m>, with <m>r/n = 0.065/12</m> and <m>nt = 360</m>.
+                <md>
+                  <mrow>\$272{,}000 =\amp d\left[\frac{1-\left(1+\frac{0.065}{12}\right)^{-360}}{\frac{0.065}{12}}\right]</mrow>
+                  <mrow>\$272{,}000 =\amp d(158.210820)</mrow>
+                  <mrow>d \approx\amp \$1{,}719.23</mrow>
+                </md>
+              </p>
+            </li>
+            <li>
+              <p>
+                $2,022.62 is the payment on the full $320,000, without subtracting the down payment. $20,829.06 is a yearly payment: it uses <m>n = 1</m> and 30 payments instead of monthly payments.
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>360(\$1{,}719.23) - \$272{,}000 = \$618{,}922.80 - \$272{,}000 = \$346{,}922.80</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                They pay <m>\$1{,}719.23 + \$300 = \$2{,}019.23</m> per month, so the interest is <m>242(\$2{,}019.23) - \$272{,}000 = \$216{,}653.66</m>. That saves <m>\$346{,}922.80 - \$216{,}653.66 = \$130{,}269.14</m>, and the loan ends <m>360 - 242 = 118</m> months, or about 9.8 years, early.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #7 (based on written 04a) -->
+      <statement>
+        <p>
+          Keisha buys a phone with no down payment and pays $45 per month for 24 months. The interest charged is 0.75% per month.
+          <ol marker="a)">
+            <li>
+              <p>
+                What was the price of the phone?
+              </p>
+            </li>
+            <li>
+              <p>
+                How much interest did Keisha pay?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a)">
+            <li>
+              <p>
+                The monthly rate is already given, <m>r/n = 0.0075</m>, and <m>nt = 24</m>.
+                <md>
+                  P = \$45\left[\frac{1-(1.0075)^{-24}}{0.0075}\right] = \$45(21.889146) \approx \$985.01
+                </md>
+              </p>
+            </li>
+            <li>
+              <p>
+                Keisha paid <m>\$45(24) = \$1{,}080</m>, so the interest was <m>\$1{,}080 - \$985.01 = \$94.99</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #8 (based on written 04b) -->
+      <statement>
+        <p>
+          A couple took out a 30-year, $240,000 home loan at 6.75% compounded monthly. After making monthly payments for 4 years, they refinance the remaining balance with a new 20-year loan at 5.5% compounded monthly, with no closing costs.
+          <ol marker="a)">
+            <li>
+              <p>
+                What was the monthly payment on the original loan?
+              </p>
+            </li>
+            <li>
+              <p>
+                What is the remaining balance on the original loan after 4 years of payments?
+              </p>
+            </li>
+            <li>
+              <p>
+                How much interest have they paid in those 4 years?
+              </p>
+            </li>
+            <li>
+              <p>
+                Using your answer to (b) as the amount of the new loan, what is the new monthly payment? How much does the payment change?
+              </p>
+            </li>
+            <li>
+              <p>
+                How much interest does the refinance save, compared with keeping the original loan for its full term?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a)">
+            <li>
+              <p>
+                <md>
+                  <mrow>\$240{,}000 =\amp d\left[\frac{1-\left(1+\frac{0.0675}{12}\right)^{-360}}{\frac{0.0675}{12}}\right]</mrow>
+                  <mrow>\$240{,}000 =\amp d(154.178682)</mrow>
+                  <mrow>d \approx\amp \$1{,}556.64</mrow>
+                </md>
+              </p>
+            </li>
+            <li>
+              <p>
+                There are <m>360 - 48 = 312</m> payments left.
+                <md>
+                  P = \$1{,}556.64\left[\frac{1-\left(1+\frac{0.0675}{12}\right)^{-312}}{\frac{0.0675}{12}}\right] = \$1{,}556.64(146.887181) \approx \$228{,}650.46
+                </md>
+              </p>
+            </li>
+            <li>
+              <p>
+                They have paid off <m>\$240{,}000 - \$228{,}650.46 = \$11{,}349.54</m> of principal. They paid <m>48(\$1{,}556.64) = \$74{,}718.72</m> in all, so <m>\$74{,}718.72 - \$11{,}349.54 = \$63{,}369.18</m> was interest.
+              </p>
+            </li>
+            <li>
+              <p>
+                <md>
+                  <mrow>\$228{,}650.46 =\amp d\left[\frac{1-\left(1+\frac{0.055}{12}\right)^{-240}}{\frac{0.055}{12}}\right]</mrow>
+                  <mrow>\$228{,}650.46 =\amp d(145.372649)</mrow>
+                  <mrow>d \approx\amp \$1{,}572.86</mrow>
+                </md>
+                The payment goes up by only <m>\$1{,}572.86 - \$1{,}556.64 = \$16.22</m> per month.
+              </p>
+            </li>
+            <li>
+              <p>
+                The original loan would have cost <m>360(\$1{,}556.64) - \$240{,}000 = \$320{,}390.40</m> in interest. With the refinance, the interest is the $63,369.18 already paid plus the interest on the new loan:
+                <md>
+                  \$63{,}369.18 + \left[240(\$1{,}572.86) - \$228{,}650.46\right] = \$212{,}205.12.
+                </md>
+                The refinance saves <m>\$320{,}390.40 - \$212{,}205.12 = \$108{,}185.28</m> in interest.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #9 (new) -->
+      <statement>
+        <p>
+          A retiree has $300,000 in an account earning 5% compounded monthly. She wants to make equal monthly withdrawals for 25 years, ending with an empty account. How much can she withdraw each month? How much of what she withdraws is interest?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Here <m>r/n = 0.05/12</m> and <m>nt = 300</m>.
+          <md>
+            <mrow>\$300{,}000 =\amp d\left[\frac{1-\left(1+\frac{0.05}{12}\right)^{-300}}{\frac{0.05}{12}}\right]</mrow>
+            <mrow>\$300{,}000 =\amp d(171.060047)</mrow>
+            <mrow>d \approx\amp \$1{,}753.77</mrow>
+          </md>
+          She can withdraw $1,753.77 per month. Her withdrawals total <m>300(\$1{,}753.77) = \$526{,}131.00</m>, so $226,131.00 of it is interest.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #10 (new) -->
+      <statement>
+        <p>
+          A lottery winner can take $50,000 at the end of each year for 20 years, or a lump sum of $600,000 today.
+          <ol marker="a)">
+            <li>
+              <p>
+                If money is worth 5% compounded annually, which option is worth more today?
+              </p>
+            </li>
+            <li>
+              <p>
+                Answer the same question if money is worth 7% compounded annually.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Compare the present value of the 20 payments with $600,000.
+          <ol marker="a)">
+            <li>
+              <p>
+                <m>\$50{,}000\left[\frac{1-(1.05)^{-20}}{0.05}\right] = \$50{,}000(12.462210) \approx \$623{,}110.52</m>, so the yearly payments are worth more.
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\$50{,}000\left[\frac{1-(1.07)^{-20}}{0.07}\right] = \$50{,}000(10.594014) \approx \$529{,}700.71</m>, so the lump sum is worth more. At a higher rate, money received later is worth less today.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #11 (new) -->
+      <statement>
+        <p>
+          Sam finances an $18,000 boat with a 7-year loan at 7.2% APR, paid monthly. What is the monthly payment? What is the remaining balance after 3 years? How much of the principal has Sam paid off by then, and how does that compare with the total of the payments made?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Here <m>r/n = 0.072/12 = 0.006</m> and <m>nt = 84</m>.
+          <md>
+            <mrow>\$18{,}000 =\amp d\left[\frac{1-(1.006)^{-84}}{0.006}\right]</mrow>
+            <mrow>\$18{,}000 =\amp d(65.830026)</mrow>
+            <mrow>d \approx\amp \$273.43</mrow>
+          </md>
+          After 3 years, 48 payments remain:
+          <md>
+            P = \$273.43\left[\frac{1-(1.006)^{-48}}{0.006}\right] = \$273.43(41.598819) \approx \$11{,}374.37.
+          </md>
+          Sam has paid off <m>\$18{,}000 - \$11{,}374.37 = \$6{,}625.63</m> of principal, even though the payments total <m>36(\$273.43) = \$9{,}843.48</m>. The other $3,217.85 went to interest.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #12 (new) -->
+      <statement>
+        <p>
+          Ravi uses a credit card with 22.99% APR compounded daily to buy a $1,250 laptop. He makes no payments during the grace period, and his first payment is due 30 days after the grace period ends. The minimum payment is 2% of the balance (after interest) or $35, whichever is larger. What is his balance when the payment is due? What is his minimum payment? If he pays only the minimum, what is his new balance?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            \$1{,}250\left(1+\frac{0.2299}{365}\right)^{30} \approx \$1{,}273.84
+          </md>
+          Since <m>0.02(\$1{,}273.84) \approx \$25.48</m> is less than $35, his minimum payment is $35. His new balance is <m>\$1{,}273.84 - \$35 = \$1{,}238.84</m>.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #13 (new) -->
+      <statement>
+        <p>
+          A credit card balance of $4,800 is charged 19.99% APR compounded daily for 31 days. The minimum payment is 3% of the balance (after interest) or $25, whichever is larger. Find the balance after interest, the minimum payment, and the new balance after the minimum payment.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            \$4{,}800\left(1+\frac{0.1999}{365}\right)^{31} \approx \$4{,}882.17
+          </md>
+          Since <m>0.03(\$4{,}882.17) \approx \$146.47</m> is more than $25, the minimum payment is $146.47. The new balance is <m>\$4{,}882.17 - \$146.47 = \$4{,}735.70</m>.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #14 (new) -->
+      <statement>
+        <p>
+          A $200,000 home loan at 6% APR for 30 years has monthly payments of $1,199.10. Each month, the interest charged is one month's interest, <m>\frac{0.06}{12} = 0.005</m> times the balance owed, and the rest of the payment goes to principal.
+          <ol marker="a)">
+            <li>
+              <p>
+                How much of the first payment goes to interest, and how much to principal?
+              </p>
+            </li>
+            <li>
+              <p>
+                What is the balance after the first payment? How much of the second payment goes to interest?
+              </p>
+            </li>
+            <li>
+              <p>
+                Use your answers to explain the pattern in <xref ref="fig-installment-loan-interest-principal"/>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a)">
+            <li>
+              <p>
+                Interest: <m>0.005(\$200{,}000) = \$1{,}000.00</m>. Principal: <m>\$1{,}199.10 - \$1{,}000.00 = \$199.10</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The balance is <m>\$200{,}000 - \$199.10 = \$199{,}800.90</m>, so the second month's interest is <m>0.005(\$199{,}800.90) \approx \$999.00</m>, and $200.10 goes to principal.
+              </p>
+            </li>
+            <li>
+              <p>
+                At first, the balance is large, so most of each payment is interest. Each payment lowers the balance a little, so the next month's interest is a little smaller and a little more of the same payment goes to principal. The effect snowballs, so by the end of the loan most of each payment goes to principal.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #15 (Obj 1-4 review slides: what type of problem, new scenarios) -->
+      <statement>
+        <p>
+          For each situation, decide which section's formula applies: simple interest (<xref ref="sec-finance-simple-interest"/>), compound interest on a lump sum (<xref ref="sec-finance-compound-interest"/>), the future value of an annuity (<xref ref="sec-finance-savings-plans"/>), or the present value of an annuity (this section). You do not need to solve the problems.
+          <ol marker="a)">
+            <li>
+              <p>
+                A couple saves $150 each month for 6 years toward a down payment on a house.
+              </p>
+            </li>
+            <li>
+              <p>
+                You borrow $800 from a friend for 9 months at a simple interest rate of 12% per year.
+              </p>
+            </li>
+            <li>
+              <p>
+                A $10,000 inheritance is placed in a CD earning 4.5% compounded monthly for 7 years.
+              </p>
+            </li>
+            <li>
+              <p>
+                A $9,500 used car is paid off in 48 equal monthly payments.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First ask whether there is one lump sum or the same payment every period. Then ask whether the payments save up for later or pay off (or spend) money you have now.
+          <ol marker="a)">
+            <li>
+              <p>
+                Future value of an annuity: equal deposits that save up for later.
+              </p>
+            </li>
+            <li>
+              <p>
+                Simple interest: a lump sum whose interest is not compounded.
+              </p>
+            </li>
+            <li>
+              <p>
+                Compound interest: a single lump sum that is compounded.
+              </p>
+            </li>
+            <li>
+              <p>
+                Present value of an annuity: equal payments that pay off an amount borrowed now (an installment loan).
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #16 (new) -->
+      <statement>
+        <p>
+          A couple can spend $2,400 a month on housing, but $450 of that goes to property taxes and insurance, and the rest is the loan payment. They have $60,000 for a down payment. If they can get a 30-year loan at 6.25% APR with monthly payments, what is the largest loan they can afford? What is the most they can pay for a house?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The loan payment is <m>d = \$2{,}400 - \$450 = \$1{,}950</m>, with <m>r/n = 0.0625/12</m> and <m>nt = 360</m>.
+          <md>
+            P = \$1{,}950\left[\frac{1-\left(1+\frac{0.0625}{12}\right)^{-360}}{\frac{0.0625}{12}}\right] = \$1{,}950(162.412224) \approx \$316{,}703.84
+          </md>
+          They can borrow up to $316,703.84. With the down payment, they can pay up to <m>\$316{,}703.84 + \$60{,}000 = \$376{,}703.84</m> for a house.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #17 (new) -->
+      <statement>
+        <p>
+          Maya graduates owing $27,000 in student loans at 5.5% APR with monthly payments. Find her monthly payment and her total interest under a 10-year repayment plan and under a 20-year plan.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <em>10-year plan:</em> <m>nt = 120</m>.
+          <md>
+            <mrow>\$27{,}000 =\amp d\left[\frac{1-\left(1+\frac{0.055}{12}\right)^{-120}}{\frac{0.055}{12}}\right]</mrow>
+            <mrow>\$27{,}000 =\amp d(92.143582)</mrow>
+            <mrow>d \approx\amp \$293.02</mrow>
+          </md>
+          The interest is <m>120(\$293.02) - \$27{,}000 = \$8{,}162.40</m>.
+        </p>
+        <p>
+          <em>20-year plan:</em> <m>nt = 240</m>.
+          <md>
+            <mrow>\$27{,}000 =\amp d\left[\frac{1-\left(1+\frac{0.055}{12}\right)^{-240}}{\frac{0.055}{12}}\right]</mrow>
+            <mrow>\$27{,}000 =\amp d(145.372649)</mrow>
+            <mrow>d \approx\amp \$185.73</mrow>
+          </md>
+          The interest is <m>240(\$185.73) - \$27{,}000 = \$17{,}575.20</m>. The 20-year plan lowers the payment by $107.29 a month but more than doubles the interest.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #18 (new) -->
+      <statement>
+        <p>
+          Elena has a $3,600 credit card balance at 24% APR compounded monthly. She stops using the card and wants to pay it off with equal monthly payments. Find the monthly payment and the total interest if she pays it off in 1 year, and if she pays it off in 3 years.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Here <m>r/n = 0.24/12 = 0.02</m>.
+        </p>
+        <p>
+          <em>1 year:</em> <m>nt = 12</m>.
+          <md>
+            <mrow>\$3{,}600 =\amp d\left[\frac{1-(1.02)^{-12}}{0.02}\right]</mrow>
+            <mrow>\$3{,}600 =\amp d(10.575341)</mrow>
+            <mrow>d \approx\amp \$340.41</mrow>
+          </md>
+          The interest is <m>12(\$340.41) - \$3{,}600 = \$484.92</m>.
+        </p>
+        <p>
+          <em>3 years:</em> <m>nt = 36</m>.
+          <md>
+            <mrow>\$3{,}600 =\amp d\left[\frac{1-(1.02)^{-36}}{0.02}\right]</mrow>
+            <mrow>\$3{,}600 =\amp d(25.488842)</mrow>
+            <mrow>d \approx\amp \$141.24</mrow>
+          </md>
+          The interest is <m>36(\$141.24) - \$3{,}600 = \$1{,}484.64</m>, about three times as much.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #19 (new) -->
+      <statement>
+        <p>
+          A family sets up a scholarship that will pay $4,000 at the end of each semester for 4 years. How much must they deposit now into an account paying 3% compounded semiannually? How much of the scholarship money comes from interest?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Here <m>r/n = 0.03/2 = 0.015</m> and <m>nt = 8</m>.
+          <md>
+            P = \$4{,}000\left[\frac{1-(1.015)^{-8}}{0.015}\right] = \$4{,}000(7.485925) \approx \$29{,}943.70
+          </md>
+          They must deposit $29,943.70. The scholarship pays <m>8(\$4{,}000) = \$32{,}000</m>, so $2,056.30 comes from interest.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise><!--  #20 (new) -->
+      <statement>
+        <p>
+          Jordan can afford a car payment of $450 per month on a 72-month loan at 7.2% APR and has a $3,000 trade-in to put toward the car. What is the largest loan Jordan can afford, and what is the most Jordan can spend on a car? How much interest would Jordan pay on that loan?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Here <m>r/n = 0.072/12 = 0.006</m> and <m>nt = 72</m>.
+          <md>
+            P = \$450\left[\frac{1-(1.006)^{-72}}{0.006}\right] = \$450(58.325343) \approx \$26{,}246.40
+          </md>
+          Jordan can borrow up to $26,246.40, so with the trade-in Jordan can spend up to $29,246.40 on a car. The payments total <m>72(\$450) = \$32{,}400</m>, so the interest is <m>\$32{,}400 - \$26{,}246.40 = \$6{,}153.60</m>.
+        </p>
+      </solution>
+    </exercise>
+  </exercises>
 </section>
