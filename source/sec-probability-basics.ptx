@@ -494,4 +494,480 @@
 			</solution>
 		</example>
 	</subsection>
+
+	<exercises>
+		<!-- Sources: Exercises 2, 3, 4, 6, 7, 8, 9, and 10 are adapted from
+		Benjamin Jackson's MATH 105 lecture slides and clicker questions
+		(Objective 13), Walla Walla University, Fall 2026, and Exercise 5
+		from his Objective 13 warm-up (Fall 2026), all with new numbers.
+		Exercise 11 is based on his MATH 105 written-homework question
+		library (Fall 2026). Exercises 1, 12, 13, 14, 15, and 16 are new.
+		-->
+		<title>Exercises</title>
+
+		<exercise xml:id="exer-probability-types"><!--  #1 (new; slides' types frame) -->
+			<statement>
+				<p>
+					Classify each probability as theoretical, experimental, or subjective.
+					<ol marker="a)">
+						<li>
+							<p>
+								A basketball player made 172 of her 200 free throws this season, so a coach estimates the probability that she makes her next free throw as <m>\frac{172}{200} = 0.86</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								The probability of drawing a heart from a well-shuffled standard deck is <m>\frac{13}{52}</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Your friend says there is a 90% chance she gets the internship she interviewed for.
+							</p>
+						</li>
+						<li>
+							<p>
+								A computer simulates rolling two dice 10,000 times and gets a sum of 7 in 1,671 of the rolls, so the probability of a sum of 7 is estimated as about 0.167.
+							</p>
+						</li>
+						<li>
+							<p>
+								A spinner is divided into 8 equal sectors, 3 of them blue, so the probability of landing on blue is <m>\frac{3}{8}</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Kai flips a coin 20 times and gets 13 heads. Find the experimental probability of heads from Kai's flips and the theoretical probability of heads for a fair coin.
+							</p>
+						</li>
+						<li>
+							<p>
+								Kai says the coin must be unfair because the two answers in (f) are different. Do you agree? Explain.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p>Experimental (based on observed results).</p></li>
+						<li><p>Theoretical (13 of 52 equally likely cards are hearts).</p></li>
+						<li><p>Subjective (an educated guess).</p></li>
+						<li><p>Experimental (based on simulated results).</p></li>
+						<li><p>Theoretical (3 of 8 equally likely sectors are blue).</p></li>
+						<li><p>The experimental probability is <m>\frac{13}{20} = 0.65</m>; the theoretical probability for a fair coin is <m>\frac{1}{2} = 0.5</m>.</p></li>
+						<li><p>No. Twenty flips is a small number of trials, and experimental probabilities vary from one set of trials to the next. Getting 13 heads in 20 flips is not unusual for a fair coin. Many more flips would be needed before we could suspect the coin.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-probability-small-deck"><!--  #2 (adapted from slides, special deck; new cards) -->
+			<statement>
+				<p>
+					A small deck contains six cards: the jack of hearts, the queen of clubs, the 7 of spades, the 4 of clubs, the ace of diamonds, and the king of spades. You select one card at random.
+					<ol marker="a)">
+						<li><p>Write the sample space for this experiment.</p></li>
+						<li><p>Write the event <q>you get a red card</q> as a set, and find its probability.</p></li>
+						<li><p>Find the probability that you get a face card (a jack, queen, or king).</p></li>
+						<li><p>Find the probability that you do <em>not</em> get a spade.</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p><m>S = \lbrace \text{J}\heartsuit, \text{Q}\clubsuit, 7\spadesuit, 4\clubsuit, \text{A}\diamondsuit, \text{K}\spadesuit \rbrace</m>, so <m>n(S) = 6</m>.</p></li>
+						<li><p>Hearts and diamonds are red: <m>R = \lbrace \text{J}\heartsuit, \text{A}\diamondsuit \rbrace</m>, so <m>P(R) = \frac{2}{6} = \frac{1}{3}</m>.</p></li>
+						<li><p>The face cards are <m>\text{J}\heartsuit</m>, <m>\text{Q}\clubsuit</m>, and <m>\text{K}\spadesuit</m>, so <m>P(\text{face card}) = \frac{3}{6} = \frac{1}{2}</m>.</p></li>
+						<li><p>There are two spades, so <m>P(\text{spade}) = \frac{2}{6} = \frac{1}{3}</m>. By the complement rule, <m>P(\text{not a spade}) = 1 - \frac{1}{3} = \frac{2}{3}</m>.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-probability-three-flips"><!--  #3 (adapted from slides, four-flip clicker; new numbers) -->
+			<statement>
+				<p>
+					A fair coin is flipped three times, and the result of each flip is noted.
+					<ol marker="a)">
+						<li><p>Write the sample space for this experiment.</p></li>
+						<li><p>Find the probability of getting exactly two heads.</p></li>
+						<li><p>Use the complement rule to find the probability of getting at least one tail.</p></li>
+						<li><p>Find the probability of getting more heads than tails.</p></li>
+						<li><p>Now the coin is flipped six times. Without listing the sample space, find how many outcomes it contains and the probability of getting at least one head.</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p><m>S = \lbrace HHH, HHT, HTH, HTT, THH, THT, TTH, TTT \rbrace</m>, eight equally likely outcomes.</p></li>
+						<li><p>The event is <m>\lbrace HHT, HTH, THH \rbrace</m>, so the probability is <m>\frac{3}{8}</m>.</p></li>
+						<li><p>The complement of <q>at least one tail</q> is <q>no tails,</q> which is only <m>HHH</m>. So <m>P(\text{at least one tail}) = 1 - \frac{1}{8} = \frac{7}{8}</m>.</p></li>
+						<li><p>More heads than tails means three heads or two heads: <m>\lbrace HHH, HHT, HTH, THH \rbrace</m>. The probability is <m>\frac{4}{8} = \frac{1}{2}</m>.</p></li>
+						<li><p>By the multiplication rule, there are <m>2^6 = 64</m> outcomes. Only one of them, <m>TTTTTT</m>, has no heads, so <m>P(\text{at least one head}) = 1 - \frac{1}{64} = \frac{63}{64}</m>.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-probability-two-dice"><!--  #4 (adapted from slides, dice-sum example; new events) -->
+			<statement>
+				<p>
+					Two fair dice, one red and one green, are rolled.
+					<ol marker="a)">
+						<li><p>How many equally likely outcomes are there, if we record the number on each die?</p></li>
+						<li><p>Find the probability that the sum is <em>not</em> 7.</p></li>
+						<li><p>Find the probability of rolling doubles (the same number on both dice).</p></li>
+						<li><p>Find the probability that the sum is at least 4.</p></li>
+						<li><p>A classmate uses the sample space <m>\lbrace 2, 3, 4, \ldots, 12 \rbrace</m> of possible sums and concludes that the probability of a sum of 7 is <m>\frac{1}{11}</m>. Explain the mistake.</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p>Each die has 6 outcomes, so by the multiplication rule there are <m>6 \times 6 = 36</m> outcomes, from <m>(1,1)</m> to <m>(6,6)</m>.</p></li>
+						<li><p>A sum of 7 comes from <m>(1,6), (2,5), (3,4), (4,3), (5,2), (6,1)</m>, so <m>P(7) = \frac{6}{36} = \frac{1}{6}</m> and <m>P(\text{not } 7) = 1 - \frac{1}{6} = \frac{5}{6}</m>.</p></li>
+						<li><p>There are 6 doubles, <m>(1,1)</m> through <m>(6,6)</m>, so the probability is <m>\frac{6}{36} = \frac{1}{6}</m>.</p></li>
+						<li><p>The complement is a sum of 2 or 3, which happens in 3 ways: <m>(1,1), (1,2), (2,1)</m>. So <m>P(\text{sum at least } 4) = 1 - \frac{3}{36} = \frac{33}{36} = \frac{11}{12}</m>.</p></li>
+						<li><p>The sums are not equally likely. A sum of 2 happens in only one way, while a sum of 7 happens in six ways, so the theoretical probability formula can't be applied to this sample space. The correct probability is <m>\frac{6}{36} = \frac{1}{6}</m>.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-probability-concert-tickets"><!--  #5 (adapted from Obj 13 warm-up; new numbers) -->
+			<statement>
+				<p>
+					Rosa has two concert tickets to give away to two of her five friends: Dev, Lena, Marco, Priya, and Sam. She writes each possible pair of friends on its own slip of paper, puts the slips in a hat, and draws one without looking.
+					<ol marker="a)">
+						<li><p>How many slips are in the hat?</p></li>
+						<li><p>What is the probability that Priya gets a ticket?</p></li>
+						<li><p>What is the probability that Priya does <em>not</em> get a ticket? How is this related to your answer to (b)?</p></li>
+						<li><p>Sam says, <q>Either I get a ticket or I don't. That's two possibilities, so my chance is 50-50.</q> Is Sam right? Explain.</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p>Order doesn't matter within a pair, so there are <m>C(5,2) = 10</m> slips.</p></li>
+						<li><p>Priya is paired with each of the other 4 friends, so she is on 4 of the 10 slips: <m>P(\text{Priya}) = \frac{4}{10} = \frac{2}{5}</m>.</p></li>
+						<li><p>Priya is missing from <m>10 - 4 = 6</m> slips, so the probability is <m>\frac{6}{10} = \frac{3}{5}</m>. The two answers add to 1, as the complement rule says they must.</p></li>
+						<li><p>No. There are two possibilities, but they are not equally likely: 4 slips give Sam a ticket and 6 do not, so his chance is <m>\frac{2}{5}</m>. We can count outcomes to find a probability only when the outcomes are equally likely.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-probability-possible-values"><!--  #6 (adapted from slides, clicker on possible probabilities) -->
+			<statement>
+				<p>
+					Let <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m> be events in a sample space <m>S</m>. Decide whether each statement could be true. If it can't, explain why.
+					<ol marker="a)">
+						<li><p><m>P(A) = 1.05</m></p></li>
+						<li><p><m>P(B) = 0</m></p></li>
+						<li><p><m>P(C) = -0.3</m></p></li>
+						<li><p><m>P(D) = \frac{7}{8}</m></p></li>
+						<li><p><m>P(S) = 0.9</m></p></li>
+						<li><p>A single fair die is rolled. Describe an event with probability 0 and an event with probability 1.</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p>Not possible: a probability can't be greater than 1.</p></li>
+						<li><p>Possible: an event that can't happen has probability 0.</p></li>
+						<li><p>Not possible: a probability can't be negative.</p></li>
+						<li><p>Possible, since <m>0 \leq \frac{7}{8} \leq 1</m>.</p></li>
+						<li><p>Not possible: the sample space contains every outcome, so <m>P(S) = 1</m>.</p></li>
+						<li><p>Answers will vary. <q>Roll a 7</q> has probability 0, and <q>roll a number less than 7</q> has probability 1.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-probability-gummy-bears"><!--  #7 (adapted from slides, gummy-bear clicker; new numbers) -->
+			<statement>
+				<p>
+					A bag contains 20 gummy bears: 8 red, 5 green, 4 yellow, and 3 orange. You pick one gummy bear at random and note its color.
+					<ol marker="a)">
+						<li><p>Write the sample space for this experiment, recording only the color.</p></li>
+						<li><p>Assign a probability to each outcome in your sample space.</p></li>
+						<li><p>Add your probabilities from (b). Explain why the sum must be this value.</p></li>
+						<li><p>Find the probability that the gummy bear is not red.</p></li>
+						<li><p>Find the probability that the gummy bear is green or yellow.</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p><m>S = \lbrace R, G, Y, O \rbrace</m>.</p></li>
+						<li><p>Each of the 20 gummy bears is equally likely, so <m>P(R) = \frac{8}{20} = 0.40</m>, <m>P(G) = \frac{5}{20} = 0.25</m>, <m>P(Y) = \frac{4}{20} = 0.20</m>, and <m>P(O) = \frac{3}{20} = 0.15</m>.</p></li>
+						<li><p><m>0.40 + 0.25 + 0.20 + 0.15 = 1</m>. The four outcomes make up the whole sample space and don't overlap, and <m>P(S) = 1</m>.</p></li>
+						<li><p><m>P(R^C) = 1 - 0.40 = 0.60</m>.</p></li>
+						<li><p>A gummy bear can't be both green and yellow, so <m>P(G \cup Y) = 0.25 + 0.20 = 0.45</m>.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-probability-mutually-exclusive"><!--  #8 (adapted from slides, vegan-restaurant clicker) -->
+			<statement>
+				<p>
+					Decide whether the two events are mutually exclusive. If they are not, describe an outcome that is in both events.
+					<ol marker="a)">
+						<li><p>A die is rolled. <m>A =</m> <q>the number is even</q> and <m>B =</m> <q>the number is greater than 4.</q></p></li>
+						<li><p>A card is drawn from a standard deck. <m>A =</m> <q>the card is a heart</q> and <m>B =</m> <q>the card is black.</q></p></li>
+						<li><p>A student at a four-year college is chosen at random. <m>A =</m> <q>the student is a sophomore</q> and <m>B =</m> <q>the student is a junior.</q></p></li>
+						<li><p>You order a meal at a vegetarian restaurant. <m>A =</m> <q>the meal contains cheese</q> and <m>B =</m> <q>the meal contains beans.</q></p></li>
+						<li><p>Two coins are flipped. <m>A =</m> <q>exactly one head</q> and <m>B =</m> <q>both coins land tails.</q></p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p>Not mutually exclusive: a 6 is even and greater than 4.</p></li>
+						<li><p>Mutually exclusive: hearts are red.</p></li>
+						<li><p>Mutually exclusive: a student has only one class standing at a time.</p></li>
+						<li><p>Not mutually exclusive: a bean and cheese burrito is in both events.</p></li>
+						<li><p>Mutually exclusive: <m>A = \lbrace HT, TH \rbrace</m> and <m>B = \lbrace TT \rbrace</m> have no outcomes in common.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-probability-commute-times"><!--  #9 (adapted from slides, SAT-score table; new context) -->
+			<statement>
+				<p>
+					A company surveyed its employees about their one-way commute times, rounded to the nearest minute. The probabilities that a randomly chosen employee's commute falls in each range are shown in the table.
+				</p>
+				<tabular halign="center">
+					<col right="medium"></col>
+					<col halign="center"></col>
+					<row bottom="medium" header="yes">
+						<cell>Commute (minutes)</cell>
+						<cell>Probability</cell>
+					</row>
+					<row><cell>0<ndash/>10</cell><cell>0.12</cell></row>
+					<row><cell>11<ndash/>20</cell><cell>0.28</cell></row>
+					<row><cell>21<ndash/>30</cell><cell>0.25</cell></row>
+					<row><cell>31<ndash/>45</cell><cell>0.20</cell></row>
+					<row><cell>46<ndash/>60</cell><cell>0.10</cell></row>
+					<row><cell>61 or more</cell><cell>0.05</cell></row>
+				</tabular>
+				<p>
+					If an employee is chosen at random, what is the probability that their commute is
+					<ol marker="a)">
+						<li><p>more than 30 minutes?</p></li>
+						<li><p>at most 20 minutes?</p></li>
+						<li><p>more than 10 minutes but at most 45 minutes?</p></li>
+						<li><p>not in the 21<ndash/>30 minute range?</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The ranges don't overlap, so they are mutually exclusive and we can add their probabilities.
+					<ol marker="a)">
+						<li><p><m>0.20 + 0.10 + 0.05 = 0.35</m>.</p></li>
+						<li><p><m>0.12 + 0.28 = 0.40</m>.</p></li>
+						<li><p><m>0.28 + 0.25 + 0.20 = 0.73</m>.</p></li>
+						<li><p>By the complement rule, <m>1 - 0.25 = 0.75</m>.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-probability-standard-deck"><!--  #10 (adapted from slides, ace-or-spade example) -->
+			<statement>
+				<p>
+					A standard deck has 52 cards in four suits of 13 cards each. Hearts and diamonds are red; clubs and spades are black. Each suit has an ace, the number cards 2 through 10, and three face cards (jack, queen, and king). One card is drawn from a well-shuffled deck.
+					<ol marker="a)">
+						<li><p>Find the probability that the card is a heart or a face card.</p></li>
+						<li><p>Find the probability that the card is a king or a queen.</p></li>
+						<li><p>Find the probability that the card is red or a number card (2 through 10).</p></li>
+						<li><p>A classmate finds the probability of drawing a heart or a king as <m>\frac{13}{52} + \frac{4}{52} = \frac{17}{52}</m>. Explain the mistake, and find the correct probability.</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p>There are 13 hearts, 12 face cards, and 3 heart face cards. By the general addition rule, <m>P(\text{heart or face}) = \frac{13}{52} + \frac{12}{52} - \frac{3}{52} = \frac{22}{52} = \frac{11}{26}</m>.</p></li>
+						<li><p>A card can't be both a king and a queen, so <m>P(\text{king or queen}) = \frac{4}{52} + \frac{4}{52} = \frac{8}{52} = \frac{2}{13}</m>.</p></li>
+						<li><p>There are 26 red cards, <m>4 \times 9 = 36</m> number cards, and 18 red number cards. So <m>P(\text{red or number}) = \frac{26}{52} + \frac{36}{52} - \frac{18}{52} = \frac{44}{52} = \frac{11}{13}</m>.</p></li>
+						<li><p>The king of hearts is both a heart and a king, so it was counted twice. Subtracting it once gives <m>\frac{13}{52} + \frac{4}{52} - \frac{1}{52} = \frac{16}{52} = \frac{4}{13}</m>.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-probability-housing-cars"><!--  #11 (based on written 13b; new context, conditional part omitted) -->
+			<statement>
+				<p>
+					A survey of 80 students recorded where each student lives and whether they have a car on campus. The results are shown in the table.
+				</p>
+				<tabular halign="center">
+					<col right="medium"></col>
+					<col right="medium" halign="center"></col>
+					<col halign="center"></col>
+					<row bottom="medium" header="yes">
+						<cell></cell>
+						<cell>Car</cell>
+						<cell>No car</cell>
+					</row>
+					<row><cell>Residence hall</cell><cell>6</cell><cell>24</cell></row>
+					<row><cell>Apartment</cell><cell>14</cell><cell>10</cell></row>
+					<row><cell>With family</cell><cell>18</cell><cell>8</cell></row>
+				</tabular>
+				<p>
+					One of these students is chosen at random. Find the probability that the student
+					<ol marker="a)">
+						<li><p>lives in an apartment and has a car.</p></li>
+						<li><p>lives in an apartment or has a car.</p></li>
+						<li><p>does not live in a residence hall.</p></li>
+						<li><p>lives in a residence hall or with family. Explain why no subtraction is needed in this case.</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The row totals are 30 (residence hall), 24 (apartment), and 26 (with family); the column totals are 38 (car) and 42 (no car).
+					<ol marker="a)">
+						<li><p><m>P(A \cap C) = \frac{14}{80} = \frac{7}{40} = 0.175</m>.</p></li>
+						<li><p><m>P(A \cup C) = \frac{24}{80} + \frac{38}{80} - \frac{14}{80} = \frac{48}{80} = \frac{3}{5} = 0.6</m>.</p></li>
+						<li><p><m>P(H^C) = 1 - \frac{30}{80} = \frac{50}{80} = \frac{5}{8} = 0.625</m>.</p></li>
+						<li><p>No student lives both in a residence hall and with family, so the events are mutually exclusive: <m>P(H \cup F) = \frac{30}{80} + \frac{26}{80} = \frac{56}{80} = \frac{7}{10}</m>.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-probability-addition-rule-unknowns"><!--  #12 (new) -->
+			<statement>
+				<p>
+					Use the general addition rule to answer each question about events <m>A</m> and <m>B</m> in a sample space <m>S</m>.
+					<ol marker="a)">
+						<li><p>If <m>P(A) = 0.35</m>, <m>P(B) = 0.50</m>, and <m>P(A \cap B) = 0.15</m>, find <m>P(A \cup B)</m> and <m>P\left((A \cup B)^C\right)</m>.</p></li>
+						<li><p>If <m>P(A \cup B) = 0.9</m>, <m>P(A) = 0.6</m>, and <m>P(A \cap B) = 0.25</m>, find <m>P(B)</m>.</p></li>
+						<li><p>If <m>A</m> and <m>B</m> are mutually exclusive, <m>P(A) = 0.4</m>, and <m>P(B) = 0.5</m>, find <m>P(A \cup B)</m>.</p></li>
+						<li><p>A streaming service reports that 70% of its subscribers watch dramas, 60% watch comedies, and no subscriber watches both. Explain why this report can't be right. What is the smallest possible percentage of subscribers who watch both?</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p><m>P(A \cup B) = 0.35 + 0.50 - 0.15 = 0.70</m>, and by the complement rule, <m>P\left((A \cup B)^C\right) = 1 - 0.70 = 0.30</m>.</p></li>
+						<li><p><m>0.9 = 0.6 + P(B) - 0.25</m>, so <m>0.9 = 0.35 + P(B)</m> and <m>P(B) = 0.55</m>.</p></li>
+						<li><p><m>P(A \cup B) = 0.4 + 0.5 = 0.9</m>.</p></li>
+						<li><p>If no one watched both, the probability that a subscriber watches dramas or comedies would be <m>0.70 + 0.60 = 1.30</m>, which is greater than 1. Since <m>P(D \cup C) = 0.70 + 0.60 - P(D \cap C)</m> can be at most 1, <m>P(D \cap C)</m> must be at least <m>0.30</m>. At least 30% of subscribers watch both.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-probability-campus-tours"><!--  #13 (new) -->
+			<statement>
+				<p>
+					A college offers in-person and virtual campus tours. In-person tours run in the morning, with 3 guides to choose from, or in the afternoon, with 2 guides to choose from. Virtual tours are offered in 4 time slots. A booking is a type of tour together with a guide or time slot. A visitor picks a booking at random.
+					<ol marker="a)">
+						<li><p>How many bookings are possible? Use a tree diagram or the addition and multiplication rules.</p></li>
+						<li><p>Find the probability that the visitor books an in-person tour.</p></li>
+						<li><p>Find the probability that the visitor books an afternoon in-person tour.</p></li>
+						<li><p>A friend says the answer to (b) should be <m>\frac{1}{2}</m>, since there are two types of tour. Explain why that is wrong.</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p>In-person bookings: <m>3 + 2 = 5</m> (morning or afternoon, then a guide). Virtual bookings: 4. In total, <m>5 + 4 = 9</m> bookings.</p></li>
+						<li><p><m>P(\text{in person}) = \frac{5}{9}</m>.</p></li>
+						<li><p>There are 2 afternoon in-person bookings, so the probability is <m>\frac{2}{9}</m>.</p></li>
+						<li><p>The two types of tour are not equally likely: 5 of the 9 equally likely bookings are in person and only 4 are virtual.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-probability-coaches-clinic"><!--  #14 (new; cases idea from slides' candy example part B) -->
+			<statement>
+				<p>
+					A youth soccer league has 12 volunteer coaches: 7 are parents and 5 are college students. Three coaches are chosen at random to attend a training clinic.
+					<ol marker="a)">
+						<li><p>How many different groups of 3 coaches are possible?</p></li>
+						<li><p>Find the probability that exactly 2 parents and 1 college student are chosen.</p></li>
+						<li><p>Find the probability that at least one college student is chosen.</p></li>
+						<li><p>Find the probability that all three coaches come from the same group (all parents or all college students).</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p>Order doesn't matter, so <m>n(S) = C(12,3) = 220</m>.</p></li>
+						<li><p>By the multiplication rule, <m>C(7,2) \times C(5,1) = 21 \times 5 = 105</m>, so the probability is <m>\frac{105}{220} = \frac{21}{44} \approx 0.477</m>.</p></li>
+						<li><p>The complement is <q>no college students,</q> that is, all three are parents: <m>C(7,3) = 35</m> ways. So <m>P(\text{at least one student}) = 1 - \frac{35}{220} = \frac{185}{220} = \frac{37}{44} \approx 0.841</m>.</p></li>
+						<li><p>All parents: <m>C(7,3) = 35</m>. All college students: <m>C(5,3) = 10</m>. These cases are mutually exclusive, so the probability is <m>\frac{35 + 10}{220} = \frac{45}{220} = \frac{9}{44} \approx 0.205</m>.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-probability-ranked-raffle"><!--  #15 (new) -->
+			<statement>
+				<p>
+					Ten coworkers, including Lucia, Omar, and Tess, each enter a raffle once. Three names are drawn at random, one at a time. The first name drawn wins a $50 gift card, the second a $25 gift card, and the third a $10 gift card.
+					<ol marker="a)">
+						<li><p>How many outcomes are possible for the three prizes?</p></li>
+						<li><p>Find the probability that Lucia wins the $50 card, Omar the $25 card, and Tess the $10 card.</p></li>
+						<li><p>Find the probability that Lucia, Omar, and Tess are the three winners, in any order. Show that this equals <m>\frac{1}{C(10,3)}</m>, and explain why.</p></li>
+						<li><p>Find the probability that Lucia wins one of the gift cards.</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p>The prizes are different, so order matters: <m>n(S) = P(10,3) = 10 \times 9 \times 8 = 720</m>.</p></li>
+						<li><p>Only one outcome matches, so the probability is <m>\frac{1}{720}</m>.</p></li>
+						<li><p>The three friends can be arranged among the prizes in <m>3! = 6</m> ways, so the probability is <m>\frac{6}{720} = \frac{1}{120}</m>. Since <m>C(10,3) = 120</m>, this equals <m>\frac{1}{C(10,3)}</m>: if we ignore which prize each winner gets, there are 120 equally likely groups of winners, and exactly one of them is Lucia, Omar, and Tess.</p></li>
+						<li><p>The complement is that all three prizes go to the other 9 coworkers, which happens in <m>P(9,3) = 9 \times 8 \times 7 = 504</m> ways. So <m>P(\text{Lucia wins}) = 1 - \frac{504}{720} = \frac{216}{720} = \frac{3}{10}</m>. (This makes sense: 3 of the 10 entrants win a prize.)</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-probability-food-trucks"><!--  #16 (new) -->
+			<statement>
+				<p>
+					Three friends each pick one of 5 food trucks for lunch at random, and every combination of picks is equally likely. (More than one friend may pick the same truck.)
+					<ol marker="a)">
+						<li><p>How many outcomes are possible?</p></li>
+						<li><p>Find the probability that the three friends pick three different trucks.</p></li>
+						<li><p>Find the probability that at least two of the friends pick the same truck.</p></li>
+						<li><p>Find the probability that all three friends pick the same truck.</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p>Each friend has 5 choices, so by the multiplication rule there are <m>5 \times 5 \times 5 = 125</m> outcomes.</p></li>
+						<li><p>The first friend has 5 choices, the second 4, and the third 3, so <m>P(\text{all different}) = \frac{5 \times 4 \times 3}{125} = \frac{60}{125} = \frac{12}{25} = 0.48</m>.</p></li>
+						<li><p>This is the complement of (b): <m>1 - \frac{12}{25} = \frac{13}{25} = 0.52</m>.</p></li>
+						<li><p>There are 5 such outcomes, one for each truck, so the probability is <m>\frac{5}{125} = \frac{1}{25} = 0.04</m>.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+	</exercises>
 </section>
