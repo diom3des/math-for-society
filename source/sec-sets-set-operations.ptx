@@ -528,4 +528,1255 @@
 			</solution>
 		</example>
 	</subsection>
+
+	<exercises>
+		<!-- Sources: Exercise 1 is adapted from Benjamin Jackson's MATH 105
+		warm-up (Objective 9), Walla Walla University, Fall 2026. Exercises 4,
+		5, 8, 10, and 16 are adapted from his MATH 105 lecture slides and
+		clicker questions (Objective 9, Fall 2026). Exercises 9, 13, 14, 15,
+		and 17 are based on his MATH 105 written-homework question library
+		(Fall 2026). Exercises 2, 3, 6, 7, 11, and 12 are new.
+		-->
+		<title>Exercises</title>
+
+		<exercise xml:id="exer-sets-party-lists"><!--  #1 (Obj 9 warm-up: the party lists) -->
+			<statement>
+				<p>
+					Mia and Noah are throwing a party. Their friend group is Ava, Ben, Cal, Dev, Eli, Fay, Gus, Hana, Ivy, and Jo. Mia's guest list is Ava, Cal, Dev, Fay, Cal, Ivy, and Noah's guest list is Ben, Cal, Fay, Gus, Ivy. Let <m>M</m> be the set of people on Mia's list and <m>N</m> the set of people on Noah's list.
+					<ol marker="a)">
+						<li>
+							<p>
+								Mia rewrites her list as Ivy, Fay, Dev, Cal, Ava. Is this the same guest list as before? Explain using sets.
+							</p>
+						</li>
+						<li>
+							<p>
+								Noah says that everyone in town who isn't on either list was not invited. Mia says that only Eli, Hana, and Jo were not invited. Who is right? Explain what the universal set has to do with the answer.
+							</p>
+						</li>
+						<li>
+							<p>
+								Using the friend group as the universal set, draw a Venn diagram that shows each of the ten friends exactly once.
+							</p>
+						</li>
+						<li>
+							<p>
+								List the elements of <m>M \cap N</m>, <m>M \cup N</m>, and <m>(M \cup N)^C</m>.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								Yes. Both lists give the set <m>M = \{\text{Ava, Cal, Dev, Fay, Ivy}\}</m>. The order of the elements doesn't matter, and listing Cal twice doesn't invite him twice, because the elements of a set are distinct.
+							</p>
+						</li>
+						<li>
+							<p>
+								Both could be right; it depends on the universal set. If the universal set is everyone in town, Noah is right. If the universal set is the friend group, the people not invited are <m>\{\text{Eli, Hana, Jo}\}</m>, and Mia is right. The complement of a set depends on the universal set, which the context has to decide.
+							</p>
+						</li>
+						<li>
+							<p>
+								See the diagram below.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>M \cap N = \{\text{Cal, Fay, Ivy}\}</m>, <m>M \cup N = \{\text{Ava, Ben, Cal, Dev, Fay, Gus, Ivy}\}</m>, and <m>(M \cup N)^C = \{\text{Eli, Hana, Jo}\}</m>.
+							</p>
+						</li>
+					</ol>
+				</p>
+				<image xml:id="img-exer-sets-party-lists" width="60%">
+					<shortdescription>A Venn diagram: a rectangle labeled U contains two overlapping circles labeled Mia and Noah. Mia only: Ava and Dev. Both: Cal, Fay, and Ivy. Noah only: Ben and Gus. Outside both circles: Eli, Hana, and Jo.</shortdescription>
+					<latex-image>
+						\begin{tikzpicture}[font=\figfont]
+							\draw (0,0) rectangle (6.8,3.3);
+							\draw (2.2,1.45) circle (1.3);
+							\draw (3.7,1.45) circle (1.3);
+							\node at (1.5,3.02) {Mia};
+							\node at (4.4,3.02) {Noah};
+							\node[align=center] at (1.5,1.45) {Ava\\Dev};
+							\node[align=center] at (2.95,1.45) {Cal\\Fay\\Ivy};
+							\node[align=center] at (4.4,1.45) {Ben\\Gus};
+							\node[align=center] at (5.9,1.1) {Eli\\Hana\\Jo};
+							\node at (6.5,3.0) {$U$};
+						\end{tikzpicture}
+					</latex-image>
+				</image>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-roster-set-builder"><!--  #2 (new) -->
+			<statement>
+				<p>
+					Write the sets in (a) through (c) in roster notation, and write the sets in (d) and (e) in set-builder notation.
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>\{x \mid x \text{ is an odd digit}\}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\{x \mid x \text{ is a letter in the word Mississippi}\}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\{x \mid x \text{ is a month whose name begins with J}\}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\{\text{Saturday, Sunday}\}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\{1, 4, 9, 16, 25\}</m>
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Answers to (d) and (e) may vary.
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>\{1, 3, 5, 7, 9\}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\{\text{m, i, s, p}\}</m>. Each letter is listed only once, no matter how many times it appears in the word.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\{\text{January, June, July}\}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\{x \mid x \text{ is a day of the weekend}\}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\{x \mid x \text{ is a perfect square from 1 to 25}\}</m>
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-element-subset"><!--  #3 (new) -->
+			<statement>
+				<p>
+					Let <m>V = \{\text{a, e, i, o, u}\}</m>. Decide whether each statement is true or false.
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>\text{e} \in V</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\text{y} \in V</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\{\text{a, e}\} \subseteq V</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>V \subseteq \{\text{a, e, i, o, u, y}\}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\{\text{a, e, y}\} \subseteq V</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\emptyset \subseteq V</m>
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								True.
+							</p>
+						</li>
+						<li>
+							<p>
+								False; y is not an element of <m>V</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								True; both a and e are elements of <m>V</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								True; every element of <m>V</m> is in the larger set.
+							</p>
+						</li>
+						<li>
+							<p>
+								False; <m>\text{y} \notin V</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								True; the empty set is a subset of every set.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-subset-equal"><!--  #4 (Obj 9 clicker: subset, new sets) -->
+			<statement>
+				<p>
+					Consider the sets
+					<md>
+						<mrow>A = \{2, 4, 6, 8, 10\}, \quad B = \{x \mid x \text{ is an even number from 2 to 10}\},</mrow>
+						<mrow>C = \{2, 4, 6, 8, 10, 12\}, \quad D = \{10, 8, 6, 4, 2, 2\}.</mrow>
+					</md>
+					<ol marker="a)">
+						<li>
+							<p>
+								Is <m>A \subseteq C</m>? Is <m>C \subseteq A</m>?
+							</p>
+						</li>
+						<li>
+							<p>
+								Is <m>A \subseteq B</m>? Is <m>B \subseteq A</m>? What can you conclude?
+							</p>
+						</li>
+						<li>
+							<p>
+								Is <m>D = A</m>?
+							</p>
+						</li>
+						<li>
+							<p>
+								Jordan says, <q><m>A</m> can't be a subset of <m>B</m>, because they have the same elements. A subset has to be smaller.</q> Is Jordan right?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								Yes, <m>A \subseteq C</m>, since every element of <m>A</m> is in <m>C</m>. No, <m>C</m> is not a subset of <m>A</m>, since <m>12 \in C</m> but <m>12 \notin A</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Yes and yes: <m>B = \{2, 4, 6, 8, 10\}</m>. Since <m>A \subseteq B</m> and <m>B \subseteq A</m>, we conclude <m>A = B</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Yes. Order doesn't matter, and listing 2 twice doesn't change the set.
+							</p>
+						</li>
+						<li>
+							<p>
+								No. <m>A</m> is a subset of <m>B</m> because every element of <m>A</m> is in <m>B</m>; nothing in the definition requires <m>A</m> to be smaller. In fact, every set is a subset of itself.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-count-subsets"><!--  #5 (Obj 9 clicker: number of subsets, new set) -->
+			<statement>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								List every subset of <m>\{x, y, z\}</m>. How many are there?
+							</p>
+						</li>
+						<li>
+							<p>
+								Predict how many subsets a set with 4 elements has. Explain your reasoning.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								There are 8 subsets: <m>\emptyset</m>, <m>\{x\}</m>, <m>\{y\}</m>, <m>\{z\}</m>, <m>\{x, y\}</m>, <m>\{x, z\}</m>, <m>\{y, z\}</m>, and <m>\{x, y, z\}</m>. Don't forget the empty set and the set itself.
+							</p>
+						</li>
+						<li>
+							<p>
+								16. Each element is either in a subset or out of it, so adding a fourth element doubles the count: every subset of <m>\{x, y, z\}</m> can appear with or without the new element. A set with <m>n</m> elements has <m>2^n</m> subsets.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-empty-set"><!--  #6 (new) -->
+			<statement>
+				<p>
+					Which of the following sets are equal to the empty set <m>\emptyset</m>? Explain.
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>\{0\}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\{x \mid x \text{ is a month with 32 days}\}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\{\emptyset\}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\{x \mid x \text{ is a whole number less than } 0\}</m>
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								Not empty: it has one element, the number 0.
+							</p>
+						</li>
+						<li>
+							<p>
+								Empty: no month has 32 days.
+							</p>
+						</li>
+						<li>
+							<p>
+								Not empty: it has one element, the empty set itself. Think of a bag holding an empty bag; the outer bag is not empty.
+							</p>
+						</li>
+						<li>
+							<p>
+								Empty: the whole numbers are <m>0, 1, 2, \ldots</m>, so none is less than 0.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-universal-set"><!--  #7 (new) -->
+			<statement>
+				<p>
+					For each set in (a) through (c), suggest a reasonable universal set.
+					<ol marker="a)">
+						<li>
+							<p>
+								The students in your math class who have a pet.
+							</p>
+						</li>
+						<li>
+							<p>
+								The vowels.
+							</p>
+						</li>
+						<li>
+							<p>
+								The songs on your playlist that are longer than four minutes.
+							</p>
+						</li>
+						<li>
+							<p>
+								Let <m>P</m> be the set in (a). Describe <m>P^C</m> when the universal set is your math class, and again when the universal set is every student at your college.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Answers may vary.
+					<ol marker="a)">
+						<li>
+							<p>
+								All the students in your math class.
+							</p>
+						</li>
+						<li>
+							<p>
+								The letters of the alphabet.
+							</p>
+						</li>
+						<li>
+							<p>
+								All the songs on your playlist.
+							</p>
+						</li>
+						<li>
+							<p>
+								With your math class as the universal set, <m>P^C</m> is your classmates who don't have a pet. With every student at your college as the universal set, <m>P^C</m> is every student at the college except the pet owners in your class, so it now includes everyone outside your class, pet owners or not.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-operations-numbers"><!--  #8 (Obj 9 clickers: intersection and complement, new sets) -->
+			<statement>
+				<p>
+					Let <m>U = \{1, 2, 3, \ldots, 12\}</m>, let <m>A = \{1, 2, 3, 4, 6, 12\}</m> be the divisors of 12, let <m>B = \{2, 4, 6, 8, 10, 12\}</m> be the even numbers in <m>U</m>, and let <m>C = \{1, 4, 9\}</m> be the perfect squares in <m>U</m>. List the elements of each set.
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>A \cap B</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>A \cup C</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>B^C</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>(A \cup C)^C</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>A^C \cap B</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>A \cap B \cap C</m>
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>A \cap B = \{2, 4, 6, 12\}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>A \cup C = \{1, 2, 3, 4, 6, 9, 12\}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>B^C = \{1, 3, 5, 7, 9, 11\}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								Parentheses first: <m>A \cup C = \{1, 2, 3, 4, 6, 9, 12\}</m>, so <m>(A \cup C)^C = \{5, 7, 8, 10, 11\}</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>A^C = \{5, 7, 8, 9, 10, 11\}</m>, so <m>A^C \cap B = \{8, 10\}</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>A \cap B = \{2, 4, 6, 12\}</m>, and the only one of these in <m>C</m> is 4, so <m>A \cap B \cap C = \{4\}</m>.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-coffee-shop"><!--  #9 (Written 09a, new context) -->
+			<statement>
+				<p>
+					Ana, Ben, and Cy work at the campus coffee shop. Let <m>U</m> be the set of days of the week, and let <m>A</m>, <m>B</m>, and <m>C</m> be the days that Ana, Ben, and Cy work:
+					<md>
+						A = \{\text{Mon, Wed, Fri}\}, \quad B = \{\text{Mon, Tue, Sat}\}, \quad C = \{\text{Tue, Wed, Sun}\}.
+					</md>
+					List the elements of each set in (a) through (f).
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>A^C \cap B^C</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>(A \cup B)^C</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>(A \cap B)^C</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>A^C \cup B^C</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>A \cup (B \cap C)</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>(A \cup B) \cap (A \cup C)</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								Which of your answers to (a) through (f) are equal?
+							</p>
+						</li>
+						<li>
+							<p>
+								On which days is neither Ana nor Ben working? Which of the sets above gives the answer?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Here <m>A^C = \{\text{Tue, Thu, Sat, Sun}\}</m> and <m>B^C = \{\text{Wed, Thu, Fri, Sun}\}</m>.
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>A^C \cap B^C = \{\text{Thu, Sun}\}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>A \cup B = \{\text{Mon, Tue, Wed, Fri, Sat}\}</m>, so <m>(A \cup B)^C = \{\text{Thu, Sun}\}</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>A \cap B = \{\text{Mon}\}</m>, so <m>(A \cap B)^C = \{\text{Tue, Wed, Thu, Fri, Sat, Sun}\}</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>A^C \cup B^C = \{\text{Tue, Wed, Thu, Fri, Sat, Sun}\}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>B \cap C = \{\text{Tue}\}</m>, so <m>A \cup (B \cap C) = \{\text{Mon, Tue, Wed, Fri}\}</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>A \cup B = \{\text{Mon, Tue, Wed, Fri, Sat}\}</m> and <m>A \cup C = \{\text{Mon, Tue, Wed, Fri, Sun}\}</m>, so <m>(A \cup B) \cap (A \cup C) = \{\text{Mon, Tue, Wed, Fri}\}</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								(a) and (b) are equal, (c) and (d) are equal, and (e) and (f) are equal. The first two pairs are examples of De Morgan's laws for sets (see <xref ref="exer-sets-demorgan"/>), and the last pair is an example of a distributive law (see <xref ref="exer-sets-distributive"/>).
+							</p>
+						</li>
+						<li>
+							<p>
+								Thursday and Sunday. These are the days that are not in <m>A \cup B</m>, so the answer is <m>(A \cup B)^C</m>, or equivalently <m>A^C \cap B^C</m>.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-demorgan"><!--  #10 (Obj 9 clicker: De Morgan's principle, the other law) -->
+			<statement>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								Draw a Venn diagram of two sets <m>A</m> and <m>B</m>, and shade the region for <m>(A \cap B)^C</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								On a second diagram, shade <m>A^C \cup B^C</m>. (Think of <m>A^C</m> and <m>B^C</m> separately, then shade everything in either one.)
+							</p>
+						</li>
+						<li>
+							<p>
+								On a third diagram, shade <m>A^C \cap B^C</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Which two of your diagrams show the same region? Using what you found, and <xref ref="exer-sets-coffee-shop"/> if you did it, complete these two statements, called <term>De Morgan's laws</term><idx>De Morgan's laws</idx><idx><h>sets</h><h>De Morgan's laws</h></idx> for sets: <m>(A \cap B)^C = </m> ____ and <m>(A \cup B)^C = </m> ____. Compare them with De Morgan's laws for logic in <xref ref="sec-logic-equivalence"/>.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<sidebyside widths="30% 30% 30%" margins="0%" valign="top">
+					<stack>
+						<p>
+							a) <m>(A \cap B)^C</m>
+						</p>
+						<image xml:id="img-exer-sets-demorgan-a">
+							<shortdescription>A Venn diagram of two overlapping sets A and B inside a rectangle labeled U. Everything except the overlap of the two circles is shaded.</shortdescription>
+							<latex-image>
+								\begin{venndiagram2sets}[shade=yellow!70, tikzoptions={font=\figfont}]
+									\fillNotAorNotB
+									\node[below left] at (venn top right) {$U$};
+								\end{venndiagram2sets}
+							</latex-image>
+						</image>
+					</stack>
+					<stack>
+						<p>
+							b) <m>A^C \cup B^C</m>
+						</p>
+						<image xml:id="img-exer-sets-demorgan-b">
+							<shortdescription>A Venn diagram of two overlapping sets A and B inside a rectangle labeled U. Everything except the overlap of the two circles is shaded, the same region as in part a.</shortdescription>
+							<latex-image>
+								\begin{venndiagram2sets}[shade=yellow!70, tikzoptions={font=\figfont}]
+									\fillNotA\fillNotB
+									\node[below left] at (venn top right) {$U$};
+								\end{venndiagram2sets}
+							</latex-image>
+						</image>
+					</stack>
+					<stack>
+						<p>
+							c) <m>A^C \cap B^C</m>
+						</p>
+						<image xml:id="img-exer-sets-demorgan-c">
+							<shortdescription>A Venn diagram of two overlapping sets A and B inside a rectangle labeled U. Only the region outside both circles is shaded.</shortdescription>
+							<latex-image>
+								\begin{venndiagram2sets}[shade=yellow!70, tikzoptions={font=\figfont}]
+									\fillNotAorB
+									\node[below left] at (venn top right) {$U$};
+								\end{venndiagram2sets}
+							</latex-image>
+						</image>
+					</stack>
+				</sidebyside>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								Everything except the overlap of <m>A</m> and <m>B</m> is shaded.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>A^C</m> is everything outside <m>A</m> and <m>B^C</m> is everything outside <m>B</m>. Together they cover everything except the overlap, the same region as in (a).
+							</p>
+						</li>
+						<li>
+							<p>
+								Only the region outside both circles is shaded twice, so only it is in <m>A^C \cap B^C</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Diagrams (a) and (b) match, so <m>(A \cap B)^C = A^C \cup B^C</m>. Diagram (c) is the region outside both circles, which is the complement of <m>A \cup B</m>, so <m>(A \cup B)^C = A^C \cap B^C</m>. These match De Morgan's laws for logic, <m>\neg(p \land q) \equiv \neg p \lor \neg q</m> and <m>\neg(p \lor q) \equiv \neg p \land \neg q</m>, with complement in place of <q>not,</q> intersection in place of <q>and,</q> and union in place of <q>or.</q>
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-venn-primes-odds"><!--  #11 (new) -->
+			<statement>
+				<p>
+					Let <m>U = \{1, 2, 3, \ldots, 10\}</m>, let <m>A</m> be the set of prime numbers in <m>U</m>, and let <m>B</m> be the set of odd numbers in <m>U</m>.
+					<ol marker="a)">
+						<li>
+							<p>
+								List the elements of <m>A</m> and <m>B</m>, and draw a Venn diagram that places each element of <m>U</m> in the correct region.
+							</p>
+						</li>
+						<li>
+							<p>
+								Use your diagram to list the elements of <m>A \cap B</m>, <m>A^C \cap B</m>, and <m>(A \cup B)^C</m>.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>A = \{2, 3, 5, 7\}</m> and <m>B = \{1, 3, 5, 7, 9\}</m>. (Remember that 1 is not prime.) See the diagram below.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>A \cap B = \{3, 5, 7\}</m>, <m>A^C \cap B = \{1, 9\}</m>, and <m>(A \cup B)^C = \{4, 6, 8, 10\}</m>.
+							</p>
+						</li>
+					</ol>
+				</p>
+				<image xml:id="img-exer-sets-venn-primes-odds" width="50%">
+					<shortdescription>A Venn diagram: a rectangle labeled U contains two overlapping circles labeled A and B. A only: 2. Both: 3, 5, and 7. B only: 1 and 9. Outside both circles: 4, 6, 8, and 10.</shortdescription>
+					<latex-image>
+						\begin{tikzpicture}[font=\figfont]
+							\draw (0,0) rectangle (6.8,3.3);
+							\draw (2.2,1.45) circle (1.3);
+							\draw (3.7,1.45) circle (1.3);
+							\node at (1.5,3.02) {$A$};
+							\node at (4.4,3.02) {$B$};
+							\node at (1.5,1.45) {2};
+							\node[align=center] at (2.95,1.45) {3\\5\\7};
+							\node[align=center] at (4.4,1.45) {1\\9};
+							\node[align=center] at (5.9,1.1) {4\quad 6\\8\quad 10};
+							\node at (6.5,3.0) {$U$};
+						\end{tikzpicture}
+					</latex-image>
+				</image>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-shading-two"><!--  #12 (new) -->
+			<statement>
+				<p>
+					Draw a Venn diagram of two sets <m>A</m> and <m>B</m> for each part, and shade the region that represents the given set. Then describe the region in words.
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>A \cap B^C</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>(A \cap B) \cup (A \cup B)^C</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>(A \cup B) \cap (A \cap B)^C</m>
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<sidebyside widths="30% 30% 30%" margins="0%" valign="top">
+					<stack>
+						<p>
+							a) <m>A \cap B^C</m>
+						</p>
+						<image xml:id="img-exer-sets-shading-two-a">
+							<shortdescription>A Venn diagram of two overlapping sets A and B inside a rectangle labeled U. Only the part of circle A outside circle B is shaded.</shortdescription>
+							<latex-image>
+								\begin{venndiagram2sets}[shade=yellow!70, tikzoptions={font=\figfont}]
+									\fillOnlyA
+									\node[below left] at (venn top right) {$U$};
+								\end{venndiagram2sets}
+							</latex-image>
+						</image>
+					</stack>
+					<stack>
+						<p>
+							b) <m>(A \cap B) \cup (A \cup B)^C</m>
+						</p>
+						<image xml:id="img-exer-sets-shading-two-b">
+							<shortdescription>A Venn diagram of two overlapping sets A and B inside a rectangle labeled U. The overlap of the two circles and the region outside both circles are shaded.</shortdescription>
+							<latex-image>
+								\begin{venndiagram2sets}[shade=yellow!70, tikzoptions={font=\figfont}]
+									\fillACapB\fillNotAorB
+									\node[below left] at (venn top right) {$U$};
+								\end{venndiagram2sets}
+							</latex-image>
+						</image>
+					</stack>
+					<stack>
+						<p>
+							c) <m>(A \cup B) \cap (A \cap B)^C</m>
+						</p>
+						<image xml:id="img-exer-sets-shading-two-c">
+							<shortdescription>A Venn diagram of two overlapping sets A and B inside a rectangle labeled U. The part of A outside B and the part of B outside A are shaded; the overlap and the region outside both circles are not.</shortdescription>
+							<latex-image>
+								\begin{venndiagram2sets}[shade=yellow!70, tikzoptions={font=\figfont}]
+									\fillOnlyA\fillOnlyB
+									\node[below left] at (venn top right) {$U$};
+								\end{venndiagram2sets}
+							</latex-image>
+						</image>
+					</stack>
+				</sidebyside>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								The elements in <m>A</m> but not in <m>B</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								The elements in both sets or in neither set.
+							</p>
+						</li>
+						<li>
+							<p>
+								The elements in exactly one of the two sets.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-shading-three"><!--  #13 (Written 09c, new expressions) -->
+			<statement>
+				<p>
+					Draw a Venn diagram of three overlapping sets <m>A</m>, <m>B</m>, and <m>C</m> for each part, and shade the region that represents the given set.
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>B \cap (A \cup C)^C</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>(A \cap B) \cup (A \cap C) \cup (B \cap C)</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>(A \cap B \cap C)^C</m>
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<sidebyside widths="30% 30% 30%" margins="0%" valign="top">
+					<stack>
+						<p>
+							a) <m>B \cap (A \cup C)^C</m>
+						</p>
+						<image xml:id="img-exer-sets-shading-three-a">
+							<shortdescription>A Venn diagram of three overlapping circles A, B, and C in a rectangle labeled U. Only the part of B outside both A and C is shaded.</shortdescription>
+							<latex-image>
+								\begin{venndiagram3sets}[shade=yellow!70, tikzoptions={font=\figfont}]
+									\fillOnlyB
+									\node[below left] at (venn top right) {$U$};
+								\end{venndiagram3sets}
+							</latex-image>
+						</image>
+					</stack>
+					<stack>
+						<p>
+							b) <m>(A \cap B) \cup (A \cap C) \cup (B \cap C)</m>
+						</p>
+						<image xml:id="img-exer-sets-shading-three-b">
+							<shortdescription>A Venn diagram of three overlapping circles A, B, and C in a rectangle labeled U. Every region where at least two circles overlap is shaded, including the center where all three overlap.</shortdescription>
+							<latex-image>
+								\begin{venndiagram3sets}[shade=yellow!70, tikzoptions={font=\figfont}]
+									\fillACapB\fillACapC\fillBCapC
+									\node[below left] at (venn top right) {$U$};
+								\end{venndiagram3sets}
+							</latex-image>
+						</image>
+					</stack>
+					<stack>
+						<p>
+							c) <m>(A \cap B \cap C)^C</m>
+						</p>
+						<image xml:id="img-exer-sets-shading-three-c">
+							<shortdescription>A Venn diagram of three overlapping circles A, B, and C in a rectangle labeled U. Everything is shaded except the center region where all three circles overlap.</shortdescription>
+							<latex-image>
+								\begin{venndiagram3sets}[shade=yellow!70, tikzoptions={font=\figfont}]
+									\fillNotABC\fillOnlyA\fillOnlyB\fillOnlyC\fillACapBNotC\fillACapCNotB\fillBCapCNotA
+									\node[below left] at (venn top right) {$U$};
+								\end{venndiagram3sets}
+							</latex-image>
+						</image>
+					</stack>
+				</sidebyside>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>(A \cup C)^C</m> is everything outside both <m>A</m> and <m>C</m>; the part of it inside <m>B</m> is the region in <m>B</m> only.
+							</p>
+						</li>
+						<li>
+							<p>
+								Each intersection is one of the overlaps of two circles, so the union is every region in at least two of the sets.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>A \cap B \cap C</m> is the center region, so its complement is everything else, including the region outside all three circles.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-distributive"><!--  #14 (Written 09b, the other distributive law) -->
+			<statement>
+				<p>
+					Use Venn diagrams to show that
+					<md>
+						A \cup (B \cap C) = (A \cup B) \cap (A \cup C).
+					</md>
+					This is one of the <term>distributive laws</term><idx><h>sets</h><h>distributive laws</h></idx> for sets. Shade the left side on one diagram and the right side on another, and check that the shaded regions match. (<xref ref="exer-sets-coffee-shop"/> checked this law with lists of elements.)
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Left side: <m>B \cap C</m> is the overlap of <m>B</m> and <m>C</m>; taking the union with <m>A</m> adds all of <m>A</m>. Right side: <m>A \cup B</m> and <m>A \cup C</m> are shown below; the region shaded in both is all of <m>A</m> together with the overlap of <m>B</m> and <m>C</m>. Both sides give the region in the third diagram.
+				</p>
+				<sidebyside widths="30% 30% 30%" margins="0%" valign="top">
+					<stack>
+						<p>
+							<m>A \cup B</m>
+						</p>
+						<image xml:id="img-exer-sets-distributive-a">
+							<shortdescription>A Venn diagram of three overlapping circles A, B, and C in a rectangle labeled U. All of circles A and B are shaded.</shortdescription>
+							<latex-image>
+								\begin{venndiagram3sets}[shade=yellow!70, tikzoptions={font=\figfont}]
+									\fillA\fillB
+									\node[below left] at (venn top right) {$U$};
+								\end{venndiagram3sets}
+							</latex-image>
+						</image>
+					</stack>
+					<stack>
+						<p>
+							<m>A \cup C</m>
+						</p>
+						<image xml:id="img-exer-sets-distributive-b">
+							<shortdescription>A Venn diagram of three overlapping circles A, B, and C in a rectangle labeled U. All of circles A and C are shaded.</shortdescription>
+							<latex-image>
+								\begin{venndiagram3sets}[shade=yellow!70, tikzoptions={font=\figfont}]
+									\fillA\fillC
+									\node[below left] at (venn top right) {$U$};
+								\end{venndiagram3sets}
+							</latex-image>
+						</image>
+					</stack>
+					<stack>
+						<p>
+							Both sides
+						</p>
+						<image xml:id="img-exer-sets-distributive-c">
+							<shortdescription>A Venn diagram of three overlapping circles A, B, and C in a rectangle labeled U. All of circle A is shaded, along with the overlap of B and C.</shortdescription>
+							<latex-image>
+								\begin{venndiagram3sets}[shade=yellow!70, tikzoptions={font=\figfont}]
+									\fillA\fillBCapC
+									\node[below left] at (venn top right) {$U$};
+								\end{venndiagram3sets}
+							</latex-image>
+						</image>
+					</stack>
+				</sidebyside>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-name-region"><!--  #15 (Written 09d, new regions) -->
+			<statement>
+				<p>
+					Write a set expression, using <m>A</m>, <m>B</m>, <m>C</m>, <m>\cup</m>, <m>\cap</m>, and <m>^C</m>, for the shaded region of each Venn diagram.
+				</p>
+				<sidebyside widths="30% 30% 30%" margins="0%" valign="top">
+					<stack>
+						<p>
+							a)
+						</p>
+						<image xml:id="img-exer-sets-name-region-a">
+							<shortdescription>A Venn diagram of three overlapping circles A, B, and C in a rectangle labeled U. All of circles A and B are shaded, including their overlaps with C. The part of C outside A and B, and the region outside all circles, are not shaded.</shortdescription>
+							<latex-image>
+								\begin{venndiagram3sets}[shade=yellow!70, tikzoptions={font=\figfont}]
+									\fillA\fillB
+									\node[below left] at (venn top right) {$U$};
+								\end{venndiagram3sets}
+							</latex-image>
+						</image>
+					</stack>
+					<stack>
+						<p>
+							b)
+						</p>
+						<image xml:id="img-exer-sets-name-region-b">
+							<shortdescription>A Venn diagram of three overlapping circles A, B, and C in a rectangle labeled U. Everything outside circle B is shaded; all of circle B is unshaded.</shortdescription>
+							<latex-image>
+								\begin{venndiagram3sets}[shade=yellow!70, tikzoptions={font=\figfont}]
+									\fillNotB
+									\node[below left] at (venn top right) {$U$};
+								\end{venndiagram3sets}
+							</latex-image>
+						</image>
+					</stack>
+					<stack>
+						<p>
+							c)
+						</p>
+						<image xml:id="img-exer-sets-name-region-c">
+							<shortdescription>A Venn diagram of three overlapping circles A, B, and C in a rectangle labeled U. All of circle C is shaded except the center region where all three circles overlap.</shortdescription>
+							<latex-image>
+								\begin{venndiagram3sets}[shade=yellow!70, tikzoptions={font=\figfont}]
+									\fillOnlyC\fillACapCNotB\fillBCapCNotA
+									\node[below left] at (venn top right) {$U$};
+								\end{venndiagram3sets}
+							</latex-image>
+						</image>
+					</stack>
+				</sidebyside>
+			</statement>
+			<solution>
+				<p>
+					Other equivalent answers are possible.
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>A \cup B</m> (everything in <m>A</m> or <m>B</m>, whether or not it is in <m>C</m>).
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>B^C</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>C \cap (A \cap B)^C</m>, or equivalently <m>C \cap (A^C \cup B^C)</m>: everything in <m>C</m> except the part also in both <m>A</m> and <m>B</m>.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-verbal-campus"><!--  #16 (Obj 9 slides: verbal practice) -->
+			<statement>
+				<p>
+					Let <m>U</m> be the set of all college students, <m>W</m> the set of students who work on campus, <m>V</m> the set of vegetarian students, and <m>F</m> the set of first-year students. Describe each set in words.
+					<ol marker="a)" cols="3">
+						<li>
+							<p>
+								<m>W \cap V</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>W \cup V</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>W^C \cup F^C</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>W^C \cap V^C</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>F \cup V \cup W</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>F \cap V \cap W</m>
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								Vegetarian students who work on campus.
+							</p>
+						</li>
+						<li>
+							<p>
+								Students who work on campus or are vegetarian (or both).
+							</p>
+						</li>
+						<li>
+							<p>
+								Students who don't work on campus or aren't first-year students; that is, everyone except first-year students who work on campus. (This set equals <m>(W \cap F)^C</m>.)
+							</p>
+						</li>
+						<li>
+							<p>
+								Students who neither work on campus nor are vegetarian. (This set equals <m>(W \cup V)^C</m>.)
+							</p>
+						</li>
+						<li>
+							<p>
+								Students who are at least one of these: a first-year student, a vegetarian, or a campus worker.
+							</p>
+						</li>
+						<li>
+							<p>
+								Vegetarian first-year students who work on campus.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-verbal-high-school"><!--  #17 (Written 09e, new context) -->
+			<statement>
+				<p>
+					Let <m>U</m> be the set of students at a high school, <m>S</m> the set of students who play a sport, <m>M</m> the set of students in a music ensemble, and <m>J</m> the set of students who have a part-time job. Describe the sets in (a) through (f) in words, and write the sets in (g) and (h) in set notation.
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>S \cap M</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>M \cup J</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>J^C</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>S \cap J^C</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>(S \cup M)^C</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>S \cap M \cap J</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								Students who are in a music ensemble but don't play a sport.
+							</p>
+						</li>
+						<li>
+							<p>
+								Students who have a part-time job but neither play a sport nor are in a music ensemble.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								Students who play a sport and are in a music ensemble.
+							</p>
+						</li>
+						<li>
+							<p>
+								Students who are in a music ensemble or have a part-time job (or both).
+							</p>
+						</li>
+						<li>
+							<p>
+								Students who don't have a part-time job.
+							</p>
+						</li>
+						<li>
+							<p>
+								Students who play a sport but don't have a part-time job.
+							</p>
+						</li>
+						<li>
+							<p>
+								Students who neither play a sport nor are in a music ensemble. (This set equals <m>S^C \cap M^C</m>.)
+							</p>
+						</li>
+						<li>
+							<p>
+								Students who play a sport, are in a music ensemble, and have a part-time job.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>M \cap S^C</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>J \cap (S \cup M)^C</m>, or equivalently <m>J \cap S^C \cap M^C</m>
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+	</exercises>
 </section>
