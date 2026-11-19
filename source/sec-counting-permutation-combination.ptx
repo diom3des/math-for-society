@@ -413,4 +413,720 @@
 				</solution>
 		</example>
 	</subsection>
+
+	<exercises>
+		<!-- Sources: Exercises 3, 7, 8, and 9 are adapted from Benjamin
+		Jackson's MATH 105 warm-up, lecture slides, and clicker questions
+		(Objective 12), Walla Walla University, Fall 2026, and Exercise 15
+		from his lecture notes for the picnic-basket example. Exercises 4
+		and 11 are adapted from his MATH 105 counting practice sheet (Fall
+		2026). Exercises 2 and 13 are based on his MATH 105 written-homework
+		question library (Fall 2026). Exercises 1, 5, 6, 10, 12, and 14 are
+		new.
+		-->
+		<title>Exercises</title>
+
+		<exercise xml:id="exer-counting-factorial-drill"><!--  #1 (new) -->
+			<statement>
+				<p>
+					Find the value of each expression without a calculator.
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>7!</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\dfrac{10!}{8!}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\dfrac{6!}{3!\,3!}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								A classmate says that <m>\dfrac{10!}{5!} = 2!</m> because <m>10 \div 5 = 2</m>. Explain the mistake and find the correct value.
+							</p>
+						</li>
+						<li>
+							<p>
+								Give the value of <m>0!</m>, and show where it appears when you compute <m>P(5,5)</m> with the permutation formula.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>7! = 7 \times 6 \times 5 \times 4 \times 3 \times 2 \times 1 = 5{,}040</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\dfrac{10!}{8!} = \dfrac{10 \times 9 \times 8!}{8!} = 10 \times 9 = 90</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\dfrac{6!}{3!\,3!} = \dfrac{6 \times 5 \times 4 \times 3!}{3!\,(3 \times 2 \times 1)} = \dfrac{120}{6} = 20</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Factorials don't divide like ordinary numbers: <m>10!</m> is a product, and dividing by <m>5!</m> cancels only the factors 5 through 1. The correct value is <m>\dfrac{10!}{5!} = 10 \times 9 \times 8 \times 7 \times 6 = 30{,}240</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								By definition, <m>0! = 1</m>. It appears in the denominator: <m>P(5,5) = \dfrac{5!}{(5-5)!} = \dfrac{5!}{0!} = \dfrac{120}{1} = 120</m>.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-presentations"><!--  #2 (based on written 12a; new context) -->
+			<statement>
+				<p>
+					A teacher has 8 student presentations to schedule.
+					<ol marker="a)">
+						<li>
+							<p>
+								In how many orders can all 8 presentations be given?
+							</p>
+						</li>
+						<li>
+							<p>
+								Only 3 presentations fit on Monday. In how many ways can the teacher fill Monday's first, second, and third slots?
+							</p>
+						</li>
+						<li>
+							<p>
+								Instead, the teacher just picks which 3 presentations happen on Monday and lets those students decide their order later. In how many ways can the teacher pick them?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								All 8 are arranged in order: <m>8! = 40{,}320</m> orders.
+							</p>
+						</li>
+						<li>
+							<p>
+								Order matters, and only 3 of the 8 are used: <m>P(8,3) = 8 \times 7 \times 6 = 336</m> ways.
+							</p>
+						</li>
+						<li>
+							<p>
+								Order doesn't matter: <m>C(8,3) = \dfrac{8 \times 7 \times 6}{3 \times 2 \times 1} = 56</m> ways.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-permutation-facts"><!--  #3 (Obj 12 clicker: P(7,4); new numbers and parts) -->
+			<statement>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								Compute <m>P(9,3)</m> twice: once with the formula <m>\frac{n!}{(n-r)!}</m> and once as a product of <m>r</m> factors counting down from <m>n</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Compute <m>P(6,6)</m>. Which factorial is it equal to?
+							</p>
+						</li>
+						<li>
+							<p>
+								Compute <m>P(15,1)</m>, and say in words what it counts.
+							</p>
+						</li>
+						<li>
+							<p>
+								Compute <m>P(4,0)</m>, and explain why the answer makes sense.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>P(9,3) = \dfrac{9!}{6!} = \dfrac{9 \times 8 \times 7 \times 6!}{6!} = 504</m>, and <m>P(9,3) = 9 \times 8 \times 7 = 504</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>P(6,6) = \dfrac{6!}{0!} = 6! = 720</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>P(15,1) = 15</m>: the number of ways to choose one of 15 items for a single position.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>P(4,0) = \dfrac{4!}{4!} = 1</m>. There is exactly one way to arrange no items: do nothing.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-nurse-placements"><!--  #4 (practice sheet Q5; new context and numbers, parts b and c new) -->
+			<statement>
+				<p>
+					A hospital has hired 11 new nurses.
+					<ol marker="a)">
+						<li>
+							<p>
+								Three of them will be placed one each in the emergency room, the intensive care unit, and pediatrics. In how many ways can this be done?
+							</p>
+						</li>
+						<li>
+							<p>
+								Instead, three of them will all be placed in the emergency room. In how many ways can the three be chosen?
+							</p>
+						</li>
+						<li>
+							<p>
+								Explain why your answer to (a) is exactly 6 times your answer to (b).
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								The three units are different, so order matters: <m>P(11,3) = 11 \times 10 \times 9 = 990</m> ways.
+							</p>
+						</li>
+						<li>
+							<p>
+								All three go to the same unit, so order doesn't matter: <m>C(11,3) = \dfrac{990}{3!} = \dfrac{990}{6} = 165</m> ways.
+							</p>
+						</li>
+						<li>
+							<p>
+								Each group of three nurses from (b) can be sent to the three different units in <m>3! = 6</m> ways, so (a) counts every group 6 times.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-hackathon-prizes"><!--  #5 (new) -->
+			<statement>
+				<p>
+					Ten teams compete in a hackathon with three different prizes: best design, best code, and best pitch.
+					<ol marker="a)">
+						<li>
+							<p>
+								If a team may win more than one prize, in how many ways can the prizes be awarded?
+							</p>
+						</li>
+						<li>
+							<p>
+								If no team may win more than one prize, in how many ways can the prizes be awarded?
+							</p>
+						</li>
+						<li>
+							<p>
+								Only one of these answers is a permutation. Which phrase in the definition of a permutation rules out the other?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								Each prize can go to any of the 10 teams, so by the multiplication rule there are <m>10 \times 10 \times 10 = 1{,}000</m> ways.
+							</p>
+						</li>
+						<li>
+							<p>
+								Once a team wins, it can't win again, so the choices go down by one: <m>P(10,3) = 10 \times 9 \times 8 = 720</m> ways.
+							</p>
+						</li>
+						<li>
+							<p>
+								A permutation uses each element <q>at most once.</q> In (a) a team can be used more than once, so (a) is not a permutation; (b) is.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-couple-photo"><!--  #6 (new) -->
+			<statement>
+				<p>
+					Five friends line up in a row for a photo. Two of them are a couple and want to stand next to each other.
+					<ol marker="a)">
+						<li>
+							<p>
+								In how many ways can the five friends line up with the couple next to each other?
+							</p>
+						</li>
+						<li>
+							<p>
+								In how many ways can they line up with the couple <em>not</em> next to each other?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								As in <xref ref="ex-sets-counting-mixed-permutation-2"/>, treat the couple as a single block. The block and the other three friends make 4 units, which can be arranged in <m>4! = 24</m> ways. Unlike the trains, the couple can stand in either order inside the block, which is <m>2! = 2</m> more ways. By the multiplication rule there are <m>24 \times 2 = 48</m> lineups.
+							</p>
+						</li>
+						<li>
+							<p>
+								There are <m>5! = 120</m> lineups in all, and in 48 of them the couple is together, so in <m>120 - 48 = 72</m> the couple is apart.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-houseplants"><!--  #7 (Obj 12 Day 2 warm-up: The Setup Crew; new context and numbers) -->
+			<statement>
+				<p>
+					You have five houseplants, labeled A, B, C, D, and E, and want to give two of them to a friend.
+					<ol marker="a)">
+						<li>
+							<p>
+								List every pair of plants you could give. How many pairs are there?
+							</p>
+						</li>
+						<li>
+							<p>
+								A classmate computes <m>P(5,2) = 20</m>. Why is this twice your answer to (a)?
+							</p>
+						</li>
+						<li>
+							<p>
+								Show how your answers to (a) and (b) fit the formula <m>C(n,r) = \dfrac{P(n,r)}{r!}</m>.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								AB, AC, AD, AE, BC, BD, BE, CD, CE, DE: 10 pairs.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>P(5,2)</m> counts ordered pairs, so AB and BA are counted separately. Every pair of plants appears twice, but giving A and B is the same gift as giving B and A.
+							</p>
+						</li>
+						<li>
+							<p>
+								Each pair can be ordered in <m>2! = 2</m> ways, so <m>C(5,2) = \dfrac{P(5,2)}{2!} = \dfrac{20}{2} = 10</m>.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-combination-facts"><!--  #8 (Obj 12 clicker: 8C2; new numbers and parts) -->
+			<statement>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								Compute <m>C(9,2)</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Compute <m>C(12,12)</m>, <m>C(12,0)</m>, and <m>C(12,1)</m>, and say in words what each one counts.
+							</p>
+						</li>
+						<li>
+							<p>
+								Show that <m>C(10,7) = C(10,3)</m>. Then explain in words why choosing 7 items from 10 and choosing 3 items from 10 must give the same count.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>C(9,2) = \dfrac{9 \times 8}{2 \times 1} = 36</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>C(12,12) = 1</m> (there is one way to choose all 12 items), <m>C(12,0) = 1</m> (one way to choose none), and <m>C(12,1) = 12</m> (choosing one item is choosing any of the 12).
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>C(10,7) = \dfrac{10!}{7!\,3!}</m> and <m>C(10,3) = \dfrac{10!}{3!\,7!}</m>, the same fraction, and both equal <m>\dfrac{10 \times 9 \times 8}{3 \times 2 \times 1} = 120</m>. Choosing the 7 items you take is the same as choosing the 3 items you leave behind, so every group of 7 matches exactly one group of 3.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-cookie-box"><!--  #9 (Obj 12 slides: sundae toppings; new context and numbers, parts b and c new) -->
+			<statement>
+				<p>
+					A bakery sells 12 kinds of cookies and lets customers build a gift box.
+					<ol marker="a)">
+						<li>
+							<p>
+								A small box holds 3 different kinds of cookies. How many different small boxes are possible?
+							</p>
+						</li>
+						<li>
+							<p>
+								A friend says the answer to (a) is <m>P(12,3) = 1{,}320</m>. Explain the error.
+							</p>
+						</li>
+						<li>
+							<p>
+								The bakery also sells a large box that holds 4 different kinds. How many different boxes, small or large, are possible?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								The order of the kinds in a box doesn't matter: <m>C(12,3) = \dfrac{12 \times 11 \times 10}{3 \times 2 \times 1} = 220</m> boxes.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>P(12,3)</m> counts the same three kinds in every possible order, so each box is counted <m>3! = 6</m> times: <m>1{,}320 = 220 \times 6</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								There are <m>C(12,4) = \dfrac{12 \times 11 \times 10 \times 9}{4 \times 3 \times 2 \times 1} = 495</m> large boxes. A box is small or large, never both, so by the addition rule there are <m>220 + 495 = 715</m> boxes.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-card-hands"><!--  #10 (new) -->
+			<statement>
+				<p>
+					A standard deck has 52 cards in four suits (hearts, diamonds, clubs, and spades), with 13 cards in each suit. A 5-card hand is a group of 5 cards from the deck; the order in which they are dealt doesn't matter.
+					<ol marker="a)">
+						<li>
+							<p>
+								How many different 5-card hands are possible?
+							</p>
+						</li>
+						<li>
+							<p>
+								How many 5-card hands are all hearts?
+							</p>
+						</li>
+						<li>
+							<p>
+								How many 5-card hands contain exactly 2 hearts?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>C(52,5) = \dfrac{52 \times 51 \times 50 \times 49 \times 48}{5 \times 4 \times 3 \times 2 \times 1} = 2{,}598{,}960</m> hands.
+							</p>
+						</li>
+						<li>
+							<p>
+								Choose all 5 cards from the 13 hearts: <m>C(13,5) = 1{,}287</m> hands.
+							</p>
+						</li>
+						<li>
+							<p>
+								Two steps: choose 2 of the 13 hearts, then 3 of the 39 cards that aren't hearts. By the multiplication rule, <m>C(13,2) \times C(39,3) = 78 \times 9{,}139 = 712{,}842</m> hands.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-order-matters"><!--  #11 (Obj 12 slides: Does Order Matter?; new situations; part a from practice sheet Q4) -->
+			<statement>
+				<p>
+					For each situation, decide whether it calls for a permutation or a combination, and then count the possibilities.
+					<ol marker="a)">
+						<li>
+							<p>
+								A quality inspector picks 4 of the 30 batteries in a shipment to test.
+							</p>
+						</li>
+						<li>
+							<p>
+								A host seats 5 guests at the 5 places at a head table.
+							</p>
+						</li>
+						<li>
+							<p>
+								A radio station gives 3 identical concert tickets to 3 of its first 20 callers, one ticket each.
+							</p>
+						</li>
+						<li>
+							<p>
+								A coach picks 4 of 6 swimmers to swim the first, second, third, and fourth legs of a relay.
+							</p>
+						</li>
+						<li>
+							<p>
+								Swap two of the chosen people or items in (c), and then in (d). Explain how the result shows whether order matters.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								Combination (the inspector just needs a sample): <m>C(30,4) = \dfrac{30 \times 29 \times 28 \times 27}{4 \times 3 \times 2 \times 1} = 27{,}405</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Permutation (each place is different): <m>P(5,5) = 5! = 120</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Combination (the tickets are identical): <m>C(20,3) = \dfrac{20 \times 19 \times 18}{3 \times 2 \times 1} = 1{,}140</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Permutation (each leg is different): <m>P(6,4) = 6 \times 5 \times 4 \times 3 = 360</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Swapping the tickets of two winning callers in (c) changes nothing, because the same three callers still win, so order doesn't matter. Swapping two swimmers in (d) changes who swims which leg, a different relay team order, so order matters.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-grain-bowl"><!--  #12 (new) -->
+			<statement>
+				<p>
+					A restaurant builds grain bowls from 5 sauces and 8 vegetables.
+					<ol marker="a)">
+						<li>
+							<p>
+								A regular bowl has 2 different sauces and 3 different vegetables. How many regular bowls are possible?
+							</p>
+						</li>
+						<li>
+							<p>
+								A customer may instead order a veggie-heavy bowl with 1 sauce and 4 different vegetables. How many bowls, regular or veggie-heavy, are possible?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								Two steps: choose the sauces, then the vegetables. By the multiplication rule, <m>C(5,2) \times C(8,3) = 10 \times 56 = 560</m> regular bowls.
+							</p>
+						</li>
+						<li>
+							<p>
+								There are <m>C(5,1) \times C(8,4) = 5 \times 70 = 350</m> veggie-heavy bowls. The two kinds of bowls don't overlap, so by the addition rule there are <m>560 + 350 = 910</m> bowls.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-choir-ensemble"><!--  #13 (based on written 12b; new context) -->
+			<statement>
+				<p>
+					A choir director will choose a 4-singer ensemble from 6 sopranos and 5 altos.
+					<ol marker="a)">
+						<li>
+							<p>
+								In how many ways can the ensemble be chosen if it must have more sopranos than altos?
+							</p>
+						</li>
+						<li>
+							<p>
+								In how many ways can the ensemble be chosen if it must have exactly 2 sopranos and 2 altos?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								<q>More sopranos than altos</q> means 3 sopranos and 1 alto, or 4 sopranos and no altos. These cases don't overlap, so
+								<md>
+									<mrow>C(6,3) \times C(5,1) + C(6,4) \times C(5,0) \amp = 20 \times 5 + 15 \times 1</mrow>
+									<mrow>\amp = 115 \text{ ways}</mrow>
+								</md>.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>C(6,2) \times C(5,2) = 15 \times 10 = 150</m> ways.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-club-committee"><!--  #14 (new) -->
+			<statement>
+				<p>
+					A club has 10 members, including Ana and Ben. A 3-person committee will be chosen.
+					<ol marker="a)">
+						<li>
+							<p>
+								Use the inclusion-exclusion rule to find the number of committees that include Ana or Ben.
+							</p>
+						</li>
+						<li>
+							<p>
+								Check your answer by splitting into cases: committees with exactly one of Ana and Ben, and committees with both.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								Committees with Ana: choose the other 2 members from the remaining 9, <m>C(9,2) = 36</m>. Committees with Ben: also 36. Committees with both: choose the third member from the other 8, <m>C(8,1) = 8</m>. By the inclusion-exclusion rule, <m>36 + 36 - 8 = 64</m> committees.
+							</p>
+						</li>
+						<li>
+							<p>
+								Exactly one of them: choose which one (2 ways) and then 2 of the other 8 members, <m>2 \times C(8,2) = 2 \times 28 = 56</m>. Both: <m>C(8,1) = 8</m>. By the addition rule, <m>56 + 8 = 64</m>, which matches.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-picnic-overcount"><!--  #15 (Obj 12 lecture notes: common error on the picnic-basket example) -->
+			<statement>
+				<p>
+					In <xref ref="ex-counting-mixed-at-least"/>, a picnic basket holds 4 different items chosen from 8 sandwiches and 9 other items, and we counted the baskets with at least two sandwiches. A student tries a shortcut: choose 2 sandwiches, then choose any 2 of the remaining 15 items, for <m>C(8,2) \times C(15,2) = 28 \times 105 = 2{,}940</m> baskets. That is more than the correct answer of <m>1{,}582</m>.
+					<ol marker="a)">
+						<li>
+							<p>
+								Find a basket that the shortcut counts more than once. How many times is it counted?
+							</p>
+						</li>
+						<li>
+							<p>
+								How many times does the shortcut count a basket with 4 sandwiches?
+							</p>
+						</li>
+						<li>
+							<p>
+								How does the solution in the example avoid this problem?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								Take a basket with three sandwiches S1, S2, and S3 and one salad. The shortcut counts it when the first step picks S1 and S2 (then S3 and the salad), when it picks S1 and S3 (then S2 and the salad), and when it picks S2 and S3 (then S1 and the salad): 3 times, once for each of the <m>C(3,2) = 3</m> pairs of its sandwiches.
+							</p>
+						</li>
+						<li>
+							<p>
+								Once for each pair of its 4 sandwiches that the first step could pick: <m>C(4,2) = 6</m> times. As a check, the shortcut counts each two-sandwich basket once, each three-sandwich basket 3 times, and each four-sandwich basket 6 times: <m>1{,}008 + 3 \times 504 + 6 \times 70 = 2{,}940</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								It splits the baskets into cases by the exact number of sandwiches (two, three, or four). Within each case, the sandwiches and the other items are chosen from separate groups, so every basket is counted exactly once, and the cases don't overlap, so the addition rule applies.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+	</exercises>
+
 </section>
