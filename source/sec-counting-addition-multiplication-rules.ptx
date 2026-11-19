@@ -399,4 +399,721 @@
 		</example>
 	</subsection>
 
+	<exercises>
+		<!-- Sources: Exercises 1, 2, 3, and 4 are adapted from Benjamin
+		Jackson's MATH 105 warm-up, lecture slides, and clicker questions
+		(Objective 12), Walla Walla University, Fall 2026. Exercises 6 and 7
+		are adapted from his MATH 105 counting practice sheet (Fall 2026).
+		Exercises 5 and 8 through 14 are new.
+		-->
+		<title>Exercises</title>
+
+		<exercise xml:id="exer-counting-food-truck"><!--  #1 (Obj 12 warm-up: Planning the Party, Q1 and Q2; new context and numbers) -->
+			<statement>
+				<p>
+					A food truck sells 4 kinds of burritos, 3 kinds of rice bowls, and 2 kinds of salads. It also sells 5 kinds of drinks.
+					<ol marker="a)">
+						<li>
+							<p>
+								Lunch will be one burrito, one rice bowl, or one salad. How many different lunches can you choose from?
+							</p>
+						</li>
+						<li>
+							<p>
+								Your friend orders one rice bowl and one drink. How many different bowl-and-drink orders are possible?
+							</p>
+						</li>
+						<li>
+							<p>
+								In a sentence, explain why the counts in (a) are added but the counts in (b) are multiplied.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								The lunch falls into one of three cases that don't overlap (no item is both a burrito and a bowl, for example), so by the addition rule there are <m>4 + 3 + 2 = 9</m> lunches.
+							</p>
+						</li>
+						<li>
+							<p>
+								The order takes two steps, choosing a bowl and then choosing a drink, so by the multiplication rule there are <m>3 \times 5 = 15</m> orders.
+							</p>
+						</li>
+						<li>
+							<p>
+								In (a) you pick one item from one of several groups (<q>or</q>), so the groups are cases and their counts add; in (b) you make one choice <em>and</em> then another, so the choices are steps and their counts multiply.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-quiz-answers"><!--  #2 (Obj 12 clicker: two-question quiz; new numbers, part b new) -->
+			<statement>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								A quiz has two true/false questions and one multiple-choice question with five options. In how many ways can a student answer all three questions?
+							</p>
+						</li>
+						<li>
+							<p>
+								A different quiz has 10 true/false questions. How many different answer sheets are possible? If a student guesses on every question, how many of those answer sheets get every question right? What does this suggest about guessing your way through the quiz?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								Answering the quiz takes three steps with 2, 2, and 5 choices, so there are <m>2 \times 2 \times 5 = 20</m> ways.
+							</p>
+						</li>
+						<li>
+							<p>
+								Each of the 10 questions is a step with 2 choices, so there are <m>2 \times 2 \times \cdots \times 2 = 2^{10} = 1{,}024</m> answer sheets. Only 1 of them is completely correct, so a student who guesses on everything is very unlikely to get a perfect score.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-music-lessons"><!--  #3 (Obj 12 clicker: Italian or Mexican; new context and numbers) -->
+			<statement>
+				<p>
+					A music teacher gives guitar and piano lessons. Twelve of her students take guitar and 9 take piano.
+					<ol marker="a)">
+						<li>
+							<p>
+								If no student takes both, how many students does the teacher have?
+							</p>
+						</li>
+						<li>
+							<p>
+								If 4 students take both, how many students does the teacher have?
+							</p>
+						</li>
+						<li>
+							<p>
+								Explain why the addition rule gives the answer to (a) but not to (b).
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								The two groups don't overlap, so by the addition rule there are <m>12 + 9 = 21</m> students.
+							</p>
+						</li>
+						<li>
+							<p>
+								Let <m>G</m> and <m>P</m> be the sets of guitar and piano students. By the inclusion-exclusion rule, <m>n(G \cup P) = 12 + 9 - 4 = 17</m> students.
+							</p>
+						</li>
+						<li>
+							<p>
+								The addition rule requires cases that don't overlap (mutually exclusive sets). In (b) the 4 students who take both are counted once among the 12 and again among the 9, so <m>12 + 9 = 21</m> counts them twice.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-which-rule"><!--  #4 (Obj 12 slides: Summary: Steps vs Cases; new situations) -->
+			<statement>
+				<p>
+					For each situation, decide whether the addition rule or the multiplication rule applies, and then count the possibilities.
+					<ol marker="a)">
+						<li>
+							<p>
+								For movie night you will watch one of 5 comedies or one of 3 dramas. How many movies can you choose from?
+							</p>
+						</li>
+						<li>
+							<p>
+								A sandwich shop makes each sandwich with one of 3 breads and one of 4 fillings. How many sandwiches are possible?
+							</p>
+						</li>
+						<li>
+							<p>
+								The campus store sells 6 short-sleeve and 4 long-sleeve T-shirt designs. You will buy one shirt. How many designs can you choose from?
+							</p>
+						</li>
+						<li>
+							<p>
+								A phone comes in 3 models, and each model comes in 4 colors and 3 storage sizes. How many different phones can you order?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								Cases (a comedy <em>or</em> a drama): addition rule, <m>5 + 3 = 8</m> movies.
+							</p>
+						</li>
+						<li>
+							<p>
+								Steps (a bread <em>and</em> a filling): multiplication rule, <m>3 \times 4 = 12</m> sandwiches.
+							</p>
+						</li>
+						<li>
+							<p>
+								Cases (short-sleeve <em>or</em> long-sleeve): addition rule, <m>6 + 4 = 10</m> shirts.
+							</p>
+						</li>
+						<li>
+							<p>
+								Steps (a model, a color, <em>and</em> a storage size): multiplication rule, <m>3 \times 4 \times 3 = 36</m> phones.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-find-the-error"><!--  #5 (new) -->
+			<statement>
+				<p>
+					The winner of a scholarship may also choose a bonus prize: either one of 5 textbooks or one of 4 bookstore gift cards. Jordan says the winner has <m>5 \times 4 = 20</m> choices.
+					<ol marker="a)">
+						<li>
+							<p>
+								What did Jordan get wrong? How many choices does the winner actually have?
+							</p>
+						</li>
+						<li>
+							<p>
+								Change the prize rule so that <m>5 \times 4 = 20</m> is the correct count.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								The winner picks a textbook <em>or</em> a gift card, not one of each, so the choices are two cases that don't overlap. Jordan multiplied as if they were steps. By the addition rule the winner has <m>5 + 4 = 9</m> choices.
+							</p>
+						</li>
+						<li>
+							<p>
+								If the winner receives one textbook <em>and</em> one gift card, the prize takes two steps, and the multiplication rule gives <m>5 \times 4 = 20</m> possible prizes.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-home-builder"><!--  #6 (Obj 12 counting practice Q1; new numbers, part b new) -->
+			<statement>
+				<p>
+					A builder offers 7 floor plans, 3 roof styles, and 4 exterior finishes. Each home uses one of each.
+					<ol marker="a)">
+						<li>
+							<p>
+								How many different homes can the builder offer?
+							</p>
+						</li>
+						<li>
+							<p>
+								The builder adds a fourth roof style. How many more homes does this make possible? Explain why the increase is <m>7 \times 4</m>.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								By the multiplication rule, <m>7 \times 3 \times 4 = 84</m> homes.
+							</p>
+						</li>
+						<li>
+							<p>
+								Now there are <m>7 \times 4 \times 4 = 112</m> homes, which is <m>112 - 84 = 28</m> more. Every new home uses the new roof style, and it can be combined with any of the 7 plans and any of the 4 finishes, so there are <m>7 \times 1 \times 4 = 28</m> new homes.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-ballot"><!--  #7 (Obj 12 counting practice Q3; new numbers, part b new) -->
+			<statement>
+				<p>
+					A city ballot has three items: a race for mayor with 3 candidates, a race for city council with 5 candidates, and a levy measure that voters mark <q>yes</q> or <q>no.</q>
+					<ol marker="a)">
+						<li>
+							<p>
+								In how many ways can a voter fill out the ballot by voting on all three items?
+							</p>
+						</li>
+						<li>
+							<p>
+								Voters may leave any item blank. In how many ways can a voter fill out the ballot now?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								By the multiplication rule, <m>3 \times 5 \times 2 = 30</m> ways.
+							</p>
+						</li>
+						<li>
+							<p>
+								Leaving an item blank adds one more choice to each step, so there are <m>4 \times 6 \times 3 = 72</m> ways. (One of these is the completely blank ballot.)
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-cafe-tree"><!--  #8 (new) -->
+			<statement>
+				<p>
+					A café makes its house latte in small, medium, or large, and serves it hot or iced.
+					<ol marker="a)">
+						<li>
+							<p>
+								Draw a tree diagram showing every size-and-temperature combination.
+							</p>
+						</li>
+						<li>
+							<p>
+								Use the multiplication rule to check the number of leaves on your tree.
+							</p>
+						</li>
+						<li>
+							<p>
+								The café adds a choice of regular or decaf. How would your tree change, and how many lattes are possible now?
+							</p>
+						</li>
+						<li>
+							<p>
+								In the tree from (c), describe the path for a large iced decaf. How many of the possible lattes are large?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								See the tree below: the first step branches to the three sizes, and each size branches to hot and iced.
+							</p>
+						</li>
+						<li>
+							<p>
+								There are 6 leaves, and the multiplication rule gives <m>3 \times 2 = 6</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Each of the 6 leaves sprouts two new branches, regular and decaf, so the tree has <m>3 \times 2 \times 2 = 12</m> leaves, one for each latte.
+							</p>
+						</li>
+						<li>
+							<p>
+								Follow the branch to large, then the branch to iced, then the branch to decaf. The large branch leads to <m>2 \times 2 = 4</m> leaves, so 4 of the lattes are large.
+							</p>
+						</li>
+					</ol>
+				</p>
+				<image xml:id="img-exer-counting-cafe-tree" width="45%">
+					<shortdescription>A tree diagram with one branch from the starting point for each size, small, medium, and large, and two branches from each size, hot and iced, for 6 leaves in all.</shortdescription>
+					<latex-image>
+						\begin{tikzpicture}[grow=right, font=\figfont,
+						    level 1/.style={level distance=2.2cm, sibling distance=1.7cm},
+						    level 2/.style={level distance=2cm, sibling distance=0.7cm},
+						    end/.style={circle, minimum width=1pt, fill, inner sep=0pt}]
+						    \node {latte}
+						        child { node {large}
+						            child { node[end, label=right:{iced}] {} }
+						            child { node[end, label=right:{hot}] {} } }
+						        child { node {medium}
+						            child { node[end, label=right:{iced}] {} }
+						            child { node[end, label=right:{hot}] {} } }
+						        child { node {small}
+						            child { node[end, label=right:{iced}] {} }
+						            child { node[end, label=right:{hot}] {} } };
+						\end{tikzpicture}
+					</latex-image>
+				</image>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-coins-dice"><!--  #9 (new) -->
+			<statement>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								A coin is flipped three times, and the result of each flip (H or T) is recorded in order. Draw a tree diagram of the possible outcomes. How many outcomes are there?
+							</p>
+						</li>
+						<li>
+							<p>
+								How many of the outcomes in (a) have exactly two heads? List them.
+							</p>
+						</li>
+						<li>
+							<p>
+								A red die and a green die are rolled. How many outcomes are possible? (Red 2 and green 5 is a different outcome from red 5 and green 2.)
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								See the tree below. It has <m>2 \times 2 \times 2 = 8</m> leaves: HHH, HHT, HTH, HTT, THH, THT, TTH, TTT.
+							</p>
+						</li>
+						<li>
+							<p>
+								Three: HHT, HTH, and THH.
+							</p>
+						</li>
+						<li>
+							<p>
+								Rolling the two dice takes two steps with 6 choices each, so there are <m>6 \times 6 = 36</m> outcomes.
+							</p>
+						</li>
+					</ol>
+				</p>
+				<image xml:id="img-exer-counting-coins-dice" width="50%">
+					<shortdescription>A tree diagram for three coin flips. The starting point branches to H and T for the first flip, each of those branches to H and T for the second flip, and each of those branches to H and T for the third flip. The 8 leaves are labeled HHH, HHT, HTH, HTT, THH, THT, TTH, and TTT from top to bottom.</shortdescription>
+					<latex-image>
+						\begin{tikzpicture}[grow=right, font=\figfont,
+						    level 1/.style={level distance=1.8cm, sibling distance=3.2cm},
+						    level 2/.style={level distance=1.8cm, sibling distance=1.6cm},
+						    level 3/.style={level distance=1.8cm, sibling distance=0.7cm},
+						    end/.style={circle, minimum width=1pt, fill, inner sep=0pt}]
+						    \node {start}
+						        child { node {T}
+						            child { node {T}
+						                child { node[end, label=right:{T \quad TTT}] {} }
+						                child { node[end, label=right:{H \quad TTH}] {} } }
+						            child { node {H}
+						                child { node[end, label=right:{T \quad THT}] {} }
+						                child { node[end, label=right:{H \quad THH}] {} } } }
+						        child { node {H}
+						            child { node {T}
+						                child { node[end, label=right:{T \quad HTT}] {} }
+						                child { node[end, label=right:{H \quad HTH}] {} } }
+						            child { node {H}
+						                child { node[end, label=right:{T \quad HHT}] {} }
+						                child { node[end, label=right:{H \quad HHH}] {} } } };
+						\end{tikzpicture}
+					</latex-image>
+				</image>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-coin-then"><!--  #10 (new) -->
+			<statement>
+				<p>
+					Flip a coin. If it lands heads, roll a six-sided die. If it lands tails, flip the coin again.
+					<ol marker="a)">
+						<li>
+							<p>
+								Draw a tree diagram of the possible outcomes. How many outcomes are there?
+							</p>
+						</li>
+						<li>
+							<p>
+								A classmate says there are <m>2 \times 6 = 12</m> outcomes. Explain why the multiplication rule doesn't apply here.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								See the tree below. Heads leads to 6 branches (the die shows 1 through 6), and tails leads to 2 branches (H or T on the second flip), so there are <m>6 + 2 = 8</m> outcomes. Equivalently, the first flip splits the outcomes into two cases that don't overlap, and the addition rule gives <m>6 + 2 = 8</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								The number of choices at the second step depends on the first flip: 6 after heads, but only 2 after tails. The multiplication rule requires the same number of choices at a step no matter what happened before.
+							</p>
+						</li>
+					</ol>
+				</p>
+				<image xml:id="img-exer-counting-coin-then" width="40%">
+					<shortdescription>A tree diagram. The starting point branches to heads and tails. Heads branches to six leaves, the die rolls 1 through 6. Tails branches to two leaves, H and T for the second flip.</shortdescription>
+					<latex-image>
+						\begin{tikzpicture}[grow=right, font=\figfont,
+						    level 1/.style={level distance=2.2cm, sibling distance=2.8cm},
+						    level 2/.style={level distance=1.8cm, sibling distance=0.55cm},
+						    end/.style={circle, minimum width=1pt, fill, inner sep=0pt}]
+						    \node {flip}
+						        child { node {tails}
+						            child { node[end, label=right:{T}] {} }
+						            child { node[end, label=right:{H}] {} } }
+						        child { node {heads}
+						            child { node[end, label=right:{6}] {} }
+						            child { node[end, label=right:{5}] {} }
+						            child { node[end, label=right:{4}] {} }
+						            child { node[end, label=right:{3}] {} }
+						            child { node[end, label=right:{2}] {} }
+						            child { node[end, label=right:{1}] {} } };
+						\end{tikzpicture}
+					</latex-image>
+				</image>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-pizza-crust"><!--  #11 (new) -->
+			<statement>
+				<p>
+					A pizzeria makes thin-crust pizzas in small, medium, and large, but deep-dish pizzas only in medium and large. Every pizza comes with either tomato or pesto sauce.
+					<ol marker="a)">
+						<li>
+							<p>
+								Explain why <m>2 \times 3 \times 2 = 12</m> is not the number of possible pizzas.
+							</p>
+						</li>
+						<li>
+							<p>
+								Draw a tree diagram (crust, then size, then sauce) and count the possible pizzas.
+							</p>
+						</li>
+						<li>
+							<p>
+								Get the same count without the tree by using the addition and multiplication rules.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								The number of sizes depends on the crust: 3 for thin crust but only 2 for deep dish. Multiplying by 3 counts a small deep-dish pizza, which doesn't exist (with either sauce), so 12 is too large by 2.
+							</p>
+						</li>
+						<li>
+							<p>
+								See the tree below. Thin crust leads to <m>3 \times 2 = 6</m> leaves and deep dish to <m>2 \times 2 = 4</m>, for 10 pizzas.
+							</p>
+						</li>
+						<li>
+							<p>
+								Thin crust and deep dish are two cases that don't overlap. Within each case the multiplication rule applies: <m>3 \times 2 = 6</m> thin-crust pizzas and <m>2 \times 2 = 4</m> deep-dish pizzas. By the addition rule, there are <m>6 + 4 = 10</m> pizzas. (Equivalently, there are <m>3 + 2 = 5</m> crust-and-size choices, each with 2 sauces, so <m>5 \times 2 = 10</m>.)
+							</p>
+						</li>
+					</ol>
+				</p>
+				<image xml:id="img-exer-counting-pizza-crust" width="60%">
+					<shortdescription>A tree diagram. The starting point branches to thin crust and deep dish. Thin crust branches to small, medium, and large; deep dish branches to medium and large. Every size branches to tomato and pesto, giving 6 thin-crust leaves and 4 deep-dish leaves, 10 in all.</shortdescription>
+					<latex-image>
+						\begin{tikzpicture}[grow=right, font=\figfont,
+						    level 1/.style={level distance=2.6cm, sibling distance=3.6cm},
+						    level 2/.style={level distance=2.8cm, sibling distance=1.25cm},
+						    level 3/.style={level distance=1.8cm, sibling distance=0.55cm},
+						    end/.style={circle, minimum width=1pt, fill, inner sep=0pt}]
+						    \node {pizza}
+						        child { node {deep dish}
+						            child { node {large}
+						                child { node[end, label=right:{pesto}] {} }
+						                child { node[end, label=right:{tomato}] {} } }
+						            child { node {medium}
+						                child { node[end, label=right:{pesto}] {} }
+						                child { node[end, label=right:{tomato}] {} } } }
+						        child { node {thin crust}
+						            child { node {large}
+						                child { node[end, label=right:{pesto}] {} }
+						                child { node[end, label=right:{tomato}] {} } }
+						            child { node {medium}
+						                child { node[end, label=right:{pesto}] {} }
+						                child { node[end, label=right:{tomato}] {} } }
+						            child { node {small}
+						                child { node[end, label=right:{pesto}] {} }
+						                child { node[end, label=right:{tomato}] {} } } };
+						\end{tikzpicture}
+					</latex-image>
+				</image>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-hiking-trails"><!--  #12 (new) -->
+			<statement>
+				<p>
+					From a trailhead, 3 trails lead to a meadow, and from the meadow, 2 trails lead to a lake. One more trail goes directly from the trailhead to the lake without passing the meadow.
+					<ol marker="a)">
+						<li>
+							<p>
+								How many routes are there from the trailhead to the lake, if a hiker never doubles back?
+							</p>
+						</li>
+						<li>
+							<p>
+								A hiker walks from the trailhead to the lake and back again, choosing any route each way. How many round trips are possible?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								A route either passes the meadow or takes the direct trail, two cases that don't overlap. Through the meadow, the multiplication rule gives <m>3 \times 2 = 6</m> routes; the direct trail gives 1 more. By the addition rule, there are <m>6 + 1 = 7</m> routes.
+							</p>
+						</li>
+						<li>
+							<p>
+								A round trip takes two steps, a route to the lake and a route back, each with 7 choices, so there are <m>7 \times 7 = 49</m> round trips.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-outfit-rule"><!--  #13 (new) -->
+			<statement>
+				<p>
+					Sam packs a red shirt, a blue shirt, a green shirt, khaki pants, and black pants for a trip. Sam will wear any shirt with any pants, except the green shirt with the khaki pants.
+					<ol marker="a)">
+						<li>
+							<p>
+								Draw a tree diagram (shirt, then pants) showing the outfits Sam will wear. How many are there?
+							</p>
+						</li>
+						<li>
+							<p>
+								Explain why <m>3 \times 2 = 6</m> is not the answer.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								See the tree below. The red and blue shirts each have 2 branches, and the green shirt has only 1 (black pants), so there are <m>2 + 2 + 1 = 5</m> outfits.
+							</p>
+						</li>
+						<li>
+							<p>
+								The number of pants choices depends on the shirt: 2 for red or blue, but only 1 for green. The multiplication rule counts the green-and-khaki outfit, which Sam won't wear.
+							</p>
+						</li>
+					</ol>
+				</p>
+				<image xml:id="img-exer-counting-outfit-rule" width="40%">
+					<shortdescription>A tree diagram. The starting point branches to the red, blue, and green shirts. Red branches to khaki and black pants, blue branches to khaki and black pants, and green branches only to black pants, for 5 leaves in all.</shortdescription>
+					<latex-image>
+						\begin{tikzpicture}[grow=right, font=\figfont,
+						    level 1/.style={level distance=2.2cm, sibling distance=1.5cm},
+						    level 2/.style={level distance=2cm, sibling distance=0.7cm},
+						    end/.style={circle, minimum width=1pt, fill, inner sep=0pt}]
+						    \node {outfits}
+						        child { node {green}
+						            child { node[end, label=right:{black}] {} } }
+						        child { node {blue}
+						            child { node[end, label=right:{black}] {} }
+						            child { node[end, label=right:{khaki}] {} } }
+						        child { node {red}
+						            child { node[end, label=right:{black}] {} }
+						            child { node[end, label=right:{khaki}] {} } };
+						\end{tikzpicture}
+					</latex-image>
+				</image>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-counting-burrito-claim"><!--  #14 (new) -->
+			<statement>
+				<p>
+					A burrito shop advertises <q>Over 500 ways to build your burrito!</q> Each burrito uses one of 4 tortillas, one of 3 rices, one of 4 proteins, one of 2 kinds of beans, and one of 5 salsas.
+					<ol marker="a)">
+						<li>
+							<p>
+								If every burrito has exactly one item of each kind, is the advertisement correct?
+							</p>
+						</li>
+						<li>
+							<p>
+								The shop also lets customers leave out the beans. Is the advertisement correct now?
+							</p>
+						</li>
+						<li>
+							<p>
+								Would a tree diagram be a reasonable way to check the advertisement? Why or why not?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								By the multiplication rule, there are <m>4 \times 3 \times 4 \times 2 \times 5 = 480</m> burritos, which is fewer than 500, so the advertisement is not correct.
+							</p>
+						</li>
+						<li>
+							<p>
+								<q>No beans</q> becomes a third choice for the beans step, so there are <m>4 \times 3 \times 4 \times 3 \times 5 = 720</m> burritos, and the advertisement is correct.
+							</p>
+						</li>
+						<li>
+							<p>
+								No. The tree would have five levels and 720 leaves, far too many to draw or count by hand. The multiplication rule gives the count directly.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+	</exercises>
+
 </section>
