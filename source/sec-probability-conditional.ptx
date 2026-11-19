@@ -898,4 +898,555 @@
 			</solution>
 		</example>
 	</subsection>
+
+	<exercises>
+		<!-- Sources: Exercise 2 is adapted from Benjamin Jackson's MATH 105
+		Objective 14 warm-up, Walla Walla University, Fall 2026. Exercises
+		5, 6, 9, 13, 14, and 17 are adapted from his MATH 105 lecture slides
+		and clicker questions (Objectives 14-15, Fall 2026), and Exercises
+		10 and 11 from his Objectives 14-15 practice worksheet (Fall 2026),
+		all with new numbers or contexts. Exercises 12, 15, and 16 are based
+		on his MATH 105 written-homework question library (Fall 2026).
+		Exercises 1, 3, 4, 7, and 8 are new.
+		-->
+		<title>Exercises</title>
+
+		<exercise xml:id="exer-conditional-independent-or-dependent"><!--  #1 (new; section's independence examples) -->
+			<statement>
+				<p>
+					Decide whether each pair of events is independent or dependent, and explain your reasoning.
+					<ol marker="a)">
+						<li><p>A die is rolled twice. <m>A =</m> <q>the first roll is a 6</q> and <m>B =</m> <q>the second roll is a 6.</q></p></li>
+						<li><p>A student is chosen at random from a class. <m>A =</m> <q>the student studied for the exam</q> and <m>B =</m> <q>the student passed the exam.</q></p></li>
+						<li><p>Two cards are drawn from a standard deck without replacement. <m>A =</m> <q>the first card is a heart</q> and <m>B =</m> <q>the second card is a heart.</q></p></li>
+						<li><p>Two cards are drawn from a standard deck with replacement. <m>A =</m> <q>the first card is a heart</q> and <m>B =</m> <q>the second card is a heart.</q></p></li>
+						<li><p>A die is rolled twice. <m>A =</m> <q>the first roll is a 6</q> and <m>B =</m> <q>the sum of the two rolls is 12.</q></p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p>Independent. Dice have no memory, so the first roll has no effect on the second.</p></li>
+						<li><p>Dependent. Studying makes passing more likely, so knowing that a student studied changes the probability that they passed.</p></li>
+						<li><p>Dependent. If the first card is a heart, only 12 of the remaining 51 cards are hearts; if it is not, 13 of the 51 are.</p></li>
+						<li><p>Independent. The first card goes back into the deck, so the second draw is from the same 52 cards, 13 of them hearts, no matter what the first card was.</p></li>
+						<li><p>Dependent. A sum of 12 requires two 6s. If the first roll is not a 6, then <m>B</m> is impossible; if it is a 6, <m>B</m> has probability <m>\frac{1}{6}</m>.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-conditional-info-table-slips"><!--  #2 (adapted from Obj14 warm-up, The Peek; new setup) -->
+			<statement>
+				<p>
+					Two of four student workers, Priya, Omar, Lena, and Sam, will staff the information table at an open house. Their supervisor writes each possible pair of names on a slip of paper, puts the slips in a hat, and draws one without looking.
+					<ol marker="a)">
+						<li><p>List the slips in the hat. What is the probability that Sam is on the slip that is drawn?</p></li>
+						<li><p>Before the supervisor reads the slip, Omar peeks at it and says, <q>Priya's on it.</q> Now what is the probability that Sam is on the slip?</p></li>
+						<li><p>Are the events <q>Priya is chosen</q> and <q>Sam is chosen</q> independent? Explain.</p></li>
+						<li><p>Use the conditional probability formula to check your answer to (b).</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p>There are six slips: {Priya, Omar}, {Priya, Lena}, {Priya, Sam}, {Omar, Lena}, {Omar, Sam}, and {Lena, Sam}. Sam is on 3 of the 6 equally likely slips, so <m>P(\text{Sam}) = \frac{3}{6} = \frac{1}{2}</m>.</p></li>
+						<li><p>Only the 3 slips with Priya are still possible, and Sam is on 1 of them, so <m>P(\text{Sam}\mid\text{Priya}) = \frac{1}{3}</m>.</p></li>
+						<li><p>No. Knowing that Priya was chosen changed Sam's probability from <m>\frac{1}{2}</m> to <m>\frac{1}{3}</m>. With only two spots, Priya being on the slip leaves less room for Sam.</p></li>
+						<li><p>Priya and Sam are together on 1 of the 6 slips, and Priya is on 3, so <m>P(\text{Sam}\mid\text{Priya}) = \frac{P(\text{Sam}\cap\text{Priya})}{P(\text{Priya})} = \frac{1/6}{3/6} = \frac{1}{3}</m>, as in (b).</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-conditional-two-dice"><!--  #3 (new) -->
+			<statement>
+				<p>
+					A red die and a blue die are rolled. Let <m>A =</m> <q>the sum is at least 10</q> and <m>B =</m> <q>at least one die shows a 6.</q>
+					<ol marker="a)">
+						<li><p>List the outcomes in <m>A</m>, in <m>B</m>, and in <m>A\cap B</m>. Write each outcome as (red, blue).</p></li>
+						<li><p>Find <m>P(A)</m> and <m>P(B)</m>.</p></li>
+						<li><p>Find <m>P(A\mid B)</m>.</p></li>
+						<li><p>Find <m>P(B\mid A)</m>.</p></li>
+						<li><p>Are <m>A</m> and <m>B</m> independent? Explain.</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>A = \lbrace (4,6), (5,5), (6,4), (5,6), (6,5), (6,6) \rbrace</m>.
+							</p>
+							<p>
+								<m>B = \lbrace (1,6), (2,6), (3,6), (4,6), (5,6), (6,6), (6,1), (6,2), (6,3), (6,4), (6,5) \rbrace</m>.
+							</p>
+							<p>
+								<m>A\cap B = \lbrace (4,6), (6,4), (5,6), (6,5), (6,6) \rbrace</m>. Only <m>(5,5)</m> is in <m>A</m> but not in <m>B</m>.
+							</p>
+						</li>
+						<li><p>There are 36 equally likely outcomes, so <m>P(A) = \frac{6}{36} = \frac{1}{6} \approx 0.1667</m> and <m>P(B) = \frac{11}{36} \approx 0.3056</m>.</p></li>
+						<li><p><m>P(A\mid B) = \frac{n(A\cap B)}{n(B)} = \frac{5}{11} \approx 0.4545</m>.</p></li>
+						<li><p><m>P(B\mid A) = \frac{n(A\cap B)}{n(A)} = \frac{5}{6} \approx 0.8333</m>. This is not the same as <m>P(A\mid B)</m>: the order of the condition matters.</p></li>
+						<li><p>No. <m>P(A\mid B) \approx 0.4545</m> is not equal to <m>P(A) \approx 0.1667</m>, so knowing that a 6 was rolled makes a high sum more likely. The events are dependent.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-conditional-cold-sneeze"><!--  #4 (new; conceptual, P(A|B) vs P(B|A)) -->
+			<statement>
+				<p>
+					A person is chosen at random. Let <m>C =</m> <q>the person has a cold</q> and <m>S =</m> <q>the person is sneezing.</q>
+					<ol marker="a)">
+						<li><p>Describe <m>P(S\mid C)</m> and <m>P(C\mid S)</m> in words.</p></li>
+						<li><p>Which of the two probabilities do you expect to be larger? Explain.</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p><m>P(S\mid C)</m> is the probability that a person is sneezing, given that they have a cold. <m>P(C\mid S)</m> is the probability that a person has a cold, given that they are sneezing.</p></li>
+						<li><p><m>P(S\mid C)</m> should be larger. Sneezing is a common cold symptom, so a large share of people with colds sneeze. But people sneeze for many other reasons (allergies, dust, pepper), so among sneezing people a smaller share have colds. The two probabilities condition on different groups of people, so there is no reason for them to be equal.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-conditional-housing-car"><!--  #5 (adapted from slides, speeding-ticket A-D; new context) -->
+			<statement>
+				<p>
+					A college surveyed 240 students about where they live and whether they have a car on campus. The results are shown below.
+				</p>
+				<tabular halign="center">
+					<col right="medium"></col>
+					<col right="medium" halign="center"></col>
+					<col right="major" halign="center"></col>
+					<col halign="center"></col>
+					<row bottom="medium" header="yes">
+						<cell></cell>
+						<cell>Car</cell>
+						<cell>No car</cell>
+						<cell>Total</cell>
+					</row>
+					<row><cell>On campus</cell><cell>30</cell><cell>90</cell><cell>120</cell></row>
+					<row bottom="major"><cell>Off campus</cell><cell>84</cell><cell>36</cell><cell>120</cell></row>
+					<row><cell>Total</cell><cell>114</cell><cell>126</cell><cell>240</cell></row>
+				</tabular>
+				<p>
+					One of these students is chosen at random.
+					<ol marker="a)">
+						<li><p>Find <m>P(\text{car})</m>.</p></li>
+						<li><p>Find <m>P(\text{car}\mid\text{on campus})</m>.</p></li>
+						<li><p>Find <m>P(\text{on campus}\mid\text{car})</m>.</p></li>
+						<li><p>Are the events <q>car</q> and <q>on campus</q> independent? Explain.</p></li>
+						<li><p>Are the events <q>car</q> and <q>on campus</q> mutually exclusive? Explain.</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p><m>P(\text{car}) = \frac{114}{240} = 0.475</m>.</p></li>
+						<li><p>Restrict to the on-campus row: <m>P(\text{car}\mid\text{on campus}) = \frac{30}{120} = 0.25</m>.</p></li>
+						<li><p>Restrict to the car column: <m>P(\text{on campus}\mid\text{car}) = \frac{30}{114} \approx 0.2632</m>.</p></li>
+						<li><p>No. <m>P(\text{car}\mid\text{on campus}) = 0.25</m> is not equal to <m>P(\text{car}) = 0.475</m>, so the events are dependent.</p></li>
+						<li><p>No. Thirty students live on campus and have a car, so the events can happen together.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-conditional-face-cards"><!--  #6 (adapted from slides, two aces; new card type) -->
+			<statement>
+				<p>
+					Two cards are drawn, one after the other and without replacement, from a standard 52-card deck. The 12 face cards are the jacks, queens, and kings.
+					<ol marker="a)">
+						<li><p>What is the probability that the first card is a face card?</p></li>
+						<li><p>What is the probability that the second card is a face card, given that the first card was a face card?</p></li>
+						<li><p>Use the general multiplication rule to find the probability that both cards are face cards.</p></li>
+						<li><p>Find the probability that both cards are face cards if the first card is put back and the deck is shuffled before the second draw.</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p><m>P(\text{1st face}) = \frac{12}{52} = \frac{3}{13} \approx 0.2308</m>.</p></li>
+						<li><p>After a face card is drawn, 51 cards remain and 11 of them are face cards, so <m>P(\text{2nd face}\mid\text{1st face}) = \frac{11}{51} \approx 0.2157</m>.</p></li>
+						<li><p><m>P(\text{1st face}\cap\text{2nd face}) = \frac{12}{52}\times\frac{11}{51} = \frac{132}{2{,}652} = \frac{11}{221} \approx 0.0498</m>.</p></li>
+						<li><p>With replacement the draws are independent, so the probability is <m>\frac{12}{52}\times\frac{12}{52} = \frac{9}{169} \approx 0.0533</m>.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-conditional-jelly-beans"><!--  #7 (new) -->
+			<statement>
+				<p>
+					A bag holds 15 jelly beans: 5 cherry, 3 lime, and 7 lemon. You eat two jelly beans, chosen at random one after the other. Find the probability that
+					<ol marker="a)">
+						<li><p>both are cherry.</p></li>
+						<li><p>the first is cherry and the second is lime.</p></li>
+						<li><p>you eat one cherry and one lime, in either order.</p></li>
+						<li><p>both are the same flavor.</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p><m>\frac{5}{15}\times\frac{4}{14} = \frac{20}{210} = \frac{2}{21} \approx 0.0952</m>.</p></li>
+						<li><p><m>\frac{5}{15}\times\frac{3}{14} = \frac{15}{210} = \frac{1}{14} \approx 0.0714</m>.</p></li>
+						<li><p>Cherry then lime and lime then cherry are mutually exclusive, so add: <m>\frac{5}{15}\times\frac{3}{14} + \frac{3}{15}\times\frac{5}{14} = \frac{30}{210} = \frac{1}{7} \approx 0.1429</m>.</p></li>
+						<li><p>Add the probabilities of two cherry, two lime, and two lemon: <m>\frac{5}{15}\times\frac{4}{14} + \frac{3}{15}\times\frac{2}{14} + \frac{7}{15}\times\frac{6}{14} = \frac{20 + 6 + 42}{210} = \frac{68}{210} = \frac{34}{105} \approx 0.3238</m>.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-conditional-dog-cat"><!--  #8 (new) -->
+			<statement>
+				<p>
+					In a certain city, 40% of households have a dog, and 30% of the households with a dog also have a cat. Overall, 25% of the city's households have a cat. A household is chosen at random.
+					<ol marker="a)">
+						<li><p>Find the probability that the household has both a dog and a cat.</p></li>
+						<li><p>Are the events <q>has a dog</q> and <q>has a cat</q> independent? Explain.</p></li>
+						<li><p>Find the probability that the household has a dog, given that it has a cat.</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Let <m>D =</m> <q>has a dog</q> and <m>C =</m> <q>has a cat.</q> We are given <m>P(D) = 0.40</m>, <m>P(C\mid D) = 0.30</m>, and <m>P(C) = 0.25</m>.
+					<ol marker="a)">
+						<li><p>By the general multiplication rule, <m>P(D\cap C) = P(D)P(C\mid D) = 0.40 \times 0.30 = 0.12</m>.</p></li>
+						<li><p>No. <m>P(D)P(C) = 0.40 \times 0.25 = 0.10</m>, which is not equal to <m>P(D\cap C) = 0.12</m>. (Equivalently, <m>P(C\mid D) = 0.30</m> is not equal to <m>P(C) = 0.25</m>.)</p></li>
+						<li><p><m>P(D\mid C) = \frac{P(D\cap C)}{P(C)} = \frac{0.12}{0.25} = 0.48</m>.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-conditional-free-throws"><!--  #9 (adapted from slides, Dumb Game product rule; new context) -->
+			<statement>
+				<p>
+					A basketball player makes 80% of their free throws. Assume that free throws are independent. If the player takes two free throws, find the probability that the player
+					<ol marker="a)">
+						<li><p>makes both.</p></li>
+						<li><p>misses both.</p></li>
+						<li><p>makes at least one.</p></li>
+						<li><p>makes exactly one.</p></li>
+						<li><p>Is it reasonable to assume that the two free throws are independent? Explain.</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p><m>0.8 \times 0.8 = 0.64</m>.</p></li>
+						<li><p><m>0.2 \times 0.2 = 0.04</m>.</p></li>
+						<li><p><q>At least one</q> is the complement of <q>misses both,</q> so the probability is <m>1 - 0.04 = 0.96</m>.</p></li>
+						<li><p>Make then miss, or miss then make: <m>0.8 \times 0.2 + 0.2 \times 0.8 = 0.32</m>. (Check: <m>0.64 + 0.32 + 0.04 = 1</m>.)</p></li>
+						<li><p>It is a reasonable approximation. The first shot has no physical effect on the second. A player's confidence or nerves might shift a little after a make or a miss, so the assumption may not be exactly true.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-conditional-gym-classes"><!--  #10 (adapted from practice worksheet; new context and numbers) -->
+			<statement>
+				<p>
+					A gym recorded whether each of its 500 members usually works out in the morning or the evening and whether they take group classes.
+				</p>
+				<tabular halign="center">
+					<col right="medium"></col>
+					<col right="medium" halign="center"></col>
+					<col right="major" halign="center"></col>
+					<col halign="center"></col>
+					<row bottom="medium" header="yes">
+						<cell></cell>
+						<cell>Group classes</cell>
+						<cell>No classes</cell>
+						<cell>Total</cell>
+					</row>
+					<row><cell>Morning</cell><cell>60</cell><cell>90</cell><cell>150</cell></row>
+					<row bottom="major"><cell>Evening</cell><cell>140</cell><cell>210</cell><cell>350</cell></row>
+					<row><cell>Total</cell><cell>200</cell><cell>300</cell><cell>500</cell></row>
+				</tabular>
+				<p>
+					A member is chosen at random. Let <m>M =</m> <q>works out in the morning</q> and <m>C =</m> <q>takes group classes.</q>
+					<ol marker="a)">
+						<li><p>Find <m>P(M)</m>, <m>P(C)</m>, and <m>P(M\cap C)</m>.</p></li>
+						<li><p>Use the test of independence to decide whether <m>M</m> and <m>C</m> are independent.</p></li>
+						<li><p>Find <m>P(C\mid M)</m> and compare it with <m>P(C)</m>.</p></li>
+						<li><p>Explain what your answer to (b) means for the gym.</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p><m>P(M) = \frac{150}{500} = 0.3</m>, <m>P(C) = \frac{200}{500} = 0.4</m>, and <m>P(M\cap C) = \frac{60}{500} = 0.12</m>.</p></li>
+						<li><p><m>P(M)P(C) = 0.3 \times 0.4 = 0.12 = P(M\cap C)</m>, so <m>M</m> and <m>C</m> are independent.</p></li>
+						<li><p><m>P(C\mid M) = \frac{60}{150} = 0.4</m>, the same as <m>P(C)</m>, as we expect for independent events.</p></li>
+						<li><p>Morning and evening members are equally likely to take group classes (40% of each group does), so knowing when a member works out tells the gym nothing about whether they take classes.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-conditional-union-test"><!--  #11 (adapted from practice worksheet; new numbers) -->
+			<statement>
+				<p>
+					<ol marker="a)">
+						<li><p>Events <m>A</m> and <m>B</m> have <m>P(A) = 0.30</m>, <m>P(B) = 0.50</m>, and <m>P(A\cup B) = 0.65</m>. Are <m>A</m> and <m>B</m> independent?</p></li>
+						<li><p>Events <m>C</m> and <m>D</m> have <m>P(C) = 0.40</m>, <m>P(D) = 0.35</m>, and <m>P(C\cup D) = 0.60</m>. Are <m>C</m> and <m>D</m> independent?</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p>By the general addition rule, <m>0.65 = 0.30 + 0.50 - P(A\cap B)</m>, so <m>P(A\cap B) = 0.15</m>. Since <m>P(A)P(B) = 0.30 \times 0.50 = 0.15 = P(A\cap B)</m>, <m>A</m> and <m>B</m> are independent.</p></li>
+						<li><p><m>0.60 = 0.40 + 0.35 - P(C\cap D)</m>, so <m>P(C\cap D) = 0.15</m>. But <m>P(C)P(D) = 0.40 \times 0.35 = 0.14</m>, which is not equal to 0.15, so <m>C</m> and <m>D</m> are dependent.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-conditional-spinner"><!--  #12 (based on written homework; new context) -->
+			<statement>
+				<p>
+					A spinner with four equal sections numbered 1 through 4 is spun twice. Let <m>A =</m> <q>the first spin is a 4,</q> <m>B =</m> <q>the sum of the spins is 5,</q> <m>C =</m> <q>the sum of the spins is 6,</q> and <m>D =</m> <q>the sum of the spins is 2.</q>
+					<ol marker="a)">
+						<li><p>Write the sample space, with each outcome written as (first spin, second spin).</p></li>
+						<li><p>Show that <m>A</m> and <m>B</m> are not mutually exclusive.</p></li>
+						<li><p>Show that <m>A</m> and <m>B</m> are independent.</p></li>
+						<li><p>Are <m>A</m> and <m>C</m> independent?</p></li>
+						<li><p>Are <m>A</m> and <m>D</m> mutually exclusive? Are they independent?</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p><m>S = \lbrace (1,1), (1,2), (1,3), (1,4), (2,1), (2,2), (2,3), (2,4), (3,1), (3,2), (3,3), (3,4), (4,1), (4,2), (4,3), (4,4) \rbrace</m>, 16 equally likely outcomes.</p></li>
+						<li><p><m>A = \lbrace (4,1), (4,2), (4,3), (4,4) \rbrace</m> and <m>B = \lbrace (1,4), (2,3), (3,2), (4,1) \rbrace</m>, so <m>A\cap B = \lbrace (4,1) \rbrace</m>. Since <m>A\cap B</m> is not empty, the events can happen together and are not mutually exclusive.</p></li>
+						<li><p><m>P(A)P(B) = \frac{4}{16}\times\frac{4}{16} = \frac{1}{16} = P(A\cap B)</m>, so <m>A</m> and <m>B</m> are independent.</p></li>
+						<li><p><m>C = \lbrace (2,4), (3,3), (4,2) \rbrace</m> and <m>A\cap C = \lbrace (4,2) \rbrace</m>, so <m>P(A\cap C) = \frac{1}{16} = \frac{4}{64}</m>. But <m>P(A)P(C) = \frac{4}{16}\times\frac{3}{16} = \frac{3}{64}</m>. These are not equal, so <m>A</m> and <m>C</m> are dependent.</p></li>
+						<li><p><m>D = \lbrace (1,1) \rbrace</m>, so <m>A\cap D</m> is empty and the events are mutually exclusive. They are not independent: <m>P(A\cap D) = 0</m>, but <m>P(A)P(D) = \frac{4}{16}\times\frac{1}{16} = \frac{1}{64}</m>.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-conditional-exclusive-vs-independent"><!--  #13 (adapted from slides, E/F clickers; new numbers) -->
+			<statement>
+				<p>
+					<ol marker="a)">
+						<li><p>Events <m>E</m> and <m>F</m> have <m>P(E) = 0.6</m>, <m>P(F) = 0.3</m>, and <m>P(E\cap F) = 0.18</m>. Are <m>E</m> and <m>F</m> mutually exclusive? Are they independent? Find <m>P(E\mid F)</m>.</p></li>
+						<li><p>Events <m>G</m> and <m>H</m> have <m>P(G) = 0.2</m>, <m>P(H) = 0.5</m>, and <m>P(G\cap H) = 0</m>. Are <m>G</m> and <m>H</m> mutually exclusive? Are they independent? Find <m>P(G\mid H)</m>.</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p>Not mutually exclusive, since <m>P(E\cap F) = 0.18 \neq 0</m>. Independent, since <m>P(E)P(F) = 0.6 \times 0.3 = 0.18 = P(E\cap F)</m>. <m>P(E\mid F) = \frac{0.18}{0.3} = 0.6</m>, the same as <m>P(E)</m>.</p></li>
+						<li><p>Mutually exclusive, since <m>P(G\cap H) = 0</m>. Not independent, since <m>P(G)P(H) = 0.2 \times 0.5 = 0.1 \neq 0</m>. <m>P(G\mid H) = \frac{0}{0.5} = 0</m>: if <m>H</m> happens, <m>G</m> cannot.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-conditional-tamales"><!--  #14 (adapted from slides, socks tree; new context) -->
+			<statement>
+				<p>
+					A plate holds 8 tamales that look alike: 3 are spicy and 5 are mild. You take two tamales at random, one after the other.
+					<ol marker="a)">
+						<li><p>Draw a tree diagram for this experiment, and label each branch with its probability.</p></li>
+						<li><p>Find the probability that the second tamale is spicy, given that the first is mild.</p></li>
+						<li><p>Find the probability that both tamales are mild.</p></li>
+						<li><p>Find the probability that exactly one tamale is spicy.</p></li>
+						<li><p>Find the probability that the second tamale is spicy. How does it compare with the probability that the first is spicy?</p></li>
+						<li><p>Find the probability that the first tamale was spicy, given that the second is spicy.</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p>See the tree below (<m>S</m> = spicy, <m>M</m> = mild).</p></li>
+						<li><p>Read it from the tree: <m>P(\text{2nd }S\mid\text{1st }M) = \frac{3}{7}</m>.</p></li>
+						<li><p><m>\frac{5}{8}\times\frac{4}{7} = \frac{20}{56} = \frac{5}{14} \approx 0.3571</m>.</p></li>
+						<li><p>Add the paths <m>SM</m> and <m>MS</m>: <m>\frac{3}{8}\times\frac{5}{7} + \frac{5}{8}\times\frac{3}{7} = \frac{15}{56} + \frac{15}{56} = \frac{30}{56} = \frac{15}{28} \approx 0.5357</m>.</p></li>
+						<li><p>Add the paths <m>SS</m> and <m>MS</m>: <m>\frac{3}{8}\times\frac{2}{7} + \frac{5}{8}\times\frac{3}{7} = \frac{6}{56} + \frac{15}{56} = \frac{21}{56} = \frac{3}{8}</m>. This is the same as the probability that the first tamale is spicy.</p></li>
+						<li><p><m>P(\text{1st }S\mid\text{2nd }S) = \frac{P(\text{1st }S\cap\text{2nd }S)}{P(\text{2nd }S)} = \frac{6/56}{21/56} = \frac{6}{21} = \frac{2}{7} \approx 0.2857</m>.</p></li>
+					</ol>
+				</p>
+				<image xml:id="img-exer-conditional-tamales-tree" width="45%">
+					<shortdescription>A probability tree. From the start, a branch to S with probability 3/8 and a branch to M with probability 5/8. From S: S with probability 2/7 and M with probability 5/7. From M: S with probability 3/7 and M with probability 4/7.</shortdescription>
+					<latex-image>
+						\begin{tikzpicture}[grow=right, font=\figfont,
+						    level 1/.style={level distance=2.4cm, sibling distance=2.4cm},
+						    level 2/.style={level distance=2.4cm, sibling distance=1.2cm},
+						    edge label/.style={midway, font=\footnotesize}]
+						    \node {}
+						        child { node {$M$}
+						            child { node {$M$} edge from parent node[edge label, below] {$4/7$} }
+						            child { node {$S$} edge from parent node[edge label, above] {$3/7$} }
+						            edge from parent node[edge label, below] {$5/8$} }
+						        child { node {$S$}
+						            child { node {$M$} edge from parent node[edge label, below] {$5/7$} }
+						            child { node {$S$} edge from parent node[edge label, above] {$2/7$} }
+						            edge from parent node[edge label, above] {$3/8$} };
+						\end{tikzpicture}
+					</latex-image>
+				</image>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-conditional-drug-test"><!--  #15 (based on written homework; new context) -->
+			<statement>
+				<p>
+					In a sports league, 2% of athletes use a banned substance. The league's drug test is positive for 97% of athletes who use the substance and for 4% of athletes who do not.
+					<ol marker="a)">
+						<li><p>Draw a tree diagram for this situation, and label each branch with its probability.</p></li>
+						<li><p>What percentage of all tested athletes are non-users who test positive (false positives)?</p></li>
+						<li><p>What is the probability that a randomly chosen athlete tests positive?</p></li>
+						<li><p>An athlete tests positive. What is the probability that the athlete actually uses the substance?</p></li>
+						<li><p>Explain why the answer to (d) is so much lower than 97%.</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Let <m>U =</m> <q>the athlete uses the substance,</q> and let <m>+</m> and <m>-</m> stand for positive and negative test results.
+					<ol marker="a)">
+						<li><p>See the tree below.</p></li>
+						<li><p><m>P(U^C\cap +) = 0.98 \times 0.04 = 0.0392</m>, or 3.92% of all tested athletes.</p></li>
+						<li><p><m>P(+) = 0.02 \times 0.97 + 0.98 \times 0.04 = 0.0194 + 0.0392 = 0.0586</m>.</p></li>
+						<li><p><m>P(U\mid +) = \frac{P(U\cap +)}{P(+)} = \frac{0.0194}{0.0586} \approx 0.3311</m>, or about 33%.</p></li>
+						<li><p>Users are rare. Out of 10,000 athletes, about 200 are users and 194 of them test positive, but 4% of the 9,800 non-users, 392 athletes, also test positive. So about two out of every three positive tests come from non-users.</p></li>
+					</ol>
+				</p>
+				<image xml:id="img-exer-conditional-drug-test-tree" width="45%">
+					<shortdescription>A probability tree. From the start, a branch to U with probability 0.02 and a branch to U complement with probability 0.98. From U: positive with probability 0.97 and negative with probability 0.03. From U complement: positive with probability 0.04 and negative with probability 0.96.</shortdescription>
+					<latex-image>
+						\begin{tikzpicture}[grow=right, font=\figfont,
+						    level 1/.style={level distance=2.4cm, sibling distance=2.4cm},
+						    level 2/.style={level distance=2.4cm, sibling distance=1.2cm},
+						    edge label/.style={midway, font=\footnotesize}]
+						    \node {}
+						        child { node {$U^C$}
+						            child { node {$-$} edge from parent node[edge label, below] {$0.96$} }
+						            child { node {$+$} edge from parent node[edge label, above] {$0.04$} }
+						            edge from parent node[edge label, below] {$0.98$} }
+						        child { node {$U$}
+						            child { node {$-$} edge from parent node[edge label, below] {$0.03$} }
+						            child { node {$+$} edge from parent node[edge label, above] {$0.97$} }
+						            edge from parent node[edge label, above] {$0.02$} };
+						\end{tikzpicture}
+					</latex-image>
+				</image>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-conditional-alarm"><!--  #16 (based on written homework; new context) -->
+			<statement>
+				<p>
+					A student remembers to set an alarm for an 8 a.m. class on 90% of mornings. When the alarm is set, the student is late to class 10% of the time; when it is not set, the student is late 70% of the time. One morning, the student is late.
+					<ol marker="a)">
+						<li><p>Draw a tree diagram for this situation, and label each branch with its probability.</p></li>
+						<li><p>What is the probability that the student is late on a randomly chosen morning?</p></li>
+						<li><p>Given that the student is late, what is the probability that the student forgot to set the alarm?</p></li>
+						<li><p>Given that the student is late, what is the probability that the alarm was set?</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Let <m>A =</m> <q>the alarm is set</q> and <m>L =</m> <q>the student is late.</q>
+					<ol marker="a)">
+						<li><p>See the tree below.</p></li>
+						<li><p><m>P(L) = 0.9 \times 0.1 + 0.1 \times 0.7 = 0.09 + 0.07 = 0.16</m>.</p></li>
+						<li><p><m>P(A^C\mid L) = \frac{P(A^C\cap L)}{P(L)} = \frac{0.07}{0.16} = 0.4375</m>.</p></li>
+						<li><p>By the complement rule, <m>P(A\mid L) = 1 - 0.4375 = 0.5625</m>. (Check: <m>\frac{0.09}{0.16} = 0.5625</m>.)</p></li>
+					</ol>
+				</p>
+				<image xml:id="img-exer-conditional-alarm-tree" width="45%">
+					<shortdescription>A probability tree. From the start, a branch to A with probability 0.9 and a branch to A complement with probability 0.1. From A: L with probability 0.1 and L complement with probability 0.9. From A complement: L with probability 0.7 and L complement with probability 0.3.</shortdescription>
+					<latex-image>
+						\begin{tikzpicture}[grow=right, font=\figfont,
+						    level 1/.style={level distance=2.4cm, sibling distance=2.4cm},
+						    level 2/.style={level distance=2.4cm, sibling distance=1.2cm},
+						    edge label/.style={midway, font=\footnotesize}]
+						    \node {}
+						        child { node {$A^C$}
+						            child { node {$L^C$} edge from parent node[edge label, below] {$0.3$} }
+						            child { node {$L$} edge from parent node[edge label, above] {$0.7$} }
+						            edge from parent node[edge label, below] {$0.1$} }
+						        child { node {$A$}
+						            child { node {$L^C$} edge from parent node[edge label, below] {$0.9$} }
+						            child { node {$L$} edge from parent node[edge label, above] {$0.1$} }
+						            edge from parent node[edge label, above] {$0.9$} };
+						\end{tikzpicture}
+					</latex-image>
+				</image>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-conditional-pastries"><!--  #17 (adapted from slides, batteries; three cases) -->
+			<statement>
+				<p>
+					A campus coffee shop buys its pastries from three bakeries: 50% come from Bakery A, 30% from Bakery B, and 20% from Bakery C. On a given morning, 2% of Bakery A's pastries are stale, as are 5% of Bakery B's and 10% of Bakery C's. You buy a pastry at random.
+					<ol marker="a)">
+						<li><p>Draw a tree diagram for this situation, and label each branch with its probability.</p></li>
+						<li><p>What is the probability that your pastry is stale?</p></li>
+						<li><p>Your pastry is stale. Find the probability that it came from each bakery. Which bakery is most likely?</p></li>
+						<li><p>Check that your three answers to (c) add to 1. Why should they?</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Let <m>S =</m> <q>the pastry is stale.</q>
+					<ol marker="a)">
+						<li><p>See the tree below.</p></li>
+						<li><p><m>P(S) = 0.5 \times 0.02 + 0.3 \times 0.05 + 0.2 \times 0.10 = 0.010 + 0.015 + 0.020 = 0.045</m>.</p></li>
+						<li><p><m>P(A\mid S) = \frac{0.010}{0.045} = \frac{2}{9} \approx 0.2222</m>, <m>P(B\mid S) = \frac{0.015}{0.045} = \frac{1}{3} \approx 0.3333</m>, and <m>P(C\mid S) = \frac{0.020}{0.045} = \frac{4}{9} \approx 0.4444</m>. Bakery C is the most likely source, even though it supplies the fewest pastries.</p></li>
+						<li><p><m>\frac{2}{9} + \frac{3}{9} + \frac{4}{9} = 1</m>. Every stale pastry came from exactly one of the three bakeries, so given that the pastry is stale, the three cases cover all possibilities and do not overlap.</p></li>
+					</ol>
+				</p>
+				<image xml:id="img-exer-conditional-pastries-tree" width="45%">
+					<shortdescription>A probability tree. From the start, branches to A with probability 0.5, B with probability 0.3, and C with probability 0.2. From A: S with probability 0.02 and S complement with probability 0.98. From B: S with probability 0.05 and S complement with probability 0.95. From C: S with probability 0.10 and S complement with probability 0.90.</shortdescription>
+					<latex-image>
+						\begin{tikzpicture}[grow=right, font=\figfont,
+						    level 1/.style={level distance=2.4cm, sibling distance=2.2cm},
+						    level 2/.style={level distance=2.4cm, sibling distance=1.0cm},
+						    edge label/.style={midway, font=\footnotesize}]
+						    \node {}
+						        child { node {$C$}
+						            child { node {$S^C$} edge from parent node[edge label, below] {$0.90$} }
+						            child { node {$S$} edge from parent node[edge label, above] {$0.10$} }
+						            edge from parent node[edge label, below] {$0.2$} }
+						        child { node {$B$}
+						            child { node {$S^C$} edge from parent node[edge label, below] {$0.95$} }
+						            child { node {$S$} edge from parent node[edge label, above] {$0.05$} }
+						            edge from parent node[edge label, above] {$0.3$} }
+						        child { node {$A$}
+						            child { node {$S^C$} edge from parent node[edge label, below] {$0.98$} }
+						            child { node {$S$} edge from parent node[edge label, above] {$0.02$} }
+						            edge from parent node[edge label, above] {$0.5$} };
+						\end{tikzpicture}
+					</latex-image>
+				</image>
+			</solution>
+		</exercise>
+	</exercises>
 </section>
