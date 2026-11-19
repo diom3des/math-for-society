@@ -652,4 +652,940 @@
 			</solution>
 		</example>
 	</subsection>
+	<exercises>
+		<!-- Sources: Exercises 1, 2, 3, 5, 6, 8, 12, 13, and 14 are adapted
+		from Benjamin Jackson's MATH 105 warm-up, lecture slides, clicker
+		questions, and practice sheet (Objectives 10 and 11), Walla Walla
+		University, Fall 2026. Exercises 4, 9, 10, 15, and 16 are based on
+		his MATH 105 written-homework question library (Fall 2026).
+		Exercises 7, 11, and 17 are new.
+		-->
+		<title>Exercises</title>
+
+		<exercise xml:id="exer-sets-pizza-tacos"><!--  #1 (Obj 10 warm-up: That Doesn't Add Up) -->
+			<statement>
+				<p>
+					Noah surveys his class of 30 students and finds that 19 like pizza and 17 like tacos. He notices that <m>19 + 17 = 36</m>, but there are only 30 students in the class.
+					<ol marker="a)">
+						<li>
+							<p>
+								How can both of Noah's counts be correct?
+							</p>
+						</li>
+						<li>
+							<p>
+								If every student likes at least one of the two foods, how many like both?
+							</p>
+						</li>
+						<li>
+							<p>
+								If 3 students like neither food, how many like both?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Let <m>P</m> be the students who like pizza and <m>T</m> the students who like tacos.
+					<ol marker="a)">
+						<li>
+							<p>
+								Students who like both foods are counted once among the 19 and again among the 17, so the sum 36 counts them twice. Nothing is wrong with either count.
+							</p>
+						</li>
+						<li>
+							<p>
+								Here <m>n(P \cup T) = 30</m>, so by the inclusion-exclusion rule <m>30 = 19 + 17 - n(P \cap T)</m>, and <m>n(P \cap T) = 36 - 30 = 6</m> students like both.
+							</p>
+						</li>
+						<li>
+							<p>
+								Now <m>n(P \cup T) = 30 - 3 = 27</m>, so <m>27 = 19 + 17 - n(P \cap T)</m>, and <m>n(P \cap T) = 36 - 27 = 9</m> students like both.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-hockey-helmets"><!--  #2 (Obj 10 slides: hockey injury data; new questions) -->
+			<statement>
+				<p>
+					The table below shows injuries to hockey players who wore half-shield or full-shield helmets. Let <m>H</m> and <m>F</m> be the sets of injuries to players wearing half shields and full shields, and let <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m> be the sets of head and face injuries, concussions, neck injuries, and other injuries.
+					<ol marker="a)">
+						<li>
+							<p>
+								How many injuries were head or face injuries or happened to players wearing half shields?
+							</p>
+						</li>
+						<li>
+							<p>
+								Find <m>n(C \cup F)</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Write <q>neck injuries to players who were not wearing half shields</q> in set notation, and find the number of such injuries.
+							</p>
+						</li>
+						<li>
+							<p>
+								Explain why <m>n(A \cap B) = 0</m> for this table, and find <m>n(A \cup B)</m>.
+							</p>
+						</li>
+					</ol>
+				</p>
+				<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+					<row header="yes">
+						<cell></cell>
+						<cell>Half Shield (<m>H</m>)</cell>
+						<cell>Full Shield (<m>F</m>)</cell>
+						<cell>Totals</cell>
+					</row>
+					<row>
+						<cell halign="left">Head and Face (<m>A</m>)</cell>
+						<cell>95</cell>
+						<cell>34</cell>
+						<cell>129</cell>
+					</row>
+					<row>
+						<cell halign="left">Concussions (<m>B</m>)</cell>
+						<cell>41</cell>
+						<cell>38</cell>
+						<cell>79</cell>
+					</row>
+					<row>
+						<cell halign="left">Neck Injuries (<m>C</m>)</cell>
+						<cell>9</cell>
+						<cell>7</cell>
+						<cell>16</cell>
+					</row>
+					<row bottom="minor">
+						<cell halign="left">Other Injuries (<m>D</m>)</cell>
+						<cell>202</cell>
+						<cell>150</cell>
+						<cell>352</cell>
+					</row>
+					<row>
+						<cell halign="left">Totals</cell>
+						<cell>347</cell>
+						<cell>229</cell>
+						<cell>576</cell>
+					</row>
+				</tabular>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>n(A \cup H) = n(A) + n(H) - n(A \cap H) = 129 + 347 - 95 = 381</m> injuries. The 95 head and face injuries with half shields are subtracted because they were counted in both 129 and 347.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>n(C \cup F) = 16 + 229 - 7 = 238</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>C \cap H^C</m>. Every player wore one of the two helmets, so <m>H^C = F</m>, and <m>n(C \cap H^C) = n(C \cap F) = 7</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Each injury is recorded in exactly one row, so no injury is both a head or face injury and a concussion: <m>A</m> and <m>B</m> are mutually exclusive. Then <m>n(A \cup B) = n(A) + n(B) = 129 + 79 = 208</m>.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-reading-regions"><!--  #3 (Obj 10 slides: Practice with Regions; new numbers) -->
+			<statement>
+				<p>
+					Use the Venn diagram to find each cardinality.
+				</p>
+				<image xml:id="img-exer-sets-reading-regions" width="45%">
+					<shortdescription>A Venn diagram: a rectangle labeled U contains two overlapping circles labeled A and B. A only contains 9, the overlap contains 6, B only contains 14, and the region outside both circles contains 11.</shortdescription>
+					<latex-image>
+						\begin{venndiagram2sets}[tikzoptions={font=\figfont},
+							labelA={$A$}, labelB={$B$},
+							labelOnlyA={9}, labelAB={6}, labelOnlyB={14}, labelNotAB={11}]
+							\node[below left] at (venn top right) {$U$};
+						\end{venndiagram2sets}
+					</latex-image>
+				</image>
+				<p>
+					<ol marker="a)" cols="2">
+						<li><p><m>n(A)</m></p></li>
+						<li><p><m>n(B)</m></p></li>
+						<li><p><m>n(A \cup B)</m></p></li>
+						<li><p><m>n(A^C \cap B)</m></p></li>
+						<li><p><m>n(A \cap B^C)</m></p></li>
+						<li><p><m>n(U)</m></p></li>
+						<li><p><m>n((A \cup B)^C)</m></p></li>
+						<li><p><m>n(A^C)</m></p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p><m>n(A) = 9 + 6 = 15</m>. The set <m>A</m> includes the overlap, not just the 9.</p></li>
+						<li><p><m>n(B) = 6 + 14 = 20</m>.</p></li>
+						<li><p><m>n(A \cup B) = 9 + 6 + 14 = 29</m>. (Check: <m>15 + 20 - 6 = 29</m>.)</p></li>
+						<li><p><m>n(A^C \cap B) = 14</m>, the part of <m>B</m> outside <m>A</m>.</p></li>
+						<li><p><m>n(A \cap B^C) = 9</m>, the part of <m>A</m> outside <m>B</m>.</p></li>
+						<li><p><m>n(U) = 9 + 6 + 14 + 11 = 40</m>.</p></li>
+						<li><p><m>n((A \cup B)^C) = 11</m>, or <m>40 - 29</m>.</p></li>
+						<li><p><m>n(A^C) = 14 + 11 = 25</m>, or <m>40 - 15</m>.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-inclusion-exclusion-drill"><!--  #4 (based on written 10a) -->
+			<statement>
+				<p>
+					Use the inclusion-exclusion rule to answer each question.
+					<ol marker="a)">
+						<li>
+							<p>
+								Find <m>n(A \cup B)</m> if <m>n(A) = 14</m>, <m>n(B) = 11</m>, and <m>n(A \cap B) = 5</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Find <m>n(A \cap B)</m> if <m>n(A \cup B) = 30</m>, <m>n(A) = 18</m>, and <m>n(B) = 19</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Find <m>n(B)</m> if <m>n(A \cup B) = 25</m>, <m>n(A) = 12</m>, and <m>n(A \cap B) = 4</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Is it possible to have <m>n(A) = 10</m>, <m>n(B) = 8</m>, and <m>n(A \cup B) = 20</m>? Explain.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>n(A \cup B) = 14 + 11 - 5 = 20</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>30 = 18 + 19 - n(A \cap B)</m>, so <m>n(A \cap B) = 37 - 30 = 7</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>25 = 12 + n(B) - 4</m>, so <m>25 = 8 + n(B)</m> and <m>n(B) = 17</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								No. Solving <m>20 = 10 + 8 - n(A \cap B)</m> gives <m>n(A \cap B) = -2</m>, which is impossible. The union can have at most <m>10 + 8 = 18</m> elements, which happens when the sets are mutually exclusive.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-cardio-machines"><!--  #5 (Obj 10 clicker: gym usage; new machines and numbers) -->
+			<statement>
+				<p>
+					A fitness club surveyed 300 of its members about the cardio machines they use regularly. They found that 185 use a treadmill, 140 use a rowing machine, and 72 use both.
+					<ol marker="a)">
+						<li>
+							<p>
+								How many use a treadmill or a rowing machine?
+							</p>
+						</li>
+						<li>
+							<p>
+								How many use exactly one of the two machines?
+							</p>
+						</li>
+						<li>
+							<p>
+								How many use neither machine?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Let <m>T</m> be the members who use a treadmill and <m>R</m> the members who use a rowing machine.
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>n(T \cup R) = 185 + 140 - 72 = 253</m> members. (Adding <m>185 + 140 = 325</m> counts the 72 who use both twice.)
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>185 - 72 = 113</m> use only a treadmill and <m>140 - 72 = 68</m> use only a rowing machine, so <m>113 + 68 = 181</m> use exactly one.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>300 - 253 = 47</m> members use neither.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-two-sales"><!--  #6 (Obj 10 slides: Shopping; new numbers) -->
+			<statement>
+				<p>
+					An online store surveyed 400 customers. Of these, 240 made a purchase during its spring sale, 210 made a purchase during its fall sale, and 360 made a purchase during at least one of the two sales.
+					<ol marker="a)">
+						<li>
+							<p>
+								How many customers made a purchase during both sales?
+							</p>
+						</li>
+						<li>
+							<p>
+								Draw a Venn diagram and write the number of customers in each of its four regions.
+							</p>
+						</li>
+						<li>
+							<p>
+								Jordan answers (a) with <m>240 + 210 - 400 = 50</m>. Explain the mistake.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Let <m>S</m> and <m>F</m> be the customers who bought during the spring and fall sales.
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>n(S \cup F) = 360</m>, so <m>360 = 240 + 210 - n(S \cap F)</m>, and <m>n(S \cap F) = 450 - 360 = 90</m> customers.
+							</p>
+						</li>
+						<li>
+							<p>
+								Spring only: <m>240 - 90 = 150</m>. Fall only: <m>210 - 90 = 120</m>. Neither: <m>400 - 360 = 40</m>. See the diagram below.
+							</p>
+						</li>
+						<li>
+							<p>
+								The inclusion-exclusion rule needs <m>n(S \cup F)</m>, which is 360, not 400. The 40 customers who bought at neither sale are in the universal set but not in <m>S \cup F</m>.
+							</p>
+						</li>
+					</ol>
+				</p>
+				<image xml:id="img-exer-sets-two-sales" width="45%">
+					<shortdescription>A Venn diagram: a rectangle labeled U contains two overlapping circles labeled S and F. S only contains 150, the overlap contains 90, F only contains 120, and the region outside both circles contains 40.</shortdescription>
+					<latex-image>
+						\begin{venndiagram2sets}[tikzoptions={font=\figfont},
+							labelA={$S$}, labelB={$F$},
+							labelOnlyA={150}, labelAB={90}, labelOnlyB={120}, labelNotAB={40}]
+							\node[below left] at (venn top right) {$U$};
+						\end{venndiagram2sets}
+					</latex-image>
+				</image>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-commuters"><!--  #7 (new) -->
+			<statement>
+				<p>
+					A city surveyed 150 commuters. Of these, 45 ride only the bus, 30 ride only light rail, and 25 ride both the bus and light rail.
+					<ol marker="a)">
+						<li>
+							<p>
+								How many commuters ride the bus?
+							</p>
+						</li>
+						<li>
+							<p>
+								How many ride light rail?
+							</p>
+						</li>
+						<li>
+							<p>
+								How many ride neither?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The numbers given are regions of the Venn diagram, so nothing needs to be subtracted.
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>45 + 25 = 70</m> ride the bus. (Not 45: those are the commuters who ride <em>only</em> the bus.)
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>30 + 25 = 55</m> ride light rail.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>150 - (45 + 25 + 30) = 50</m> ride neither.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-concert-merch"><!--  #8 (Obj 10 slides: Movie Snacks; new context and numbers) -->
+			<statement>
+				<p>
+					At a concert, 320 people bought a T-shirt and 140 bought a poster. Of these, 60 bought both.
+					<ol marker="a)">
+						<li>
+							<p>
+								How many people bought a T-shirt but no poster?
+							</p>
+						</li>
+						<li>
+							<p>
+								How many bought a poster but no T-shirt?
+							</p>
+						</li>
+						<li>
+							<p>
+								Can you find how many people at the concert bought neither? Explain.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Let <m>T</m> be the people who bought a T-shirt and <m>P</m> the people who bought a poster.
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>n(T \cap P^C) = 320 - 60 = 260</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>n(P \cap T^C) = 140 - 60 = 80</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								No. We know <m>n(T \cup P) = 320 + 140 - 60 = 400</m>, but finding the number who bought neither requires the total attendance, <m>n(U)</m>, which is not given.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-national-parks"><!--  #9 (based on written 10b) -->
+			<statement>
+				<p>
+					A survey of 120 people at a trailhead found that 64 have visited Yellowstone National Park, 38 have visited Glacier National Park, and 15 have visited both.
+					<ol marker="a)">
+						<li>
+							<p>
+								Draw a Venn diagram of the survey results, writing the number of people in each of its four regions.
+							</p>
+						</li>
+						<li>
+							<p>
+								How many have visited Yellowstone but not Glacier?
+							</p>
+						</li>
+						<li>
+							<p>
+								How many have visited exactly one of the two parks?
+							</p>
+						</li>
+						<li>
+							<p>
+								How many have visited neither park?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Let <m>Y</m> and <m>G</m> be the people who have visited Yellowstone and Glacier.
+					<ol marker="a)">
+						<li>
+							<p>
+								Start with the overlap, 15. Then <m>64 - 15 = 49</m> are in <m>Y</m> only and <m>38 - 15 = 23</m> are in <m>G</m> only. The rest, <m>120 - (49 + 15 + 23) = 33</m>, are outside both circles. See the diagram below.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>n(Y \cap G^C) = 49</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>49 + 23 = 72</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>n(Y \cup G) = 64 + 38 - 15 = 87</m>, so <m>120 - 87 = 33</m> have visited neither.
+							</p>
+						</li>
+					</ol>
+				</p>
+				<image xml:id="img-exer-sets-national-parks" width="45%">
+					<shortdescription>A Venn diagram: a rectangle labeled U contains two overlapping circles labeled Y and G. Y only contains 49, the overlap contains 15, G only contains 23, and the region outside both circles contains 33.</shortdescription>
+					<latex-image>
+						\begin{venndiagram2sets}[tikzoptions={font=\figfont},
+							labelA={$Y$}, labelB={$G$},
+							labelOnlyA={49}, labelAB={15}, labelOnlyB={23}, labelNotAB={33}]
+							\node[below left] at (venn top right) {$U$};
+						\end{venndiagram2sets}
+					</latex-image>
+				</image>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-jobs-intramurals"><!--  #10 (based on written 10c) -->
+			<statement>
+				<p>
+					A survey of the 45 students on one floor of a residence hall found that 28 have a part-time job, 21 play an intramural sport, and 5 do neither.
+					<ol marker="a)">
+						<li>
+							<p>
+								How many students have a job or play an intramural sport?
+							</p>
+						</li>
+						<li>
+							<p>
+								Use the inclusion-exclusion rule to find how many students have a job and play an intramural sport.
+							</p>
+						</li>
+						<li>
+							<p>
+								How many play an intramural sport but do not have a job?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Let <m>J</m> be the students with a job and <m>S</m> the students who play an intramural sport, so <m>n(U) = 45</m>.
+					<ol marker="a)">
+						<li>
+							<p>
+								Everyone except the 5 who do neither: <m>n(J \cup S) = 45 - 5 = 40</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>40 = 28 + 21 - n(J \cap S)</m>, so <m>n(J \cap S) = 49 - 40 = 9</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>n(S \cap J^C) = 21 - 9 = 12</m>.
+							</p>
+						</li>
+					</ol>
+				</p>
+				<image xml:id="img-exer-sets-jobs-intramurals" width="45%">
+					<shortdescription>A Venn diagram: a rectangle labeled U contains two overlapping circles labeled J and S. J only contains 19, the overlap contains 9, S only contains 12, and the region outside both circles contains 5.</shortdescription>
+					<latex-image>
+						\begin{venndiagram2sets}[tikzoptions={font=\figfont},
+							labelA={$J$}, labelB={$S$},
+							labelOnlyA={19}, labelAB={9}, labelOnlyB={12}, labelNotAB={5}]
+							\node[below left] at (venn top right) {$U$};
+						\end{venndiagram2sets}
+					</latex-image>
+				</image>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-music-streaming"><!--  #11 (new) -->
+			<statement>
+				<p>
+					In a survey of college students, 55% use Spotify, 35% use Apple Music, and 15% use both.
+					<ol marker="a)">
+						<li>
+							<p>
+								What percentage use at least one of the two services?
+							</p>
+						</li>
+						<li>
+							<p>
+								What percentage use neither?
+							</p>
+						</li>
+						<li>
+							<p>
+								What percentage use exactly one of the two services?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Let <m>S</m> and <m>A</m> be the students who use Spotify and Apple Music, and let <m>n</m> represent the proportion of students in each set.
+					<ol marker="a)">
+						<li>
+							<p>
+								<m>n(S \cup A) = 0.55 + 0.35 - 0.15 = 0.75</m>, or 75%.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>1 - 0.75 = 0.25</m>, or 25%.
+							</p>
+						</li>
+						<li>
+							<p>
+								Spotify only is <m>0.55 - 0.15 = 0.40</m> and Apple Music only is <m>0.35 - 0.15 = 0.20</m>, so 60% use exactly one.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-naming-regions"><!--  #12 (Obj 11 clickers: regions of S, H, R; more parts) -->
+			<statement>
+				<p>
+					Fifty students are asked whether they are taking a science <m>(S)</m>, humanities <m>(H)</m>, or religion <m>(R)</m> course next quarter. The diagram labels the eight regions <m>a</m> through <m>h</m>. List the region(s) that represent each set.
+				</p>
+				<image xml:id="img-exer-sets-naming-regions" width="45%">
+					<shortdescription>A Venn diagram: a rectangle labeled U contains three overlapping circles labeled S (upper left), H (upper right), and R (bottom). S only is region a, S and H only is b, H only is c, S and R only is d, all three is e, H and R only is f, R only is g, and the region outside all three circles is h.</shortdescription>
+					<latex-image>
+						\begin{venndiagram3sets}[tikzoptions={font=\figfont},
+							labelA={$S$}, labelB={$H$}, labelC={$R$},
+							labelOnlyA={$a$}, labelOnlyAB={$b$}, labelOnlyB={$c$},
+							labelOnlyAC={$d$}, labelABC={$e$}, labelOnlyBC={$f$},
+							labelOnlyC={$g$}, labelNotABC={$h$}]
+							\node[below left] at (venn top right) {$U$};
+						\end{venndiagram3sets}
+					</latex-image>
+				</image>
+				<p>
+					<ol marker="a)">
+						<li><p><m>S \cap H</m></p></li>
+						<li><p>Students taking a science or a humanities course</p></li>
+						<li><p><m>S \cap H \cap R^C</m></p></li>
+						<li><p>Students taking only a humanities course</p></li>
+						<li><p><m>R \cap S^C</m></p></li>
+						<li><p>Students taking exactly two of the three kinds of courses</p></li>
+						<li><p><m>(S \cup H \cup R)^C</m></p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li><p><m>b</m> and <m>e</m>. The center, <m>e</m>, is in <m>S</m> and <m>H</m> (and also <m>R</m>).</p></li>
+						<li><p><m>a, b, c, d, e, f</m>. <q>Or</q> means the union <m>S \cup H</m>, everything in either circle.</p></li>
+						<li><p><m>b</m> only.</p></li>
+						<li><p><m>c</m>.</p></li>
+						<li><p><m>f</m> and <m>g</m>.</p></li>
+						<li><p><m>b, d, f</m>.</p></li>
+						<li><p><m>h</m>.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-deans-list"><!--  #13 (Obj 11 slides and practice sheet: Small Colleges; new numbers) -->
+			<statement>
+				<p>
+					At a small college:
+					<ul>
+						<li><p>28 female seniors were on the dean's list,</p></li>
+						<li><p>54 women were on the dean's list who were not seniors,</p></li>
+						<li><p>40 male seniors were on the dean's list,</p></li>
+						<li><p>75 female seniors were not on the dean's list,</p></li>
+						<li><p>82 male seniors were not on the dean's list,</p></li>
+						<li><p>240 women were not seniors and were not on the dean's list,</p></li>
+						<li><p>71 men were on the dean's list who were not seniors,</p></li>
+						<li><p>210 men were not seniors and were not on the dean's list.</p></li>
+					</ul>
+					<ol marker="a)">
+						<li><p>How many students were seniors?</p></li>
+						<li><p>How many were women?</p></li>
+						<li><p>How many were on the dean's list?</p></li>
+						<li><p>How many seniors were on the dean's list?</p></li>
+						<li><p>How many women were on the dean's list?</p></li>
+						<li><p>How many were men?</p></li>
+						<li><p>How many students attended the college?</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Let <m>S</m> be the seniors, <m>W</m> the women, and <m>D</m> the students on the dean's list; men are <m>W^C</m>. Each fact describes exactly one of the eight regions, so nothing needs to be subtracted. For example, <q>54 women were on the dean's list who were not seniors</q> is the region <m>W \cap D \cap S^C</m>.
+				</p>
+				<image xml:id="img-exer-sets-deans-list" width="45%">
+					<shortdescription>A Venn diagram: a rectangle labeled U contains three overlapping circles labeled S, W, and D. S only contains 82, W only 240, D only 71; S and W only 75, S and D only 40, W and D only 54; all three 28; outside all three circles 210.</shortdescription>
+					<latex-image>
+						\begin{venndiagram3sets}[tikzoptions={font=\figfont},
+							labelA={$S$}, labelB={$W$}, labelC={$D$},
+							labelOnlyA={82}, labelOnlyAB={75}, labelOnlyB={240},
+							labelOnlyAC={40}, labelABC={28}, labelOnlyBC={54},
+							labelOnlyC={71}, labelNotABC={210}]
+							\node[below left] at (venn top right) {$U$};
+						\end{venndiagram3sets}
+					</latex-image>
+				</image>
+				<p>
+					<ol marker="a)">
+						<li><p><m>28 + 40 + 75 + 82 = 225</m> seniors.</p></li>
+						<li><p><m>28 + 54 + 75 + 240 = 397</m> women.</p></li>
+						<li><p><m>28 + 54 + 40 + 71 = 193</m> students on the dean's list.</p></li>
+						<li><p><m>28 + 40 = 68</m> seniors on the dean's list.</p></li>
+						<li><p><m>28 + 54 = 82</m> women on the dean's list.</p></li>
+						<li><p><m>40 + 82 + 71 + 210 = 403</m> men.</p></li>
+						<li><p>All eight regions: <m>397 + 403 = 800</m> students.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-news-sources"><!--  #14 (Obj 11 slides and practice sheet: Magazines; new sets and numbers) -->
+			<statement>
+				<p>
+					A survey of 90 college students asked whether they get their news from a news app <m>(N)</m>, from podcasts <m>(P)</m>, or from TV news <m>(T)</m>. The results are:
+					<ul>
+						<li><p>30 use a news app,</p></li>
+						<li><p>24 listen to podcasts,</p></li>
+						<li><p>40 do not watch TV news,</p></li>
+						<li><p>14 use a news app but do not listen to podcasts,</p></li>
+						<li><p>13 listen to podcasts and watch TV news,</p></li>
+						<li><p>15 use a news app and watch TV news,</p></li>
+						<li><p>6 use all three.</p></li>
+					</ul>
+					<ol marker="a)">
+						<li><p>How many students use none of the three?</p></li>
+						<li><p>How many watch only TV news?</p></li>
+						<li><p>How many use a news app and listen to podcasts but do not watch TV news?</p></li>
+						<li><p>How many use exactly two of the three?</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Fill in the Venn diagram from the center out.
+					<ul>
+						<li><p>All three: 6.</p></li>
+						<li><p><m>P</m> and <m>T</m> only: <m>13 - 6 = 7</m>. <m>N</m> and <m>T</m> only: <m>15 - 6 = 9</m>.</p></li>
+						<li><p><m>N</m> only: the 14 in <m>N</m> but not <m>P</m> include the 9 in <m>N</m> and <m>T</m> only, so <m>14 - 9 = 5</m>.</p></li>
+						<li><p><m>N</m> and <m>P</m> only: <m>30 - 5 - 9 - 6 = 10</m>.</p></li>
+						<li><p><m>P</m> only: <m>24 - 10 - 6 - 7 = 1</m>.</p></li>
+						<li><p><m>T</m> only: <m>90 - 40 = 50</m> watch TV news, so <m>50 - 9 - 6 - 7 = 28</m>.</p></li>
+						<li><p>None: the 40 who do not watch TV news are <m>5 + 10 + 1 = 16</m> plus those who use none, so <m>40 - 16 = 24</m>.</p></li>
+					</ul>
+					Check: <m>5 + 10 + 1 + 9 + 6 + 7 + 28 + 24 = 90</m>.
+				</p>
+				<image xml:id="img-exer-sets-news-sources" width="45%">
+					<shortdescription>A Venn diagram: a rectangle labeled U contains three overlapping circles labeled N, P, and T. N only contains 5, P only 1, T only 28; N and P only 10, N and T only 9, P and T only 7; all three 6; outside all three circles 24.</shortdescription>
+					<latex-image>
+						\begin{venndiagram3sets}[tikzoptions={font=\figfont},
+							labelA={$N$}, labelB={$P$}, labelC={$T$},
+							labelOnlyA={5}, labelOnlyAB={10}, labelOnlyB={1},
+							labelOnlyAC={9}, labelABC={6}, labelOnlyBC={7},
+							labelOnlyC={28}, labelNotABC={24}]
+							\node[below left] at (venn top right) {$U$};
+						\end{venndiagram3sets}
+					</latex-image>
+				</image>
+				<p>
+					<ol marker="a)">
+						<li><p>24 students.</p></li>
+						<li><p>28 students. (Not 50: that is everyone who watches TV news.)</p></li>
+						<li><p>10 students. (Not <m>10 + 6 = 16</m>: the 6 in the center also watch TV news.)</p></li>
+						<li><p><m>10 + 9 + 7 = 26</m> students.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-book-club"><!--  #15 (based on written 11b) -->
+			<statement>
+				<p>
+					A library asked the members of its book club which genres they read: mystery <m>(M)</m>, fantasy <m>(F)</m>, or biography <m>(B)</m>. The results are:
+					<ul>
+						<li><p>25 read mystery,</p></li>
+						<li><p>12 read fantasy,</p></li>
+						<li><p>26 read biography,</p></li>
+						<li><p>9 read mystery and fantasy,</p></li>
+						<li><p>11 read mystery and biography,</p></li>
+						<li><p>8 read fantasy and biography,</p></li>
+						<li><p>5 read all three,</p></li>
+						<li><p>4 read none of these genres.</p></li>
+					</ul>
+					<ol marker="a)">
+						<li><p>Complete a Venn diagram showing the number of members in each of the eight regions.</p></li>
+						<li><p>How many members were surveyed?</p></li>
+						<li><p>How many read exactly one of the three genres?</p></li>
+						<li><p>How many read only fantasy?</p></li>
+						<li><p>How many read at least two of the three genres?</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a)">
+						<li>
+							<p>
+								The center is 5. The two-genre-only regions are <m>9 - 5 = 4</m> (<m>M</m> and <m>F</m>), <m>11 - 5 = 6</m> (<m>M</m> and <m>B</m>), and <m>8 - 5 = 3</m> (<m>F</m> and <m>B</m>). Then mystery only is <m>25 - 4 - 6 - 5 = 10</m>, fantasy only is <m>12 - 4 - 3 - 5 = 0</m>, and biography only is <m>26 - 6 - 3 - 5 = 12</m>. Four members are outside all three circles. See the diagram below.
+							</p>
+						</li>
+						<li><p><m>10 + 0 + 12 + 4 + 6 + 3 + 5 + 4 = 44</m> members.</p></li>
+						<li><p><m>10 + 0 + 12 = 22</m> members.</p></li>
+						<li><p>0 members. Every fantasy reader also reads at least one of the other genres.</p></li>
+						<li><p><m>4 + 6 + 3 + 5 = 18</m> members.</p></li>
+					</ol>
+				</p>
+				<image xml:id="img-exer-sets-book-club" width="45%">
+					<shortdescription>A Venn diagram: a rectangle labeled U contains three overlapping circles labeled M, F, and B. M only contains 10, F only 0, B only 12; M and F only 4, M and B only 6, F and B only 3; all three 5; outside all three circles 4.</shortdescription>
+					<latex-image>
+						\begin{venndiagram3sets}[tikzoptions={font=\figfont},
+							labelA={$M$}, labelB={$F$}, labelC={$B$},
+							labelOnlyA={10}, labelOnlyAB={4}, labelOnlyB={0},
+							labelOnlyAC={6}, labelABC={5}, labelOnlyBC={3},
+							labelOnlyC={12}, labelNotABC={4}]
+							\node[below left] at (venn top right) {$U$};
+						\end{venndiagram3sets}
+					</latex-image>
+				</image>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-membership-tiers"><!--  #16 (based on written 11c) -->
+			<statement>
+				<p>
+					A recreation center offers three amenities: a pool <m>(P)</m>, group fitness classes <m>(C)</m>, and a weight room <m>(W)</m>. A membership with all three is called <em>Full Access</em>, a membership with classes and the weight room but not the pool is called <em>Fit</em>, and a membership with only the pool is called <em>Swim</em>. The center's records show:
+					<ul>
+						<li><p>28 memberships include the pool,</p></li>
+						<li><p>13 include the pool but not classes,</p></li>
+						<li><p>42 include classes,</p></li>
+						<li><p>25 include classes and the weight room,</p></li>
+						<li><p>50 include the weight room,</p></li>
+						<li><p>15 include the pool and the weight room,</p></li>
+						<li><p>10 include all three,</p></li>
+						<li><p>6 include none of the three (social memberships).</p></li>
+					</ul>
+					How many memberships
+					<ol marker="a)">
+						<li><p>are there in all?</p></li>
+						<li><p>are Full Access?</p></li>
+						<li><p>are Fit?</p></li>
+						<li><p>are Swim?</p></li>
+						<li><p>include exactly one of the three amenities?</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Fill in the Venn diagram from the center out. The center is 10. Pool and weight room only: <m>15 - 10 = 5</m>. Classes and weight room only: <m>25 - 10 = 15</m>. The 13 with the pool but not classes are the pool-only region and the 5 with the pool and weight room only, so pool only is <m>13 - 5 = 8</m>. Then pool and classes only is <m>28 - 8 - 5 - 10 = 5</m>, classes only is <m>42 - 5 - 15 - 10 = 12</m>, and weight room only is <m>50 - 5 - 15 - 10 = 20</m>. Six are outside all three circles.
+				</p>
+				<image xml:id="img-exer-sets-membership-tiers" width="45%">
+					<shortdescription>A Venn diagram: a rectangle labeled U contains three overlapping circles labeled P, C, and W. P only contains 8, C only 12, W only 20; P and C only 5, P and W only 5, C and W only 15; all three 10; outside all three circles 6.</shortdescription>
+					<latex-image>
+						\begin{venndiagram3sets}[tikzoptions={font=\figfont},
+							labelA={$P$}, labelB={$C$}, labelC={$W$},
+							labelOnlyA={8}, labelOnlyAB={5}, labelOnlyB={12},
+							labelOnlyAC={5}, labelABC={10}, labelOnlyBC={15},
+							labelOnlyC={20}, labelNotABC={6}]
+							\node[below left] at (venn top right) {$U$};
+						\end{venndiagram3sets}
+					</latex-image>
+				</image>
+				<p>
+					<ol marker="a)">
+						<li><p><m>8 + 5 + 12 + 5 + 10 + 15 + 20 + 6 = 81</m> memberships.</p></li>
+						<li><p>10 (the center).</p></li>
+						<li><p>15 (classes and weight room only).</p></li>
+						<li><p>8 (pool only).</p></li>
+						<li><p><m>8 + 12 + 20 = 40</m>.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="exer-sets-outdoor-club"><!--  #17 (new; unknown region, like the farmers market example) -->
+			<statement>
+				<p>
+					An outdoor club with 80 members asked which activities members had done in the past year: trail running <m>(R)</m>, climbing <m>(C)</m>, or kayaking <m>(K)</m>. The results are:
+					<ul>
+						<li><p>38 went trail running,</p></li>
+						<li><p>30 went climbing,</p></li>
+						<li><p>33 went kayaking,</p></li>
+						<li><p>14 went trail running and kayaking,</p></li>
+						<li><p>11 went climbing and kayaking,</p></li>
+						<li><p>4 did all three,</p></li>
+						<li><p>9 did none of these activities.</p></li>
+					</ul>
+					<ol marker="a)">
+						<li><p>How many members went trail running and climbing?</p></li>
+						<li><p>How many went only climbing?</p></li>
+						<li><p>How many did at least one of the three activities?</p></li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Start at the center, 4. Running and kayaking only: <m>14 - 4 = 10</m>. Climbing and kayaking only: <m>11 - 4 = 7</m>. Kayaking only: <m>33 - 4 - 10 - 7 = 12</m>. The number who went running and climbing is not given, so let <m>x</m> be the number who went running and climbing but not kayaking. Then running only is <m>38 - x - 4 - 10 = 24 - x</m> and climbing only is <m>30 - x - 4 - 7 = 19 - x</m>.
+				</p>
+				<p>
+					All 80 members belong to exactly one of the eight regions:
+					<md>
+						<mrow> (24 - x) + (19 - x) + 12 + x + 10 + 7 + 4 + 9 =\amp 80 </mrow>
+						<mrow> 85 - x =\amp 80 </mrow>
+						<mrow> x =\amp 5. </mrow>
+					</md>
+					So running only is <m>24 - 5 = 19</m> and climbing only is <m>19 - 5 = 14</m>.
+				</p>
+				<image xml:id="img-exer-sets-outdoor-club" width="45%">
+					<shortdescription>A Venn diagram: a rectangle labeled U contains three overlapping circles labeled R, C, and K. R only contains 19, C only 14, K only 12; R and C only 5, R and K only 10, C and K only 7; all three 4; outside all three circles 9.</shortdescription>
+					<latex-image>
+						\begin{venndiagram3sets}[tikzoptions={font=\figfont},
+							labelA={$R$}, labelB={$C$}, labelC={$K$},
+							labelOnlyA={19}, labelOnlyAB={5}, labelOnlyB={14},
+							labelOnlyAC={10}, labelABC={4}, labelOnlyBC={7},
+							labelOnlyC={12}, labelNotABC={9}]
+							\node[below left] at (venn top right) {$U$};
+						\end{venndiagram3sets}
+					</latex-image>
+				</image>
+				<p>
+					<ol marker="a)">
+						<li><p><m>x + 4 = 5 + 4 = 9</m> members. (The 5 is only those who did not also kayak.)</p></li>
+						<li><p>14 members.</p></li>
+						<li><p><m>80 - 9 = 71</m> members.</p></li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+	</exercises>
 </section>
